@@ -7,4 +7,4 @@ subtitle: "En esta página voy a ir subiendo presentaciones, recursos e investig
 
 **Jornadas Psicología (con)Ciencia Abierta**
 
--   Click aquí para acceder a la presentación
+-   [Click aquí para acceder a la presentación](https://toninif.quarto.pub/presentaciones/presentacionConcienciaAbierta/presentacion2.html#/title-slide)
