@@ -3,14 +3,14 @@ project:
   
 website: 
   page-navigation: true
-  title: "Armando web para presentaciones" 
-  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
-  repo-url: https://github.com/openscapes/quarto-website-tutorial 
+  title: "Mi web laboral" 
+  site-url: "https://toninif.github.io" 
+  repo-url: https://toninif.github.io 
   repo-actions: [edit, issue]
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "&copy; CC-By Openscapes, 2022"
+    left: "-"
     
   sidebar:
     logo: "images/perfil.jpeg"
@@ -18,14 +18,14 @@ website:
     align: center
     tools: 
       - icon: globe
-        href: https://openscapes.org
-        text: "Openscapes.org"
+        href: https://toninif.github.io/
+        text: "Fernando Tonini"
       - icon: github
-        href: https://github.com/openscapes/quarto-website-tutorial
-        text: "Quarto website tutorial"
+        href: https://github.com/toninif
+        text: "Mi git-hub"
       - icon: twitter
-        href: https://twitter.com/openscapes
-        text: "Openscapes Twitter"         
+        href: https://twitter.com/toninifer
+        text: "Mi twitter"         
 
     style: "docked"
     search: true
