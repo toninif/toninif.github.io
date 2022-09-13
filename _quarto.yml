@@ -38,8 +38,8 @@ website:
           - quarto-workflows/browser.md
           - quarto-workflows/rstudio.qmd
           - quarto-workflows/jupyter.md 
-      - href: transition-from-rmarkdown.qmd
-        text: Transition from Rmd
+      - href: concienciaAbierta/presentacion2.qmd
+        text: Presentacion
 
 
 format:
