@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/index.html</loc>
-    <lastmod>2022-09-13T21:58:52.754Z</lastmod>
+    <loc>https://toninif.github.io/index.html</loc>
+    <lastmod>2022-09-13T22:13:28.378Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/jupyter.html</loc>
-    <lastmod>2022-09-13T21:58:54.090Z</lastmod>
+    <loc>https://toninif.github.io/quarto-workflows/jupyter.html</loc>
+    <lastmod>2022-09-13T22:13:31.107Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/index.html</loc>
-    <lastmod>2022-09-13T21:58:54.522Z</lastmod>
+    <loc>https://toninif.github.io/quarto-workflows/index.html</loc>
+    <lastmod>2022-09-13T22:13:31.523Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/browser.html</loc>
-    <lastmod>2022-09-13T21:58:54.902Z</lastmod>
+    <loc>https://toninif.github.io/quarto-workflows/browser.html</loc>
+    <lastmod>2022-09-13T22:13:31.895Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/quarto-workflows/rstudio.html</loc>
-    <lastmod>2022-09-13T21:58:55.374Z</lastmod>
+    <loc>https://toninif.github.io/quarto-workflows/rstudio.html</loc>
+    <lastmod>2022-09-13T22:13:32.355Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/learning-more.html</loc>
-    <lastmod>2022-09-13T21:58:55.759Z</lastmod>
+    <loc>https://toninif.github.io/learning-more.html</loc>
+    <lastmod>2022-09-13T22:13:32.727Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/transition-from-rmarkdown.html</loc>
-    <lastmod>2022-09-13T21:58:56.235Z</lastmod>
+    <loc>https://toninif.github.io/transition-from-rmarkdown.html</loc>
+    <lastmod>2022-09-13T22:13:33.195Z</lastmod>
   </url>
   <url>
-    <loc>https://openscapes.github.io/quarto-website-tutorial/explore.html</loc>
-    <lastmod>2022-09-13T21:58:56.735Z</lastmod>
+    <loc>https://toninif.github.io/explore.html</loc>
+    <lastmod>2022-09-13T22:13:33.675Z</lastmod>
   </url>
 </urlset>
