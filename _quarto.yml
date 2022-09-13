@@ -3,7 +3,7 @@ project:
   
 website: 
   page-navigation: true
-  title: "Making sharable documents with Quarto" 
+  title: "Armando web para presentaciones" 
   site-url: "https://openscapes.github.io/quarto-website-tutorial" 
   repo-url: https://github.com/openscapes/quarto-website-tutorial 
   repo-actions: [edit, issue]
