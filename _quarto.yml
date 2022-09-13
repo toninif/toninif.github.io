@@ -33,13 +33,6 @@ website:
     contents:
       - href: index.qmd
         text: Inicio
-      - section: quarto-workflows/index.qmd
-        contents: 
-          - quarto-workflows/browser.md
-          - quarto-workflows/rstudio.qmd
-          - quarto-workflows/jupyter.md 
-      - href: concienciaAbierta/presentacion2.qmd
-        text: Presentacion
 
 
 format:
