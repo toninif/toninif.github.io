@@ -1,0 +1,28 @@
+---
+title: "Sobre mi"
+about:
+  template: solana
+  image: "images/perfil.jpeg"
+  links:
+    - icon: twitter
+      text: twitter
+      href: https://twitter.com/toninifer
+    - icon: github
+      text: Github
+      href: https://github.com/toninif
+    - icon: envelope
+      text: Mail
+      href: mailto:fernandotonini11@gmail.com
+---
+
+Mi nombre es Fernando Tonini y soy licenciado en psicología. Actualmente me encuentro terminando mis estudios de doctorado gracias a una beca doctoral CONICET. Me dedico a trabajar con estímulos emocionales en contexto de laboratorio y me gusta mucho hablar, compartir y usar R. El de la foto es mi perro Fidel.
+
+## Educación
+
+Universidad de Palermo, Argentina \| PhD en Psicología \| 2017 - 2022
+
+Universidad de Palermo, Argentina \| Licenciatura en Psicología \| 2012 - 2017
+
+## Publiaciones
+
+(actualizar esto)

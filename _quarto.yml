@@ -35,13 +35,19 @@ website:
     contents:
       - href: index.qmd
         text: Inicio
+      - href: about.qmd
+        text: Sobre mi
+      - href: https://toninif.github.io/blog_clubdelcodigo/
+        text: Club del Código
+      - href: https://toninif.github.io/NOMBREBLOG/
+        text: Mi blog
 
 
 format:
   html:
     theme:
-      light: [cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
-      dark: [cosmo, theme-dark.scss]
+      light: journal
+      dark: darkly
     code-copy: true
     code-overflow: wrap
     toc: true
