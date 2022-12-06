@@ -1,5 +1,26 @@
 [
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre mi",
+    "section": "",
+    "text": "Mi nombre es Fernando Tonini y soy licenciado en psicología. Actualmente me encuentro terminando mis estudios de doctorado gracias a una beca doctoral CONICET. Me dedico a trabajar con estímulos emocionales en contexto de laboratorio y me gusta mucho hablar, compartir y usar R. El de la foto es mi perro Fidel."
+  },
+  {
+    "objectID": "about.html#educación",
+    "href": "about.html#educación",
+    "title": "Sobre mi",
+    "section": "Educación",
+    "text": "Educación\nUniversidad de Palermo, Argentina | PhD en Psicología | 2017 - 2022\nUniversidad de Palermo, Argentina | Licenciatura en Psicología | 2012 - 2017"
+  },
+  {
+    "objectID": "about.html#publiaciones",
+    "href": "about.html#publiaciones",
+    "title": "Sobre mi",
+    "section": "Publiaciones",
+    "text": "Publiaciones\n(actualizar esto)"
+  },
+  {
     "objectID": "index.html",
     "href": "index.html",
     "title": "PROBANDO PAGINA PERSONA",
