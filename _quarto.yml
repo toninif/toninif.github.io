@@ -5,34 +5,24 @@ project:
   
 website: 
   page-navigation: true
-  title: "Mi web laboral" 
+  title: ":herb:" 
   site-url: "https://toninif.github.io" 
   repo-url: https://toninif.github.io 
-  repo-actions: [edit, issue]
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     left: "-"
     
-  sidebar:
-    logo: "images/perfil.jpeg"
+  navbar:
     pinned: true
-    align: center
-    tools: 
+    right: 
       - icon: globe
         href: https://toninif.github.io/
-        text: "Fernando Tonini"
       - icon: github
         href: https://github.com/toninif
-        text: "Mi git-hub"
       - icon: twitter
         href: https://twitter.com/toninifer
-        text: "Mi twitter"         
-
-    style: "docked"
-    search: true
-    collapse-level: 1
-    contents:
+    left: 
       - href: index.qmd
         text: Inicio
       - href: about.qmd
@@ -40,8 +30,9 @@ website:
       - href: https://toninif.github.io/blog_clubdelcodigo/
         text: Club del Código
       - href: https://toninif.github.io/NOMBREBLOG/
-        text: Mi blog
-
+        text: Mi blog 
+    style: "docked"
+    search: true
 
 format:
   html:
@@ -51,10 +42,9 @@ format:
     code-copy: true
     code-overflow: wrap
     toc: true
+    from: markdown+emoji
 
 
-filters:
-  - include-files.lua
-  - quarto
+
 
   
