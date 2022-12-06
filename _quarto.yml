@@ -38,6 +38,8 @@ website:
             text: Congreso ConCiencia Abierta 2022
           - href: https://toninif.github.io/presentacionUBA2022/trabajo_presentacion.html
             text: XIV Congreso Internacional de Investigacion UBA
+          - href: https://toninif.github.io/congresoSIP2022/presentacionQ.html
+            text: Congreso SIP 2022
     search: true
 
 format:
