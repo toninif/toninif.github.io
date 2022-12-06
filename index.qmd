@@ -1,9 +1,11 @@
 ---
-title: "PROBANDO PAGINA PERSONA"
+title: "Bienvenidxs a mi web laboral"
 subtitle: "En esta página voy a ir subiendo presentaciones, recursos e investigaciones en las que participe"
 ---
 
-## Presentaciones {#welcome}
+## Últimas Publicaciones {#welcome1}
+
+## Últimas Presentaciones {#welcome2}
 
 **Jornadas Psicología (con)Ciencia Abierta**
 
