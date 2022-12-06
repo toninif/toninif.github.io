@@ -3,10 +3,16 @@ title: "Bienvenidxs a mi web laboral"
 subtitle: "En esta página voy a ir subiendo presentaciones, recursos e investigaciones en las que participe"
 ---
 
-## Últimas Publicaciones {#welcome1}
+## Últimas Publicaciones :bar_chart: {#welcome1}
 
-## Últimas Presentaciones {#welcome2}
+## Últimas Presentaciones :teacher: {#welcome2}
+
+**XIV Congreso Internacional de Investigación Facultad de Psicología - UBA**
+-   [Congreso UBA 2022]()
 
 **Jornadas Psicología (con)Ciencia Abierta**
+-   [Ciencia Abierta: A new hope](https://toninif.github.io/ccabierta_2022/conCienciaAbierta2022.html)
 
--   [Click aquí para acceder a la presentación](https://toninif.quarto.pub/presentaciones/presentacionConcienciaAbierta/presentacion2.html#/title-slide)
+
+## Contacto :incoming_envelope:
+
