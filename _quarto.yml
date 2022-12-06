@@ -30,8 +30,11 @@ website:
       - href: https://toninif.github.io/blog_clubdelcodigo/
         text: Club del Código
       - href: https://toninif.github.io/fernandoBlognini/
-        text: Mi blog 
-    style: "docked"
+        text: Mi blog
+      - text: Presentaciones
+        menu:
+          - href: presentaciones/conCienciaAbierta2022.html
+            text: ads
     search: true
 
 format:
