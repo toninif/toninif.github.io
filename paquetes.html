@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>🌿 - Sobre mi</title>
+<title>🌿 - Paquetes desarrollados</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -34,6 +34,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="prefetch" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
@@ -80,7 +81,7 @@ cookieconsent.run({
 
 </head>
 
-<body class="nav-fixed fullcontent">
+<body class="nav-fixed">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -101,7 +102,7 @@ cookieconsent.run({
  <span class="menu-text">Inicio</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" aria-current="page">
+    <a class="nav-link" href="./about.html">
  <span class="menu-text">Sobre mi</span></a>
   </li>  
   <li class="nav-item">
@@ -132,7 +133,7 @@ cookieconsent.run({
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="./paquetes.html">
+    <a class="nav-link active" href="./paquetes.html" aria-current="page">
  <span class="menu-text">Paquetes</span></a>
   </li>  
 </ul>
@@ -165,51 +166,33 @@ cookieconsent.run({
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
-<!-- main -->
-<div class="quarto-about-solana column-body">
-  <div class="about-entity">
-    <div class="entity-contents">
-      <header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Sobre mi</h1>
-</div>
-<div class="quarto-title-meta">
-  </div>
-</header> <div class="about-links">
-  <a href="https://twitter.com/toninifer" class="about-link">
-    <i class="bi bi-twitter"></i>
-     <span class="about-link-text">twitter</span>
-  </a>
-  <a href="https://github.com/toninif" class="about-link">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">Github</span>
-  </a>
-  <a href="mailto:fernandotonini11@gmail.com" class="about-link">
-    <i class="bi bi-envelope"></i>
-     <span class="about-link-text">Mail</span>
-  </a>
-</div>
-      <div class="about-contents"><main class="content" id="quarto-document-content">
-<p>Mi nombre es Fernando Tonini y soy licenciado en psicología. Actualmente me encuentro terminando mis estudios de doctorado gracias a una beca doctoral CONICET. Me dedico a trabajar con estímulos emocionales en contexto de laboratorio y me gusta mucho hablar, compartir y usar R. El de la foto es mi perro Fidel.</p>
-<section id="educación" class="level2">
-<h2 data-anchor-id="educación">Educación</h2>
-<p>Universidad de Palermo, Argentina | PhD en Psicología | 2017 - 2022</p>
-<p>Universidad de Palermo, Argentina | Licenciatura en Psicología | 2012 - 2017</p>
-</section>
-<section id="publiaciones" class="level2">
-<h2 data-anchor-id="publiaciones">Publiaciones</h2>
-<p>(actualizar esto)</p>
-
-
-</section>
-</main></div>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
     </div>
-    <img src="images/perfil.jpeg" class="about-image
-  rounded " style="width: 15em;">
-  </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Paquetes desarrollados</h1>
 </div>
- <!-- /main -->
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+
+
+
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {
@@ -345,6 +328,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   } else {
     toggleColorMode(false);
   }
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const clipboard = new window.ClipboardJS('.code-copy-button', {
     target: function(trigger) {
       return trigger.previousElementSibling;
