@@ -12,7 +12,7 @@ website:
   
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    left: "-"
+    left: "⭐⭐⭐"
     
   navbar:
     pinned: true
@@ -40,6 +40,8 @@ website:
             text: XIV Congreso Internacional de Investigacion UBA
           - href: https://toninif.github.io/congresoSIP2022/presentacionQ.html
             text: Congreso SIP 2022
+      - href: paquetes.qmd
+        text: Paquetes
     search: true
 
 format:
