@@ -26,5 +26,26 @@
     "title": "Bienvenidxs a mi web laboral",
     "section": "Últimas Presentaciones 🧑‍🏫",
     "text": "Últimas Presentaciones 🧑‍🏫\nXIV Congreso Internacional de Investigación Facultad de Psicología - UBA - Validación del IADS-2 en población argentina\nJornadas Psicología (con)Ciencia Abierta - Ciencia Abierta: A new hope"
+  },
+  {
+    "objectID": "paquetes/iapsArgentina/index.html",
+    "href": "paquetes/iapsArgentina/index.html",
+    "title": "iapsArgentina",
+    "section": "",
+    "text": "devtools::install_github(\"toninif/iapsArgentina\")"
+  },
+  {
+    "objectID": "paquetes/iapsArgentina/index.html#documentación",
+    "href": "paquetes/iapsArgentina/index.html#documentación",
+    "title": "iapsArgentina",
+    "section": "Documentación",
+    "text": "Documentación\nAcceder a la documentación haciendo click acá"
+  },
+  {
+    "objectID": "paquetes.html",
+    "href": "paquetes.html",
+    "title": ":herb:",
+    "section": "",
+    "text": "iapsArgentina\n\n\n{iapsArgentina} es un paquete que continene los datos normativos de las validaciones argentinas del Sistema Internacional de Imágenes Afectivas (IAPS).\n\n\n\nNatalia Irrazabal, Fernando Tonini\n\n\n\n\n\n\n\n\nNo matching items"
   }
 ]

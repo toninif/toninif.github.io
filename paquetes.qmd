@@ -1,3 +1,17 @@
 ---
-title: "Paquetes desarrollados"
+#title: "Paquetes"
+listing:
+  contents: paquetes
+  sort: "date desc"
+  type: grid
+  categories: false
+  sort-ui: false
+  filter-ui: false
+  image-height: 416px
+page-layout: full
+title-block-banner: false
+format: 
+  html:
+    code-tools: false
 ---
+

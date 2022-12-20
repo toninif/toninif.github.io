@@ -1,0 +1,21 @@
+---
+title: iapsArgentina
+description: |
+  {iapsArgentina} es un paquete que continene los datos normativos de las validaciones argentinas del Sistema Internacional de Imágenes Afectivas (IAPS).
+#date: no se que poner
+author: 
+  - name: Natalia Irrazabal
+  - name: Fernando Tonini
+    url: https://twitter.com/toninifer
+site-url: https://toninif.github.io/
+image: /images/hexpaquete.png
+draft: false
+---
+
+## Instalación
+
+    devtools::install_github("toninif/iapsArgentina")
+
+## Documentación
+
+Acceder a la documentación haciendo [click acá](https://toninif.github.io/iapsArgentina/index.html)
