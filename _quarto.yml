@@ -28,8 +28,6 @@ website:
         text: Inicio
       - href: about.qmd
         text: Sobre mi
-      - href: https://toninif.github.io/blog_clubdelcodigo/
-        text: Club del Código
       - href: https://toninif.github.io/fernandoBlognini/
         text: Mi blog
       - text: Presentaciones
@@ -52,7 +50,7 @@ format:
       dark: darkly
     code-copy: true
     code-overflow: wrap
-    toc: true
+    toc: false
     from: markdown+emoji
 
 
