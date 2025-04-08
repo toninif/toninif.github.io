@@ -47,5 +47,12 @@
     "title": ":herb:",
     "section": "",
     "text": "iapsArgentina\n\n\n{iapsArgentina} es un paquete que continene los datos normativos de las validaciones argentinas del Sistema Internacional de Imágenes Afectivas (IAPS).\n\n\n\nNatalia Irrazabal, Fernando Tonini\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "paquetes/iapsArgentina/index.html#instalación",
+    "href": "paquetes/iapsArgentina/index.html#instalación",
+    "title": "iapsArgentina",
+    "section": "",
+    "text": "devtools::install_github(\"toninif/iapsArgentina\")"
   }
 ]
