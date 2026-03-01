@@ -17,7 +17,7 @@ Presentaciones y materiales de mis cursos de grado y posgrado.
 
 [Motivación y Emoción →](presentaciones/emocion/)
 
-[Prácticas de Investigación →](presentaciones/psico_general/)
+[Psicoloǵia →](presentaciones/psico_general/)
 :::
 
 ::: {.grid-card}
@@ -29,9 +29,11 @@ Memoria prospectiva, procesamiento emocional, validación de estímulos afectivo
 
 ::: {.grid-card}
 ### Contacto
-[fernandotonini11@gmail.com](mailto:fernandotonini11@gmail.com)
+[ftonin@palermo.edu](mailto:ftonin@palermo.edu)
 
-[GitHub](https://github.com/toninif) · [ORCID](https://orcid.org/0000-0002-XXXX-XXXX)
+[Research Gate](https://www.researchgate.net/profile/Fernando-Tonini/research) · [X](https://x.com/toninifer) 
+
+[GitHub](https://github.com/toninif) · [ORCID](https://orcid.org/0000-0001-6435-8923)
 :::
 
 :::
