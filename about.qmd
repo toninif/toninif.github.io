@@ -6,24 +6,24 @@ page-layout: custom
 ---
 
 ::: {.hero}
-Soy psicólogo, docente e investigador en la Universidad de Palermo (Buenos Aires, Argentina). Mi trabajo se centra en la intersección entre emoción y cognición, con especial interés en la memoria prospectiva y el procesamiento de estímulos afectivos.
+Soy psicólogo, docente e investigador. Trabajo principalmente en la Universidad de Palermo (Buenos Aires, Argentina). Mi trabajo se centra en la intersección entre emoción y cognición, con especial interés en el procesamiento de estímulos afectivos. Todo desde un marco de ciencia abierta.
 :::
 
 ::: {.grid-section .grid-2col}
 
 ::: {.grid-card}
 ### Formación
-- Doctor en Psicología (en curso) · Universidad de Palermo
-- Licenciado en Psicología
+- Doctor en Psicología · Universidad de Palermo
+- Licenciado en Psicología · Universidad de Palermo
 
-*Completar con tu info.*
+
 :::
 
 ::: {.grid-card}
 ### Líneas de investigación
 - Memoria prospectiva y valencia emocional
-- Procesamiento de estímulos auditivos afectivos (IADS-E)
-- Competencias digitales e inteligencia artificial en educación
+- Validación de estímulos auditivos afectivos
+- Competencias digitales e inteligencia artificial
 - Ciencia abierta y reproducibilidad
 :::
 
@@ -33,13 +33,14 @@ Soy psicólogo, docente e investigador en la Universidad de Palermo (Buenos Aire
 
 ::: {.grid-card}
 ### Docencia
-- Psicología de la Motivación y Emoción (grado)
-- Prácticas de Investigación: Competencias Digitales e IA
+- Psicología de la Motivación y Emoción
+- Psicología
+- Prácticas de Investigación
 :::
 
 ::: {.grid-card}
 ### Herramientas
-R · Quarto · Git · Linux · JASP · jamovi
+R · Quarto · Git · Python
 :::
 
 :::

@@ -1,38 +1,121 @@
 ---
 title: "Publicaciones"
-subtitle: "Artículos, capítulos y presentaciones en congresos"
+subtitle: "Artículos, congresos y otras contribuciones"
 toc: false
 page-layout: custom
 ---
 
 ::: {.hero}
-Selección de trabajos publicados y presentados en congresos. Para un listado completo, visitá mi perfil en [ORCID](https://orcid.org/0000-0002-XXXX-XXXX) o [Google Scholar](#).
+Selección de trabajos publicados y presentaciones en congresos. Para un listado completo, visitá mi perfil en [Google Scholar](https://scholar.google.com/citations?hl=es&user=qgsX4fwAAAAJ&view_op=list_works&sortby=pubdate) u [Research Gate](https://www.researchgate.net/profile/Fernando-Tonini/research)
 :::
 
 ::: {.pub-section}
 ### Artículos
 
 ::: {.pub-item}
-**Título del artículo.** Tonini, F., et al. (2025). *Nombre de la Revista, volumen*(número), páginas. [DOI](https://doi.org/)
+Irrazabal, N. & **Tonini, F.** (en prensa). Affective norms for texts in Rioplatense Spanish (ANET-RS): Adaptation and cross-cultural variations in emotional explicitness, gender, and age. *Behavior and Research Methods*.
 :::
 
 ::: {.pub-item}
-**Título del artículo.** Tonini, F., et al. (2024). *Nombre de la Revista, volumen*(número), páginas. [DOI](https://doi.org/)
+Irrazabal, N., Feldberg, C., **Tonini, F.**, Ofman, D., Quian, R. & Castro Solano, A. (en prensa). Validation of the Positive and Negative Affect Schedule (PANAS) in Older Argentine Adults. *Dementia & Neuropsychologia*.
 :::
 
-*Completar con tus publicaciones.*
+::: {.pub-item}
+**Tonini, F.**, Barreyro, J. P., Scarpin, L. & Irrazabal, N. (en prensa). Normative data of emojis for Valence, Arousal, Dominance, Familiarity and Clarity in an Argentinian Sample. *Ciencias Psicológicas*.
+:::
+
+::: {.pub-item}
+Montenegro Guevara, E., **Tonini, F.** & Irrazabal, N. (2025). Comprensión lectora y metacomprensión en estudiantes universitarios utilizando sistemas inteligentes de tutorías (SIT). *RECIE. Revista Caribeña de Investigación Educativa, 9*, e9840. [DOI](https://doi.org/10.32541/recie.v9.840)
+:::
+
+::: {.pub-item}
+Irrazabal, N., **Tonini, F.**, Feldberg, C. & Quian, R. (2025). Datos normativos del Sistema Internacional de Sonidos Afectivos (IADS-2) en una muestra argentina. *Interdisciplinaria, 42*(2), 331–351.
+:::
+
+::: {.pub-item}
+Swami, V., Stieger, S., et al. [incluye a **Tonini, F.**] (2025). Life satisfaction around the world: Measurement invariance of the SWLS across 65 nations. *PLoS ONE, 20*(1), e0313107. [DOI](https://doi.org/10.1371/journal.pone.0313107)
+:::
+
+::: {.pub-item}
+Swami, V., Tran, U.S., Voracek, M., et al. [incluye a **Tonini, F.**] (2025). Self-Compassion around the world: Measurement invariance of the SCS-SF across 65 nations. *Mindfulness*. [DOI](https://doi.org/10.1007/s12671-025-02560-5)
+:::
+
+::: {.pub-item}
+Swami, V., White, M., et al. [incluye a **Tonini, F.**] (2024). Exposure and connectedness to natural environments: Measurement invariance of the NES and CNS across 65 nations. *Journal of Environmental Psychology, 99*, 102432. [DOI](https://doi.org/10.1016/j.jenvp.2024.102432)
+:::
+
+::: {.pub-item}
+**Tonini, F.**, Yang, W. & Irrazabal, N. (2024). Datos normativos para 180 sonidos afectivos de la versión expandida del IADS-E en una muestra argentina. *Psicodebate, 24*(1), 47–63. [DOI](http://dx.doi.org/10.18682/pd.v24i1.10400)
+:::
+
+::: {.pub-item}
+**Tonini, F.** (2024). Ciencia abierta: compartir datos, código y materiales para impulsar la transparencia en la investigación. *Revista de Psicología, 23*(2), 71–80.
+:::
+
+::: {.pub-item}
+Irrazabal, N. & **Tonini, F.** (2023). Datos normativos del IAPS en una muestra argentina. Tercera parte. *Revista Argentina de Ciencias del Comportamiento, 15*(3), 24–55.
+:::
+
+::: {.pub-item}
+Swami, V., Tran, U.S., Stieger, S., et al. [incluye a **Tonini, F.**] (2023). Body appreciation around the world: Measurement invariance of the BAS-2 across 65 nations. *Body Image, 46*, 449–466. [DOI](https://doi.org/10.1016/j.bodyim.2023.07.010)
+:::
+
+::: {.pub-item}
+Vietri, M. & **Tonini, F.** (2023). Del aislamiento salimos haciendo ciencia abierta. *Investigación Joven, 10*(3), 624–627.
+:::
+
+::: {.pub-item}
+**Tonini, F.** & Irrazabal, N. (2022). Herramientas para la inducción emocional en contexto experimental: Una revisión desde el paradigma de percepción de estímulos. *Anuario de Investigaciones de la Facultad de Psicología, U.B.A., XXIX*, 181–189.
+:::
+
+::: {.pub-item}
+Irrazabal, N. & **Tonini, F.** (2020). Datos normativos del IAPS en una muestra argentina. Segunda parte. *Revista Argentina de Ciencias del Comportamiento, 12*(3), 59–81.
+:::
+
 :::
 
 ::: {.pub-section}
-### Congresos
+### Congresos (selección)
 
 ::: {.pub-item}
-**Validación del IADS-2 en población argentina.** XIV Congreso Internacional de Investigación, Facultad de Psicología, UBA. (2022)
+**Tonini, F.**, Barreyro, J. P., Sterpin, L. & Irrazabal, N. (2025). Dimensiones afectivas, claridad y familiaridad en emojis: datos normativos en Argentina. *XX Reunión Nacional AACC*, Córdoba.
 :::
 
 ::: {.pub-item}
-**Ciencia Abierta: A new hope.** Jornadas Psicología (con)Ciencia Abierta. (2022)
+Irrazabal, N. & **Tonini, F.** (2025). Valence, Arousal, and Dominance in Obese and Post-Treatment Groups Exposed to Food Stimuli. *CERE*, Grenoble, Francia.
 :::
 
-*Completar con tus presentaciones.*
+::: {.pub-item}
+Irrazabal, N. & **Tonini, F.** (2024). Datos normativos de corpus de estímulos emocionales en población argentina. *I Congreso Iberoamericano de la Asociación de Motivación y Emoción*, Madrid, España.
+:::
+
+::: {.pub-item}
+**Tonini, F.** & Irrazabal, N. (2024). Efecto de estímulos emocionales sobre el recuerdo prospectivo de material auditivo y visual. *I Congreso de Ciencias Cognitivas*, Buenos Aires.
+:::
+
+::: {.pub-item}
+**Tonini, F.** & Irrazabal, N. (2023). Efecto de la valencia emocional de estímulos auditivos en la memoria prospectiva. *XIX Reunión Nacional AACC*, Buenos Aires.
+:::
+
+::: {.pub-item}
+**Tonini, F.** & Irrazabal, N. (2023). La influencia de la valencia afectiva en la memoria prospectiva: Comparación entre sonidos e imágenes. *I Congreso Internacional de Psicología, UNLP*, La Plata.
+:::
+
+::: {.pub-item}
+Irrazabal, N. & **Tonini, F.** (2022). Datos normativos de la versión expandida del IADS-E en población argentina. *VIII Congreso Regional SIP*, Santiago, Chile.
+:::
+
+:::
+
+::: {.pub-section}
+### Premios y distinciones
+
+::: {.pub-item}
+**Segunda mención — Premio Jóvenes Investigadores** (categoría Posgrado). XX Reunión Nacional AACC, Córdoba, 2025.
+:::
+
+::: {.pub-item}
+**Beca Escuela de Verano** — Würzburg Summer School "How Stories Affect our Lives: The Psychology of Narrative Impact" (SALON), Alemania, 2021.
+:::
+
 :::

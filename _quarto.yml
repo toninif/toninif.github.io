@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Fernando Tonini, PhD"
+  title: "Mi web laboral"
   navbar:
     left:
       - href: index.qmd
@@ -15,14 +15,14 @@ website:
           - href: presentaciones/emocion/index.qmd
             text: "Psicología de la Motivación y Emoción"
           - href: presentaciones/psico_general/index.qmd
-            text: "Prácticas de Investigación"
+            text: "Psicología"
       - href: publicaciones.qmd
         text: Publicaciones
     right:
       - icon: github
         href: https://github.com/toninif
   page-footer:
-    center: "© 2026 Fernando Tonini · Universidad de Palermo"
+    center: "2026 Fernando Tonini"
 
 format:
   html:
