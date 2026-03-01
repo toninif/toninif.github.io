@@ -1,0 +1,37 @@
+---
+title: "Fernando Tonini"
+subtitle: "PhD · Docente · Investigador"
+toc: false
+page-layout: custom
+---
+
+::: {.hero}
+Estudio cómo la emoción y la memoria se cruzan en la vida cotidiana. Doy clases en la [Universidad de Palermo](https://www.palermo.edu/) y me interesa la ciencia abierta, la estadística aplicada y las competencias digitales.
+:::
+
+::: {.grid-section}
+
+::: {.grid-card}
+### Docencia
+Presentaciones y materiales de mis cursos de grado y posgrado.
+
+[Motivación y Emoción →](presentaciones/emocion/)
+
+[Prácticas de Investigación →](presentaciones/psico_general/)
+:::
+
+::: {.grid-card}
+### Investigación
+Memoria prospectiva, procesamiento emocional, validación de estímulos afectivos (IADS-E).
+
+[Publicaciones →](publicaciones.qmd)
+:::
+
+::: {.grid-card}
+### Contacto
+[fernandotonini11@gmail.com](mailto:fernandotonini11@gmail.com)
+
+[GitHub](https://github.com/toninif) · [ORCID](https://orcid.org/0000-0002-XXXX-XXXX)
+:::
+
+:::

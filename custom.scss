@@ -1,0 +1,305 @@
+/*-- scss:defaults --*/
+
+// Tipografía
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&family=DM+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500&display=swap');
+
+$font-family-sans-serif: "DM Sans", -apple-system, sans-serif;
+$font-family-serif: "Source Serif 4", Georgia, serif;
+$font-family-monospace: "JetBrains Mono", monospace;
+
+// Colores - paleta sobria con un acento sutil
+$body-bg: #faf9f7;
+$body-color: #2d2d2d;
+$link-color: #5a6e4a;
+$link-hover-color: #3d4b33;
+
+$navbar-bg: #2d2d2d;
+$navbar-fg: #faf9f7;
+
+$heading-color: #1a1a1a;
+
+// Espaciado
+$font-size-base: 1.05rem;
+$line-height-base: 1.7;
+$paragraph-margin-bottom: 1.25rem;
+
+// Bordes y sombras
+$border-radius: 2px;
+$card-border-color: #e8e5e0;
+
+/*-- scss:rules --*/
+
+// Headings con tipografía serif
+h1, h2, h3, h4, h5, h6,
+.title, .subtitle {
+  font-family: $font-family-serif;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+h1, .title {
+  font-weight: 700;
+  font-size: 2.2rem;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-weight: 300;
+  font-size: 1.15rem;
+  color: #6b6862;
+  margin-top: 0.3rem;
+}
+
+// Navbar refinado
+.navbar {
+  border-bottom: none;
+  letter-spacing: 0.02em;
+  font-size: 0.82rem;
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+  
+  .navbar-brand {
+    font-family: $font-family-serif;
+    font-weight: 600;
+    font-size: 0.95rem;
+  }
+  
+  .nav-link {
+    transition: opacity 0.2s ease;
+    opacity: 0.75;
+    padding: 0.35rem 0.7rem !important;
+    
+    &:hover, &.active {
+      opacity: 1;
+    }
+  }
+}
+
+// Dropdown menu
+.dropdown-menu {
+  background-color: #2d2d2d;
+  border: 1px solid #444;
+  border-radius: 3px;
+  padding: 0.3rem 0;
+  font-size: 0.82rem;
+  
+  .dropdown-item {
+    color: #b0ada8;
+    padding: 0.45rem 1rem;
+    transition: all 0.15s ease;
+    
+    &:hover, &:focus {
+      color: #faf9f7;
+      background-color: #5a6e4a;
+    }
+  }
+}
+
+// Contenido principal
+#quarto-content {
+  max-width: 780px;
+  margin: 0 auto;
+  padding-top: 2.5rem;
+}
+
+// Links con underline sutil
+a {
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  
+  &:hover {
+    border-bottom-color: $link-hover-color;
+  }
+}
+
+// Navbar links sin border-bottom
+.navbar a, .nav-link {
+  border-bottom: none !important;
+}
+
+// Bloques de código
+pre {
+  background-color: #f0eee9;
+  border: 1px solid #e0ddd6;
+  border-radius: 3px;
+  padding: 1rem 1.25rem;
+  font-size: 0.88rem;
+}
+
+code {
+  font-size: 0.88rem;
+  color: #5a6e4a;
+}
+
+// Footer - sutil, no pesado
+.nav-footer {
+  background-color: transparent !important;
+  border-top: 1px solid #e0ddd6;
+  font-size: 0.8rem;
+  letter-spacing: 0.01em;
+  color: #999;
+  padding: 1.2rem 0;
+  margin-top: 4rem;
+}
+
+// Tablas del listing
+.quarto-listing {
+  margin-top: 1.5rem;
+  
+  table {
+    font-size: 0.92rem;
+  }
+  
+  th {
+    font-family: $font-family-sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    color: #8a8580;
+    border-bottom: 2px solid #2d2d2d;
+  }
+  
+  td {
+    border-bottom: 1px solid #e8e5e0;
+    padding: 0.75rem 0.5rem;
+  }
+}
+
+// Separador visual sutil
+hr {
+  border: none;
+  border-top: 1px solid #e0ddd6;
+  margin: 2.5rem 0;
+}
+
+// Listas más respiradas
+ul, ol {
+  padding-left: 1.2rem;
+  
+  li {
+    margin-bottom: 0.4rem;
+  }
+}
+
+// Blockquotes
+blockquote {
+  border-left: 3px solid $link-color;
+  padding-left: 1.25rem;
+  color: #555;
+  font-style: italic;
+  font-family: $font-family-serif;
+}
+
+// ── Landing page ──
+
+.hero {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 3rem 1rem 2.5rem;
+  font-family: $font-family-serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #555;
+  border-bottom: 1px solid #e0ddd6;
+}
+
+.grid-section {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 2rem 1rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.grid-card {
+  h3 {
+    font-family: $font-family-sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #999;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2d2d2d;
+  }
+  
+  p {
+    font-size: 0.92rem;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 0.6rem;
+  }
+  
+  a {
+    font-size: 0.9rem;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+    
+    li {
+      font-size: 0.92rem;
+      line-height: 1.6;
+      color: #555;
+      padding: 0.2rem 0;
+    }
+  }
+}
+
+// Grid de 2 columnas (para About)
+.grid-2col {
+  grid-template-columns: 1fr 1fr;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ── Publicaciones ──
+
+.pub-section {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 1rem;
+  
+  h3 {
+    font-family: $font-family-sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: #999;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #2d2d2d;
+  }
+}
+
+.pub-item {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #e8e5e0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: #555;
+  
+  strong {
+    color: #2d2d2d;
+  }
+}
+
+// ── Listing de presentaciones ──
+
+.listing-section {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem 3rem;
+}

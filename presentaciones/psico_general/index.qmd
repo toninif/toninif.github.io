@@ -1,0 +1,22 @@
+---
+title: "Prácticas de Investigación"
+subtitle: "Competencias Digitales e Inteligencia Artificial"
+toc: false
+page-layout: custom
+listing:
+  id: slides-practicas
+  contents: "*.qmd"
+  type: table
+  fields: [title, date, description]
+  sort: "date desc"
+  filter-ui: true
+---
+
+::: {.hero}
+Material de clase del curso de Prácticas de Investigación, Universidad de Palermo. Incluye temas como análisis estadístico, programación en R, competencias digitales e inteligencia artificial.
+:::
+
+::: {.listing-section}
+::: {#slides-practicas}
+:::
+:::

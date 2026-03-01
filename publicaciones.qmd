@@ -1,0 +1,38 @@
+---
+title: "Publicaciones"
+subtitle: "Artículos, capítulos y presentaciones en congresos"
+toc: false
+page-layout: custom
+---
+
+::: {.hero}
+Selección de trabajos publicados y presentados en congresos. Para un listado completo, visitá mi perfil en [ORCID](https://orcid.org/0000-0002-XXXX-XXXX) o [Google Scholar](#).
+:::
+
+::: {.pub-section}
+### Artículos
+
+::: {.pub-item}
+**Título del artículo.** Tonini, F., et al. (2025). *Nombre de la Revista, volumen*(número), páginas. [DOI](https://doi.org/)
+:::
+
+::: {.pub-item}
+**Título del artículo.** Tonini, F., et al. (2024). *Nombre de la Revista, volumen*(número), páginas. [DOI](https://doi.org/)
+:::
+
+*Completar con tus publicaciones.*
+:::
+
+::: {.pub-section}
+### Congresos
+
+::: {.pub-item}
+**Validación del IADS-2 en población argentina.** XIV Congreso Internacional de Investigación, Facultad de Psicología, UBA. (2022)
+:::
+
+::: {.pub-item}
+**Ciencia Abierta: A new hope.** Jornadas Psicología (con)Ciencia Abierta. (2022)
+:::
+
+*Completar con tus presentaciones.*
+:::
