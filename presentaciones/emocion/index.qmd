@@ -3,20 +3,18 @@ title: "Psicología de la Motivación y Emoción"
 subtitle: "Presentaciones del curso"
 toc: false
 page-layout: custom
-listing:
-  id: slides-emocion
-  contents: "*.qmd"
-  type: table
-  fields: [title, date, description]
-  sort: "date desc"
-  filter-ui: true
 ---
 
 ::: {.hero}
-Material de clase del curso de Psicología de la Motivación y Emoción, Universidad de Palermo. Las presentaciones están en formato RevealJS — hacé click en cualquiera para verla en el navegador.
+Material de clase del curso de Psicología de la Motivación y Emoción, Universidad de Palermo. Hacé click en cualquier presentación para verla en pantalla completa.
 :::
 
-::: {.listing-section}
-::: {#slides-emocion}
+::: {.pub-section}
+### Presentaciones
+
+::: {.pub-item}
+**[Bienvenida](00-bienvenida.html){target="_blank"}** · Comunicación, clases, sugerencias de estudio y condiciones para aprobar.
 :::
+
 :::
+

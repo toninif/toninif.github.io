@@ -1,0 +1,190 @@
+---
+title: ""
+date: "2026-03-01"
+description: "Bienvenida al curso: cómo vamos a trabajar juntos este cuatrimestre"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition: fade
+    footer: "Psicología de la Motivación y Emoción · UP"
+    chalkboard: true
+    title-slide-attributes:
+      data-background-color: "#ffffff"
+      data-visibility: hidden
+    css: slides-style.css
+---
+
+##  {background-color="#ffffff"}
+
+::::: columns
+::: {.column width="40%"}
+<br><br>
+
+![](img/portada.jpg){width="300" style="border-radius: 50%; display: block; margin: 0 auto;"}
+:::
+
+::: {.column width="60%"}
+<br><br><br>
+
+### Psicología de la Motivación y la Emoción
+
+Primera clase · Bienvenida
+
+Dr. Fernando Tonini
+:::
+:::::
+
+## Cómo vamos a trabajar
+
+::::: columns
+::: {.column width="50%"}
+**Cada semana**
+
+📖 Ustedes leen el material *antes* de la clase
+
+🏫 En clase trabajamos sobre lo leído
+
+💬 Dudas, debates, preguntas
+:::
+
+::: {.column width="50%"}
+**La idea**
+
+La clase no reemplaza la lectura.
+
+La clase es donde lo leído **cobra sentido**.
+:::
+:::::
+
+:::: {.callout-important appearance="simple"}
+<div>
+
+Se toma asistencia. Mínimo de 75% para el final de la cursada.
+
+</div>
+::::
+
+::: notes
+Explicitar el contrato: leer antes es parte del trabajo. La clase se aprovecha distinto si llegan habiendo leído.
+:::
+
+## Cómo nos comunicamos
+
+<br> <br>
+
+| Necesitás... | Usá... |
+|------------------------------------|------------------------------------|
+| Saber qué hay que leer o hacer | **Anuncios** en Blackboard |
+| Consultar una duda de contenido | **Mensaje** por Blackboard |
+| Resolver un problema técnico | **Helpdesk** (*Antes de comenzar → Herramientas útiles*) |
+
+::: fragment
+**Todo pasa por Blackboard.**
+:::
+
+## Lo que sabemos sobre estudiar bien
+
+Un hallazgo que les va a servir durante el resto de su formación.
+
+::::::: columns
+::::: {.column width="55%"}
+::: fragment
+> A mayor cantidad de texto resaltado, **peor rendimiento** en el examen (Dunlosky et al., 2013).
+:::
+
+::: fragment
+Pero... Por qué? Resaltar casi todo promueve la **ilusión de aprendizaje**. "Sentimos" que aprendimos, pero solo marcamos.
+:::
+:::::
+
+::: {.column width="45%"}
+![](img/estudio.png){fig-align="center" width="90%"}
+:::
+:::::::
+
+::: notes
+Este es un momento clave. Conecta con el contenido de la materia: la diferencia entre sentir que sabemos y saber de verdad es un tema motivacional y emocional.
+:::
+
+## Entonces, ¿qué sí funciona?
+
+::: incremental
+-   **Distribuir** el estudio: un poco cada día \> todo la noche anterior
+
+-   **Explicar** con tus palabras lo que leíste (a un compañero, al espejo, al gato)
+
+-   **Hacerte preguntas** sobre el texto en vez de solo releerlo
+
+-   No te preocupes si no entendés todo la primera vez. **Volvé a leer**
+
+    :::: {.callout-note appearance="simple"}
+    <div>
+
+    Estas estrategias tienen evidencia fuerte. Veremos algunas en la materia.
+
+    </div>
+    ::::
+:::
+
+::: notes
+Acá se puede mencionar que la materia misma les va a dar herramientas para entender por qué estas estrategias funcionan (autorregulación, metacognición, motivación intrínseca).
+:::
+
+## El cronograma es tu aliado
+
+:::::: columns
+:::: {.column width="55%"}
+<div>
+
+-   Lo van a tener en Blackboard
+-   Tiene **qué leer** y **para cuándo**
+-   Úsenlo para armar su propia agenda
+-   Descargar el material y organizarlo por semana
+
+</div>
+::::
+
+::: {.column width="45%"}
+![](img/organizacion.gif){fig-align="center" width="75%"}
+:::
+::::::
+
+::: {.callout-important appearance="simple"}
+Es posible que agregue *autoevaluaciones* opcionales para que puedan ir midiendo cómo van.
+:::
+
+## Evaluación
+
+|                    |                                |
+|--------------------|--------------------------------|
+| **Parciales**      | 2 (cada uno con recuperatorio) |
+| **Formato**        | Desarrollo + opción múltiple   |
+| **Duración**       | 50 minutos                     |
+| **Para aprobar**   | Mínimo 4 (escala 1–10)         |
+| **Día de parcial** | No hay clase regular           |
+
+:::: {.callout-important appearance="simple"}
+<div>
+
+No hay sorpresas. El parcial evalúa lo que trabajamos en clase y en las lecturas.
+
+</div>
+::::
+
+## Resumen
+
+<br> <br>
+[Lean antes · Pregunten en clase · Usen el cronograma]{style="color: #000000;"}
+
+
+:::: {.callout-important appearance="simple"}
+<div>
+
+[*Buen inicio del cuatrimestre* 🚀]{style="color: black; font-size: 1.2em;"}
+
+</div>
+::::
+
+
+

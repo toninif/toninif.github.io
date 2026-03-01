@@ -1,0 +1,34 @@
+/* Tamaño base */
+.reveal {
+  font-size: 34px;
+}
+
+.reveal h2 {
+  font-size: 1.3em;
+  margin-bottom: 0.5em;
+}
+
+/* Tablas */
+.reveal table {
+  font-size: 0.8em;
+}
+
+.reveal table th,
+.reveal table td {
+  padding: 0.35em 0.7em;
+}
+
+/* Listas */
+.reveal li {
+  margin-bottom: 0.35em;
+}
+
+/* Footer discreto */
+.reveal .footer {
+  font-size: 0.45em;
+}
+
+/* Fondo uniforme blanco en todas las slides */
+.reveal .slides section {
+  background-color: #ffffff;
+}
