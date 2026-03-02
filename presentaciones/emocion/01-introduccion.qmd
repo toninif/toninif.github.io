@@ -1,0 +1,420 @@
+---
+title: ""
+date: "2026-03-01"
+description: "Introducción a los conceptos de motivación y emoción: perspectiva histórica, definiciones y aportes disciplinares"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition: fade
+    footer: "Psicología de la Motivación y Emoción · UP"
+    chalkboard: true
+    title-slide-attributes:
+      data-background-color: "#ffffff"
+      data-visibility: hidden
+    css: clase1-style.css
+---
+
+## {data-background-color="#ffffff"}
+
+<div style="position: absolute; top: 0; right: 0; width: 0; height: 0; border-top: 100vh solid #3d3229; border-left: 55vw solid transparent; z-index: 0;"></div>
+
+<div style="position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; height: 75vh; padding-left: 1em;">
+
+[Introducción]{style="color: #c9a96e; font-size: 0.55em; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase;"}
+
+[Motivación y]{style="color: #3d3229; font-size: 1.6em; font-weight: 700; font-family: 'Libre Baskerville', serif; line-height: 1.2; display: block;"}
+[Emoción]{style="color: #3d3229; font-size: 1.6em; font-weight: 700; font-family: 'Libre Baskerville', serif; line-height: 1.2; display: block;"}
+
+<br>
+
+[Clase 1 · Dr. Fernando Tonini]{style="color: #a09585; font-size: 0.5em;"}
+[Universidad de Palermo]{style="color: #a09585; font-size: 0.5em;"}
+
+</div>
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PARTE 1: PERSPECTIVA HISTÓRICA        -->
+<!-- ═══════════════════════════════════════ -->
+
+##  {data-background-color="#ffffff"}
+
+<div style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;">
+<div>
+<div style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;">Perspectiva histórica</div>
+<div style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;">Estudios de la<br>motivación y la emoción</div>
+</div>
+</div>
+
+## Perspectiva histórica
+
+Históricamente, motivación y emoción fueron procesos **marginados** de los grandes temas centrales de la psicología.
+
+::: {.fragment}
+Sin embargo, desde hace ya varios años existe un gran interés por estos procesos, a partir de lo que se conoce como la [**línea cálida de la psicología cognitiva**]{.accent}: el estudio de los procesos humanos donde estos se hacen más humanos y dejan de ser fríos y mecánicos.
+:::
+
+## Razón vs. pasión {.smaller}
+
+Desde la filosofía griega hasta hoy se piensa en dos aspectos antagónicos al entender al ser humano:
+
+| Razón | Pasión |
+|---|---|
+| Pensar | Sentir |
+| Idea | Sensación |
+| Cognición | Afecto |
+| Racional | Irracional |
+| Control | Sin control |
+| Mente | Cuerpo |
+
+::: {.fragment}
+La filosofía platónica y la filosofía cartesiana son claros ejemplos de esta dualidad.
+:::
+
+## ¿De dónde vienen estas palabras?
+
+Esta dicotomía llevó a ubicar a la motivación y la emoción en el universo de las pasiones, alejándolas del universo de la razón.
+
+Ambos términos proceden de la raíz latina [**mover**]{.accent}, que remite a la acción.
+
+::: {.fragment}
+- **Emoción**: *mover de*, sacar, quitar. Nos mueve del lugar en el que estamos para llevarnos a otro estado afectivo más relevante.
+:::
+
+::: {.fragment}
+- **Motivación**: *mover hacia*, atraer, ir. Nos orienta y moviliza hacia una meta, un estado ideal diferente al actual.
+:::
+
+## Procesos "inferiores"
+
+Los temas centrales de la psicología se vinculaban con los **procesos superiores** (pensamiento, lenguaje, memoria), asociados al universo de la razón.
+
+::: {.fragment}
+La motivación y la emoción se consideraban [**funciones inferiores**]{.accent}, asociadas al universo de las pasiones y compartidas con otras especies.
+:::
+
+::: {.fragment}
+Sin embargo, al hacer un recorrido histórico encontramos estudios de distintas disciplinas que hicieron aportes significativos.
+:::
+
+<!-- ═══════════════════════════════════════ -->
+<!-- APORTES DISCIPLINARES                  -->
+<!-- ═══════════════════════════════════════ -->
+
+##  {data-background-color="#ffffff"}
+
+<div style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;">
+<div>
+<div style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;">Aportes disciplinares</div>
+<div style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;">Para el conocimiento de la<br>motivación y la emoción</div>
+</div>
+</div>
+
+## Aportes de la biología {.smaller}
+
+Búsqueda de sustratos biológicos y mecanismos de control asociados a respuestas automáticas, genéticamente determinadas y reflejas.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Motivación**
+
+El concepto de [**instinto**]{.accent}: respuestas genéticamente programadas que ocurren cuando las circunstancias son apropiadas, sin aprendizaje previo.
+
+:::
+
+::: {.column width="50%"}
+
+**Emoción**
+
+El concepto de [***feedback* facial**]{.accent}: la expresión facial emocional (innata y universal), al ser reconocida por el cerebro, se experimenta como estado afectivo específico.
+
+:::
+
+::::
+
+## Aportes del conductismo {.smaller}
+
+Estudio del aprendizaje como modelador de las funciones adaptativas y soporte de la evolución.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Motivación**
+
+El concepto de [**impulso**]{.accent}: la fuerza que actúa en el organismo para originar una conducta.
+
+:::
+
+::: {.column width="50%"}
+
+**Emoción**
+
+El concepto de [**condicionamiento**]{.accent}: las emociones como respuestas condicionadas. Conocer los estímulos desencadenantes puede anticipar consecuencias apetitivas o aversivas.
+
+:::
+
+::::
+
+## Aportes de la filosofía {.smaller}
+
+Dentro de la línea platónica, motivación y emoción eran procesos inferiores que necesitaban ser controlados por la voluntad. Metáfora del **amo** (razón) y el **esclavo** (sentimientos).
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+**Motivación**
+
+El concepto de [**necesidad**]{.accent}: fuerza motivacional (interés) que organiza pensamientos, sentimientos y acciones.
+
+:::
+
+::: {.column width="50%"}
+
+**Emoción**
+
+El concepto de [**valoración**]{.accent}: la evaluación de consecuencias positivas o negativas de una situación será el desencadenante de la emoción.
+
+:::
+
+::::
+
+## Aportes de la psicología {.smaller}
+
+Gran diversidad de teorías que explican de maneras distintas la motivación y la emoción. Esto lleva a una fragmentación:
+
+- [**Conceptual**]{.accent}: la emoción puede entenderse como fenómeno biológico o cognitivo
+- [**Terminológica**]{.accent}: el significado de "sentimiento" varía según el marco teórico
+- [**Metodológica**]{.accent}: técnicas fisiológicas vs. autorreportes según la perspectiva
+
+::: {.fragment}
+Existen distintos niveles de análisis (biológico, conductual, cognitivo, social, diferencias individuales). Todas son aproximaciones parciales; motivación y emoción son fruto de la confluencia de todos los niveles.
+:::
+
+<!-- ═══════════════════════════════════════ -->
+<!-- EN LA ACTUALIDAD                       -->
+<!-- ═══════════════════════════════════════ -->
+
+##  {data-background-color="#ffffff"}
+
+<div style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;">
+<div>
+<div style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;">Estado actual</div>
+<div style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;">En la actualidad</div>
+</div>
+</div>
+
+## En la actualidad {.smaller}
+
+Motivación y emoción forman parte de los **grandes temas centrales** de la psicología de los procesos básicos. Son considerados procesos con componentes inconscientes y conscientes.
+
+::: {.fragment}
+Sin embargo, la función del **cuerpo** y la **conciencia** resulta un aspecto central que los diferencia del resto de los procesos básicos. Para tener emociones y motivos, además del procesamiento mental inconsciente, el cuerpo aporta información fisiológica y la conciencia juega un papel fundamental.
+:::
+
+::: {.fragment}
+El avance en los últimos años permitió empezar a estudiar la relación de la motivación y la emoción con el resto de los procesos básicos.
+:::
+
+## Puntos importantes
+
+- Estudiaremos motivación y emoción en tanto **procesos psicológicos dinámicos** (no rasgos de personalidad).
+- Los consideraremos **constructos teóricos** que pueden ser estudiados a partir de sus efectos observables.
+- Consideraremos la existencia de **distintos niveles de análisis** para su estudio.
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PARTE 2: CONCEPTO DE MOTIVACIÓN       -->
+<!-- ═══════════════════════════════════════ -->
+
+##  {data-background-color="#ffffff"}
+
+<div style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;">
+<div>
+<div style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;">Definiciones</div>
+<div style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;">Concepto de motivación</div>
+</div>
+</div>
+
+## ¿Qué explica la motivación?
+
+Se utiliza para explicar distintos efectos en la conducta observable:
+
+::: {.fragment}
+[**Inicio**]{.accent} · [**Mantenimiento**]{.accent} · [**Dirección**]{.accent} · [**Intensidad**]{.accent} · [**Finalización**]{.accent} de una conducta
+:::
+
+::: {.fragment}
+Para su explicación, la psicología supone la actuación de fuerzas (internas o externas) sobre el organismo, que serían responsables de tales efectos.
+:::
+
+##  {data-background-color="#ffffff"}
+
+<div style="display: flex; align-items: center; justify-content: center; height: 70vh; text-align: center;">
+<div>
+<div style="color: #3d3229; font-size: 1.6em; font-weight: 700; letter-spacing: 0.15em;">M O T I V A C I Ó N</div>
+<br>
+<div style="color: #c9a96e; font-size: 0.85em; font-family: 'Libre Baskerville', serif; font-style: italic;">Proceso multideterminado que energiza y direcciona la conducta</div>
+</div>
+</div>
+
+## Aspectos fundantes
+
+Tres aspectos fundantes de la motivación:
+
+::: {.incremental}
+- **a) Proceso multideterminado**
+- **b) Energía**
+- **c) Dirección**
+:::
+
+## Proceso multideterminado {.smaller}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+[**Factores internos**]{.accent}
+
+- **Herencia**: mecanismos programados genéticamente en el organismo.
+- **Homeostasis**: nivel óptimo de activación del estado del organismo.
+- **Crecimiento**: tendencia a alcanzar un potencial completo.
+- **Procesos cognitivos**: tipo de información seleccionada y modo de procesarla.
+
+:::
+
+::: {.column width="50%"}
+
+[**Factores externos**]{.accent}
+
+- **Aprendizaje**: muchas conductas motivadas se adquieren y mantienen por efecto del aprendizaje.
+- **Hedonismo**: tendencia a acercarnos a lo apetitivo y alejarnos de lo aversivo.
+- **Interrelación social**: la presencia de otros modela nuestra motivación y viceversa.
+
+:::
+
+::::
+
+::: {.fragment}
+La conducta final es producto de varios determinantes, cada uno con distinto peso relativo. Ej: *sueño* → + internos · *motivo de poder* → + externos.
+:::
+
+## Energía
+
+La **activación** es una de las variables responsables del inicio, mantenimiento, intensidad y finalización de la conducta motivada.
+
+::: {.fragment}
+Para que se inicie una conducta debe haber un **incremento de la activación**. Luego, cuanto mayor sea la activación, mayor será la persistencia e intensidad de la conducta.
+:::
+
+## Dirección
+
+**Tendencia a acercarse o evitar** un determinado objetivo (selección de actividades y metas).
+
+::: {.fragment}
+La motivación es la fuerza que nos orienta a acercarnos a aquello que nos gustaría que pasara, y también la fuerza que nos mueve a alejarnos de las situaciones que queremos evitar.
+:::
+
+## La metáfora de la flecha
+
+Una forma gráfica de entender la motivación es pensar en una flecha:
+
+::: {.fragment}
+El **cuerpo** de la flecha marca la intensidad (energía) que tiene ese proceso motivacional.
+
+El **vector** señala la dirección del proceso.
+
+[**Energía**]{.accent} ════════════════▶ [**Dirección**]{.accent}
+:::
+
+<!-- ═══════════════════════════════════════ -->
+<!-- PARTE 3: CONCEPTO DE EMOCIÓN          -->
+<!-- ═══════════════════════════════════════ -->
+
+##  {data-background-color="#ffffff"}
+
+<div style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;">
+<div>
+<div style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;">Definiciones</div>
+<div style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;">Concepto de emoción</div>
+</div>
+</div>
+
+## ¿Qué explica la emoción?
+
+Se utiliza para explicar, entre otras funciones, los efectos producidos por:
+
+::: {.incremental}
+- Cambios de la **activación fisiológica**
+- **Interpretación subjetiva** de estos
+- Preparación para la **acción**
+- **Expresión** emocional
+:::
+
+## Proceso vs. rasgo
+
+Dado que la emoción se estudia desde múltiples perspectivas, es fundamental diferenciar:
+
+::: {.fragment}
+[**Proceso emocional**]{.accent}: cambio puntual que se produce en un determinado momento y con una duración limitada en el tiempo.
+:::
+
+::: {.fragment}
+[**Rasgo emocional**]{.accent}: forma habitual de responder emocionalmente de determinada manera. Estructuras relativamente estables en el tiempo.
+:::
+
+## Múltiples definiciones
+
+Existen múltiples definiciones de emoción, lo cual marca la **fragmentación teórica, conceptual y metodológica** que aún hoy existe en el campo.
+
+::: {.fragment}
+Algunas darán un rol fundamental a los aspectos **biológicos**, otras al aspecto **cognitivo** del procesamiento, y otro conjunto considerará la relevancia de los factores **sociales**.
+:::
+
+::: {.fragment}
+Sin embargo, todas las teorías acuerdan en la **multiplicidad de funciones** que cumple la emoción.
+:::
+
+## Funciones de la emoción
+
+::: {.incremental}
+- [**Función adaptativa**]{.accent}: preparan al organismo para la acción.
+- [**Función social**]{.accent}: comunican nuestro estado de ánimo.
+- [**Función motivacional**]{.accent}: facilitan las conductas motivadas. La conducta motivada produce una reacción emocional y, a su vez, la emoción facilita la aparición de la conducta motivada.
+:::
+
+<!-- ═══════════════════════════════════════ -->
+<!-- SÍNTESIS                               -->
+<!-- ═══════════════════════════════════════ -->
+
+##  {data-background-color="#ffffff"}
+
+<div style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;">
+<div>
+<div style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;">Síntesis</div>
+<div style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;">Motivación y emoción</div>
+</div>
+</div>
+
+## Motivación y emoción {.smaller}
+
+| | **Motivación** | **Emoción** |
+|---|---|---|
+| **Pregunta** | ¿Por qué hacemos lo que hacemos? | ¿Qué sentimos y cómo respondemos? |
+| **Proceso** | Multideterminado, produce energía, marca objetivos | Desencadenado por condiciones ambientales y valoración cognitiva |
+| **Ejemplo** | ¿Por qué el hambre no nos deja seguir atendiendo? | ¿Qué nos pasa cuando enfrentamos una amenaza? |
+
+::: {.fragment}
+**En común**: procesos dinámicos (no estados fijos), se deducen por sus efectos observables, requieren integración de múltiples niveles de análisis.
+:::
+
+##  {data-background-color="#ffffff"}
+
+<div style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;">
+<div>
+<div style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;">Muchas gracias!!</div>
+<div style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;">Clase siguiente: Historia de la psicología de la motivación</div>
+</div>
+</div>
