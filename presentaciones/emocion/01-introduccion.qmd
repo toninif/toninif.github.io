@@ -17,19 +17,20 @@ format:
 
 ## {data-background-color="#ffffff"}
 
-<div style="position: absolute; top: 0; right: 0; width: 0; height: 0; border-top: 100vh solid #3d3229; border-left: 55vw solid transparent; z-index: 0;"></div>
+<div style="position: absolute; top: 0; right: 0; width: 0; height: 0; border-top: 550px solid #3d3229; border-left: 500px solid transparent; z-index: 0;"></div>
+
 
 <div style="position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; height: 75vh; padding-left: 1em;">
 
 [Introducción]{style="color: #c9a96e; font-size: 0.55em; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase;"}
 
-[Motivación y]{style="color: #3d3229; font-size: 1.6em; font-weight: 700; font-family: 'Libre Baskerville', serif; line-height: 1.2; display: block;"}
-[Emoción]{style="color: #3d3229; font-size: 1.6em; font-weight: 700; font-family: 'Libre Baskerville', serif; line-height: 1.2; display: block;"}
+[Motivación y]{style="color: #3d3229; font-size: 1.4em; font-weight: 700; font-family: 'Libre Baskerville', serif; line-height: 1.2; display: block;"}
+[Emoción]{style="color: #3d3229; font-size: 1.4em; font-weight: 700; font-family: 'Libre Baskerville', serif; line-height: 1.2; display: block;"}
 
 <br>
 
-[Clase 1 · Dr. Fernando Tonini]{style="color: #a09585; font-size: 0.5em;"}
-[Universidad de Palermo]{style="color: #a09585; font-size: 0.5em;"}
+[Clase 1 · ]{style="color: #a09585; font-size: 0.5em;"}
+[Dr. Fernando Tonini]{style="color: #a09585; font-size: 0.5em;"}
 
 </div>
 
