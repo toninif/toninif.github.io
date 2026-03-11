@@ -83,3 +83,11 @@
 .reveal .slides section {
   background-color: #ffffff;
 }
+
+/* Mermaid más grande y centrado */
+.reveal .mermaid {
+  text-align: center;
+  transform: scale(1.3);
+  transform-origin: center center;
+  margin-top: 1em;
+}

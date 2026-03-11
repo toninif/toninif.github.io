@@ -20,5 +20,9 @@ Material de clase del curso de Psicología de la Motivación y Emoción, Univers
 **[Clase 1](01-introduccion.html){target="_blank"}** · Intro a los conceptos de motivación y emoción.
 :::
 
+::: {.pub-item}
+**[Clase 2](02-historia-motivacion.html){target="_blank"}** · Intro al estudio de la motivación. Grandes y mini teorías
+:::
+
 :::
 
