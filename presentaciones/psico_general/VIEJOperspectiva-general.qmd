@@ -1,0 +1,548 @@
+---
+title: "Perspectiva general y diversidad en psicología"
+format:
+  revealjs:
+    theme: [simple, psico-general-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Psicología · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+<!-- PORTADA -->
+:::{.slide-portada data-visibility="hidden" #title-slide}
+:::
+
+## {data-visibility="hidden"}
+
+<div style="
+  position: absolute;
+  inset: 0;
+  background: #1a3d2b;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  overflow: hidden;
+">
+  <!-- Círculo decorativo fondo -->
+  <svg style="position:absolute;top:-60px;right:-60px;opacity:0.08" width="360" height="360" viewBox="0 0 360 360">
+    <circle cx="180" cy="180" r="180" fill="#95c17a"/>
+  </svg>
+  <!-- Círculo pequeño acento -->
+  <svg style="position:absolute;bottom:40px;left:40px;opacity:0.12" width="180" height="180" viewBox="0 0 180 180">
+    <circle cx="90" cy="90" r="90" fill="#f5f0e8"/>
+  </svg>
+
+  <!-- Contenido superior: materia + título -->
+  <div style="
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding: 60px 80px 40px 80px;
+    position: relative;
+  ">
+    <p style="
+      font-family:'Source Sans 3',sans-serif;
+      font-size:0.62em;
+      color:#95c17a;
+      letter-spacing:0.14em;
+      text-transform:uppercase;
+      margin:0 0 18px 0;
+      font-weight:600;
+    ">Psicología General</p>
+    <h1 style="
+      font-family:'Playfair Display',serif;
+      font-size:1.55em;
+      color:#f5f0e8;
+      line-height:1.2;
+      margin:0 0 32px 0;
+      max-width:700px;
+    ">Perspectiva general y diversidad en psicología</h1>
+    <!-- Línea separadora -->
+    <div style="width:72px;height:3px;background:#95c17a;border-radius:2px;margin-bottom:32px;"></div>
+  </div>
+
+  <!-- Franja crema inferior: datos del docente -->
+  <div style="
+    background:#f5f0e8;
+    padding: 22px 80px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    position:relative;
+    z-index:2;
+  ">
+    <div>
+      <p style="
+        font-family:'Playfair Display',serif;
+        font-size:0.82em;
+        color:#1a3d2b;
+        margin:0;
+        font-weight:700;
+      ">Dr. Fernando Tonini</p>
+      <p style="
+        font-family:'Source Sans 3',sans-serif;
+        font-size:0.58em;
+        color:#3d5247;
+        margin:4px 0 0 0;
+        letter-spacing:0.04em;
+      ">Universidad de Palermo</p>
+    </div>
+    <svg width="38" height="38" viewBox="0 0 38 38">
+      <circle cx="19" cy="19" r="19" fill="#1a3d2b"/>
+      <text x="19" y="25" text-anchor="middle" fill="#95c17a" font-size="18" font-family="serif" font-weight="bold">Ψ</text>
+    </svg>
+  </div>
+</div>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Psicología: visión del sentido común</h2>
+</div>
+
+---
+
+## Psicología: visión del sentido común
+
+**¿Qué hace? ¿Dónde trabaja?**
+
+> ¿Cómo se imaginan a un/a psicólogo/a?
+
+. . .
+
+Usualmente las respuestas giran en torno a la **psicología clínica**, principalmente haciendo referencia al psicoanálisis.
+
+Lo cierto es que la realidad dentro de esta disciplina es un poco más **diversa**.
+
+---
+
+## La propuesta de la materia
+
+<div class="cols-2" style="margin-top:0.6em">
+<div>
+<div class="caja-crema">
+  <strong>Existen las ciencias</strong>
+</div>
+<div class="caja-crema" style="margin-top:0.5em">
+  <strong>Existen las psicologías</strong>
+</div>
+</div>
+<div>
+<p style="margin-top:0.3em">Para comenzar, distinguimos entre dos grandes formas de entender la disciplina:</p>
+<ul>
+  <li>Psicología del **sentido común**</li>
+  <li>Psicología como **ciencia**</li>
+</ul>
+</div>
+</div>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Diversidad en psicología</h2>
+</div>
+
+---
+
+## Diversidad en psico
+
+Otro aspecto importante es la **variedad de trabajos profesionales** que se pueden desempeñar en psicología.
+
+Una clasificación divide los trabajos en dos grandes ramas:
+
+<div class="cols-2" style="margin-top:0.8em">
+<div class="tarjeta">
+  <h4>Rama Aplicada</h4>
+  <p>Ejercicio profesional directo con personas, organizaciones o sistemas.</p>
+</div>
+<div class="tarjeta">
+  <h4>Rama Académica</h4>
+  <p>Producción y transmisión de conocimiento científico.</p>
+</div>
+</div>
+
+---
+
+## Diversidad en psico: rama académica
+
+### Psicólogo/a Investigador/a
+
+<div class="cols-2" style="margin-top:0.8em">
+<div class="tarjeta">
+  <h4>Investigación pura</h4>
+  <p>Incrementar el conocimiento que existe en la disciplina, sin una aplicación inmediata.</p>
+</div>
+<div class="tarjeta">
+  <h4>Investigación aplicada</h4>
+  <p>Busca soluciones a problemáticas concretas aplicando el conocimiento existente.</p>
+</div>
+</div>
+
+---
+
+## Diversidad en psico: rama aplicada
+
+<div class="cols-2" style="margin-top:0.5em; font-size:0.88em">
+<ul>
+  <li>Psicología clínica</li>
+  <li>Psicología organizacional / laboral</li>
+  <li>Psicología educacional</li>
+  <li>Orientación psicológica</li>
+</ul>
+<ul>
+  <li>Psicología del consumidor</li>
+  <li>UX / UI</li>
+  <li>Psicología forense</li>
+  <li>Docencia</li>
+</ul>
+</div>
+
+---
+
+## Diversidad en psico: distribución
+
+<!-- Slide 8: placeholder para gráficos con datos -->
+![](img/grafico-distribucion.png){width=80%}
+
+::: {.fragment}
+> *Los gráficos se actualizan con los datos provistos por la cátedra.*
+:::
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Escuelas psicológicas</h2>
+</div>
+
+---
+
+## Gran diversidad de escuelas
+
+Hoy en día la psicología se configura como un terreno donde convergen la **diversidad** y los puntos de vista opuestos.
+
+Esto se debe a dos grandes tipos de escuelas:
+
+<div class="cols-3" style="margin-top:0.8em; font-size:0.82em">
+<div class="tarjeta">
+  <h4>Cognitivos</h4>
+  <p>Explican conductas a partir de <strong>procesos mentales</strong>.</p>
+</div>
+<div class="tarjeta">
+  <h4>Conductistas</h4>
+  <p>Explican la conducta como resultado de la <strong>interacción organismo–entorno</strong>.</p>
+</div>
+<div class="tarjeta">
+  <h4>Psicoanalistas</h4>
+  <p>Ponen el foco en las <strong>experiencias tempranas</strong> en el desarrollo de la personalidad.</p>
+</div>
+</div>
+
+. . .
+
+<p style="font-size:0.75em; color:#3d5247; margin-top:0.5em">⚠ Hay escuelas que aplican el método científico (cognitiva, conductismo) y otras que no (psicoanálisis).</p>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>¿Qué hace científica a una disciplina?</h2>
+</div>
+
+---
+
+## ¿Qué hace científica a una disciplina?
+
+<!-- Slide 10: placeholder imagen método científico -->
+![](img/metodo-cientifico.png){width=65%}
+
+---
+
+## Pseudociencias vs. Ciencia
+
+![](img/pseudociencias-ciencia.svg){width=95%}
+
+---
+
+## El método científico en acción
+
+**Ejemplo: ¿Afecta el estrés a la memoria?**
+
+<div class="cols-2" style="font-size:0.82em; margin-top:0.5em">
+<div>
+<div class="caja-crema" style="margin-bottom:0.5em">
+  <strong>Observación</strong><br>
+  Estudiantes con dificultades para recordar en exámenes; reportan altos niveles de estrés.
+</div>
+<div class="caja-crema" style="margin-bottom:0.5em">
+  <strong>Hipótesis</strong><br>
+  "El estrés elevado interfiere en la memoria de estudiantes universitarios."
+</div>
+<div class="caja-crema">
+  <strong>Deducción</strong><br>
+  Si se induce estrés controlado, el rendimiento en memoria será inferior al del grupo sin estrés.
+</div>
+</div>
+<div>
+<div class="caja-verde" style="margin-bottom:0.5em">
+  <strong>Experimentación</strong><br>
+  Grupo control vs. grupo experimental (inducción de estrés: "si no aprobás, recursás").
+</div>
+<div class="caja-verde" style="margin-bottom:0.5em">
+  <strong>Resultados</strong><br>
+  Se miden y comparan los resultados de la tarea de memoria entre ambos grupos.
+</div>
+<div class="caja-verde">
+  <strong>Conclusión</strong><br>
+  Se explican los efectos encontrados o se replantean las hipótesis si no hay diferencias.
+</div>
+</div>
+</div>
+
+---
+
+## Probemos algo…
+
+<div style="font-size:1.05em; line-height:2; margin-top:0.6em">
+1. Necesito que alguien agarre algo que **no se pueda romper** (una hoja hecha bollito, por ejemplo).
+2. Dejamos caer ese objeto.
+3. Anotamos qué pasa.
+4. Ahora lo repetimos **todos**.
+5. Anotamos qué pasa y comparamos con la primera vez.
+</div>
+
+---
+
+## 🎉 ¡Replicamos un hallazgo!
+
+<div style="text-align:center; margin-top:0.8em">
+  <p style="font-size:1.1em; color:#1a3d2b">Encontramos evidencia que soporta la</p>
+  <p style="font-family:'Playfair Display',serif; font-size:1.6em; color:#1a3d2b; font-weight:700">Teoría de Gravitación Universal<br>de Newton</p>
+  <div style="width:80px;height:4px;background:#95c17a;border-radius:2px;margin:20px auto;"></div>
+  <p style="font-size:0.8em; color:#3d5247">Un experimento simple, observación sistemática, resultado replicable. Eso es ciencia.</p>
+</div>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Crisis de replicabilidad</h2>
+</div>
+
+---
+
+## Otro aspecto clave: ¡Replicar!
+
+La **crisis de replicabilidad** se refiere a la dificultad para replicar resultados de estudios previos bajo las mismas condiciones.
+
+Es un desafío central en la psicología moderna (y en todas las ciencias).
+
+**¿Por qué se llegó a esto?**
+
+<ul class="lista-crisis" style="margin-top:0.5em; font-size:0.88em">
+  <li>Sesgos de publicación</li>
+  <li>Falta de transparencia en los datos</li>
+  <li>Tamaños de muestra insuficientes</li>
+  <li>Prácticas de investigación cuestionables (<em>p-hacking</em>, <em>HARKing</em>)</li>
+</ul>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Algunos autores</h2>
+</div>
+
+---
+
+## Empirismo y psicología: antecedentes
+
+<div style="font-size:0.88em">
+
+**Antes de 1870** no existían laboratorios dedicados a la investigación psicológica.
+
+Los primeros psicólogos científicos tenían formación en **fisiología, medicina, filosofía**, o combinaciones de estas disciplinas.
+
+</div>
+
+### Wilhelm Wundt <span class="badge">1832–1920</span>
+
+<div class="caja-crema" style="font-size:0.85em; margin-top:0.5em">
+  Estableció el **primer laboratorio de psicología** en 1879 en Leipzig, Alemania.<br>
+  Formado como fisiólogo, se convirtió en profesor de "filosofía científica".<br>
+  Su laboratorio marcó el <strong>nacimiento de la psicología como disciplina independiente</strong>.
+</div>
+
+---
+
+## Algunos autores: interdisciplinariedad
+
+<div class="caja-crema" style="font-size:0.88em">
+La fundación de la psicología como ciencia se benefició de la intersección de múltiples disciplinas: **fisiología, medicina y filosofía**.
+</div>
+
+**Wundt y James** son acreditados con el desarrollo de la **psicología académica**, estableciendo las bases para la investigación experimental.
+
+La creación de los primeros laboratorios fue crucial para el estudio empírico de la mente y el comportamiento.
+
+---
+
+## Algunos autores: William James <span class="badge">1842–1910</span>
+
+<div class="cols-2" style="font-size:0.86em; margin-top:0.5em">
+<div>
+<div class="tarjeta">
+  <h4>Definición de psicología</h4>
+  <p>James la definió como <em>"la ciencia de la vida mental"</em>. Sentó bases para futuras teorías.</p>
+</div>
+<div class="tarjeta" style="margin-top:0.6em">
+  <h4>Influencia de Darwin</h4>
+  <p>Sus ideas hicieron que los estadounidenses fueran receptivos a las teorías sobre variación individual y selección natural.</p>
+</div>
+</div>
+<div>
+<div class="tarjeta">
+  <h4>Funcionalismo</h4>
+  <p>Su trabajo inspiró el funcionalismo: teoría que enfatiza el <strong>propósito y la utilidad</strong> de la conducta y el interés por las diferencias individuales.</p>
+</div>
+</div>
+</div>
+
+---
+
+## Algunos autores: John B. Watson <span class="badge">1878–1958</span>
+
+### La revolución conductual
+
+<div class="cols-2" style="font-size:0.86em; margin-top:0.5em">
+<div>
+<div class="caja-crema">
+  <strong>Crítica a la introspección</strong><br>
+  La consideró poco confiable y difícil de verificar, por su carácter subjetivo y privado.
+</div>
+</div>
+<div>
+<div class="caja-verde">
+  <strong>Manifiesto Conductista (1913)</strong><br>
+  Redefinió la psicología enfocándola en el estudio <em>observable</em> del comportamiento, excluyendo la conciencia como objeto de estudio.
+</div>
+</div>
+</div>
+
+. . .
+
+<p style="font-size:0.78em; color:#3d5247; margin-top:0.6em">Este cambio de paradigma sentó las bases para el conductismo como corriente dominante en el siglo XX.</p>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>La revolución cognitiva</h2>
+</div>
+
+---
+
+## La revolución cognitiva
+
+**1956**: ampliamente reconocido como el inicio de la revolución cognitiva.
+
+<div class="cols-2" style="font-size:0.85em; margin-top:0.6em">
+<div>
+<div class="tarjeta">
+  <h4>Críticas al conductismo</h4>
+  <p>Insatisfacción con sus limitaciones: no podía explicar completamente la complejidad del comportamiento y la experiencia humana.</p>
+</div>
+<div class="tarjeta" style="margin-top:0.6em">
+  <h4>Expansión de la psicología cognitiva</h4>
+  <p>Estudio de percepción, pensamiento, memoria, lenguaje y solución de problemas.</p>
+</div>
+</div>
+<div>
+<div class="tarjeta">
+  <h4>Nuevos métodos</h4>
+  <p>Experimentos controlados, modelos computacionales, neurociencia cognitiva.</p>
+</div>
+<div class="tarjeta" style="margin-top:0.6em">
+  <h4>Implicancias interdisciplinares</h4>
+  <p>Influyó en lingüística, inteligencia artificial y neurociencia, fomentando un enfoque más integrado.</p>
+</div>
+</div>
+</div>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>En la actualidad</h2>
+</div>
+
+---
+
+## En la actualidad
+
+La psicología estudia muchos temas. Una clasificación útil los divide en:
+
+<div class="cols-2" style="margin-top:0.8em">
+<div class="tarjeta">
+  <h4>Foco en los procesos</h4>
+  <p>Contenido próximamente — pendiente de datos de la cátedra.</p>
+</div>
+<div class="tarjeta">
+  <h4>Foco en las personas</h4>
+  <p>Contenido próximamente — pendiente de datos de la cátedra.</p>
+</div>
+</div>
+
+<!-- TODO: agregar contenido de slides 21-24 cuando esté disponible -->
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Síntesis de la clase</h2>
+</div>
+
+---
+
+## Ahora deberían saber…
+
+<div style="font-size:0.88em; line-height:1.8">
+
+- Existen **diversas áreas y escuelas** dentro de la psicología.
+- Algunas aplican el **método científico** (cognitiva, conductismo); otras no (psicoanálisis).
+- En un principio se usaba la **introspección** para indagar sobre los procesos mentales → **Wundt**.
+- El **conductismo** dotó a la psicología de métodos empíricos y cuantificó los cambios en la conducta → **Watson**.
+- La **revolución cognitiva** surgió como respuesta a las limitaciones del conductismo.
+- A mediados del siglo XX surge el **cognitivismo** → **Chomsky** y otros.
+- Hoy existen dos grandes perspectivas: una focalizada en los **procesos** y otra en las **personas**.
+
+</div>

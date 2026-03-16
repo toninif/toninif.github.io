@@ -1,0 +1,84 @@
+<svg viewBox="0 0 820 480" xmlns="http://www.w3.org/2000/svg" font-family="'Source Sans 3', 'Segoe UI', sans-serif">
+
+  <!-- Background -->
+  <rect width="820" height="480" fill="#f5f0e8" rx="10"/>
+
+  <!-- Header izquierdo: Pseudociencias -->
+  <rect x="20" y="20" width="370" height="52" rx="8" fill="#7a3b1e"/>
+  <text x="205" y="52" text-anchor="middle" fill="#f5f0e8" font-size="20" font-weight="700" font-family="'Playfair Display', Georgia, serif">Pseudociencias</text>
+
+  <!-- Header derecho: Ciencia -->
+  <rect x="430" y="20" width="370" height="52" rx="8" fill="#1a3d2b"/>
+  <text x="615" y="52" text-anchor="middle" fill="#f5f0e8" font-size="20" font-weight="700" font-family="'Playfair Display', Georgia, serif">Ciencia</text>
+
+  <!-- Separador central -->
+  <line x1="410" y1="15" x2="410" y2="465" stroke="#c5bfb0" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Filas de comparación -->
+  <!-- Fila 1 -->
+  <rect x="20" y="90" width="370" height="56" rx="6" fill="#f0e6dc"/>
+  <text x="36" y="113" fill="#4a2010" font-size="13" font-weight="600">ANECDÓTICO</text>
+  <text x="36" y="130" fill="#5c3020" font-size="12">Casos únicos y experiencias personales.</text>
+  <text x="36" y="144" fill="#5c3020" font-size="12">Sin validación empírica.</text>
+
+  <rect x="430" y="90" width="370" height="56" rx="6" fill="#dff0e8"/>
+  <text x="446" y="113" fill="#1a3d2b" font-size="13" font-weight="600">EMPÍRICO</text>
+  <text x="446" y="130" fill="#2d5040" font-size="12">El conocimiento se valida y verifica</text>
+  <text x="446" y="144" fill="#2d5040" font-size="12">mediante evidencia empírica.</text>
+
+  <!-- Fila 2 -->
+  <rect x="20" y="154" width="370" height="56" rx="6" fill="#ebe0d5"/>
+  <text x="36" y="177" fill="#4a2010" font-size="13" font-weight="600">SECRETO</text>
+  <text x="36" y="194" fill="#5c3020" font-size="12">Lo posee una persona o grupo selecto.</text>
+  <text x="36" y="208" fill="#5c3020" font-size="12">No se comparte.</text>
+
+  <rect x="430" y="154" width="370" height="56" rx="6" fill="#d5e9df"/>
+  <text x="446" y="177" fill="#1a3d2b" font-size="13" font-weight="600">PÚBLICO</text>
+  <text x="446" y="194" fill="#2d5040" font-size="12">El conocimiento se comparte y es</text>
+  <text x="446" y="208" fill="#2d5040" font-size="12">accesible a toda la comunidad.</text>
+
+  <!-- Fila 3 -->
+  <rect x="20" y="218" width="370" height="56" rx="6" fill="#f0e6dc"/>
+  <text x="36" y="241" fill="#4a2010" font-size="13" font-weight="600">CREYENTES</text>
+  <text x="36" y="258" fill="#5c3020" font-size="12">Grupo de seguidores del dogma,</text>
+  <text x="36" y="272" fill="#5c3020" font-size="12">sin autorregulación.</text>
+
+  <rect x="430" y="218" width="370" height="56" rx="6" fill="#dff0e8"/>
+  <text x="446" y="241" fill="#1a3d2b" font-size="13" font-weight="600">DEMOCRÁTICO</text>
+  <text x="446" y="258" fill="#2d5040" font-size="12">Comunidad que se autorregula</text>
+  <text x="446" y="272" fill="#2d5040" font-size="12">y debate los hallazgos.</text>
+
+  <!-- Fila 4 -->
+  <rect x="20" y="282" width="370" height="56" rx="6" fill="#ebe0d5"/>
+  <text x="36" y="305" fill="#4a2010" font-size="13" font-weight="600">DOGMÁTICO</text>
+  <text x="36" y="322" fill="#5c3020" font-size="12">El conocimiento no se modifica.</text>
+  <text x="36" y="336" fill="#5c3020" font-size="12">Es cerrado e inmutable.</text>
+
+  <rect x="430" y="282" width="370" height="56" rx="6" fill="#d5e9df"/>
+  <text x="446" y="305" fill="#1a3d2b" font-size="13" font-weight="600">ABIERTO</text>
+  <text x="446" y="322" fill="#2d5040" font-size="12">El conocimiento es revisable y</text>
+  <text x="446" y="336" fill="#2d5040" font-size="12">se actualiza con nueva evidencia.</text>
+
+  <!-- Fila 5 -->
+  <rect x="20" y="346" width="370" height="56" rx="6" fill="#f0e6dc"/>
+  <text x="36" y="369" fill="#4a2010" font-size="13" font-weight="600">RESTRINGIDO</text>
+  <text x="36" y="386" fill="#5c3020" font-size="12">Solo acceden los del grupo selecto.</text>
+  <text x="36" y="400" fill="#5c3020" font-size="12">No se transfiere a la sociedad.</text>
+
+  <rect x="430" y="346" width="370" height="56" rx="6" fill="#dff0e8"/>
+  <text x="446" y="369" fill="#1a3d2b" font-size="13" font-weight="600">POPULAR / TRANSFERIBLE</text>
+  <text x="446" y="386" fill="#2d5040" font-size="12">El conocimiento se transfiere a</text>
+  <text x="446" y="400" fill="#2d5040" font-size="12">la sociedad en general.</text>
+
+  <!-- Fila 6 -->
+  <rect x="20" y="410" width="370" height="52" rx="6" fill="#ebe0d5"/>
+  <text x="36" y="433" fill="#4a2010" font-size="13" font-weight="600">REPLICACIÓN DE DOGMA</text>
+  <text x="36" y="450" fill="#5c3020" font-size="12">Se insta a repetir la doctrina,</text>
+  <text x="36" y="464" fill="#5c3020" font-size="12">no a formar expertos.</text>
+
+  <rect x="430" y="410" width="370" height="52" rx="6" fill="#d5e9df"/>
+  <text x="446" y="433" fill="#1a3d2b" font-size="13" font-weight="600">FORMACIÓN DE EXPERTOS</text>
+  <text x="446" y="450" fill="#2d5040" font-size="12">Genera especialistas capaces</text>
+  <text x="446" y="464" fill="#2d5040" font-size="12">de producir nuevo conocimiento.</text>
+
+</svg>
