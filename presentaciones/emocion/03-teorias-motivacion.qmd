@@ -228,58 +228,7 @@ El efecto negativo de las atribuciones **estables** se replicó en ambos estudio
 
 ## Emociones ante problemas tecnológicos académicos
 
-```{r}
-library(haven)
-library(dplyr)
-library(tidyr)
-library(ggplot2)
-
-# Leer y estandarizar nombres
-s1_trad   <- read_sav("datos/Study_1_Traditional_Students.sav") |> rename_with(tolower)
-s1_online <- read_sav("datos/Study_1_Online_Students.sav")      |> rename_with(tolower)
-s2_trad   <- read_sav("datos/Study_2_Traditional_Students.sav") |> rename_with(tolower)
-s2_online <- read_sav("datos/Study_2_Online_Students.sav")      |> rename_with(tolower)
-
-emo_vars <- c("emo_1","emo_2","emo_3","emo_4","emo_7","emo_10","emo_11","emo_13")
-emo_labels <- c("Esperanza","Culpa","Desesperanza","Orgullo",
-                "Vergüenza","Aburrimiento","Ansiedad","Disfrute")
-
-# Combinar
-df <- bind_rows(
-  s1_trad   |> mutate(grupo = "S1 Tradicional"),
-  s1_online |> mutate(grupo = "S1 Online"),
-  s2_trad   |> mutate(grupo = "S2 Tradicional"),
-  s2_online |> mutate(grupo = "S2 Online")
-) |> select(grupo, all_of(emo_vars))
-
-# Calcular medias por grupo
-medias <- df |>
-  group_by(grupo) |>
-  summarise(across(all_of(emo_vars), \(x) mean(as.numeric(x), na.rm = TRUE))) |>
-  pivot_longer(-grupo, names_to = "var", values_to = "media") |>
-  mutate(emocion = emo_labels[match(var, emo_vars)])
-
-# Gráfico
-ggplot(medias, aes(x = emocion, y = media, fill = grupo)) +
-  geom_col(position = "dodge", width = 0.7) +
-  scale_fill_manual(values = c(
-    "S1 Tradicional" = "#3d3229",
-    "S1 Online"      = "#c9a96e",
-    "S2 Tradicional" = "#6b7c45",
-    "S2 Online"      = "#a09585"
-  )) +
-  labs(
-    x        = NULL,
-    y        = "Media (1–10)",
-    fill     = "Grupo"
-  ) +
-  theme_minimal(base_size = 13) +
-  theme(
-    axis.text.x      = element_text(angle = 30, hjust = 1),
-    plot.title       = element_text(face = "bold"),
-    legend.position  = "bottom"
-  )
-```
+![](img/corr_atrb.png)
 
 
 ## Stupnisky et al. (2018) — ¿Qué confirma de Weiner?
