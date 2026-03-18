@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Atkinson</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+            color: #4CAF50;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        input[type=number] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type=button] {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            width: 100%;
+        }
+        input[type=button]:hover {
+            background-color: #45a049;
+        }
+        #resultado {
+            margin-top: 20px;
+            font-size: 18px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora Atkinsoniana :p </h1>
+        <form>
+            <label for="me">Me:</label>
+            <input type="number" id="me" name="me" min="1" max="10" required>
+
+            <label for="mef">Mef:</label>
+            <input type="number" id="mef" name="mef" min="1" max="10" required>
+
+            <label for="pe">Pe:</label>
+            <input type="number" id="pe" name="pe" min="0" max="1" step="0.01" required>
+
+            <label for="ie">Ie:</label>
+            <input type="number" id="ie" name="ie" readonly>
+
+            <input type="button" value="Calcular" onclick="calcularMotivacion()">
+        </form>
+
+        <div id="resultado">Veamos cuál es tu nivel de motivación!</div>
+    </div>
+
+    <script>
+        function calcularMotivacion() {
+            const me = parseFloat(document.getElementById('me').value);
+            const mef = parseFloat(document.getElementById('mef').value);
+            const pe = parseFloat(document.getElementById('pe').value);
+
+            // Validaciones
+            if (me < 1 || me > 10) {
+                alert("Me debe estar entre 1 y 10.");
+                return;
+            }
+            if (mef < 1 || mef > 10) {
+                alert("Mef debe estar entre 1 y 10.");
+                return;
+            }
+            if (pe < 0 || pe > 1) {
+                alert("Pe debe ser una probabilidad entre 0 y 1.");
+                return;
+            }
+
+            const ie = 1 - pe;
+
+            document.getElementById('ie').value = ie.toFixed(2);
+
+            const motivacion = (me * mef) * (pe * ie);
+
+            document.getElementById('resultado').textContent = 'Motivación de Logro: ' + motivacion.toFixed(2);
+        }
+    </script>
+</body>
+</html>
