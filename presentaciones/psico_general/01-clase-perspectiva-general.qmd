@@ -126,14 +126,11 @@ Una clasificación divide los trabajos en dos grandes ramas:
 
 ---
 
-## Diversidad en psico: distribución
+## Diversidad en psico
 
 <!-- Slide 8: placeholder para gráficos con datos -->
-![](img/grafico-distribucion.png){width=80%}
+![](img/grafico-areas-psicologia.svg){width=80%}
 
-::: {.fragment}
-> *Los gráficos se actualizan con los datos provistos por la cátedra.*
-:::
 
 ---
 
@@ -150,7 +147,7 @@ Una clasificación divide los trabajos en dos grandes ramas:
 
 Hoy en día la psicología se configura como un terreno donde convergen la **diversidad** y los puntos de vista opuestos.
 
-Esto se debe a dos grandes tipos de escuelas:
+Esto se debe a tres grandes tipos de escuelas:
 
 <div class="cols-3" style="margin-top:0.8em; font-size:0.82em">
 <div class="tarjeta">
@@ -169,7 +166,12 @@ Esto se debe a dos grandes tipos de escuelas:
 
 . . .
 
-<p style="font-size:0.75em; color:#3d5247; margin-top:0.5em">⚠ Hay escuelas que aplican el método científico (cognitiva, conductismo) y otras que no (psicoanálisis).</p>
+::: {.callout-caution}
+## No todas son similares ni complementarias
+
+Hay escuelas que aplican el método científico y otras que no
+:::
+
 
 ---
 
@@ -180,12 +182,6 @@ Esto se debe a dos grandes tipos de escuelas:
   <h2>¿Qué hace científica a una disciplina?</h2>
 </div>
 
----
-
-## ¿Qué hace científica a una disciplina?
-
-<!-- Slide 10: placeholder imagen método científico -->
-![](img/metodo-cientifico.png){width=65%}
 
 ---
 
@@ -234,23 +230,55 @@ Esto se debe a dos grandes tipos de escuelas:
 
 ## Probemos algo…
 
-<div style="font-size:1.05em; line-height:2; margin-top:0.6em">
-1. Necesito que alguien agarre algo que **no se pueda romper** (una hoja hecha bollito, por ejemplo).
-2. Dejamos caer ese objeto.
-3. Anotamos qué pasa.
-4. Ahora lo repetimos **todos**.
-5. Anotamos qué pasa y comparamos con la primera vez.
+<div style="font-size:0.95em; line-height:1.85; margin-top:0.4em">
+1. Agarrá una hoja y una lapicera.
+2. Voy a leer una lista de palabras **en voz alta**, una por una, a ritmo constante.
+3. **No anotes nada mientras escuchás.**
+4. Cuando termine, escribí **todas las palabras que recuerdes**, en el orden que quieras.
+5. Tenés **solo unos segundos**.
+</div>
+
+<div class="caja-verde" style="margin-top:0.8em; font-size:0.85em">
+  No hay trampa ni trucos. Simplemente prestá atención.
 </div>
 
 ---
 
-## 🎉 ¡Replicamos un hallazgo!
+## 
 
 <div style="text-align:center; margin-top:0.8em">
-  <p style="font-size:1.1em; color:#1a3d2b">Encontramos evidencia que soporta la</p>
-  <p style="font-family:'Playfair Display',serif; font-size:1.6em; color:#1a3d2b; font-weight:700">Teoría de Gravitación Universal<br>de Newton</p>
-  <div style="width:80px;height:4px;background:#95c17a;border-radius:2px;margin:20px auto;"></div>
-  <p style="font-size:0.8em; color:#3d5247">Un experimento simple, observación sistemática, resultado replicable. Eso es ciencia.</p>
+  <p style="font-size:1em; color:#1a3d2b; font-family:'Playfair Display',serif;">Escribí todas las palabras que recuerdes.</p>
+  <p style="font-size:0.85em; color:#3d5247; margin-top:0.4em">No importa el orden. Tenés algunos segundos.</p>
+  <div style="width:80px; height:4px; background:#95c17a; border-radius:2px; margin:1.2em auto;"></div>
+  <p style="font-size:0.75em; color:#7a8c82; font-style:italic">Cuando termines, contá cuántas anotaste y guardá la hoja.</p>
+</div>
+
+---
+
+## Lo que acabamos de demostrar
+
+<div class="cols-2" style="margin-top:0.5em">
+<div>
+<div class="caja-verde" style="margin-bottom:0.6em">
+  <strong>Efecto de primacía</strong><br>
+  <span style="font-size:0.85em">Las primeras palabras se recuerdan mejor. Tuvieron más oportunidades de <em>ensayo</em> y pasaron a memoria a largo plazo.</span>
+</div>
+<div class="caja-verde">
+  <strong>Efecto de recencia</strong><br>
+  <span style="font-size:0.85em">Las últimas palabras se recuerdan mejor. Aún están activas en <em>memoria de trabajo</em> al momento de evocar.</span>
+</div>
+</div>
+<div>
+<div class="caja-crema" style="margin-bottom:0.6em">
+  <strong>Las del medio… no tanto</strong><br>
+  <span style="font-size:0.85em">Ya no están en memoria de trabajo, y tampoco tuvieron tanto ensayo. La curva en U es el patrón esperado.</span>
+</div>
+<div class="caja-crema">
+  <strong>¿Por qué importa?</strong><br>
+  <span style="font-size:0.85em">Este efecto es <em>replicable</em> en distintos contextos, culturas e idiomas — uno de los hallazgos más robustos de la psicología cognitiva.</span>
+</div>
+<p style="font-size:0.7em; color:#5a6e62; margin-top:0.5em">Murdock (1962) · Glanzer &amp; Cunitz (1966)</p>
+</div>
 </div>
 
 ---
@@ -316,7 +344,7 @@ Los primeros psicólogos científicos tenían formación en **fisiología, medic
 La fundación de la psicología como ciencia se benefició de la intersección de múltiples disciplinas: **fisiología, medicina y filosofía**.
 </div>
 
-**Wundt y James** son acreditados con el desarrollo de la **psicología académica**, estableciendo las bases para la investigación experimental.
+**Wundt y James** son precursores de la **psicología académica**. Establecieron las bases para la investigación experimental.
 
 La creación de los primeros laboratorios fue crucial para el estudio empírico de la mente y el comportamiento.
 
@@ -364,9 +392,12 @@ La creación de los primeros laboratorios fue crucial para el estudio empírico 
 </div>
 </div>
 
-. . .
 
-<p style="font-size:0.78em; color:#3d5247; margin-top:0.6em">Este cambio de paradigma sentó las bases para el conductismo como corriente dominante en el siglo XX.</p>
+::: {.callout-tip}
+## El estudio de la conducta
+
+Este cambio de paradigma sentó las bases para el conductismo como corriente dominante en el siglo XX.
+:::
 
 ---
 
@@ -424,15 +455,104 @@ La psicología estudia muchos temas. Una clasificación útil los divide en:
 <div class="cols-2" style="margin-top:0.8em">
 <div class="tarjeta">
   <h4>Foco en los procesos</h4>
-  <p>Contenido próximamente — pendiente de datos de la cátedra.</p>
 </div>
 <div class="tarjeta">
   <h4>Foco en las personas</h4>
-  <p>Contenido próximamente — pendiente de datos de la cátedra.</p>
 </div>
 </div>
 
-<!-- TODO: agregar contenido de slides 21-24 cuando esté disponible -->
+
+
+---
+
+## Foco en los procesos
+
+<div class="cols-3" style="margin-top:0.7em; font-size:0.86em">
+<div class="tarjeta">
+  <h4>Psicología fisiológica</h4>
+  <ul>
+    <li>Hormonas</li>
+    <li>Sistema nervioso</li>
+    <li>Genética</li>
+  </ul>
+</div>
+<div class="tarjeta">
+  <h4>Psicología comparada</h4>
+  <ul>
+    <li>Estudios utilizando animales para comprender la cognición humana</li>
+  </ul>
+</div>
+<div class="tarjeta">
+  <h4>Psicología cognitiva</h4>
+  <ul>
+    <li>Memoria</li>
+    <li>Razonamiento</li>
+    <li>Emoción</li>
+    <li>Lenguaje</li>
+  </ul>
+</div>
+</div>
+
+---
+
+## Foco en las personas
+
+<div class="cols-3" style="margin-top:0.7em; font-size:0.86em">
+<div class="tarjeta">
+  <h4>Psicología social</h4>
+  <ul>
+    <li>Prejuicios</li>
+    <li>Conducta antisocial y prosocial</li>
+  </ul>
+</div>
+<div class="tarjeta">
+  <h4>Diferencias individuales</h4>
+  <ul>
+    <li>Inteligencia</li>
+    <li>Personalidad</li>
+    <li>Anormalidad</li>
+  </ul>
+</div>
+<div class="tarjeta">
+  <h4>Psicología del desarrollo</h4>
+  <ul>
+    <li>Cambios a través del tiempo</li>
+    <li>Estudio del ciclo vital</li>
+  </ul>
+</div>
+</div>
+
+---
+
+## Métodos de estudio
+
+<div class="cols-2" style="margin-top:0.8em; font-size:0.88em">
+
+<div>
+<p style="font-family:'Playfair Display',serif; font-weight:700; color:#1a3d2b; margin-bottom:0.5em">Foco en procesos</p>
+<div class="tarjeta" style="margin-bottom:0.5em">
+  <h4>Estudios de laboratorio</h4>
+  <p>Condiciones controladas, manipulación de variables.</p>
+</div>
+<div class="tarjeta">
+  <h4>Sujetos</h4>
+  <p>Animales no humanos y humanos.</p>
+</div>
+</div>
+
+<div>
+<p style="font-family:'Playfair Display',serif; font-weight:700; color:#1a3d2b; margin-bottom:0.5em">Foco en personas</p>
+<div class="tarjeta" style="margin-bottom:0.5em">
+  <h4>Estudios observacionales</h4>
+  <p>No experimentales. Sin manipulación de variables.</p>
+</div>
+<div class="tarjeta">
+  <h4>Participantes</h4>
+  <p>Humanos en contextos naturales.</p>
+</div>
+</div>
+
+</div>
 
 ---
 
@@ -454,7 +574,7 @@ La psicología estudia muchos temas. Una clasificación útil los divide en:
 - En un principio se usaba la **introspección** para indagar sobre los procesos mentales → **Wundt**.
 - El **conductismo** dotó a la psicología de métodos empíricos y cuantificó los cambios en la conducta → **Watson**.
 - La **revolución cognitiva** surgió como respuesta a las limitaciones del conductismo.
-- A mediados del siglo XX surge el **cognitivismo** → **Chomsky** y otros.
+- A mediados del siglo XX surge el **cognitivismo** → Cada autor desarrolla sobre algún proceso.
 - Hoy existen dos grandes perspectivas: una focalizada en los **procesos** y otra en las **personas**.
 
 </div>
