@@ -226,69 +226,69 @@ Hay escuelas que aplican el método científico y otras que no
 </div>
 </div>
 
----
+<!-- --- -->
 
-## Probemos algo…
+<!-- ## Probemos algo… -->
 
-<div style="font-size:0.95em; line-height:1.85; margin-top:0.4em">
-1. Agarrá una hoja y una lapicera.
-2. Voy a leer una lista de palabras **en voz alta**, una por una, a ritmo constante.
-3. **No anotes nada mientras escuchás.**
-4. Cuando termine, escribí **todas las palabras que recuerdes**, en el orden que quieras.
-5. Tenés **solo unos segundos**.
-</div>
+<!-- <div style="font-size:0.95em; line-height:1.85; margin-top:0.4em"> -->
+<!-- 1. Agarrá una hoja y una lapicera. -->
+<!-- 2. Voy a leer una lista de palabras **en voz alta**, una por una, a ritmo constante. -->
+<!-- 3. **No anotes nada mientras escuchás.** -->
+<!-- 4. Cuando termine, escribí **todas las palabras que recuerdes**, en el orden que quieras. -->
+<!-- 5. Tenés **solo unos segundos**. -->
+<!-- </div> -->
 
-<div class="caja-verde" style="margin-top:0.8em; font-size:0.85em">
-  No hay trampa ni trucos. Simplemente prestá atención.
-</div>
+<!-- <div class="caja-verde" style="margin-top:0.8em; font-size:0.85em"> -->
+<!--   No hay trampa ni trucos. Simplemente prestá atención. -->
+<!-- </div> -->
 
----
+<!-- --- -->
 
-## 
+<!-- ##  -->
 
-<div style="text-align:center; margin-top:0.8em">
-  <p style="font-size:1em; color:#1a3d2b; font-family:'Playfair Display',serif;">Escribí todas las palabras que recuerdes.</p>
-  <p style="font-size:0.85em; color:#3d5247; margin-top:0.4em">No importa el orden. Tenés algunos segundos.</p>
-  <div style="width:80px; height:4px; background:#95c17a; border-radius:2px; margin:1.2em auto;"></div>
-  <p style="font-size:0.75em; color:#7a8c82; font-style:italic">Cuando termines, contá cuántas anotaste y guardá la hoja.</p>
-</div>
+<!-- <div style="text-align:center; margin-top:0.8em"> -->
+<!--   <p style="font-size:1em; color:#1a3d2b; font-family:'Playfair Display',serif;">Escribí todas las palabras que recuerdes.</p> -->
+<!--   <p style="font-size:0.85em; color:#3d5247; margin-top:0.4em">No importa el orden. Tenés algunos segundos.</p> -->
+<!--   <div style="width:80px; height:4px; background:#95c17a; border-radius:2px; margin:1.2em auto;"></div> -->
+<!--   <p style="font-size:0.75em; color:#7a8c82; font-style:italic">Cuando termines, contá cuántas anotaste y guardá la hoja.</p> -->
+<!-- </div> -->
 
----
+<!-- --- -->
 
-## Lo que acabamos de demostrar
+<!-- ## Lo que acabamos de demostrar -->
 
-<div class="cols-2" style="margin-top:0.5em">
-<div>
-<div class="caja-verde" style="margin-bottom:0.6em">
-  <strong>Efecto de primacía</strong><br>
-  <span style="font-size:0.85em">Las primeras palabras se recuerdan mejor. Tuvieron más oportunidades de <em>ensayo</em> y pasaron a memoria a largo plazo.</span>
-</div>
-<div class="caja-verde">
-  <strong>Efecto de recencia</strong><br>
-  <span style="font-size:0.85em">Las últimas palabras se recuerdan mejor. Aún están activas en <em>memoria de trabajo</em> al momento de evocar.</span>
-</div>
-</div>
-<div>
-<div class="caja-crema" style="margin-bottom:0.6em">
-  <strong>Las del medio… no tanto</strong><br>
-  <span style="font-size:0.85em">Ya no están en memoria de trabajo, y tampoco tuvieron tanto ensayo. La curva en U es el patrón esperado.</span>
-</div>
-<div class="caja-crema">
-  <strong>¿Por qué importa?</strong><br>
-  <span style="font-size:0.85em">Este efecto es <em>replicable</em> en distintos contextos, culturas e idiomas — uno de los hallazgos más robustos de la psicología cognitiva.</span>
-</div>
-<p style="font-size:0.7em; color:#5a6e62; margin-top:0.5em">Murdock (1962) · Glanzer &amp; Cunitz (1966)</p>
-</div>
-</div>
+<!-- <div class="cols-2" style="margin-top:0.5em"> -->
+<!-- <div> -->
+<!-- <div class="caja-verde" style="margin-bottom:0.6em"> -->
+<!--   <strong>Efecto de primacía</strong><br> -->
+<!--   <span style="font-size:0.85em">Las primeras palabras se recuerdan mejor. Tuvieron más oportunidades de <em>ensayo</em> y pasaron a memoria a largo plazo.</span> -->
+<!-- </div> -->
+<!-- <div class="caja-verde"> -->
+<!--   <strong>Efecto de recencia</strong><br> -->
+<!--   <span style="font-size:0.85em">Las últimas palabras se recuerdan mejor. Aún están activas en <em>memoria de trabajo</em> al momento de evocar.</span> -->
+<!-- </div> -->
+<!-- </div> -->
+<!-- <div> -->
+<!-- <div class="caja-crema" style="margin-bottom:0.6em"> -->
+<!--   <strong>Las del medio… no tanto</strong><br> -->
+<!--   <span style="font-size:0.85em">Ya no están en memoria de trabajo, y tampoco tuvieron tanto ensayo. La curva en U es el patrón esperado.</span> -->
+<!-- </div> -->
+<!-- <div class="caja-crema"> -->
+<!--   <strong>¿Por qué importa?</strong><br> -->
+<!--   <span style="font-size:0.85em">Este efecto es <em>replicable</em> en distintos contextos, culturas e idiomas — uno de los hallazgos más robustos de la psicología cognitiva.</span> -->
+<!-- </div> -->
+<!-- <p style="font-size:0.7em; color:#5a6e62; margin-top:0.5em">Murdock (1962) · Glanzer &amp; Cunitz (1966)</p> -->
+<!-- </div> -->
+<!-- </div> -->
 
----
+<!-- --- -->
 
-## {.slide-transicion}
+<!-- ## {.slide-transicion} -->
 
-<div class="transicion-inner">
-  <div class="barra-acento"></div>
-  <h2>Crisis de replicabilidad</h2>
-</div>
+<!-- <div class="transicion-inner"> -->
+<!--   <div class="barra-acento"></div> -->
+<!--   <h2>Crisis de replicabilidad</h2> -->
+<!-- </div> -->
 
 ---
 
