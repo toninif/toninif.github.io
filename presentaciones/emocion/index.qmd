@@ -28,5 +28,9 @@ Material de clase del curso de Psicología de la Motivación y Emoción, Univers
 **[Clase 3](03-teorias-motivacion.html){target="_blank"}** · Motivación como proceso psicológico. Más teorías desde perspectiva cognitiva
 :::
 
+::: {.pub-item}
+**[Clase 4](04-motivos.html){target="_blank"}** · Motivos biológicos y motivos sociales
+:::
+
 :::
 
