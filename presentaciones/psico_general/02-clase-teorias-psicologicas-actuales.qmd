@@ -1,0 +1,493 @@
+---
+title: "Enfoques psicológicos actuales: Cognitivo - Conductual - Psicodinámico"
+subtitle: "Psicología General"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: [simple, psico-general-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Psicología · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Tres enfoques teóricos</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Principales enfoques teóricos
+
+La psicología incluye varios enfoques teóricos. Tres de esos enfoques son:
+
+:::::: {.cols-3 style="margin-top:0.9em"}
+::: {.tarjeta style="border-top-color:#1a3d2b"}
+<h4>Enfoque psicodinámico</h4>
+
+<p>Deseos icc y conformación del aparato psíquico producto de las fases psicosexuales.</p>
+:::
+
+::: {.tarjeta style="border-top-color:#2d6a4f"}
+<h4>Enfoque conductista</h4>
+
+<p>La relación entre el ambiente y el organismo determina el comportamiento observable.</p>
+:::
+
+::: {.tarjeta style="border-top-color:#52b788"}
+<h4>Enfoque cognitivo</h4>
+
+<p>La mente como procesador de información: los procesos mentales determinan la conducta.</p>
+:::
+::::::
+
+<p style="font-size:0.75em; color:#5a6e62; margin-top:0.8em">
+
+De cada enfoque veremos: eje temático · naturaleza del ser humano · concepción de (a)normalidad · desarrollo · métodos de estudio · métodos y metas del tratamiento.
+
+</p>
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Eje temático</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Eje temático
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Psicoanálisis</h4>
+
+<p>El <strong>conflicto</strong> es el eje central (ya sea en el pasado o en el presente), entre partes de la mente (instancias psíquicas) o entre el yo y la realidad.</p>
+:::
+
+::: tarjeta
+<h4>Conductismo</h4>
+
+<p>Lo esencial es la <strong>relación entre el ambiente y el organismo</strong>. El ambiente moldea al individuo. De esa interacción surge la conducta observable.</p>
+:::
+
+::: tarjeta
+<h4>Cognitivismo</h4>
+
+<p>Lo central es entender la <strong>mente como procesador orgánico de información</strong>. Los procesos y su contenido (ideas y representaciones) determinan la conducta.</p>
+:::
+::::::
+
+::: {.callout-tip appearance="simple"}
+Comportamiento ≠ Conduta
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Naturaleza del ser humano</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Naturaleza del ser humano
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Psicoanálisis</h4>
+
+<p>Las <strong>fuerzas, deseos o pulsiones inconscientes</strong> determinan la conducta, generando conflicto entre las partes de la mente y el mundo exterior.</p>
+:::
+
+::: tarjeta
+<h4>Conductismo</h4>
+
+<p>El comportamiento es determinado por las <strong>condiciones ambientales</strong>. Su naturaleza está dominada por procesos de condicionamiento (clásico u operante).</p>
+:::
+
+::: tarjeta
+<h4>Cognitivismo</h4>
+
+<p>La <strong>actividad mental</strong> determina la naturaleza del ser humano. Cada proceso básico guía el comportamiento.</p>
+:::
+::::::
+
+::: {.callout-tip appearance="simple"}
+Psicoanálisis y Conductismo ⇢ Deterministas
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Concepción de normalidad</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Concepción de normalidad
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Psicoanálisis</h4>
+
+<p>Lograr un <strong>equilibrio entre las partes de la mente</strong> (primera/segunda tópica). El problema es que el conflicto entre cada parte siempre estará presente.</p>
+:::
+
+::: tarjeta
+<h4>Conductismo</h4>
+
+<p>Poseer un <strong>repertorio amplio de respuestas</strong> que permiten al organismo adaptarse a las demandas del entorno. Diferentes ambientes demandan distintas respuestas adaptativas.</p>
+:::
+
+::: tarjeta
+<h4>Cognitivismo</h4>
+
+<p><strong>Funcionamiento adecuado de los procesos psicológicos básicos</strong>, que generan una conducta adaptativa a las demandas externas e internas.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Desarrollo</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Desarrollo
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Psicoanálisis</h4>
+
+<p>Secuencia de <strong>etapas psicosexuales</strong> que determinan la maduración del sujeto. El individuo se desarrolla en función a las experiencias durante la infancia temprana.</p>
+:::
+
+::: tarjeta
+<h4>Conductismo</h4>
+
+<p><strong>No existen etapas</strong> de desarrollo psicológico. El comportamiento se va moldeando de manera selectiva dependiendo de la maduración del organismo.</p>
+:::
+
+::: tarjeta
+<h4>Cognitivismo</h4>
+
+<p>Cada proceso mental tiene su <strong>propia evolución</strong>. Por ejemplo, el desarrollo de las emociones es más temprano que el de la memoria (→ amnesia infantil).</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Métodos de estudio</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Métodos de estudio
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Psicoanálisis</h4>
+
+<p><strong>Análisis de casos únicos</strong>. El llamado "método clínico". Estudio en profundidad de individuos particulares.</p>
+:::
+
+::: tarjeta
+<h4>Conductismo</h4>
+
+<p><strong>Experimentación</strong> utilizando animales no humanos y humanos. Control riguroso de variables ambientales.</p>
+:::
+
+::: tarjeta
+<h4>Cognitivismo</h4>
+
+<p><strong>Experimentación</strong> principalmente con humanos. Simulaciones computacionales. A veces estudios observacionales.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Aplicación: Tratamientos basados en estos enfoques</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Métodos de tratamiento
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.84em"}
+::: tarjeta
+<h4>Psicoanálisis</h4>
+
+<p><strong>Psicoterapia orientada al insight.</strong> El inconsciente se manifiesta a través de sueños, síntomas y transferencia, que deben ser interpretados por el analista.</p>
+:::
+
+::: tarjeta
+<h4>Conductismo</h4>
+
+<p><strong>Terapia de conducta</strong> y análisis funcional. Por ejemplo: desensibilización sistemática, terapia aversiva, inundación, moldeamiento conductual.</p>
+:::
+
+::: tarjeta
+<h4>Cognitivismo</h4>
+
+<p><strong>TRE, terapia cognitiva, TCC.</strong> Regulación emocional, psicoeducación, modificación de creencias centrales. En depresión: modificar la tríada cognitiva.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Metas del tratamiento
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Psicoanálisis</h4>
+
+<p><strong>Descubrir y elaborar los conflictos inconscientes.</strong> Lograr un equilibrio razonable entre las partes de la mente. El tratamiento puede extenderse por mucho tiempo.</p>
+:::
+
+::: tarjeta
+<h4>Conductismo</h4>
+
+<p><strong>Eliminar respuestas desadaptativas</strong> y aprender nuevos comportamientos funcionales a las demandas del entorno.</p>
+:::
+
+::: tarjeta
+<h4>Cognitivismo</h4>
+
+<p><strong>Corregir creencias o ideas irracionales</strong> basadas en sesgos, de modo que el pensamiento se vuelva un medio efectivo de controlar la conducta.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>¿Funciona la psicoterapia?</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Gran debate en psicología clínica
+
+![](img/placeholder-escuela-atenas.png){width="55%"}
+
+::::: {.cols-2 style="margin-top:0.6em; font-size:0.86em"}
+::: caja-crema
+<strong>¿Cómo sabemos que un tratamiento psicológico realmente funciona?</strong>
+:::
+
+::: caja-crema
+<strong>¿Cómo diferenciamos una terapia basada en ciencia de una que no lo está?</strong>
+:::
+:::::
+
+<p style="font-size:0.78em; color:#3d5247; margin-top:0.6em">
+
+Como futuros psicólogos van a encontrarse con una gran cantidad de enfoques terapéuticos. No todos están respaldados por estudios científicos sólidos.
+
+</p>
+
+------------------------------------------------------------------------
+
+## Tres problemas centrales
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.85em"}
+::: tarjeta
+<h4>Dificultad del método científico</h4>
+
+<p>Trabajamos con seres humanos en entornos reales: enorme diversidad de comportamientos y factores difíciles de controlar. Se necesitan <strong>estudios clínicos controlados</strong> para validar tratamientos.</p>
+:::
+
+::: tarjeta
+<h4>Proliferación de pseudoterapias</h4>
+
+<p>Tratamientos sin validación científica que parecen efectivos porque apelan a emociones o promesas fáciles. Pueden <strong>afectar negativamente</strong> a los pacientes y generar falsas expectativas.</p>
+:::
+
+::: tarjeta
+<h4>El veredicto del pájaro Dodo</h4>
+
+<p>La idea de que <em>"todas las psicoterapias son igual de efectivas"</em>. El artículo critica esta noción: <strong>no todas las terapias son iguales</strong> y debemos exigir evidencia de calidad.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Un estudio de ejemplo</h2>
+::::
+
+------------------------------------------------------------------------
+
+## El artículo
+
+<iframe src="img/clase2-articulo.pdf" width="100%" height="580px" style="border:none; border-radius:6px;"></iframe>
+
+
+## Limitaciones del estudio
+
+::::: {.cols-2 style="margin-top:0.7em; font-size:0.88em"}
+<div>
+
+<ul style="line-height:1.9">
+
+<li><strong>Tamaño de muestra</strong>: potencia insuficiente para detectar efectos medianos y pequeños</li>
+
+<li><strong>Nivel de experticia</strong> de los terapeutas no se controló</li>
+
+<li><strong>Lealtad a la terapia</strong> no se midió: ¿cuánto cree el/la psi en la terapia que aplica?</li>
+
+</ul>
+
+</div>
+
+::: {.caja-crema style="font-size:0.88em"}
+<strong>¿Por qué importa discutir las limitaciones?</strong><br> Ningún estudio es definitivo. La evidencia se construye acumulando estudios con distintas muestras, terapeutas y contextos... Por eso replicar estudios es importante!!.
+:::
+:::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Preguntas para discutir</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Para discutir en clase
+
+::::::::: {.cols-2 style="margin-top:0.6em; font-size:0.86em"}
+<div>
+
+::: {.caja-verde style="margin-bottom:0.5em"}
+<strong>Método científico en clínica</strong><br> ¿Qué hace más difícil aplicar el método científico en psicología clínica vs. medicina? ¿Cómo podríamos controlar mejor las variables?
+:::
+
+::: caja-verde
+<strong>Pseudoterapias</strong><br> ¿Por qué siguen siendo populares aunque no tengan respaldo? ¿Qué peligros implica usarlas con un paciente?
+:::
+
+</div>
+
+<div>
+
+::: {.caja-verde style="margin-bottom:0.5em"}
+<strong>Veredicto del pájaro Dodo</strong><br> ¿Les parece creíble que "todas las psicoterapias son igual de efectivas"? ¿Qué impacto tendría en la profesión no distinguir entre ellas?
+:::
+
+::: caja-verde
+<strong>Responsabilidad profesional</strong><br> ¿Qué responsabilidad tenemos al recomendar una terapia? ¿Cómo asegurarnos de ofrecer lo mejor para nuestros pacientes?
+:::
+
+</div>
+:::::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Recursos útiles</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Recursos para consultar evidencia
+
+<table style="font-size:0.72em; margin-top:0.5em">
+  <thead>
+    <tr>
+      <th>Recurso</th>
+      <th>Descripción</th>
+      <th>Utilidad</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="https://www.div12.org/psychological-treatments/" target="_blank"><strong>APA Div. 12</strong></a></td>
+      <td>Listado de tratamientos empíricamente validados, por diagnóstico e intervención</td>
+      <td>Consultar qué tratamientos tienen respaldo y su nivel de eficacia</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.cochranelibrary.com" target="_blank"><strong>Cochrane Collaboration</strong></a></td>
+      <td>Revisiones sistemáticas sobre intervenciones de salud, incluidas psicoterapias</td>
+      <td>Revisiones de alta calidad sobre eficacia de tratamientos</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.psicoevidencia.es" target="_blank"><strong>Psicoevidencia</strong></a></td>
+      <td>Plataforma en español con revisiones críticas de la evidencia en psicoterapia</td>
+      <td>Accesible para psicólogos y estudiantes hispanohablantes</td>
+    </tr>
+    <tr>
+      <td><a href="https://www.nice.org.uk/guidance" target="_blank"><strong>NICE</strong></a></td>
+      <td>Guías clínicas y revisiones de tratamientos basados en evidencia</td>
+      <td>Estándar internacional para tratamientos basados en evidencia</td>
+    </tr>
+    <tr>
+      <td><a href="https://clinicaltrials.gov" target="_blank"><strong>ClinicalTrials.gov</strong></a></td>
+      <td>Base de datos global de estudios clínicos</td>
+      <td>Ver estudios finalizados o en curso sobre intervenciones psicológicas</td>
+    </tr>
+  </tbody>
+</table>

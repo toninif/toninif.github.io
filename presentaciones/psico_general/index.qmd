@@ -20,6 +20,8 @@ Material de clase del curso de Psicología. Hacé click en cualquier presentaci�
 **[Clase 1](01-clase-perspectiva-general.html){target="_blank"}** · Intro al estudio científico de la Psicología.
 :::
 
-
+::: {.pub-item}
+**[Clase 2](02-clase-teorias-psicologicas-actuales.html){target="_blank"}** · Vemos distintos enfoques teóricos dentro de la psicología. Debatimos sobre la evidencia en psicoterapia.
+:::
 
 :::
