@@ -1,13 +1,23 @@
-/* ── Clase 1: Introducción ── */
+/* ── Motivación y Emoción: Estilo general ── */
 /* Estilo académico, tipografía serif, tonos cálidos */
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── Variables ── */
+:root {
+  --marron: #3d3229;
+  --dorado: #c9a96e;
+  --crema: #faf7f2;
+  --borde-crema: #e8d5b0;
+  --texto: #2a2a2a;
+  --texto-claro: #5a4a3a;
+}
 
 .reveal {
   font-size: 32px;
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  color: #2a2a2a;
+  color: var(--texto);
 }
 
 .reveal h2 {
@@ -16,7 +26,7 @@
   font-weight: 700;
   color: #1a1a1a;
   margin-bottom: 0.6em;
-  border-bottom: 2px solid #c9a96e;
+  border-bottom: 2px solid var(--dorado);
   padding-bottom: 0.25em;
 }
 
@@ -26,13 +36,69 @@
   color: #1a1a1a;
 }
 
-/* Tablas */
+/* ── Acento dorado inline ── */
+.dorado {
+  color: #996b2f;
+  font-weight: 600;
+}
+
+.accent {
+  color: #996b2f;
+  font-weight: 600;
+}
+
+/* ── Slides de transición / sección ── */
+.slide-titulo {
+  background-color: var(--marron) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.slide-titulo h2 {
+  border-bottom: none;
+}
+
+.barra-vertical {
+  position: absolute;
+  left: 38%;
+  top: 25%;
+  width: 4px;
+  height: 50%;
+  background: var(--dorado);
+  border-radius: 2px;
+}
+
+.contenido-titulo {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Subtítulo dentro de slides de contenido ── */
+.subtitulo-slide {
+  font-family: "Libre Baskerville", serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: var(--marron);
+  text-align: center;
+  margin-bottom: 0.6em;
+  letter-spacing: 0.02em;
+}
+
+/* ── Tablas ── */
 .reveal table {
   font-size: 0.78em;
 }
 
 .reveal table th {
-  background-color: #3d3229;
+  background-color: var(--marron);
   color: #fff;
   font-weight: 500;
   text-transform: uppercase;
@@ -44,47 +110,72 @@
   border-bottom: 1px solid #e0d8cc;
 }
 
-/* Listas */
+.tabla-contenido {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78em;
+}
+
+.tabla-contenido th {
+  background-color: var(--marron);
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+  padding: 0.5em 0.7em;
+}
+
+.tabla-contenido td {
+  border-bottom: 1px solid #e0d8cc;
+  padding: 0.5em 0.7em;
+  vertical-align: top;
+}
+
+.tabla-pequeña {
+  font-size: 0.7em;
+}
+
+.tabla-pequeña td,
+.tabla-pequeña th {
+  padding: 0.35em 0.6em;
+}
+
+/* ── Listas ── */
 .reveal li {
   margin-bottom: 0.4em;
 }
 
-/* Blockquotes */
+/* ── Blockquotes ── */
 .reveal blockquote {
-  border-left: 3px solid #c9a96e;
+  border-left: 3px solid var(--dorado);
   font-style: italic;
   font-family: "Libre Baskerville", serif;
   color: #555;
 }
 
-/* Acento dorado para conceptos clave */
-.accent {
-  color: #996b2f;
-  font-weight: 600;
-}
-
-/* Slides de sección/transición */
+/* ── Slides de sección (clase legacy) ── */
 .reveal .section-slide {
-  background-color: #3d3229;
+  background-color: var(--marron);
 }
 
-/* Footer */
+/* ── Footer ── */
 .reveal .footer {
   font-size: 0.42em;
   color: #999;
 }
 
-/* Columnas más respiradas */
+/* ── Columnas ── */
 .reveal .columns {
   gap: 1.5em;
 }
 
-/* Fondo uniforme */
+/* ── Fondo uniforme ── */
 .reveal .slides section {
   background-color: #ffffff;
 }
 
-/* Mermaid más grande y centrado */
+/* ── Mermaid ── */
 .reveal .mermaid {
   text-align: center;
   transform: scale(1.3);
@@ -92,10 +183,10 @@
   margin-top: 1em;
 }
 
-/* ── Clases adicionales clase 3 ── */
+/* ── Clases auxiliares de contenido ── */
 .formula-box {
-  background: #faf7f2;
-  border: 2px solid #c9a96e;
+  background: var(--crema);
+  border: 2px solid var(--dorado);
   border-radius: 8px;
   padding: 0.6em 1.2em;
   text-align: center;
@@ -104,9 +195,9 @@
 }
 
 .tarjeta {
-  background: #faf7f2;
-  border: 1.5px solid #e8d5b0;
-  border-top: 4px solid #c9a96e;
+  background: var(--crema);
+  border: 1.5px solid var(--borde-crema);
+  border-top: 4px solid var(--dorado);
   border-radius: 6px;
   padding: 0.6em 0.85em;
   font-size: 0.82em;
@@ -115,14 +206,14 @@
 
 .tarjeta h4 {
   font-family: 'Libre Baskerville', serif;
-  color: #3d3229;
+  color: var(--marron);
   font-size: 0.95em;
   margin: 0 0 0.35em 0;
 }
 
 .caja-dorada {
-  background: #e8d5b0;
-  border-left: 5px solid #c9a96e;
+  background: var(--borde-crema);
+  border-left: 5px solid var(--dorado);
   border-radius: 0 6px 6px 0;
   padding: 0.5em 0.9em;
   margin: 0.5em 0;
@@ -131,7 +222,7 @@
 }
 
 .caja-oscura {
-  background: #3d3229;
+  background: var(--marron);
   color: #ffffff;
   border-radius: 6px;
   padding: 0.5em 0.9em;
@@ -151,4 +242,10 @@
   grid-template-columns: 1fr 1fr 1fr;
   gap: 1.2em;
   align-items: start;
+}
+
+
+.reveal p,
+.reveal li {
+  font-size: 0.88em;
 }

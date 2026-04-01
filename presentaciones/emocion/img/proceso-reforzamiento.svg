@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 420" font-family="Inter, sans-serif">
+  <defs>
+    <style>
+      .caja-texto { font-size: 15px; fill: #3d3229; font-weight: 500; }
+      .caja-sub { font-size: 12.5px; fill: #7a6a5a; }
+      .intervencion { font-size: 14px; fill: #c9a96e; font-weight: 700; font-style: italic; }
+    </style>
+    <marker id="flecha" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#c9a96e"/>
+    </marker>
+  </defs>
+
+  <!-- Caja 1: Estímulo -->
+  <rect x="225" y="20" width="250" height="55" rx="8" fill="#f5efe6" stroke="#c9a96e" stroke-width="1.5"/>
+  <text x="350" y="44" text-anchor="middle" class="caja-texto">Estímulo</text>
+  <text x="350" y="62" text-anchor="middle" class="caja-sub">(situación)</text>
+
+  <!-- Flecha 1 -->
+  <line x1="350" y1="75" x2="350" y2="110" stroke="#c9a96e" stroke-width="2" marker-end="url(#flecha)"/>
+
+  <!-- Caja 2: Respuesta -->
+  <rect x="225" y="115" width="250" height="55" rx="8" fill="#f5efe6" stroke="#c9a96e" stroke-width="1.5"/>
+  <text x="350" y="139" text-anchor="middle" class="caja-texto">Respuesta</text>
+  <text x="350" y="157" text-anchor="middle" class="caja-sub">(conducta)</text>
+
+  <!-- Flecha 2 -->
+  <line x1="350" y1="170" x2="350" y2="205" stroke="#c9a96e" stroke-width="2" marker-end="url(#flecha)"/>
+
+  <!-- Etiqueta intervención a la izquierda -->
+  <text x="180" y="245" text-anchor="end" class="intervencion">intervención</text>
+  <line x1="190" y1="241" x2="222" y2="241" stroke="#c9a96e" stroke-width="1.5" stroke-dasharray="4,3"/>
+
+  <!-- Caja 3: Consecuencias -->
+  <rect x="225" y="210" width="250" height="55" rx="8" fill="#c9a96e" fill-opacity="0.2" stroke="#c9a96e" stroke-width="1.5"/>
+  <text x="350" y="234" text-anchor="middle" class="caja-texto">Consecuencias</text>
+  <text x="350" y="252" text-anchor="middle" class="caja-sub">(premios y castigos)</text>
+
+  <!-- Flecha 3 -->
+  <line x1="350" y1="265" x2="350" y2="300" stroke="#c9a96e" stroke-width="2" marker-end="url(#flecha)"/>
+
+  <!-- Caja 4: Conducta futura -->
+  <rect x="225" y="305" width="250" height="55" rx="8" fill="#3d3229" fill-opacity="0.08" stroke="#3d3229" stroke-width="1.5"/>
+  <text x="350" y="337" text-anchor="middle" class="caja-texto">Conducta futura</text>
+
+  <!-- Flecha de retroalimentación (de conducta futura vuelve a estímulo) -->
+  <path d="M 478 335 Q 570 335 570 200 Q 570 47 478 47" fill="none" stroke="#c9a96e" stroke-width="1.5" stroke-dasharray="5,3" marker-end="url(#flecha)"/>
+</svg>

@@ -32,5 +32,9 @@ Material de clase del curso de Psicología de la Motivación y Emoción, Univers
 **[Clase 4](04-motivos.html){target="_blank"}** · Motivos biológicos y motivos sociales
 :::
 
+::: {.pub-item}
+**[Clase 5](05-motivacion-laboral.html){target="_blank"}** · Teorías clásicas y contemporáneas de la motivación aplicadas a las organizaciones laborales
+:::
+
 :::
 
