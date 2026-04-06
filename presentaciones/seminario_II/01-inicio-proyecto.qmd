@@ -1,0 +1,445 @@
+---
+title: "Seminario II – Clase 1"
+subtitle: "Inicio de un proyecto"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: simple
+    css: seminario-uai-style.css
+    slide-number: true
+    transition: fade
+    footer: "Seminario Taller de Integración II · UAI"
+    chalkboard: true
+    title-slide-attributes:
+      data-visibility: hidden
+---
+
+## {.no-title data-background-color="#FFFFFF"}
+
+<div class="portada-container">
+  <div class="portada-materia">Seminario II</div>
+  <div class="portada-titulo">Inicio de un proyecto de investigación</div>
+  <div class="portada-subtitulo">Clase 1</div>
+  <div class="portada-autor"> Dr. Fernando Tonini</div>
+</div>
+
+---
+
+## Bienvenida
+
+A lo largo de su formación trabajaron con fundamentos de la **epistemología**.  
+
+Ahora vamos a poner esos fundamentos en práctica a través de un **proyecto de investigación**.
+
+. . .
+
+::: {.highlight-box}
+El primer objetivo de esta parte de la materia es construir el **marco conceptual** y el **diseño metodológico** de una investigación. En la primera parta de la materia no se ejecutará la recolección de datos ni el análisis de resultados, pero sí todo lo que los precede.
+:::
+
+---
+
+## {.no-title data-background-color="#FFFFFF"}
+
+<div class="transition-slide">
+  <div class="section-label">Parte I</div>
+  <div class="section-title">Investigación científica</div>
+</div>
+
+---
+
+## ¿Qué es la investigación científica?
+
+Es un proceso de **producción de conocimiento** con pretensión de **validez intersubjetiva**. La idea es que el conocimiento puede y **debe** ser evaluado, replicado y contrastado por otros/as investigadores/as.
+
+. . .
+
+Este proceso se caracteriza por ser:
+
+- **Sistemático**: sigue procedimientos organizados y explícitos
+- **Controlado**: busca minimizar fuentes de error y explicaciones alternativas
+- **Verificable**: sus resultados pueden ser contrastados empíricamente
+
+::: {.ref}
+Hernández Sampieri, R., Fernández Collado, C., & Baptista Lucio, P. (2014). *Metodología de la investigación* (6ª ed.). McGraw-Hill.
+:::
+
+---
+
+## La lógica de la investigación
+
+La investigación parte de la **problematización de la realidad**: identificar un aspecto del mundo que requiere explicación, comprensión o intervención.
+
+. . .
+
+Esto implica articular dos planos:
+
+:::: {.columns}
+::: {.column width="50%"}
+::: {.highlight-box}
+**Teoríco ↔ Empírico**
+
+La teoría genera expectativas sobre lo que deberíamos observar. Los datos empíricos permiten evaluar esas expectativas. Es un proceso cíclico, no lineal.
+:::
+:::
+
+::: {.column width="50%"}
+::: {.highlight-box}
+**Sujeto ↔ Objeto**
+
+Quien investiga y lo investigado mantienen una relación que varía según el paradigma. En investigación cuantitativa se busca maximizar la objetividad.
+:::
+:::
+::::
+
+::: {.ref}
+Hernández Sampieri et al. (2014), pp. 24–28.
+:::
+
+---
+
+## {.no-title data-background-color="#FFFFFF"}
+
+<div class="transition-slide">
+  <div class="section-label">Parte II</div>
+  <div class="section-title">La idea de investigación</div>
+</div>
+
+---
+
+## El punto de partida: la idea
+
+Todo proyecto de investigación comienza con una **idea**, pero no cualquier idea constituye un problema de investigación.
+
+. . .
+
+Una idea se convierte en problema científico cuando cumple ciertos criterios:
+
+- Aborda una **vacancia** (algo que no se sabe o no se ha estudiado suficientemente)
+- Es **relevante** para el campo disciplinar
+- Es **viable** (puede ser investigada con los recursos disponibles)
+
+::: {.ref}
+Hernández Sampieri et al. (2014), p. 24.
+:::
+
+---
+
+## Fuentes de ideas
+
+Las ideas pueden originarse en múltiples fuentes:
+
+:::: {.columns}
+::: {.column width="50%"}
+- Experiencia profesional o personal
+- Literatura científica (artículos, libros)
+- Materiales audiovisuales
+:::
+
+::: {.column width="50%"}
+- Teorías existentes
+- Intercambio con colegas y docentes
+- Medios de comunicación e internet
+:::
+::::
+
+. . .
+
+::: {.highlight-box}
+La fuente de la idea no determina su calidad. Lo que importa es el proceso posterior. Es decir, debemos **anclar la idea en la literatura científica** existente para transformarla en un problema de investigación fundamentado.
+:::
+
+::: {.ref}
+Hernández Sampieri et al. (2014), p. 25.
+:::
+
+---
+
+## De la idea al problema
+
+Las ideas iniciales suelen ser **vagas y generales**. Requieren un proceso de refinamiento:
+
+. . .
+
+1. Identificar el **área temática** de interés
+2. Realizar una **revisión bibliográfica** preliminar
+3. Delimitar qué aspecto específico se quiere estudiar
+4. Evaluar si existe una **vacancia teórica o empírica** que justifique el estudio
+
+. . .
+
+::: {.highlight-box}
+Este proceso no elimina la perspectiva propia quien realiza la investigación. La revisión bibliográfica permite **situar la idea** en el campo de conocimiento existente. Esto no significa reemplazarla.
+:::
+
+::: {.ref}
+Hernández Sampieri et al. (2014), pp. 26–27.
+:::
+
+---
+
+## ¿Por qué investigar?
+
+::: {.highlight-box}
+La investigación se justifica cuando existe un **problema** que requiere respuesta. Si no hay un vacío de conocimiento, una inconsistencia teórica o una necesidad aplicada, el estudio carece de fundamento.
+:::
+
+. . .
+
+Algunos motores legítimos:
+
+- **Vacancia empírica**: no hay datos sobre un fenómeno en determinada población o contexto
+- **Inconsistencia teórica**: dos modelos predicen cosas distintas
+- **Necesidad aplicada**: se requiere evidencia para intervenir o tomar decisiones
+- **Extensión**: replicar hallazgos en nuevas poblaciones o condiciones
+
+---
+
+## {.no-title data-background-color="#FFFFFF"}
+
+<div class="transition-slide">
+  <div class="section-label">Parte III</div>
+  <div class="section-title">Formular el tema</div>
+</div>
+
+---
+
+## Los componentes de un tema
+
+Para formular un tema de investigación en psicología hay que definir, como mínimo, tres elementos:
+
+. . .
+
+| Componente | Definición | Ejemplo |
+|:----------:|:----------|:--------|
+| **Variable(s)** | Constructo psicológico operacionalizable mediante un instrumento de medición | Valencia afectiva, Memoria prospectiva, Uso de IA |
+| **Población** | Unidad de análisis: las personas sobre las que se pretende conocer algo | Estudiantes universitarios, adolescentes, población gral |
+| **Contexto / Ámbito** | Aislamiento, Contexto social, Virtualidad |
+
+::: {.ref}
+Nota: estos son términos introductorios que se precisarán en las próximas clases.
+:::
+
+---
+
+## Variables psicológicas
+
+Una **variable** es un constructo teórico que puede ser medido a través de un **instrumento** (escala, cuestionario, test).
+
+
+. . .
+
+::: {.highlight-box}
+La construcción de instrumentos es un campo de investigación en sí mismo (**psicometría**). Cada instrumento define indicadores específicos basados en la teoría para medir el constructo que dice medir. 
+:::
+
+. . .
+
+A mayor cantidad de variables, mayor **complejidad** del diseño. Para un primer proyecto, dos variables son un punto de partida razonable.
+
+---
+
+## Fundamentación teórica de las variables
+
+Las variables de un estudio no se eligen arbitrariamente. La idea es que exista una **relación fundamentada teóricamente**.
+
+::: {.warning-box}
+Pregunta clave: ¿existe teoría o evidencia empírica previa que vincule estas variables? Si la respuesta es no, la combinación carece de sustento. 
+:::
+
+. . .
+
+::: {.example-box}
+**Ejemplo bien fundamentado:** estrés académico y estrategias de afrontamiento. Si se lo enmarca desde el modelo transaccional de Lazarus y Folkman (1984) establece una relación directa entre ambos constructos.
+:::
+
+. . .
+
+::: {.example-box}
+**Ejemplo sin fundamento claro:** personalidad y enfermedades autoinmunes... ¿Qué marco teórico predice una relación entre ambos? Sin ese respaldo, la combinación es arbitraria.
+:::
+
+---
+
+## Población
+
+Es el conjunto de personas sobre las que se quiere producir conocimiento: la **unidad de análisis**.
+
+Se puede trabajar con:
+
+- **Una población**: Uso de IA en estudiantes universitarios
+- **Dos o más poblaciones** (permite comparar): Uso de IA en estudiantes de primer año vs. estudiantes de último año; Creatividad en psicos. vs. creatividad en arquitec.
+
+. . .
+
+::: {.highlight-box}
+La elección de la población no es caprichosa. Debe estar justificada por el problema de investigación: ¿por qué estudiar este fenómeno en *estas* personas y no en otras?
+:::
+
+---
+
+## Contexto o ámbito
+
+Es la **condición situacional** o el **ámbito específico** en el que se estudia el fenómeno.
+
+. . .
+
+::: {.example-box}
+Por ejemplo la pandemia de COVID-19 constituyó un contexto particular: aislamiento, modificación abrupta de rutinas, incertidumbre prolongada. Ese escenario generó condiciones específicas para estudiar fenómenos como el estrés, la resiliencia o el duelo. Algo más reciente puede ser contexto presencial vs. virtual vs. híbrido.
+:::
+
+. . .
+
+::: {.highlight-box}
+El contexto puede funcionar como una **condición delimitante** (dónde se realiza el estudio) o como una **variable en sí misma** (si se comparan contextos). Es importante distinguir ambos usos.
+:::
+
+---
+
+## Combinando los componentes
+
+Las combinaciones posibles son múltiples:
+
+. . .
+
+::: {.example-box}
+**Dos variables + una población + un contexto:**
+
+Creatividad y estilos de aprendizaje en adolescentes de una escuela de Quilmes
+:::
+
+. . .
+
+::: {.example-box}
+**Una variable + tres poblaciones:**
+
+Resiliencia en budistas, no creyentes y evangélicos de Buenos Aires
+:::
+
+. . .
+
+::: {.example-box}
+**Dos variables + una población:**
+
+Estrés académico y estrategias de afrontamiento en estudiantes universitarios de Uruguay
+:::
+
+---
+
+## ¿Qué NO es un tema de investigación?
+
+Un **área temática general** no es un tema de investigación. Le faltan los componentes que permiten operacionalizarlo.
+
+:::: {.columns}
+::: {.column width="45%"}
+::: {.warning-box}
+**Áreas temáticas (no son temas):**
+
+- "El aborto"
+- "El COVID"
+- "Las redes sociales"
+:::
+:::
+
+::: {.column width="55%"}
+::: {.highlight-box}
+**Temas formulados:**
+
+- Rasgos de personalidad en mujeres a favor y en contra del aborto del conurbano bonaerense
+- Resiliencia en personas que padecieron COVID y personas que no
+:::
+:::
+::::
+
+. . .
+
+La diferencia: en el segundo caso hay **variables definidas**, **poblaciones identificadas** y, en algunos casos, un **contexto delimitado**.
+
+---
+
+## El problema de la trivialidad
+
+::: {.warning-box}
+Un tema de investigación debe aportar algo que **no se sepa de antemano**. Si el resultado es predecible sin necesidad de recolectar datos, el estudio carece de relevancia científica.
+:::
+
+. . .
+
+::: {.example-box}
+**Tema trivial:** "Ansiedad y estrés en estudiantes universitarios"
+
+¿Por qué? No porque sea "obvio", sino porque carece de **especificidad** y **vacancia**: ya hay abundante evidencia de que los estudiantes universitarios presentan niveles elevados en ambas variables. ¿Qué aportaría un estudio más?
+:::
+
+. . .
+
+::: {.example-box}
+**Tema con vacancia:** "Burnout en médicos recién recibidos vs. médicos con 10 años de ejercicio"
+
+¿Por qué funciona? Porque hay argumentos teóricos para esperar diferencias en **ambas direcciones** (los novatos enfrentan la brecha teoría-práctica; los experimentados, el desgaste acumulado). Hay un vacío empírico que justifica la comparación.
+:::
+
+---
+
+## Criterios para evaluar un tema
+
+- **Vacancia**: ¿falta evidencia sobre este fenómeno en esta población o contexto?
+- **Relevancia**: ¿el resultado puede contribuir al conocimiento psicológico o a la intervención?
+- **Viabilidad**: ¿es posible acceder a la población y medir las variables con instrumentos existentes?
+- **Especificidad**: ¿el tema es lo suficientemente acotado como para ser abordable en un proyecto?
+- **Fundamentación**: ¿hay un marco teórico que respalde la relación entre las variables?
+
+. . .
+
+::: {.highlight-box}
+**Revisar la literatura** es indispensable. No para copiar lo que otros hicieron, sino para identificar qué falta, qué se contradice o qué no se ha estudiado en determinado contexto o población.
+:::
+
+---
+
+## {.no-title data-background-color="#FFFFFF"}
+
+<div class="transition-slide">
+  <div class="section-label">Actividad</div>
+  <div class="section-title">Crear el tema de investigación</div>
+</div>
+
+---
+
+## Actividad de la clase
+
+**A.** Conformar un grupo de entre 4 y 5 integrantes.
+
+. . .
+
+**B.** Seleccionar y elaborar un tema de investigación teniendo en cuenta:
+
+::: {.highlight-box}
+- Al menos una **variable** psicológica medible
+- Al menos un **grupo** de personas
+- Opcionalmente, un **contexto** particular
+- Que el tema **no sea obvio**
+- Que esté **vinculado teóricamente**
+:::
+
+. . .
+
+**C.** Debatir en grupo hasta llegar a un acuerdo y entregar el archivo.
+
+---
+
+## Lecturas y recursos
+
+📖 Hernández Sampieri, R., Fernández Collado, C., & Baptista Lucio, P. (2014). *Metodología de la investigación* (6ª ed., pp. 24–28). McGraw-Hill.
+
+🎬 [Video explicativo](https://www.youtube.com/watch?v=K2HNt_Q6qwE)
+
+📋 Recurso didáctico: "Idea de investigación" (disponible en el aula virtual)
+
+---
+
+## {.no-title data-background-color="#8B1A2B"}
+
+<div class="cierre-container">
+  <h2>Éxito con la elección del tema!</h2>
+</div>

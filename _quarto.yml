@@ -16,6 +16,8 @@ website:
             text: "Psicología de la Motivación y Emoción"
           - href: presentaciones/psico_general/index.qmd
             text: "Psicología"
+          - href: presentaciones/seminario_II/index.qmd
+            text: "Seminario II - UAI"
       - href: publicaciones.qmd
         text: Publicaciones
     right:

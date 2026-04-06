@@ -1,0 +1,320 @@
+/*
+ * Seminario Taller de Integración II – UAI
+ * Paleta: bordo UAI (#8B1A2B), crema (#FDF6EE), arena (#D4A574)
+ * Tipografía: Lora (serif, headings) + Nunito Sans (sans-serif, body)
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,600;0,6..12,700;1,6..12,400&display=swap');
+
+:root {
+  --uai-bordo: #8B1A2B;
+  --uai-bordo-dark: #6B1420;
+  --uai-bordo-light: #A82040;
+  --uai-crema: #FDF6EE;
+  --uai-arena: #D4A574;
+  --uai-arena-light: #E8D5B8;
+  --uai-gris: #5C5C5C;
+  --uai-gris-claro: #9A9590;
+  --uai-texto: #2D2D2D;
+}
+
+/* === BASE === */
+.reveal {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 24px;
+  color: var(--uai-texto);
+}
+
+.reveal .slides {
+  text-align: left;
+}
+
+.reveal .slides section {
+  padding: 40px 60px;
+}
+
+/* === HEADINGS === */
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-family: 'Lora', serif;
+  color: var(--uai-bordo);
+  text-transform: none;
+  letter-spacing: -0.01em;
+}
+
+.reveal h2 {
+  font-size: 1.6em;
+  font-weight: 600;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.3em;
+  border-bottom: 3px solid var(--uai-arena);
+}
+
+.reveal h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: var(--uai-bordo);
+  margin-bottom: 0.4em;
+}
+
+/* === TEXT === */
+.reveal p {
+  line-height: 1.6;
+  margin-bottom: 0.6em;
+}
+
+.reveal ul, .reveal ol {
+  margin-left: 0.5em;
+}
+
+.reveal li {
+  margin-bottom: 0.4em;
+  line-height: 1.5;
+}
+
+.reveal strong {
+  color: var(--uai-bordo);
+  font-weight: 700;
+}
+
+/* === ACCENT CLASS === */
+.reveal .accent {
+  color: var(--uai-bordo);
+  font-weight: 600;
+}
+
+.reveal .accent-arena {
+  color: #996B2F;
+  font-weight: 600;
+}
+
+.reveal .highlight-box {
+  background: var(--uai-crema);
+  border-left: 4px solid var(--uai-bordo);
+  padding: 0.8em 1.2em;
+  margin: 0.8em 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.9em;
+}
+
+.reveal .example-box {
+  background: #FFF9F0;
+  border: 1px solid var(--uai-arena-light);
+  border-left: 4px solid var(--uai-arena);
+  padding: 0.8em 1.2em;
+  margin: 0.8em 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.85em;
+}
+
+.reveal .warning-box {
+  background: #FFF5F5;
+  border-left: 4px solid var(--uai-bordo-light);
+  padding: 0.8em 1.2em;
+  margin: 0.8em 0;
+  border-radius: 0 4px 4px 0;
+  font-size: 0.85em;
+}
+
+/* === PORTADA CUSTOM === */
+.portada-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 0 80px;
+  position: relative;
+}
+
+.portada-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--uai-bordo) 0%, var(--uai-bordo-dark) 100%);
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.portada-container::after {
+  content: '';
+  position: absolute;
+  bottom: 60px;
+  left: 80px;
+  width: 120px;
+  height: 3px;
+  background: var(--uai-arena);
+}
+
+.portada-materia {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.55em;
+  font-weight: 600;
+  color: var(--uai-bordo);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.3em;
+}
+
+.portada-titulo {
+  font-family: 'Lora', serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--uai-texto);
+  line-height: 1.15;
+  margin-bottom: 0.15em;
+  max-width: 75%;
+}
+
+.portada-subtitulo {
+  font-family: 'Lora', serif;
+  font-size: 0.85em;
+  font-weight: 400;
+  font-style: italic;
+  color: var(--uai-gris);
+  margin-bottom: 1.5em;
+}
+
+.portada-autor {
+  font-family: 'Lora', serif;
+  font-size: 1em;
+  color: var(--uai-gris);
+  line-height: 1.6;
+}
+
+.portada-autor strong {
+  color: var(--uai-texto);
+  font-weight: 600;
+}
+
+/* === SLIDE DE TRANSICIÓN === */
+.transition-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 100%;
+  padding: 0 80px;
+}
+
+.transition-slide .section-label {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.5em;
+  font-weight: 600;
+  color: var(--uai-arena);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+}
+
+.transition-slide .section-title {
+  font-family: 'Lora', serif;
+  font-size: 1.8em;
+  font-weight: 700;
+  color: var(--uai-bordo);
+  border-left: 4px solid var(--uai-arena);
+  padding-left: 0.6em;
+  line-height: 1.2;
+}
+
+/* === TABLAS === */
+.reveal table {
+  font-size: 0.75em;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.8em 0;
+}
+
+.reveal table thead th {
+  background: var(--uai-bordo);
+  color: white;
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+  padding: 0.6em 0.8em;
+  text-align: left;
+  border: none;
+}
+
+.reveal table tbody td {
+  padding: 0.5em 0.8em;
+  border-bottom: 1px solid var(--uai-arena-light);
+}
+
+.reveal table tbody tr:nth-child(even) {
+  background: rgba(253, 246, 238, 0.5);
+}
+
+/* === COLUMNS === */
+.reveal .columns {
+  display: flex;
+  gap: 2em;
+}
+
+.reveal .column {
+  flex: 1;
+}
+
+/* === FOOTER === */
+.reveal .footer {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.45em;
+  color: var(--uai-gris-claro);
+}
+
+/* === SLIDE DE CIERRE === */
+.cierre-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.cierre-container h2 {
+  font-family: 'Lora', serif;
+  font-size: 2em;
+  color: white;
+  border: none;
+  padding: 0;
+}
+
+.cierre-container p {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 0.55em;
+  color: var(--uai-arena-light);
+  margin-top: 0.5em;
+}
+
+/* === MERMAID SCALING === */
+.reveal .mermaid {
+  transform: scale(1.2);
+  transform-origin: center center;
+}
+
+/* === REFERENCIAS === */
+.reveal .ref {
+  font-size: 0.6em;
+  color: var(--uai-gris-claro);
+  font-style: italic;
+  margin-top: 1.5em;
+  border-top: 1px solid var(--uai-arena-light);
+  padding-top: 0.5em;
+}
+
+/* === FRAGMENT TWEAKS === */
+.reveal .fragment.fade-in-then-semi-out.visible:not(.current-fragment) {
+  opacity: 0.4;
+}
+
+/* === IMAGES === */
+.reveal img {
+  max-height: 500px;
+  border-radius: 4px;
+}
+
+.reveal .img-center {
+  display: flex;
+  justify-content: center;
+}
