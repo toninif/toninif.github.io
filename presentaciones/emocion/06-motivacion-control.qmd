@@ -271,3 +271,13 @@ Incrementa la motivación y perseverancia en situaciones negativas: rasgo adapta
 - Se cae en pasividad cuando la persona se convence de que realmente no podrá controlar el resultado deseado o evitar el resultado aversivo.
 
 - La aparición más o menos temprana de la desesperanza está en conjunto con las ilusiones positivas.
+
+
+##  {data-background-color="#ffffff"}
+
+<div style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;">
+<div>
+<div style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;">Muchas gracias!!</div>
+<div style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;">Clase siguiente: Parcial 😱😱😱</div>
+</div>
+</div>
