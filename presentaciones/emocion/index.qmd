@@ -36,5 +36,9 @@ Material de clase del curso de Psicología de la Motivación y Emoción, Univers
 **[Clase 5](05-motivacion-laboral.html){target="_blank"}** · Teorías clásicas y contemporáneas de la motivación aplicadas a las organizaciones laborales
 :::
 
+::: {.pub-item}
+**[Clase 6](06-motivacion-control.html){target="_blank"}** · Motivación y atribuciones de control: Reactancia, indefensión y adaptación.
+:::
+
 :::
 
