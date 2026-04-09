@@ -186,10 +186,14 @@
 /* ── Cajas de destaque ── */
 .caja-verde {
   background: var(--verde-oscuro);
-  color: var(--crema);
+  color: var(--crema) !important;
   border-radius: 8px;
   padding: 0.5em 0.9em;
   margin: 0.4em 0;
+}
+
+.texto-crema {
+  color: var(--crema);
 }
 
 .caja-crema {

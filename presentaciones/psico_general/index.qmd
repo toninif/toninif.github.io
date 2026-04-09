@@ -24,4 +24,8 @@ Material de clase del curso de Psicología. Hacé click en cualquier presentaci�
 **[Clase 2](02-clase-teorias-psicologicas-actuales.html){target="_blank"}** · Vemos distintos enfoques teóricos dentro de la psicología. Debatimos sobre la evidencia en psicoterapia.
 :::
 
+::: {.pub-item}
+**[Clase 3](03-clase-sistemica.html){target="_blank"}** · Introducción a la psicología sistémica. Debatimos sobre la evidencia en psicoterapia y leemos algunos papers.
+:::
+
 :::

@@ -1,0 +1,328 @@
+---
+title: "Psicología Sistémica - Evidencia psicoterapia"
+subtitle: "Psicología General"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: [simple, psico-general-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Psicología · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>¿Qué es la psicología sistémica?</h2>
+</div>
+
+---
+
+## Diferencia con los otros enfoques
+
+La diferencia principal respecto a enfoques psicodinámicos, cognitivos y conductuales es el **énfasis en los sistemas**.
+
+<div class="caja-crema" style="margin-top:0.8em; font-size:0.9em">
+  La psicología sistémica hace foco en los <strong>sistema abierto</strong> y sus elementos.
+</div>
+
+<p style="font-size:0.82em; color:#3d5247; margin-top:0.8em">Aspectos importantes de la clase: diferenciar este enfoque de los anteriores · definir sistema · clasificar sistemas · comprender los axiomas de la comunicación.</p>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Definición y tipos de sistemas</h2>
+</div>
+
+---
+
+## Definición de sistema
+
+<div class="cols-2" style="margin-top:0.7em; font-size:0.88em">
+<div>
+<div class="caja-verde" style="margin-bottom:0.6em">
+  <strong>[Sistema]{style="color:#f5f0e8; font-weight:700"}</strong><br>
+  Conjunto de elementos en interacción dinámica, en el cual el estado de cada uno de los elementos está determinado por el estado de cada uno de los otros.
+</div>
+<div class="caja-crema">
+  <strong>Ejemplos</strong><br>
+  Una familia, un grupo de amigos, una organización, una empresa…
+</div>
+</div>
+<div>
+![](img/sistema-abierto.jpg)
+</div>
+</div>
+
+---
+
+## Tipos de sistemas y conceptos clave
+
+<div class="cols-2" style="margin-top:0.6em; font-size:0.86em">
+<div>
+<div class="tarjeta" style="margin-bottom:0.6em">
+  <h4>Sistemas cerrados</h4>
+  <p>Sin intercambios con el contexto.</p>
+</div>
+<div class="tarjeta">
+  <h4>Sistemas abiertos</h4>
+  <p>Con intercambios con el contexto. La familia es un sistema abierto.<br>
+  <em>Ecosistema = sistema + entorno</em></p>
+</div>
+</div>
+<div>
+<div class="tarjeta" style="margin-bottom:0.6em">
+  <h4>Totalidad</h4>
+  <p>El sistema es más que la suma de sus partes. El todo tiene propiedades que los elementos individuales no tienen. <em>Ej: el agua es H₂O — el hidrógeno y el oxígeno por separado no quitan la sed.</em></p>
+</div>
+<div class="tarjeta" style="margin-bottom:0.6em">
+  <h4>Circularidad</h4>
+  <p>Siempre hay acción y reacción de manera continua. Una se retroalimenta de la otra.</p>
+</div>
+<div class="tarjeta">
+  <h4>Equifinalidad</h4>
+  <p>Un mismo efecto puede tener diferentes causas. Característica de los sistemas abiertos.</p>
+</div>
+</div>
+</div>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Axiomas de la comunicación</h2>
+</div>
+
+---
+
+## 
+
+
+::: {.caja-verde style="margin-bottom:0.8em; font-size:0.95em; text-align:center"}
+[Comunicación = Conducta]{style="color:#f5f0e8; font-weight:700"}
+:::
+
+<br>
+
+<div class="cols-3" style="margin-top:0.5em; font-size:0.86em">
+<div class="tarjeta">
+  <h4>Nivel sintáctico</h4>
+  <p><em>¿Cómo se comunica?</em><br>
+  La forma en que se transmite el mensaje: el canal, el código, la estructura.</p>
+</div>
+<div class="tarjeta">
+  <h4>Nivel semántico</h4>
+  <p><em>¿Qué se dice?</em><br>
+  El significado del mensaje: el contenido y su interpretación.</p>
+</div>
+<div class="tarjeta">
+  <h4>Nivel pragmático</h4>
+  <p><em>¿Qué efectos produce?</em><br>
+  Las consecuencias de la comunicación en la conducta de los participantes.</p>
+</div>
+</div>
+
+
+
+---
+
+## Los 5 axiomas
+
+<div style="font-size:0.86em; margin-top:0.5em">
+La comunicación es clave para la interacción entre los elementos del sistema. La psicología sistémica propone **5 axiomas**:
+</div>
+
+<div style="margin-top:0.7em; font-size:0.84em">
+<div class="caja-crema" style="margin-bottom:0.4em">
+  <strong>1.</strong> Es imposible no comunicar.
+</div>
+<div class="caja-crema" style="margin-bottom:0.4em">
+  <strong>2.</strong> Toda comunicación tiene dos aspectos: el <em>contenido</em> y la <em>relación</em>.
+</div>
+<div class="caja-crema" style="margin-bottom:0.4em">
+  <strong>3.</strong> La secuencia de una relación depende de la puntuación de las secuencias de comunicación entre los participantes.
+</div>
+<div class="caja-crema" style="margin-bottom:0.4em">
+  <strong>4.</strong> Toda comunicación puede ser digital o analógica.
+</div>
+<div class="caja-crema">
+  <strong>5.</strong> Todo intercambio es simétrico (basado en la igualdad) o complementario (basado en la diferencia).
+</div>
+</div>
+
+---
+
+## Axioma 1 — Es imposible no comunicar
+
+<div class="cols-2" style="margin-top:0.7em; font-size:0.88em">
+<div>
+<div class="caja-verde">
+  Todo comportamiento es una forma de comunicación y toda comunicación es conducta.
+</div>
+<p style="margin-top:0.8em">Incluso el silencio, ignorar un mensaje o no responder comunica algo. No existe la no-comunicación.</p>
+</div>
+<div>
+![](img/axioma1.png)
+</div>
+</div>
+
+---
+
+## Axioma 2 — Contenido y relación
+
+<div class="cols-2" style="margin-top:0.6em; font-size:0.86em">
+<div>
+<div class="tarjeta">
+  <h4>Aspecto índice</h4>
+  <p>El <strong>contenido</strong> del mensaje — lo que se dice.</p>
+</div>
+<div class="tarjeta" style="margin-top:0.5em">
+  <h4>Aspecto de orden</h4>
+  <p>La <strong>relación</strong> entre los participantes — cómo se entiende ese contenido.</p>
+</div>
+</div>
+<div>
+<div class="caja-crema" style="margin-bottom:0.5em">
+  <strong>Ejemplo 1:</strong> "Esto está sucio" no es el mismo mensaje si lo dice un amigo que si lo dice un supervisor laboral.
+</div>
+<div class="caja-crema">
+  <strong>Ejemplo 2:</strong> Un tono sarcástico al decir "che vos sos re capo" puede indicar desaprobación, a pesar de que las palabras sean positivas.
+</div>
+</div>
+</div>
+
+---
+
+## Axioma 3 — Puntuación de secuencias
+
+<div class="cols-2" style="margin-top:0.7em; font-size:0.86em">
+<div>
+<p>Cada participante <strong>punctúa</strong> la secuencia de comunicación desde su propio punto de vista, interpretando su conducta como respuesta a la del otro.</p>
+<div class="caja-verde" style="margin-top:0.6em">
+  Esto genera <strong>ciclos de culpabilidad</strong> donde cada uno siente que reacciona al otro, sin que ninguno perciba que es también causa.
+</div>
+</div>
+<div>
+![](img/axioma3.png)
+
+---
+
+## Axioma 4 — Comunicación digital y analógica
+
+<table style="margin-top:0.6em; font-size:0.78em">
+  <thead>
+    <tr>
+      <th>Tipo</th>
+      <th>Canal</th>
+      <th>Ejemplo</th>
+      <th>Soporte</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Digital</strong></td>
+      <td>Verbal</td>
+      <td>Palabra, escritura</td>
+      <td>Fonético, gráfico</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><strong>Analógica</strong></td>
+      <td>Paraverbal</td>
+      <td>Suspiros, modulaciones</td>
+      <td>Vocal</td>
+    </tr>
+    <tr>
+      <td>No verbal</td>
+      <td>Gestos, postura</td>
+      <td>Kinésico</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="cols-2" style="margin-top:0.6em; font-size:0.84em">
+<div class="caja-crema">
+  <strong>Ej. digital:</strong> decir "Estoy triste".
+</div>
+<div class="caja-crema">
+  <strong>Ej. analógico:</strong> llorar o tener una expresión facial triste. O decir "todo bien" con cara que dice todo lo contrario.
+</div>
+</div>
+
+---
+
+## Axioma 5 — Simetría y complementariedad
+
+<div class="cols-2" style="margin-top:0.6em; font-size:0.85em">
+<div>
+<div class="tarjeta">
+  <h4>Relación simétrica</h4>
+  <p>Los participantes tienden a la <strong>igualdad</strong> / comportamiento en espejo.<br>
+  Riesgo: <em>escalada simétrica</em> (competencia intensa).<br>
+  <span style="font-size:0.9em; color:#5a6e62">Ej: si uno lleva a su hijo a Disney, el otro lo lleva a Europa (ya no es por los hijos sino por competir) </span></p>
+</div>
+</div>
+<div>
+<div class="tarjeta">
+  <h4>Relación complementaria</h4>
+  <p>Los participantes intensifican las <strong>diferencias</strong> / la conducta de uno complementa la del otro.<br>
+  Riesgo: <em>complementariedad rígida</em>.<br>
+  <span style="font-size:0.9em; color:#5a6e62">Ej: el empleado intensifica su dependencia y el jefe intensifica su mando.</span></p>
+</div>
+</div>
+</div>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Comunicación patológica y paradójica</h2>
+</div>
+
+
+---
+
+## Interacción humana como sistema
+
+Las interacciones no ocurren en el vacío. Cada intercambio de información es mediado por el **contexto**, la **historia de las relaciones** y las **dinámicas de poder** existentes. Cambios en un elemento del sistema pueden provocar cambios en otros.
+
+<div class="cols-2" style="margin-top:0.7em; font-size:0.86em">
+<div class="tarjeta">
+  <h4>Efecto mariposa en relaciones</h4>
+  <p>Un pequeño malentendido entre dos amigos afecta gradualmente a todo su círculo social, alterando la dinámica del grupo.</p>
+</div>
+<div class="tarjeta">
+  <h4>Retroalimentación negativa</h4>
+  <p>Un miembro de la pareja intenta compensar el alejamiento del otro siendo más atento, lo que lleva al otro a alejarse más — ciclo vicioso.</p>
+</div>
+</div>
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>Veamos un ejemplo de estudio de eficacia desde este enfoque</h2>
+</div>
+
+<div style="position:absolute; bottom:2em; right:2em; font-size:1.95rem">
+  <a href="https://toninif.quarto.pub/clase_5/#/hablemos-sobre-este-art%C3%ADculo" target="_blank" style="color:var(--verde-medio)">Ver ejemplo →</a>
+</div>
+
