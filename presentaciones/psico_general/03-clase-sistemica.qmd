@@ -219,6 +219,7 @@ La comunicación es clave para la interacción entre los elementos del sistema. 
 </div>
 <div>
 ![](img/axioma3.png)
+</div>
 
 ---
 
