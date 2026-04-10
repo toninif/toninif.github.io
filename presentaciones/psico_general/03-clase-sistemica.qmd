@@ -210,16 +210,21 @@ La comunicación es clave para la interacción entre los elementos del sistema. 
 
 ## Axioma 3 — Puntuación de secuencias
 
-<div class="cols-2" style="margin-top:0.7em; font-size:0.86em">
-<div>
-<p>Cada participante <strong>punctúa</strong> la secuencia de comunicación desde su propio punto de vista, interpretando su conducta como respuesta a la del otro.</p>
-<div class="caja-verde" style="margin-top:0.6em">
-  Esto genera <strong>ciclos de culpabilidad</strong> donde cada uno siente que reacciona al otro, sin que ninguno perciba que es también causa.
-</div>
-</div>
-<div>
+:::: {.columns .mt-07 .fs-086}
+
+::: {.column width="55%"}
+Cada participante **punctúa** la secuencia de comunicación desde su propio punto de vista, interpretando su conducta como respuesta a la del otro.
+
+::: {.caja-verde .mt-06}
+Esto genera **ciclos de culpabilidad** donde cada uno siente que reacciona al otro, sin que ninguno perciba que es también causa.
+:::
+:::
+
+::: {.column width="45%"}
 ![](img/axioma3.png)
-</div>
+:::
+
+::::
 
 ---
 

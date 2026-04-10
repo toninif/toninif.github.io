@@ -1,0 +1,379 @@
+---
+title: "Psicología Sistémica - Evidencia psicoterapia"
+subtitle: "Psicología General"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: [simple, psico-general-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Psicología · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+---
+
+## {.slide-transicion}
+
+<div class="transicion-inner">
+  <div class="barra-acento"></div>
+  <h2>¿Qué es la psicología sistémica?</h2>
+</div>
+
+---
+
+## Diferencia con los otros enfoques
+
+La diferencia principal respecto a enfoques psicodinámicos, cognitivos y conductuales es el **énfasis en los sistemas**.
+
+::: {.caja-crema .mt-08 .fs-09}
+La psicología sistémica hace foco en los **sistema abierto** y sus elementos.
+:::
+
+[Aspectos importantes de la clase: diferenciar este enfoque de los anteriores · definir sistema · clasificar sistemas · comprender los axiomas de la comunicación.]{.texto-nota}
+
+---
+
+## {.slide-transicion}
+
+::: {.transicion-inner}
+::: {.barra-acento}
+:::
+## Definición y tipos de sistemas
+:::
+
+---
+
+## Definición de sistema
+
+:::: {.columns .mt-07 .fs-088}
+
+::: {.column width="55%"}
+
+::: {.caja-verde .mb-06}
+[**Sistema**]{.texto-claro}
+
+Conjunto de elementos en interacción dinámica, en el cual el estado de cada uno de los elementos está determinado por el estado de cada uno de los otros.
+:::
+
+::: {.caja-crema}
+**Ejemplos**
+
+Una familia, un grupo de amigos, una organización, una empresa…
+:::
+
+:::
+
+::: {.column width="45%"}
+![](img/sistema-abierto.jpg)
+:::
+
+::::
+
+---
+
+## Tipos de sistemas y conceptos clave
+
+:::: {.columns .mt-06 .fs-086}
+
+::: {.column width="50%"}
+
+::: {.tarjeta .mb-06}
+#### Sistemas cerrados
+Sin intercambios con el contexto.
+:::
+
+::: {.tarjeta}
+#### Sistemas abiertos
+Con intercambios con el contexto. La familia es un sistema abierto.
+
+*Ecosistema = sistema + entorno*
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.tarjeta .mb-06}
+#### Totalidad
+El sistema es más que la suma de sus partes. El todo tiene propiedades que los elementos individuales no tienen. *Ej: el agua es H₂O — el hidrógeno y el oxígeno por separado no quitan la sed.*
+:::
+
+::: {.tarjeta .mb-06}
+#### Circularidad
+Siempre hay acción y reacción de manera continua. Una se retroalimenta de la otra.
+:::
+
+::: {.tarjeta}
+#### Equifinalidad
+Un mismo efecto puede tener diferentes causas. Característica de los sistemas abiertos.
+:::
+
+:::
+
+::::
+
+---
+
+## {.slide-transicion}
+
+::: {.transicion-inner}
+::: {.barra-acento}
+:::
+## Axiomas de la comunicación
+:::
+
+---
+
+##
+
+::: {.caja-verde .mb-08 .fs-095 .text-center}
+[Comunicación = Conducta]{.texto-claro .fw-700}
+:::
+
+<br>
+
+:::: {.columns .mt-05 .fs-086}
+
+::: {.column width="33%"}
+::: {.tarjeta}
+#### Nivel sintáctico
+*¿Cómo se comunica?*
+
+La forma en que se transmite el mensaje: el canal, el código, la estructura.
+:::
+:::
+
+::: {.column width="33%"}
+::: {.tarjeta}
+#### Nivel semántico
+*¿Qué se dice?*
+
+El significado del mensaje: el contenido y su interpretación.
+:::
+:::
+
+::: {.column width="33%"}
+::: {.tarjeta}
+#### Nivel pragmático
+*¿Qué efectos produce?*
+
+Las consecuencias de la comunicación en la conducta de los participantes.
+:::
+:::
+
+::::
+
+---
+
+## Los 5 axiomas {.fs-086}
+
+La comunicación es clave para la interacción entre los elementos del sistema. La psicología sistémica propone **5 axiomas**:
+
+::: {.caja-crema .mb-04 .mt-07 .fs-084}
+**1.** Es imposible no comunicar.
+:::
+
+::: {.caja-crema .mb-04 .fs-084}
+**2.** Toda comunicación tiene dos aspectos: el *contenido* y la *relación*.
+:::
+
+::: {.caja-crema .mb-04 .fs-084}
+**3.** La secuencia de una relación depende de la puntuación de las secuencias de comunicación entre los participantes.
+:::
+
+::: {.caja-crema .mb-04 .fs-084}
+**4.** Toda comunicación puede ser digital o analógica.
+:::
+
+::: {.caja-crema .fs-084}
+**5.** Todo intercambio es simétrico (basado en la igualdad) o complementario (basado en la diferencia).
+:::
+
+---
+
+## Axioma 1 — Es imposible no comunicar
+
+:::: {.columns .mt-07 .fs-088}
+
+::: {.column width="55%"}
+
+::: {.caja-verde}
+Todo comportamiento es una forma de comunicación y toda comunicación es conducta.
+:::
+
+Incluso el silencio, ignorar un mensaje o no responder comunica algo. No existe la no-comunicación.
+
+:::
+
+::: {.column width="45%"}
+![](img/axioma1.png)
+:::
+
+::::
+
+---
+
+## Axioma 2 — Contenido y relación
+
+:::: {.columns .mt-06 .fs-086}
+
+::: {.column width="50%"}
+
+::: {.tarjeta}
+#### Aspecto índice
+El **contenido** del mensaje — lo que se dice.
+:::
+
+::: {.tarjeta .mt-05}
+#### Aspecto de orden
+La **relación** entre los participantes — cómo se entiende ese contenido.
+:::
+
+:::
+
+::: {.column width="50%"}
+
+::: {.caja-crema .mb-05}
+**Ejemplo 1:** "Esto está sucio" no es el mismo mensaje si lo dice un amigo que si lo dice un supervisor laboral.
+:::
+
+::: {.caja-crema}
+**Ejemplo 2:** Un tono sarcástico al decir "che vos sos re capo" puede indicar desaprobación, a pesar de que las palabras sean positivas.
+:::
+
+:::
+
+::::
+
+---
+
+## Axioma 3 — Puntuación de secuencias
+
+:::: {.columns .mt-07 .fs-086}
+
+::: {.column width="55%"}
+Cada participante **punctúa** la secuencia de comunicación desde su propio punto de vista, interpretando su conducta como respuesta a la del otro.
+
+::: {.caja-verde .mt-06}
+Esto genera **ciclos de culpabilidad** donde cada uno siente que reacciona al otro, sin que ninguno perciba que es también causa.
+:::
+:::
+
+::: {.column width="45%"}
+![](img/axioma3.png)
+:::
+
+::::
+
+---
+
+## Axioma 4 — Comunicación digital y analógica
+
+| Tipo | Canal | Ejemplo | Soporte |
+|---|---|---|---|
+| **Digital** | Verbal | Palabra, escritura | Fonético, gráfico |
+| **Analógica** | Paraverbal | Suspiros, modulaciones | Vocal |
+| | No verbal | Gestos, postura | Kinésico |
+
+: {.fs-078 .mt-06}
+
+:::: {.columns .mt-06 .fs-084}
+
+::: {.column width="50%"}
+::: {.caja-crema}
+**Ej. digital:** decir "Estoy triste".
+:::
+:::
+
+::: {.column width="50%"}
+::: {.caja-crema}
+**Ej. analógico:** llorar o tener una expresión facial triste. O decir "todo bien" con cara que dice todo lo contrario.
+:::
+:::
+
+::::
+
+---
+
+## Axioma 5 — Simetría y complementariedad
+
+:::: {.columns .mt-06 .fs-085}
+
+::: {.column width="50%"}
+::: {.tarjeta}
+#### Relación simétrica
+Los participantes tienden a la **igualdad** / comportamiento en espejo.
+
+Riesgo: *escalada simétrica* (competencia intensa).
+
+[Ej: si uno lleva a su hijo a Disney, el otro lo lleva a Europa (ya no es por los hijos sino por competir)]{.texto-nota}
+:::
+:::
+
+::: {.column width="50%"}
+::: {.tarjeta}
+#### Relación complementaria
+Los participantes intensifican las **diferencias** / la conducta de uno complementa la del otro.
+
+Riesgo: *complementariedad rígida*.
+
+[Ej: el empleado intensifica su dependencia y el jefe intensifica su mando.]{.texto-nota}
+:::
+:::
+
+::::
+
+---
+
+## {.slide-transicion}
+
+::: {.transicion-inner}
+::: {.barra-acento}
+:::
+## Comunicación patológica y paradójica
+:::
+
+---
+
+## Interacción humana como sistema
+
+Las interacciones no ocurren en el vacío. Cada intercambio de información es mediado por el **contexto**, la **historia de las relaciones** y las **dinámicas de poder** existentes. Cambios en un elemento del sistema pueden provocar cambios en otros.
+
+:::: {.columns .mt-07 .fs-086}
+
+::: {.column width="50%"}
+::: {.tarjeta}
+#### Efecto mariposa en relaciones
+Un pequeño malentendido entre dos amigos afecta gradualmente a todo su círculo social, alterando la dinámica del grupo.
+:::
+:::
+
+::: {.column width="50%"}
+::: {.tarjeta}
+#### Retroalimentación negativa
+Un miembro de la pareja intenta compensar el alejamiento del otro siendo más atento, lo que lleva al otro a alejarse más — ciclo vicioso.
+:::
+:::
+
+::::
+
+---
+
+## {.slide-transicion}
+
+::: {.transicion-inner}
+::: {.barra-acento}
+:::
+## Veamos un ejemplo de estudio de eficacia desde este enfoque
+:::
+
+::: {.absolute bottom="2em" right="2em" style="font-size:1.95rem"}
+[Ver ejemplo →](https://toninif.quarto.pub/clase_5/#/hablemos-sobre-este-art%C3%ADculo){target="_blank" style="color:var(--verde-medio)"}
+:::
