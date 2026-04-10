@@ -1,0 +1,402 @@
+---
+title: "Conciencia - Atención - Sueño/Vigilia"
+subtitle: "Psicología General"
+author: "Dr. Fernando Tonini"
+institute: "Universidad de Palermo"
+format:
+  revealjs:
+    theme: [simple, psico-general-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Psicología · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+------------------------------------------------------------------------
+
+## Antes de comenzar con la clase...
+
+<iframe width="100%" height="500" src="https://www.youtube.com/embed/KB_lTKZm1Ts" frameborder="0" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Inicios del estudio de la conciencia</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Inicios...
+
+El estudio de la conciencia estuvo presente desde los inicios de la psicología. El auge del conductismo la opacó y la revolución cognitiva significó su retorno... Pero desde la perspectiva del **procesamiento de la información**.
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Wundt y James</h4>
+
+<p>Tuvieron a la conciencia como objeto de estudio central en los orígenes de la disciplina.</p>
+:::
+
+::: tarjeta
+<h4>El conductismo la rechazó</h4>
+
+<p>Watson descartó su estudio por ser un fenómeno subjetivo, difícilmente observable y medible.</p>
+:::
+::::::
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.86em"}
+::: tarjeta
+<strong>Mediados del siglo XX</strong>
+
+<p>Surgió la alternativa de estudiarla en términos de <strong>activación fisiológica</strong>, estado de alerta y atención.</p>
+:::
+
+::: tarjeta
+<strong>Dinámica sueño/lucidez</strong>
+
+<p>Se investigó la conciencia en función del ciclo sueño-vigilia. El soñar se entendía como un <strong>estado de conciencia alterada</strong>.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>¿Qué es la conciencia?</h2>
+::::
+
+------------------------------------------------------------------------
+
+## ¿Qué es la conciencia?
+
+Se proponen distintos significados según el contraste que se plantee:
+
+:::::: {style="margin-top:0.6em; font-size:0.86em"}
+::: {.caja-crema style="margin-bottom:0.4em"}
+<strong>Estar despierto</strong> (estado de vigilia) vs. dormido (o en coma)
+:::
+::: {.caja-crema style="margin-bottom:0.4em"}
+<strong>Comportamiento deliberado</strong> vs. automático (ej: atar cordones)
+:::
+::: {.caja-crema style="margin-bottom:0.4em"}
+<strong>Saber</strong> (fumar hace mal) vs. desconocimiento (estacionar mal)
+:::
+::: caja-crema
+<strong>Conciencia normal</strong> vs. conciencia alterada
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Tipos de definiciones
+
+La conciencia puede orientarse hacia:
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.88em"}
+::: tarjeta
+<h4>Interior</h4>
+
+<p>Pensamientos, recuerdos, emociones —> los contenidos de la propia mente.</p>
+:::
+
+::: tarjeta
+<h4>Exterior</h4>
+
+<p>Cualquier estímulo ambiental —>lo que percibimos del entorno.</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.8em; font-size:0.88em"}
+[La conciencia es un proceso a través del cual experimentamos el ambiente externo e interno de modo que podamos **[percibir y comprender]{.texto-crema}** distintos estímulos.]{style="color:#f5f0e8"}
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>El problema de los nueve puntos</h2>
+::::
+
+------------------------------------------------------------------------
+
+## El problema de los nueve puntos
+
+Uní estos 9 puntos utilizando únicamente **4 líneas rectas unidas entre sí**.
+
+![](img/placeholder-9puntos-consigna.png){width="45%"}
+
+------------------------------------------------------------------------
+
+## El problema de los nueve puntos — solución
+
+![](img/placeholder-9puntos-solucion.png){width="55%"}
+
+------------------------------------------------------------------------
+
+## ¿Por qué cuesta resolverlo?
+
+La solución a este problema se encuentra en el **procesamiento inconsciente de la información**. La solución salta de golpe a la conciencia — el llamado *efecto aaaaah*.
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Si no lo pude resolver...</h4>
+
+<p>Una explicación es que nos quedamos fijados en el cuadrado que procesamos implícitamente debido a la <strong>atención focal</strong>.</p>
+:::
+
+::: tarjeta
+<h4>Lo que nos muestra</h4>
+
+<p>La atención focal limita lo que percibimos como posible. Salir del marco requiere procesamiento que va más allá de lo que atendemos conscientemente.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Atención focal y periférica</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Conciencia como atención
+
+Una de las maneras de entender la conciencia es en términos de **atención**. Se proponen dos tipos:
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.86em"}
+::: {.caja-verde}
+<strong>Atención focal</strong>
+
+<p style="color:#f5f0e8">Lo que ahora mismo estoy atendiendo deliberadamente — viendo la hoja, escuchando las palabras, mirando esta diapositiva.</p>
+:::
+
+::: caja-crema
+<strong>Atención periférica</strong>
+
+<p>Aquello que se vuelve fácilmente centro de la atención focal — un detalle llamativo, un ruido de fondo, algo que sucede cerca.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Hablemos de prestar atención
+
+Hacemos muchas cosas de modo **inconsciente** — automáticamente, sin pensar en lo que se hace.
+
+En el caso de habilidades aprendidas (como andar en bicicleta), los procesos inconscientes se consideran *precipitados* o derivados de procesos que alguna vez fueron conscientes.
+
+::: {.caja-crema style="margin-top:0.8em; font-size:0.86em"}
+Piensen en todas las diapositivas que vimos — **¿recuerdan cuándo parpadearon?**
+
+Si prestaron atención a los parpadeos, ¿pudieron prestar atención a la clase?
+
+Si lograron ver al mono que pasaba detrás de los jugadores, ¿pudieron contar correctamente los pases?
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Propuestas sobre la conciencia</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Nisbett y Wilson
+
+La perspectiva más extrema sobre los procesos inconscientes:
+
+::: {.caja-verde style="margin-top:0.6em; margin-bottom:0.7em; font-size:0.9em"}
+[Las causas de **todas** las actividades psicológicas son procesos inconscientes. No tenemos acceso directo ni "privilegiado" a nuestros procesos cognitivos — solo a sus **productos**.]{style="color:#f5f0e8"}
+:::
+
+:::::: {.cols-2 style="font-size:0.85em"}
+::: tarjeta
+<h4>La conciencia como monitor</h4>
+
+<p>En la conciencia no se <em>procesa</em> nada. Como en una computadora, el procesamiento ocurre en el CPU — la pantalla solo muestra el resultado.</p>
+:::
+
+<div>
+
+![](img/placeholder-monitor.png)
+
+</div>
+::::::
+
+------------------------------------------------------------------------
+
+## Freud — tres tipos de contenidos
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.84em"}
+::: tarjeta
+<h4>Consciente</h4>
+
+<p>Todo lo que se tiene conocimiento en este preciso instante — cómo me siento, qué estoy escuchando, qué estoy viendo.</p>
+:::
+
+::: tarjeta
+<h4>Preconsciente</h4>
+
+<p>Todo lo que uno puede saber haciendo un esfuerzo. Por ejemplo: ¿qué comí ayer al mediodía? ¿Cómo me llamo?</p>
+:::
+
+::: tarjeta
+<h4>Inconsciente</h4>
+
+<p>Lo que es inaccesible a la conciencia, pero está presente teniendo efectos sobre pensamientos, sentimientos y comportamientos.</p>
+:::
+::::::
+
+<p style="font-size:0.78em; color:#5a6e62; margin-top:0.7em">
+La idea de inconsciente en Freud está ligada al concepto de <strong>represión</strong> — que se produce, según el psicoanálisis, hacia el fin del Complejo de Edipo.
+</p>
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Estados alterados de conciencia</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Estados alterados — panorama
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Sueño</h4>
+
+<p>Patrones y funcionalidad del sueño — fases REM y NREM.</p>
+:::
+
+::: tarjeta
+<h4>Sustancias psicoactivas</h4>
+
+<p>Alteraciones de la conciencia inducidas químicamente.</p>
+:::
+
+::: {.tarjeta style="margin-top:0.5em"}
+<h4>Atención plena y meditación</h4>
+
+<p>Terapias de tercera ola basadas en la reducción de ansiedad y estrés.</p>
+:::
+
+::: {.tarjeta style="margin-top:0.5em"}
+<h4>Hipnosis</h4>
+
+<p>Atención reducida e incremento de la sugestión. Estudio sobre miembro fantasma.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Estado alterado — Sueño
+
+Según Hobson, la función del dormir puede analizarse en diferentes niveles:
+
+:::::: {.cols-3 style="margin-top:0.6em; font-size:0.83em"}
+::: tarjeta
+<h4>Nivel conductual</h4>
+
+<p>Suprime la actividad cuando las probabilidades de encontrar comida o pareja son más bajas. Sirve para unir a las personas en grupos.</p>
+:::
+
+::: tarjeta
+<h4>Nivel de desarrollo</h4>
+
+<p>En la fase REM se activan circuitos neuronales subyacentes a comportamientos cruciales de supervivencia. El sueño REM podría ser una forma de <strong>ensayo conductual</strong>.</p>
+:::
+
+::: tarjeta
+<h4>Nivel metabólico</h4>
+
+<p>Hay cambios importantes en todos los sistemas fisiológicos durante el sueño.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Estado alterado — Fases del sueño
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.85em"}
+::: {.caja-verde style="margin-bottom:0.5em"}
+<strong>REM</strong> — Movimientos Oculares Rápidos
+
+<p style="color:#f5f0e8">Mucha actividad cerebral. Se producen los sueños.</p>
+:::
+
+<div>
+<div class="tarjeta" style="margin-bottom:0.4em">
+<strong>Etapa 1 (NREM)</strong> — Transición vigilia/sueño. Ondas theta. Sueño ligero.
+</div>
+<div class="tarjeta" style="margin-bottom:0.4em">
+<strong>Etapa 2 (NREM)</strong> — Se bloquean estímulos externos. Consolida el sueño.
+</div>
+<div class="tarjeta" style="margin-bottom:0.4em">
+<strong>Etapa 3 (NREM)</strong> — Inicia el sueño profundo. Ondas delta. Restauración física.
+</div>
+<div class="tarjeta">
+<strong>Etapa 4 (NREM)</strong> — Sueño profundo. Predominio de ondas delta y procesos de restauración.
+</div>
+</div>
+::::::
+
+------------------------------------------------------------------------
+
+## Estado alterado — Sustancias psicoactivas
+
+![](img/placeholder-sustancias.png){width="70%"}
+
+------------------------------------------------------------------------
+
+## Estado alterado — Meditación y atención plena
+
+![](img/placeholder-meditacion.png){width="70%"}
+
+------------------------------------------------------------------------
+
+## Estado alterado — Hipnosis
+
+::: {.caja-crema style="margin-top:0.6em; font-size:0.88em"}
+Estado caracterizado por **atención reducida** e incremento de la sugestión.
+:::
+
+<p style="font-size:0.86em; margin-top:0.7em">
+Un caso relevante de investigación es el <strong>estudio sobre miembro fantasma</strong> — personas que sienten dolor en un miembro amputado, y en quienes la hipnosis ha mostrado resultados como intervención.
+</p>
+
+![](img/placeholder-hipnosis.png){width="50%"}
