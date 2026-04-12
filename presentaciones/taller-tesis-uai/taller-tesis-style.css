@@ -1,0 +1,419 @@
+/*-- scss:defaults --*/
+
+/*-- scss:rules --*/
+
+/* ============================================================
+   taller-tesis-style.css
+   Taller de Tesis – Universidad de Palermo
+   Paleta: azul-pizarra oscuro + cobre/terracota + crema
+   Tipografía: DM Serif Display (headings) + DM Sans (body)
+   ============================================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+/* ── Variables ── */
+:root {
+  --azul-pizarra:     #1e293b;
+  --azul-medio:       #334155;
+  --azul-suave:       #64748b;
+  --cobre:            #b45309;
+  --cobre-claro:      #d97706;
+  --arena:            #fef3c7;
+  --crema:            #faf8f5;
+  --crema-oscura:     #e7e1d8;
+  --texto-dark:       #1a1a2e;
+  --texto-mid:        #475569;
+}
+
+/* ── Fuentes base ── */
+.reveal {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 32px;
+  color: var(--texto-dark);
+  background-color: var(--crema);
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3 {
+  font-family: 'DM Serif Display', serif;
+  color: var(--azul-pizarra);
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.reveal h1 { font-size: 1.6em; line-height: 1.15; }
+.reveal h2 {
+  font-size: 1.25em;
+  margin-bottom: 0.6em;
+  padding-bottom: 0.25em;
+  border-bottom: 3px solid var(--cobre);
+}
+.reveal h3 {
+  font-size: 1.05em;
+  font-style: italic;
+  color: var(--azul-medio);
+}
+
+/* ── Slides de contenido general ── */
+.reveal .slides section {
+  text-align: left;
+}
+
+/* ── Texto ── */
+.reveal p {
+  line-height: 1.6;
+  margin-bottom: 0.6em;
+}
+
+.reveal p,
+.reveal li {
+  font-size: 0.88em;
+}
+
+/* ── Listas ── */
+.reveal ul {
+  margin-left: 1.2em;
+  line-height: 1.7;
+}
+
+.reveal ul li::marker {
+  color: var(--cobre);
+}
+
+.reveal ul ul li::marker {
+  color: var(--cobre-claro);
+}
+
+.reveal li {
+  margin-bottom: 0.4em;
+  line-height: 1.5;
+}
+
+/* ── Strong / em ── */
+.reveal strong {
+  color: var(--azul-medio);
+  font-weight: 600;
+}
+
+.reveal em {
+  color: var(--texto-mid);
+}
+
+/* ── Slide de transición ── */
+.slide-transicion {
+  display: flex !important;
+  align-items: center !important;
+  background-color: #ffffff !important;
+  padding: 0 !important;
+}
+
+.slide-transicion .transicion-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  padding: 0 1.2em;
+  width: 100%;
+}
+
+.slide-transicion .barra-acento {
+  width: 7px;
+  height: 1.6em;
+  background: var(--cobre);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.slide-transicion h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.5em;
+  color: var(--azul-pizarra);
+  margin: 0;
+  line-height: 1.2;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* ── Portada: override del title-slide nativo de Quarto ── */
+.reveal #title-slide {
+  padding: 0 !important;
+  margin: 0 !important;
+  background: var(--azul-pizarra) !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-end !important;
+  text-align: left !important;
+  box-shadow: inset 0 -110px 0 0 #faf8f5;
+}
+
+.reveal #title-slide::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 420px;
+  height: 420px;
+  border-radius: 50%;
+  background: rgba(180, 83, 9, 0.08);
+  pointer-events: none;
+}
+
+.reveal #title-slide::after {
+  content: '';
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 240px;
+  height: 240px;
+  border-radius: 50%;
+  border: 2px solid rgba(180, 83, 9, 0.15);
+  pointer-events: none;
+}
+
+.reveal #title-slide h1.title {
+  font-family: 'DM Serif Display', serif !important;
+  color: #faf8f5 !important;
+  font-size: 1.65em !important;
+  line-height: 1.18 !important;
+  font-weight: 400 !important;
+  text-shadow: none !important;
+  margin: 0 0 0.6em 0 !important;
+  padding: 0 80px !important;
+  max-width: 820px;
+  position: relative;
+  z-index: 2;
+}
+
+.reveal #title-slide p.subtitle {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.55em !important;
+  color: var(--cobre-claro) !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+  font-weight: 600 !important;
+  margin: 0 0 1em 0 !important;
+  padding: 0 80px !important;
+  position: relative;
+  z-index: 2;
+}
+
+.reveal #title-slide p.author {
+  font-family: 'DM Serif Display', serif !important;
+  font-size: 0.72em !important;
+  color: var(--azul-pizarra) !important;
+  font-weight: 400 !important;
+  margin: 0 !important;
+  padding: 22px 80px 4px 80px !important;
+  display: block !important;
+}
+
+.reveal #title-slide p.institute {
+  font-family: 'DM Sans', sans-serif !important;
+  font-size: 0.52em !important;
+  color: var(--texto-mid) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.04em !important;
+  margin: 0 !important;
+  padding: 0 80px 28px 80px !important;
+  display: block !important;
+}
+
+.reveal #title-slide p.date {
+  display: none !important;
+}
+
+/* ── Cajas de destaque ── */
+.caja-azul {
+  background: var(--azul-pizarra);
+  color: var(--crema) !important;
+  border-radius: 8px;
+  padding: 0.5em 0.9em;
+  margin: 0.4em 0;
+}
+
+.caja-crema {
+  background: var(--crema-oscura);
+  border-left: 5px solid var(--cobre);
+  border-radius: 0 6px 6px 0;
+  padding: 0.45em 0.85em;
+  margin: 0.4em 0;
+}
+
+.caja-arena {
+  background: var(--arena);
+  border-left: 5px solid var(--cobre-claro);
+  border-radius: 0 6px 6px 0;
+  padding: 0.45em 0.85em;
+  margin: 0.4em 0;
+}
+
+/* ── Dos / tres columnas ── */
+.cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  align-items: start;
+}
+
+.cols-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2em;
+  align-items: start;
+}
+
+/* ── Tarjetas ── */
+.tarjeta {
+  background: #fff;
+  border: 1.5px solid var(--crema-oscura);
+  border-top: 4px solid var(--cobre);
+  border-radius: 6px;
+  padding: 0.6em 0.85em;
+  font-size: 0.85em;
+  line-height: 1.5;
+}
+
+.tarjeta h4 {
+  font-family: 'DM Serif Display', serif;
+  color: var(--azul-pizarra);
+  font-size: 1em;
+  margin: 0 0 0.3em 0;
+}
+
+/* ── Badge chips ── */
+.badge {
+  display: inline-block;
+  background: var(--azul-pizarra);
+  color: var(--crema);
+  font-size: 0.6em;
+  font-weight: 600;
+  padding: 0.15em 0.6em;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+  vertical-align: middle;
+  margin-left: 0.3em;
+}
+
+/* ── Footer ── */
+.reveal .footer {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.42em;
+  color: var(--texto-mid);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+/* ── Mermaid ── */
+.reveal .mermaid {
+  transform: scale(1.3);
+  transform-origin: center center;
+}
+
+/* ── Imágenes ── */
+.reveal img {
+  display: block;
+  margin: 0 auto;
+  border-radius: 6px;
+}
+
+/* ── Tablas ── */
+.reveal table {
+  font-size: 0.78em;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reveal table th {
+  background: var(--azul-pizarra);
+  color: var(--crema);
+  padding: 0.4em 0.7em;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  text-align: left;
+}
+
+.reveal table td {
+  padding: 0.4em 0.7em;
+  border-bottom: 1px solid var(--crema-oscura);
+  vertical-align: top;
+}
+
+.reveal table tr:nth-child(even) td {
+  background: var(--crema-oscura);
+}
+
+/* ── Slide number ── */
+.reveal .slide-number {
+  color: var(--azul-suave);
+  font-size: 0.55em;
+  background: transparent;
+}
+
+/* ── Blockquote ── */
+.reveal blockquote {
+  border-left: 3px solid var(--cobre);
+  font-style: italic;
+  font-family: 'DM Serif Display', serif;
+  color: #555;
+}
+
+/* ── Numeración con acento ── */
+.numero-paso {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6em;
+  height: 1.6em;
+  background: var(--cobre);
+  color: #fff;
+  font-family: 'DM Serif Display', serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  border-radius: 50%;
+  margin-right: 0.4em;
+  flex-shrink: 0;
+}
+
+/* ── Lista check ── */
+.lista-check li {
+  list-style: none;
+  padding-left: 1.4em;
+  position: relative;
+  margin-bottom: 0.4em;
+}
+
+.lista-check li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--cobre);
+  font-weight: 700;
+  font-size: 0.9em;
+}
+
+/* ── Slide de cierre ── */
+.cierre-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.cierre-container h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2em;
+  color: white;
+  border: none;
+  padding: 0;
+}
+
+.cierre-container p {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.55em;
+  color: var(--crema-oscura);
+  margin-top: 0.5em;
+}

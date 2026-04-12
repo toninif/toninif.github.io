@@ -1,0 +1,22 @@
+---
+title: "Taller de Tesis"
+subtitle: "Presentaciones del curso"
+toc: false
+page-layout: custom
+---
+
+::: {.hero}
+Material de clase del curso de Taller de Tesis, UAI. Hacé click en cualquier presentación para verla en pantalla completa.
+:::
+
+::: {.pub-section}
+### Presentaciones
+
+::: {.pub-item}
+**[Clase 1](01-revision-anteproyecto.html){target="_blank"}** · Revisión del proyecto presentado en el seminario III
+:::
+
+
+
+:::
+

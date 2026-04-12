@@ -1,0 +1,288 @@
+---
+title: "El proyecto de investigación"
+subtitle: "Taller de Tesis"
+author: "Dr. Fernando Tonini"
+institute: ""
+format:
+  revealjs:
+    theme: [simple, taller-tesis-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Taller de Tesis · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Bienvenida al Taller de Tesis</h2>
+::::
+
+------------------------------------------------------------------------
+
+## El desafío de aprendizaje
+
+A lo largo de esta cursada van a **redactar su tesis de grado**, partiendo del proyecto que elaboraron en *Seminario Taller de Integración III*.
+
+::: {.caja-crema style="margin-top:0.8em; font-size:0.88em"}
+<p>El recorrido implica: revisar el proyecto, actualizar la bibliografía, diseñar instrumentos, recolectar datos, analizar resultados y redactar el informe final en formato APA.</p>
+:::
+
+<p style="font-size:0.78em; color:#475569; margin-top:0.8em">El docente acompañará los avances de forma individual, con entregas parciales programadas en cada unidad.</p>
+
+------------------------------------------------------------------------
+
+## Resultados de aprendizaje
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: tarjeta
+<h4>Diseño de proyectos</h4>
+
+<p>Diseñar proyectos de intervención relevando problemas pertinentes a la psicología, según objetivos, condiciones, resultados e indicadores.</p>
+:::
+
+::: tarjeta
+<h4>Preguntas de investigación</h4>
+
+<p>Formular preguntas de investigación básica y aplicada conforme a los cánones académicos y científicos de la psicología.</p>
+:::
+::::::
+
+:::::: {.cols-2 style="margin-top:0.4em; font-size:0.85em"}
+::: tarjeta
+<h4>Análisis de resultados</h4>
+
+<p>Analizar resultados recabados de instrumentos estadísticos o de análisis cualitativo para responder a los objetivos de investigación.</p>
+:::
+
+::: tarjeta
+<h4>Redacción científica</h4>
+
+<p>Redactar informes científicos aplicando normas APA y estándares de escritura académica para diferentes públicos.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Elementos del proyecto de investigación</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Estructura de un proyecto de investigación
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.82em"}
+::: {}
+
+<p><span class="numero-paso">1</span> <strong>Elección y delimitación del tema</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">Tema, problemática, población, lugar, duración y título.</p>
+
+<p><span class="numero-paso">2</span> <strong>Planteamiento del problema</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">Causas, consecuencias, pregunta central y preguntas complementarias.</p>
+
+<p><span class="numero-paso">3</span> <strong>Justificación</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">Beneficios sociales, profesionales y personales de la investigación.</p>
+
+<p><span class="numero-paso">4</span> <strong>Objetivos</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">General y específicos.</p>
+
+<p><span class="numero-paso">5</span> <strong>Hipótesis</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">Respuesta tentativa a la pregunta central.</p>
+
+:::
+::: {}
+
+<p><span class="numero-paso">6</span> <strong>Variables</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">Identificación y operacionalización, en relación directa con la hipótesis.</p>
+
+<p><span class="numero-paso">7</span> <strong>Marco teórico</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">Esbozo teórico sobre las principales teorías y conceptos.</p>
+
+<p><span class="numero-paso">8</span> <strong>Metodología</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">Enfoque, diseño, fuentes, instrumentos, población, muestra y muestreo.</p>
+
+<p><span class="numero-paso">9</span> <strong>Cronograma</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">Actividades y tiempos para cada etapa.</p>
+
+<p><span class="numero-paso">10</span> <strong>Bibliografía</strong></p>
+<p style="margin-left:2.2em; font-size:0.9em">Fuentes consultadas en formato APA.</p>
+
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## No confundir: tema, problema y título
+
+Aunque están relacionados, son elementos distintos del proyecto.
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.84em"}
+::: tarjeta
+<h4>Tema</h4>
+
+<p>El área general de interés sobre la que se quiere investigar.</p>
+<p style="font-size:0.85em; color:#64748b"><em>Ej.: Ansiedad en adolescentes</em></p>
+:::
+
+::: tarjeta
+<h4>Problemática</h4>
+
+<p>La situación concreta que se busca investigar, con causas y consecuencias identificables.</p>
+<p style="font-size:0.85em; color:#64748b"><em>Ej.: Aumento de ansiedad en adolescentes tras la pandemia</em></p>
+:::
+
+::: tarjeta
+<h4>Título</h4>
+
+<p>La formulación precisa que sintetiza tema + problema + población + contexto.</p>
+<p style="font-size:0.85em; color:#64748b"><em>Ej.: Niveles de ansiedad en adolescentes de CABA post-pandemia</em></p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Consistencia interna del proyecto
+
+Un proyecto bien diseñado tiene **coherencia** entre todos sus componentes.
+
+::: {.caja-arena style="margin-top:0.6em; font-size:0.86em"}
+<p>La revisión de consistencia implica verificar que cada elemento del proyecto se articule lógicamente con los demás.</p>
+:::
+
+```{mermaid}
+%%{init: {'theme':'base', 'themeVariables': {'primaryColor': '#1e293b', 'primaryTextColor': '#faf8f5', 'lineColor': '#b45309', 'secondaryColor': '#e7e1d8'}}}%%
+flowchart LR
+  A[Problema] --> B[Objetivos]
+  A --> C[Hipótesis]
+  B --> C
+  C --> D[Variables]
+  D --> E[Metodología]
+  B --> E
+```
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Actividad de la clase</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Consigna: revisión del proyecto
+
+La actividad de esta unidad tiene tres pasos:
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.84em"}
+::: tarjeta
+<h4>1 · Revisar el proyecto</h4>
+
+<p>Retomá el proyecto de <em>Taller de Integración III</em> y verificá:</p>
+
+- Problema de investigación
+- Coherencia problema–objetivos
+- Coherencia problema–hipótesis
+- Coherencia objetivos–hipótesis
+:::
+
+::: tarjeta
+<h4>2 · Actualizar bibliografía</h4>
+
+<p>Realizá una búsqueda bibliográfica actualizada sobre tu temática de investigación.</p>
+
+<p>Incorporá publicaciones recientes que fortalezcan el marco teórico.</p>
+:::
+
+::: tarjeta
+<h4>3 · Redactar la introducción</h4>
+
+<p>Sistematizá la información recopilada y comenzá a redactar la <strong>introducción</strong> de la tesis.</p>
+
+<p>Entregá el proyecto en su versión final.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Recomendaciones para la entrega
+
+::: {.caja-crema style="font-size:0.88em"}
+<p><strong>Contacto con el tutor:</strong> se recomienda ponerse en contacto con el director de tesis para discutir las modificaciones antes de comenzar la toma de datos.</p>
+:::
+
+::: {.caja-crema style="font-size:0.88em; margin-top:0.4em"}
+<p><strong>Carátula:</strong> incluir una carátula con todos los datos formales — alumno, comisión, título del proyecto y demás datos identificatorios.</p>
+:::
+
+::: {.caja-crema style="font-size:0.88em; margin-top:0.4em"}
+<p><strong>Formato:</strong> el informe debe seguir las normas APA vigentes tanto en su estructura como en las citas y referencias.</p>
+:::
+
+------------------------------------------------------------------------
+
+## Preguntas para reflexionar
+
+Antes de comenzar, pensá en las siguientes cuestiones:
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.86em"}
+::: {.caja-azul}
+<p style="color:#faf8f5; font-size:1.1em; font-weight:600; margin-bottom:0.3em">¿Qué voy a precisar?</p>
+<p style="color:#e7e1d8; font-size:0.9em">Recursos, acceso a la muestra, instrumentos, bibliografía…</p>
+:::
+
+::: {.caja-azul}
+<p style="color:#faf8f5; font-size:1.1em; font-weight:600; margin-bottom:0.3em">¿Cuánto tiempo me demandará?</p>
+<p style="color:#e7e1d8; font-size:0.9em">Planificá un cronograma realista para cada etapa del proceso.</p>
+:::
+
+::: {.caja-azul}
+<p style="color:#faf8f5; font-size:1.1em; font-weight:600; margin-bottom:0.3em">¿Cómo lo voy a organizar?</p>
+<p style="color:#e7e1d8; font-size:0.9em">Definí prioridades, secuencia de tareas y momentos de consulta con el tutor.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Secuencia de trabajo sugerida
+
+```{mermaid}
+%%{init: {'theme':'base', 'themeVariables': {'primaryColor': '#1e293b', 'primaryTextColor': '#faf8f5', 'lineColor': '#b45309', 'secondaryColor': '#e7e1d8'}}}%%
+flowchart LR
+  A["📹 Ver el video"] --> B["📖 Leer la bibliografía"]
+  B --> C["✏️ Resolver actividades"]
+  C --> D["📝 Aplicar a la tesis"]
+```
+
+::: {.caja-arena style="margin-top:0.8em; font-size:0.86em"}
+<p>Recordá que esta materia es de cursada <strong>individual</strong>. El docente acompañará los avances de cada uno y resolverá dudas a lo largo del proceso.</p>
+:::
+
+------------------------------------------------------------------------
+
+## {background-color="#1e293b"}
+
+::: cierre-container
+<h2>¡Manos a la obra!</h2>
+<p>Revisá tu proyecto · Actualizá la bibliografía · Comenzá la introducción</p>
+:::
