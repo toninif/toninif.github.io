@@ -1,0 +1,736 @@
+---
+title: "El planteamiento del problema"
+subtitle: "Seminario Taller de Integración II"
+author: "Dr. Fernando Tonini"
+institute: "Universidad Abierta Interamericana"
+format:
+  revealjs:
+    theme: simple
+    css: seminario-uai-style.css
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Seminario Taller de Integración II · UAI"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+------------------------------------------------------------------------
+
+## {background-color="#8B1A2B"}
+
+::: cierre-container
+<h2>Clase 2</h2>
+<p>El planteamiento del problema de investigación</p>
+:::
+
+------------------------------------------------------------------------
+
+## ¿Qué vamos a trabajar hoy?
+
+<div class="highlight-box">
+
+En esta clase esperamos que puedan:
+
+- **Definir** el problema de investigación en base a su relevancia y al análisis de los antecedentes.
+- **Construir** las preguntas de investigación identificando fuentes documentales especializadas.
+- **Comenzar a redactar** bajo los lineamientos de **Normas APA** (7ma edición).
+
+</div>
+
+Estas competencias son el puntapié inicial de toda investigación y tributan directamente al desafío de aprendizaje de la materia.
+
+------------------------------------------------------------------------
+
+## {.transition-slide}
+
+::: section-label
+Parte 1
+:::
+
+::: section-title
+¿Qué es plantear el problema de investigación?
+:::
+
+------------------------------------------------------------------------
+
+## De la idea al problema
+
+Plantear el problema de investigación es **afinar y estructurar más formalmente** la idea de investigación que concibieron en la clase anterior.
+
+<div class="example-box">
+
+El paso de la idea al planteamiento puede ser inmediato o tomar un tiempo considerable. Depende de cuán familiarizado esté el investigador con el tema, la complejidad de la idea, la existencia de estudios antecedentes y las habilidades del investigador.
+
+</div>
+
+. . .
+
+<div class="highlight-box">
+
+**Delimitar** es la esencia de los planteamientos cuantitativos (Hernández Sampieri et al., 2014).
+
+</div>
+
+------------------------------------------------------------------------
+
+## ¿Por qué es tan importante?
+
+Como señala Ackoff (1967): un problema **correctamente planteado** está parcialmente resuelto.
+
+A mayor exactitud → más posibilidades de obtener una solución satisfactoria.
+
+. . .
+
+El investigador debe ser capaz no solo de **conceptualizar** el problema, sino también de **comunicarlo** de forma clara, precisa y accesible.
+
+. . .
+
+<div class="warning-box">
+
+En la actualidad, la mayoría de las investigaciones requieren la colaboración de varias personas. Si no podés comunicar el problema, difícilmente puedas avanzar.
+
+</div>
+
+------------------------------------------------------------------------
+
+## Criterios para plantear el problema
+
+Según Kerlinger y Lee (2002), un problema de investigación cuantitativa debe cumplir tres criterios:
+
+. . .
+
+**1. Expresar una relación entre variables**
+
+El problema debe vincular dos o más conceptos o variables que puedan medirse.
+
+. . .
+
+**2. Formularse como pregunta clara**
+
+Sin ambigüedades: *¿Qué efecto tiene...?*, *¿Cómo se relaciona... con...?*
+
+. . .
+
+**3. Permitir una prueba empírica**
+
+Los aspectos deben ser observables y medibles en la realidad.
+
+------------------------------------------------------------------------
+
+## {.transition-slide}
+
+::: section-label
+Parte 2
+:::
+
+::: section-title
+Los cinco elementos del planteamiento
+:::
+
+------------------------------------------------------------------------
+
+## Elementos del planteamiento
+
+El planteamiento del problema se compone de **cinco elementos** interrelacionados:
+
+:::: columns
+
+::: column
+
+<div class="highlight-box">
+
+**1.** Objetivos de investigación
+
+**2.** Preguntas de investigación
+
+**3.** Justificación del estudio
+
+</div>
+
+:::
+
+::: column
+
+<div class="highlight-box">
+
+**4.** Viabilidad de la investigación
+
+**5.** Evaluación de las deficiencias en el conocimiento
+
+</div>
+
+:::
+
+::::
+
+. . .
+
+Así como un artista define qué va a pintar y con qué técnica antes de empezar, el investigador necesita establecer estos elementos antes de comenzar su estudio.
+
+------------------------------------------------------------------------
+
+## 1. Objetivos de investigación
+
+Los objetivos señalan **qué se pretende** con la investigación. Son las **guías del estudio** y deben estar presentes durante todo su desarrollo.
+
+. . .
+
+<div class="highlight-box">
+
+Los objetivos deben ser:
+
+- **Específicos** — ¿Qué exactamente quiero lograr?
+- **Medibles** — ¿Puedo verificar si los alcancé?
+- **Apropiados** — ¿Son coherentes con el problema?
+- **Realistas** — ¿Son susceptibles de alcanzarse?
+
+</div>
+
+. . .
+
+<div class="example-box">
+
+**Verbos habituales:** describir, determinar, examinar, analizar, comparar, estimar, relacionar, evaluar.
+
+</div>
+
+------------------------------------------------------------------------
+
+## Ejemplo: Objetivos
+
+Supongamos que una investigadora quiere estudiar los factores que influyen en el noviazgo entre jóvenes universitarios. Sus objetivos podrían ser:
+
+. . .
+
+- **Determinar** si la atracción física, la confianza y la similitud tienen influencia significativa en el desarrollo del noviazgo.
+
+. . .
+
+- **Evaluar** cuál de esos factores ejerce mayor influencia.
+
+. . .
+
+- **Analizar** si hay diferencias entre hombres y mujeres respecto al peso asignado a cada factor.
+
+. . .
+
+<div class="example-box">
+
+Noten cómo cada objetivo usa un verbo específico y refiere a variables concretas y medibles.
+
+</div>
+
+------------------------------------------------------------------------
+
+## 2. Preguntas de investigación
+
+Además de los objetivos, es necesario **plantear preguntas** que presenten el problema de manera directa.
+
+Se formulan frecuentemente en términos de **¿qué?**, **¿por qué?** y **¿cómo?**
+
+. . .
+
+<div class="warning-box">
+
+**Las preguntas demasiado generales no conducen a una investigación concreta.**
+
+</div>
+
+------------------------------------------------------------------------
+
+## De lo general a lo específico
+
+:::: columns
+
+::: column
+
+<div class="warning-box" style="font-size:0.85em">
+
+**Pregunta demasiado general:**
+
+¿Cómo se relacionan los medios de comunicación con el voto?
+
+→ No queda claro qué medios, qué tipo de voto, qué contexto.
+
+</div>
+
+:::
+
+::: column
+
+<div class="highlight-box" style="font-size:0.85em">
+
+**Pregunta delimitada:**
+
+¿La exposición de los votantes a los debates televisivos de los candidatos a la presidencia está relacionada con la decisión de votar o abstenerse?
+
+→ Especifica medio, contexto y variable a medir.
+
+</div>
+
+:::
+
+::::
+
+. . .
+
+**Cuanto más precisas son las preguntas, más fácilmente se responden** — esto deben tenerlo especialmente en cuenta quienes se inician en la investigación.
+
+------------------------------------------------------------------------
+
+## Requisitos de las preguntas
+
+Según León y Montero (2003), las preguntas de investigación deben cumplir:
+
+. . .
+
+- Que **no se conozcan** las respuestas (si ya se conocen, no vale la pena investigar).
+
+. . .
+
+- Que puedan responderse con **evidencia empírica**.
+
+. . .
+
+- Que impliquen usar **medios éticos**.
+
+. . .
+
+- Que sean **claras**.
+
+. . .
+
+- Que el conocimiento obtenido sea **sustancial** (que aporte algo al campo de estudio).
+
+------------------------------------------------------------------------
+
+## 3. Justificación de la investigación
+
+Es necesario **exponer las razones** del estudio: el *para qué* o *por qué* debe realizarse.
+
+. . .
+
+<div class="highlight-box">
+
+**Criterios para evaluar la importancia potencial** (Ackoff, 1973; Miller y Salkind, 2002):
+
+</div>
+
+------------------------------------------------------------------------
+
+## Criterios de justificación
+
+| Criterio | Pregunta clave |
+|----------|----------------|
+| **Conveniencia** | ¿Para qué sirve esta investigación? |
+| **Relevancia social** | ¿Quiénes se benefician y de qué modo? |
+| **Implicaciones prácticas** | ¿Ayuda a resolver un problema real? |
+| **Valor teórico** | ¿Llena un vacío de conocimiento? |
+| **Utilidad metodológica** | ¿Contribuye a crear nuevos instrumentos o métodos? |
+
+. . .
+
+<div class="example-box">
+
+No es necesario que una investigación cumpla todos los criterios. A veces, con cumplir uno o dos ya se justifica.
+
+</div>
+
+------------------------------------------------------------------------
+
+## 4. Viabilidad de la investigación
+
+Además de que el tema sea relevante, debemos preguntarnos: **¿es factible llevarlo a cabo?**
+
+. . .
+
+Considerar la disponibilidad de:
+
+- **Tiempo** — ¿Cuánto va a tomar? ¿Es compatible con los plazos?
+- **Recursos financieros** — ¿Qué costos implica?
+- **Recursos humanos y materiales** — ¿Tengo acceso a instrumentos, participantes, contextos?
+- **Acceso al campo** — ¿Puedo entrar al lugar o institución donde se realizará el estudio?
+
+. . .
+
+<div class="warning-box">
+
+Las investigaciones que se demoran más allá de lo previsto pueden perder su utilidad: los resultados quedan desactualizados o el contexto cambió.
+
+</div>
+
+------------------------------------------------------------------------
+
+## 5. Evaluación de deficiencias
+
+Finalmente, debemos preguntarnos:
+
+- ¿Qué más necesitamos saber del problema?
+- ¿Qué falta de estudiar o abordar?
+- ¿Qué no se ha considerado?
+
+. . .
+
+Las respuestas nos ayudan a ubicar nuestra investigación en la **evolución del estudio del problema** y a identificar qué nuevas perspectivas podemos aportar.
+
+. . .
+
+<div class="example-box">
+
+Este aspecto solo puede incluirse si el investigador ya tiene un vínculo con el tema. Si no, se trabaja después de la **revisión de la literatura** (Hernández-Sampieri y Méndez, 2009).
+
+</div>
+
+------------------------------------------------------------------------
+
+## {.transition-slide}
+
+::: section-label
+Parte 3
+:::
+
+::: section-title
+La búsqueda de antecedentes
+:::
+
+------------------------------------------------------------------------
+
+## ¿Por qué buscar antecedentes?
+
+Este es el puntapié inicial de toda investigación: conocer en qué situación se encuentra la comunidad científica sobre el tema que querés investigar.
+
+. . .
+
+<div class="highlight-box">
+
+Todo conocimiento científico es **sistemático**: siempre remite a un conocimiento anterior. No investigamos en el vacío.
+
+</div>
+
+. . .
+
+Un buen relevamiento de investigaciones previas ayuda a:
+
+- Tomar **mejores decisiones** en el diseño de la investigación.
+- Encontrar **tratamientos eficaces y actualizados** en el ámbito clínico.
+- Identificar **qué se sabe** y **qué falta por saber** sobre el tema.
+
+------------------------------------------------------------------------
+
+## Antecedentes y pregunta de investigación
+
+La búsqueda de antecedentes **se sustenta en la pregunta de investigación**.
+
+De la pregunta se desprenden tanto:
+
+- El **recorrido teórico** que vas a hacer.
+- El **análisis estadístico** que vas a realizar.
+
+. . .
+
+<div class="highlight-box">
+
+Es un proceso **circular**: la revisión de antecedentes puede llevar a reformular o precisar la pregunta de investigación, y una pregunta más precisa guía mejor la búsqueda.
+
+</div>
+
+------------------------------------------------------------------------
+
+## ¿Qué es un antecedente?
+
+Un antecedente de investigación es un **estudio previo** que aborda variables, poblaciones o problemas similares al que vamos a investigar.
+
+. . .
+
+<div class="highlight-box">
+
+**¿Qué buscar en cada antecedente?**
+
+- ¿Qué **pregunta/objetivo** se plantearon los autores?
+- ¿Qué **metodología** usaron? (diseño, muestra, instrumentos)
+- ¿Cuáles fueron los **resultados principales**?
+- ¿Qué **limitaciones** reportaron?
+- ¿Qué **recomendaciones** hacen para futuras investigaciones?
+
+</div>
+
+------------------------------------------------------------------------
+
+## ¿Dónde buscar antecedentes?
+
+**Fuentes documentales especializadas:**
+
+:::: columns
+
+::: column
+
+<div class="highlight-box" style="font-size:0.85em">
+
+**Bases de datos académicas**
+
+- Google Scholar
+- PubMed
+- PsycINFO / PsycArticles
+- Scielo
+- REDALYC
+- Dialnet
+
+</div>
+
+:::
+
+::: column
+
+<div class="highlight-box" style="font-size:0.85em">
+
+**Repositorios institucionales**
+
+- Repositorios de universidades
+- CONICET Digital
+- Tesis y disertaciones
+
+</div>
+
+:::
+
+::::
+
+. . .
+
+<div class="warning-box">
+
+**No son fuentes válidas**: Wikipedia, blogs, páginas de divulgación general, redes sociales.
+
+</div>
+
+------------------------------------------------------------------------
+
+## Criterios para seleccionar antecedentes
+
+Para esta actividad (y en general para una buena investigación), tengan en cuenta:
+
+. . .
+
+- Las investigaciones pueden ser **nacionales e internacionales**.
+
+. . .
+
+- No deben tener más de **10 años de antigüedad** (lo ideal en investigación es 5 años, pero al ser su primera investigación, se amplía el rango).
+
+. . .
+
+- Deben dar cuenta de las **variables sociodemográficas** que van a indagar, ya que les dan sustento.
+
+. . .
+
+- Cada antecedente debe tener su correspondiente **cita y referencia bibliográfica** ajustada a **Normas APA**.
+
+------------------------------------------------------------------------
+
+## {.transition-slide}
+
+::: section-label
+Parte 4
+:::
+
+::: section-title
+Normas APA — 7ma edición
+:::
+
+------------------------------------------------------------------------
+
+## ¿Por qué Normas APA?
+
+Los investigadores deben expresarse en el **lenguaje y bajo los lineamientos** que la comunidad científica propone.
+
+. . .
+
+Las Normas APA establecen un estándar para:
+
+- **Citar** las fuentes que consultamos.
+- **Referenciar** correctamente cada fuente.
+- **Dar formato** al texto académico.
+- Garantizar la **ética y transparencia** en la comunicación de resultados.
+
+------------------------------------------------------------------------
+
+## Citas en el texto
+
+:::: columns
+
+::: column
+
+<div class="highlight-box" style="font-size:0.82em">
+
+**Cita narrativa** — el autor es parte de la oración:
+
+Hernández Sampieri et al. (2014) señalan que delimitar es la esencia de los planteamientos cuantitativos.
+
+</div>
+
+:::
+
+::: column
+
+<div class="highlight-box" style="font-size:0.82em">
+
+**Cita parentética** — el autor va entre paréntesis:
+
+Delimitar es la esencia de los planteamientos cuantitativos (Hernández Sampieri et al., 2014).
+
+</div>
+
+:::
+
+::::
+
+. . .
+
+<div class="example-box">
+
+**Según la cantidad de autores:**
+
+- **1 autor:** Pérez (2020) o (Pérez, 2020)
+- **2 autores:** Pérez y López (2020) o (Pérez & López, 2020)
+- **3 o más autores:** Pérez et al. (2020) o (Pérez et al., 2020)
+
+</div>
+
+------------------------------------------------------------------------
+
+## Referencia bibliográfica
+
+La referencia va al final del trabajo, en la lista de referencias, y contiene todos los datos necesarios para que el lector **localice la fuente**.
+
+. . .
+
+<div class="highlight-box" style="font-size:0.85em">
+
+**Formato general para artículos de revista:**
+
+Apellido, I. N. (Año). Título del artículo. *Nombre de la Revista*, *Volumen*(Número), páginas. https://doi.org/xxxxx
+
+</div>
+
+. . .
+
+<div class="example-box" style="font-size:0.85em">
+
+**Ejemplo:**
+
+Muñiz, M., & Rangel, J. (2014). La relación de noviazgo y la autoestima en universitarios. *Revista de Psicología Social*, *29*(3), 45–62. https://doi.org/10.1080/ejemplo
+
+</div>
+
+------------------------------------------------------------------------
+
+## {.transition-slide}
+
+::: section-label
+Actividad
+:::
+
+::: section-title
+Actividad 1 — Antecedentes y pregunta de investigación
+:::
+
+------------------------------------------------------------------------
+
+## Consigna de la actividad
+
+La actividad tiene **tres partes** que tributan al desafío de aprendizaje:
+
+------------------------------------------------------------------------
+
+## Parte A — Búsqueda de antecedentes
+
+Cada integrante del grupo debe buscar **dos antecedentes** de investigación.
+
+<div class="highlight-box">
+
+**Criterios:**
+
+- Pueden ser investigaciones **nacionales e internacionales**.
+- **No más de 10 años de antigüedad** (idealmente 5).
+- Deben referirse a las **variables sociodemográficas** que van a indagar.
+- **No deben repetirse** entre compañeros → lean lo que encontraron los demás.
+
+</div>
+
+------------------------------------------------------------------------
+
+## Parte B — Cita y referencia APA
+
+Cada antecedente debe incluir:
+
+- Su **cita en el texto** (narrativa o parentética).
+- Su **referencia bibliográfica completa** en formato APA 7ma edición.
+
+. . .
+
+<div class="example-box" style="font-size:0.82em">
+
+**Ejemplo de cita + referencia:**
+
+En el texto: Muñiz y Rangel (2014) encontraron que un noviazgo satisfactorio eleva la autoestima.
+
+En la lista de referencias: Muñiz, M., & Rangel, J. (2014). La relación de noviazgo y la autoestima en universitarios. *Revista de Psicología Social*, *29*(3), 45–62.
+
+</div>
+
+------------------------------------------------------------------------
+
+## Parte C — Pregunta de investigación
+
+A partir del tema elegido y los antecedentes relevados, **formulen la pregunta de investigación** del grupo.
+
+. . .
+
+<div class="highlight-box">
+
+**Recuerden que la pregunta debe:**
+
+- Expresar una relación entre variables.
+- Ser clara y sin ambigüedades.
+- Permitir una prueba empírica.
+- No conocerse la respuesta de antemano.
+
+</div>
+
+------------------------------------------------------------------------
+
+## Material de lectura
+
+<div class="highlight-box">
+
+**Lectura obligatoria:**
+
+- Hernández Sampieri, R., Fernández Collado, C., & Baptista Lucio, P. (2014). *Metodología de la Investigación* (6ta ed.). McGraw-Hill. — Capítulo 3: "El planteamiento cuantitativo del problema" (pp. 36–42).
+- Manual de Normas APA, 7ma edición (2019).
+
+</div>
+
+. . .
+
+<div class="example-box">
+
+**Recursos complementarios:**
+
+- Videos explicativos disponibles en el aula virtual.
+- Guía rápida de Normas APA (material adjunto en el campus).
+
+</div>
+
+------------------------------------------------------------------------
+
+## {background-color="#8B1A2B"}
+
+::: cierre-container
+<h2>¡A investigar!</h2>
+<p>Recuerden: lean la teoría y miren los videos antes de la actividad</p>
+:::

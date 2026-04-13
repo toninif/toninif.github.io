@@ -9,7 +9,7 @@ format:
     slide-number: true
     transition: fade
     chalkboard: true
-    footer: "Taller de Tesis · UP"
+    footer: "Taller de Tesis · UAI"
     logo: ""
     width: 1280
     height: 720
