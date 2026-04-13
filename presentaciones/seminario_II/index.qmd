@@ -17,7 +17,7 @@ Material de clase del curso de Seminario Taller de Integración II, UAI. Hacé c
 :::
 
 ::: {.pub-item}
-**[Clase 2](02-planteamiento-problema.html){target="_blank"}** · Pasamos de la idea a la pregunta problema que guiará la investigación. Vemos nociones de búsqueda de antecedentes.
+**[Clase 2](02-planteamiento-del-problema.html){target="_blank"}** · Pasamos de la idea a la pregunta problema que guiará la investigación. Vemos nociones de búsqueda de antecedentes.
 :::
 
 
