@@ -141,15 +141,17 @@ La conciencia puede orientarse hacia:
 
 ## El problema de los nueve puntos
 
-Uní estos 9 puntos utilizando únicamente **4 líneas rectas unidas entre sí**.
+<br>
 
-![](img/placeholder-9puntos-consigna.png){width="45%"}
+Uní estos 9 puntos utilizando únicamente **4 líneas rectas concatenadas**.
+
+![](img/9-puntos.png){width="25%"}
 
 ------------------------------------------------------------------------
 
 ## El problema de los nueve puntos — solución
 
-![](img/placeholder-9puntos-solucion.png){width="55%"}
+![](img/9-puntos.gif){width="100%"}
 
 ------------------------------------------------------------------------
 
@@ -192,15 +194,69 @@ Una de las maneras de entender la conciencia es en términos de **atención**. S
 ::: {.caja-verde}
 <strong>Atención focal</strong>
 
-<p style="color:#f5f0e8">Lo que ahora mismo estoy atendiendo deliberadamente — viendo la hoja, escuchando las palabras, mirando esta diapositiva.</p>
+<p style="color:#f5f0e8">Lo que ahora mismo estoy atendiendo deliberadamente —> viendo la hoja, escuchando las palabras, mirando esta diapositiva.</p>
 :::
 
 ::: caja-crema
 <strong>Atención periférica</strong>
 
-<p>Aquello que se vuelve fácilmente centro de la atención focal — un detalle llamativo, un ruido de fondo, algo que sucede cerca.</p>
+<p>Aquello que se vuelve fácilmente centro de la atención focal —> un detalle llamativo, un ruido de fondo, algo que sucede cerca.</p>
 :::
 ::::::
+
+------------------------------------------------------------------------
+
+## La atención
+
+::: {.caja-dorada style="margin-bottom: 0.7em"}
+<p>La atención es la función cognitiva encargada de <strong>organizar y regular el flujo constante de estímulos</strong> que recibemos del entorno.</p>
+:::
+
+<br>
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.86em"}
+::: tarjeta
+<h4>El desafío cotidiano</h4>
+<p>Pestañas abiertas, teléfono que vibra, ruido del tránsito. De todas formas, la mente consigue llevar adelante sus tareas.</p>
+:::
+
+::: tarjeta
+<h4>El mecanismo detrás de esto</h4>
+<p>Selección, priorización y descarte continuo de información: la atención opera sin que nos demos cuenta.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Modelo de Posner y Petersen (1990)
+
+::: {.subtitulo-slide}
+Tres redes atencionales complementarias
+:::
+
+<br>
+
+:::::: {.cols-3 style="margin-top:0.5em; font-size:0.84em"}
+::: tarjeta
+<h4>🔔 Red de alerta</h4>
+<p>Mantiene la <strong>vigilancia</strong> y prepara al organismo para responder a estímulos relevantes.</p>
+<p style="color:#996b2f; font-size:0.9em"><em> Contexto --> Sala de espera atención médica usando el celu. Ej: Escuchar los apellidos hasta oír el propio.</em></p>
+:::
+
+::: tarjeta
+<h4>🎯 Red de orientación</h4>
+<p>Dirige el <strong>foco atencional</strong> hacia la información prioritaria en el entorno. Anula otras fuentes de estímulos.</p>
+<p style="color:#996b2f; font-size:0.9em"><em> Contexto --> Sala de espera atención médica usando el celu. Ej: Identificar desde qué puerta nos llamaron. </em></p>
+:::
+
+::: tarjeta
+<h4>⚙️ Red ejecutiva</h4>
+<p>Responsable de la <strong>inhibición, toma de decisiones</strong> y control voluntario. Conducta motivada.</p>
+<p style="color:#996b2f; font-size:0.9em"><em> Contexto --> Sala de espera atención médica usando el celu. Ej: Dirigirse a la puerta y saludar al médico.                                                   </em></p>
+:::
+::::::
+
+
 
 ------------------------------------------------------------------------
 
@@ -248,7 +304,7 @@ La perspectiva más extrema sobre los procesos inconscientes:
 
 <div>
 
-![](img/placeholder-monitor.png)
+![](img/procesos.png)
 
 </div>
 ::::::
@@ -377,26 +433,11 @@ Según Hobson, la función del dormir puede analizarse en diferentes niveles:
 
 ------------------------------------------------------------------------
 
-## Estado alterado — Sustancias psicoactivas
+##  {.slide-transicion}
 
-![](img/placeholder-sustancias.png){width="70%"}
-
-------------------------------------------------------------------------
-
-## Estado alterado — Meditación y atención plena
-
-![](img/placeholder-meditacion.png){width="70%"}
-
-------------------------------------------------------------------------
-
-## Estado alterado — Hipnosis
-
-::: {.caja-crema style="margin-top:0.6em; font-size:0.88em"}
-Estado caracterizado por **atención reducida** e incremento de la sugestión.
+:::: transicion-inner
+::: barra-acento
 :::
 
-<p style="font-size:0.86em; margin-top:0.7em">
-Un caso relevante de investigación es el <strong>estudio sobre miembro fantasma</strong> — personas que sienten dolor en un miembro amputado, y en quienes la hipnosis ha mostrado resultados como intervención.
-</p>
-
-![](img/placeholder-hipnosis.png){width="50%"}
+<h2>Hablemos el parcial</h2>
+::::
