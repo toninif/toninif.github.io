@@ -1,0 +1,486 @@
+---
+title: "Planteamiento del problema: relevancia y contextualización"
+subtitle: "Seminario Taller de Integración II"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: simple
+    css: seminario-uai-style.css
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Seminario Taller de Integración II · UAI"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+## Resultado de aprendizaje
+
+<p style="font-size:0.95em; margin-top:0.5em;">
+
+Al finalizar esta clase, deberían poder:
+
+</p>
+
+::: highlight-box
+**Definir el problema de investigación en base a su relevancia y al análisis de los antecedentes.**
+:::
+
+<p style="margin-top:1em;">
+
+Para eso trabajaremos sobre dos aspectos fundamentales del planteamiento:
+
+</p>
+
+-   la [**relevancia o justificación**]{.accent} — el *para qué* de la investigación
+-   la [**contextualización**]{.accent} — el marco en el que se circunscribe la problemática
+
+<p style="margin-top:0.8em; font-size:0.85em;">
+
+Ambos elementos deben estar en **congruencia** con el tema y la pregunta de investigación.
+
+</p>
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+¿Qué es plantear el problema?
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Plantear el problema
+
+<p style="margin-top:0.5em;">
+
+Plantear el problema consiste en <strong>afinar y estructurar formalmente</strong> la idea de investigación.
+
+</p>
+
+<p style="margin-top:0.8em;">
+
+Según Hernández-Sampieri et al. (2014), supone desarrollar cinco elementos:
+
+</p>
+
+::: {style="background:#FDF6EE; border-left:4px solid #8B1A2B; padding:0.7em 1em; border-radius:0 4px 4px 0;"}
+<strong style="color:#8B1A2B;">Objetivos</strong><br>
+
+<strong style="color:#8B1A2B;">Preguntas</strong><br>
+
+<strong style="color:#8B1A2B;">Justificación ⚠️</strong><br>
+
+<strong style="color:#8B1A2B;">Viabilidad</strong><br>
+
+<strong style="color:#8B1A2B;">Contextualización ⚠️</strong><br>
+:::
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Contextualizar el problema
+:::
+::::
+
+------------------------------------------------------------------------
+
+## ¿Qué significa contextualizar?
+
+<p style="margin-top:0.5em;">
+
+Contextualizar es <strong>inscribir la investigación en un marco</strong>. Es decirm, el escenario, el campo o el problema real en el que cobra sentido lo que vamos a estudiar.
+
+</p>
+
+::: highlight-box
+La contextualización responde a **¿para qué problemática (o problemáticas) puede ayudar a dar una posible explicación nuestra investigación?**
+:::
+
+<p style="margin-top:0.8em;">
+
+Sin contexto, se corre el riesgo de producir:
+
+</p>
+
+-   correlaciones o comparaciones [**espurias**]{.accent}
+-   investigaciones que [**carecen de sentido**]{.accent} para la psicología o la sociedad
+-   estudios técnicamente correctos pero [**irrelevantes**]{.accent}
+
+------------------------------------------------------------------------
+
+## Ejemplo 1 — aislamiento y emocionalidad
+
+::::: {.cols-2 style="margin-top:0.6em; font-size:0.88em; gap:1.5em;"}
+::: {style="background:#FFF9F0; border-left:4px solid #D4A574; padding:0.9em 1.1em; border-radius:0 4px 4px 0;"}
+<h4 style="color:#8B1A2B; margin-top:0;">
+
+La investigación
+
+</h4>
+
+Se estudia la relación entre **aislamiento prolongado** y **estado afectivo** en población general.
+:::
+
+<br>
+
+::: {style="background:#FDF6EE; border-left:4px solid #8B1A2B; padding:0.9em 1.1em; border-radius:0 4px 4px 0;"}
+<h4 style="color:#8B1A2B; margin-top:0;">
+
+El contexto
+
+</h4>
+
+La **cantidad de estresores**. El escenario de pandemia generaba una cantidad de estresores que, al mismo tiempo, podrían afecta la menra en la que procesabamos el afecto.
+:::
+:::::
+
+<p style="margin-top:1em; font-size:0.88em;">
+
+La pregunta de fondo —\> <em>¿los cambios asociados al contexto de confinamiento impactan sobrel estado afectivo de la población?</em> — se vuelve relevante porque está enmarcada en una problemática real.
+
+</p>
+
+------------------------------------------------------------------------
+
+## Ejemplo 2 — burnout en personal de salud
+
+::::: {.cols-2 style="margin-top:0.6em; font-size:0.88em; gap:1.5em;"}
+::: {style="background:#FFF9F0; border-left:4px solid #D4A574; padding:0.9em 1.1em; border-radius:0 4px 4px 0;"}
+<h4 style="color:#8B1A2B; margin-top:0;">
+
+La investigación
+
+</h4>
+
+Se estudia efecto de **valencia del output de IAgen** sobre dilemas morales en estudiantes universitarios.
+:::
+
+<br>
+
+::: {style="background:#FDF6EE; border-left:4px solid #8B1A2B; padding:0.9em 1.1em; border-radius:0 4px 4px 0;"}
+<h4 style="color:#8B1A2B; margin-top:0;">
+
+El contexto
+
+</h4>
+
+El **uso de IAgen para tomar decisioens**: una situación sin precedentes inmediatos, pero que impacta sobre una población en específico.
+:::
+:::::
+
+<p style="margin-top:1em; font-size:0.88em;">
+
+La problemática contextual justifica la urgencia: <em>¿Cómo podemos conocer el efecto de esta herrimenta sobre el proceso decisorio? ¿Qué intervenciones se podrían elaborar con ese conocimiento?</em>
+
+</p>
+
+------------------------------------------------------------------------
+
+## ¿Cómo escribir la contextualización?
+
+::: {style="margin-top:0.6em;"}
+:::
+
+::::: {.cols-2 style="margin-top:0.4em; font-size:0.88em; gap:1.5em;"}
+::: {style="background:#FDF6EE; border-left:4px solid #8B1A2B; padding:0.9em 1.1em; border-radius:0 4px 4px 0;"}
+<h4 style="color:#8B1A2B; margin-top:0;">
+
+Extensión
+
+</h4>
+
+**Uno o dos párrafos** son suficientes. No es necesario extenderse más.
+:::
+
+<br>
+
+::: {style="background:#FDF6EE; border-left:4px solid #8B1A2B; padding:0.9em 1.1em; border-radius:0 4px 4px 0;"}
+<h4 style="color:#8B1A2B; margin-top:0;">
+
+Citas
+
+</h4>
+
+No hace falta citar todo, pero **algunas partes deben estar citadas**. El problema tiene que "salir de algún lado".
+:::
+:::::
+
+<br>
+
+::: {style="background:#FFF5F5; border-left:4px solid #A82040; padding:0.7em 1em; margin-top:0.9em; border-radius:0 4px 4px 0; font-size:0.85em;"}
+**Recordatorio:** más adelante, en el marco teórico, cada afirmación tendrá que estar citada. En la contextualización inicial la exigencia es menor, pero no se puede prescindir totalmente de fuentes.
+:::
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Justificación
+:::
+::::
+
+------------------------------------------------------------------------
+
+## ¿Por qué justificar?
+
+<p style="margin-top:0.5em;">
+
+La justificación expone las <strong>razones</strong> de por qué es importante llevar a cabo el estudio.
+
+</p>
+
+::: highlight-box
+La mayoría de las investigaciones se ejecutan con un propósito definido. <strong>Ese propósito debe ser lo suficientemente significativo para que se justifique su realización</strong> (Hernández-Sampieri et al., 2014).
+:::
+
+<p style="margin-top:0.8em; font-size:0.9em;">
+
+En todos los ámbitos aparece esta exigencia:
+
+</p>
+
+-   El tesista expone a un comité el valor de su tesis
+-   El investigador justifica su proyecto ante evaluadores
+-   El profesional explica a un cliente las bondades del estudio
+
+------------------------------------------------------------------------
+
+## Criterios de Hernández-Sampieri
+
+<p style="font-size:0.88em; margin-top:0.4em;">
+
+Cinco criterios para evaluar la importancia potencial de una investigación:
+
+</p>
+
+| Criterio | Pregunta clave |
+|--------------------|----------------------------------------------------|
+| **Conveniencia** | ¿Para qué sirve? |
+| **Relevancia social** | ¿Qué alcance o proyección social tiene? ¿Quiénes se beneficiarán? |
+| **Implicaciones prácticas** | ¿Ayudará a resolver algún problema real? |
+| **Valor teórico** | ¿Se llenará algún vacío de conocimiento? ¿Aportará a una teoría? |
+| **Utilidad metodológica** | ¿Ayudará a crear un instrumento, mejorar un procedimiento, definir una variable? |
+
+<p style="margin-top:0.6em; font-size:0.82em;">
+
+<em>Es muy difícil que una investigación responda positivamente a todos los criterios. A veces cumple con uno solo y eso ya es suficiente.</em>
+
+¿Qué criterios cumple su investigación? Piensen
+
+</p>
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Ejes para estructurar la Justificación
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Relevancia teórica — en detalle
+
+<p style="margin-top:0.5em; font-size:0.9em;">
+
+Responde a la pregunta: <strong>¿qué aporta mi investigación al conocimiento sobre estas variables?</strong>
+
+</p>
+
+<p style="margin-top:0.6em; font-size:0.88em;">
+
+Algunas formas típicas de aporte teórico:
+
+</p>
+
+-   [**Un vacío de conocimiento:**]{.accent} nadie ha estudiado esta relación antes
+-   [**Un nuevo contexto:**]{.accent} por ejemplo, en la zona sur del conurbano bonaerense, donde no se había estudiado
+-   [**Una nueva relación entre variables:**]{.accent} variables ya conocidas que se vinculan de un modo no examinado
+-   [**Un nuevo grupo poblacional:**]{.accent} se estudia el fenómeno en una población distinta
+
+::: highlight-box
+Lo clave: **¿qué es lo novedoso de mi investigación?** ¿Qué se sabrá después que no se sabía antes?
+:::
+
+------------------------------------------------------------------------
+
+## Relevancia práctica — en detalle
+
+<p style="margin-top:0.5em; font-size:0.9em;">
+
+Responde: <strong>¿a qué profesionales les es útil esta investigación, y cómo?</strong>
+
+</p>
+
+<p style="margin-top:0.5em; font-size:0.88em;">
+
+En un proyecto de psicología, los psicólogos <strong>siempre</strong> deben estar contemplados. Pero también pueden aparecer otros profesionales según el tema:
+
+</p>
+
+::: {style="background:#FFF9F0; border-left:4px solid #D4A574; padding:0.7em 1em; border-radius:0 4px 4px 0;"}
+**Ámbitos posibles**
+
+-   Clínico / psiquiátrico --\> Medicos/as
+-   Educacional --\> Docentes / Directivos
+-   Laboral / organizacional --\> RR.HH
+-   Político / comunitario --\> Organizaciones / Municipio
+:::
+
+------------------------------------------------------------------------
+
+## Relevancia social — en detalle
+
+<p style="margin-top:0.5em; font-size:0.9em;">
+
+Responde: <strong>¿qué le aporta mi investigación a la sociedad en su conjunto?</strong>
+
+</p>
+
+::: highlight-box
+Se hace investigación, en última instancia, **para que la sociedad progrese**. La relevancia social es el puente entre el estudio particular y el bien común.
+:::
+
+<p style="margin-top:0.8em; font-size:0.88em;">
+
+Algunas formas de aporte social:
+
+</p>
+
+-   Visibilizar una problemática poco atendida
+-   Aportar evidencia para el diseño de políticas públicas
+-   Ayudar a reducir el sufrimiento, la exclusión o el estigma
+-   Promover prácticas más saludables, inclusivas o equitativas
+-   Generar conciencia sobre un fenómeno emergente
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Errores frecuentes y cómo evitarlos
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Errores en el planteamiento del problema
+
+<p style="font-size:0.85em; margin-top:0.4em;">
+
+Siguiendo a Hernández-Sampieri et al. (2014):
+
+</p>
+
+| Error | Ejemplo típico |
+|----------------------|--------------------------------------------------|
+| **Términos generales, poco específicos** | "Analizar las causas del cáncer de mama en mujeres mayores" — ¿qué es \*mujer mayor\*? ¿qué contexto? ¿qué causas? |
+| **Objetivo centrado en un producto o impacto** | "Promover el empleo", "motivar a los trabajadores" — son resultados deseables, no objetivos de investigación. |
+| **Objetivos dispersos (en varias direcciones)** | Varios objetivos que llevan a investigaciones distintas en un solo planteamiento. |
+
+------------------------------------------------------------------------
+
+## Revisión: del objetivo poco claro al objetivo delimitado
+
+::::: {.cols-2 style="margin-top:0.6em; font-size:0.85em; gap:1.5em;"}
+::: {style="background:#FFF5F5; border-left:4px solid #A82040; padding:0.9em 1.1em; border-radius:0 4px 4px 0;"}
+<h4 style="color:#A82040; margin-top:0;">
+
+Difuso
+
+</h4>
+
+"Conocer las consecuencias de la depresión."
+
+<em>¿De qué naturaleza? ¿Qué tipo de consecuencias? ¿En qué población?</em>
+:::
+
+<br>
+
+::: {style="background:#FDF6EE; border-left:4px solid #8B1A2B; padding:0.9em 1.1em; border-radius:0 4px 4px 0;"}
+<h4 style="color:#8B1A2B; margin-top:0;">
+
+Delimitado
+
+</h4>
+
+"Analizar las consecuencias académicas de los episodios depresivos en estudiantes universitarios del primer año de la UAI durante 2024."
+:::
+:::::
+
+<p style="margin-top:0.9em; font-size:0.85em;">
+
+<strong>Regla operativa:</strong> cuanto más precisas son las preguntas, más fácilmente se responden. Delimitar en términos de <em>variables</em>, <em>población</em>, <em>tiempo</em> y <em>lugar</em>.
+
+</p>
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Actividad de la semana
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Consigna
+
+Contextualización y justificación
+
+**Uno o dos párrafos** que describan:
+
+-   qué problemática quieren abordar
+
+-   en qué contexto se inscribe
+
+-   por qué ese contexto hace que la investigación tenga sentido
+
+-   relevancia (teórica - práctica - social)
+
+
+
+------------------------------------------------------------------------
+
+## Criterios de autoevaluación
+
+<p style="font-size:0.88em; margin-top:0.5em;">
+
+Antes de entregar, revisen que su texto cumpla con:
+
+</p>
+
+-   ¿La [**contextualización**]{.accent} enmarca el problema en una situación real?
+-   ¿Hay al menos [**una o dos citas**]{.accent} que anclan la problemática en la literatura?
+-   ¿Se reconoce el [**aporte teórico**]{.accent} (vacío, nuevo contexto, nueva relación)?
+-   ¿Se identifica a qué [**profesionales y ámbitos**]{.accent} les es útil?
+-   ¿Se explicita el [**aporte social**]{.accent} (más allá del grupo estudiado)?
+-   ¿Hay [**congruencia**]{.accent} con el tema y la pregunta formulados antes?
+-   ¿La extensión es [**razonable**]{.accent} (1-2 párrafos por cada componente)?
+
+------------------------------------------------------------------------
+
+## {.no-title data-background-color="#8B1A2B"}
+
+<div class="cierre-container">
+  <h2>A escribir!</h2>
+</div>
+
