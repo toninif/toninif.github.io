@@ -40,5 +40,8 @@ Material de clase del curso de Psicología de la Motivación y Emoción, Univers
 **[Clase 6](06-motivacion-control.html){target="_blank"}** · Motivación y atribuciones de control: Reactancia, indefensión y adaptación.
 :::
 
+::: {.pub-item}
+**[Clase 7](07-intro-emocion.html){target="_blank"}** · Introducción a la psicología de la emoción. Perspectivas, clasificación y modelo de Ekman
+
 :::
 
