@@ -17,6 +17,9 @@ Material de clase del curso de Taller de Tesis, UAI. Hacé click en cualquier pr
 :::
 
 
+::: {.pub-item}
+**[Clase 2](02-busqueda-bibliografica.html){target="_blank"}** · Búsqueda bibliogáfica y criterios de selección de artículos
+:::
 
 :::
 

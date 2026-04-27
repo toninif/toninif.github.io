@@ -1,0 +1,773 @@
+---
+title: "Búsqueda bibliográfica para la tesis"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: [simple, taller-tesis-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Taller de Tesis · UAI"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+## Bienvenida [no se ve, es la portada nativa de Quarto] {visibility="hidden"}
+
+------------------------------------------------------------------------
+
+## ¿Qué vamos a ver hoy?
+
+::: {.caja-crema style="margin-top:0.5em"}
+Esta clase es un **mapa práctico** para que la búsqueda bibliográfica de su tesis no sea un camino de prueba y error.
+:::
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Lo que veremos</h4>
+
+- Cómo formular y refinar búsquedas
+- Operadores booleanos
+- Bases de datos especializadas
+- Herramientas con IA
+- Cómo evaluar la calidad de una fuente
+- Cómo leer y citar correctamente
+:::
+
+::: {.tarjeta .tarjeta-ocre}
+<h4>Lo que se llevan</h4>
+
+- Un workflow de búsqueda replicable
+- Criterios para distinguir fuentes serias
+- Herramientas instaladas y listas
+- Una bitácora de búsqueda inicial
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Una idea para empezar
+
+> "La búsqueda bibliográfica no es una etapa previa a la tesis. **Es parte de la tesis**. La forma en que buscan determina lo que pueden pensar."
+
+::: {.caja-ocre style="margin-top:1em; font-size:0.88em"}
+Buscar bien no es buscar más. Es buscar con **estrategia**, **registro** y **criterio**.
+:::
+
+------------------------------------------------------------------------
+
+## De la curiosidad al concepto buscable
+
+Una tesis no se busca con frases del lenguaje cotidiano. Se busca con **conceptos clave** y sus **sinónimos**.
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.85em"}
+::: {.caja-warning}
+**Pregunta vaga**
+
+*"¿Cómo afectan las redes sociales a los adolescentes?"*
+
+→ devuelve millones de resultados, casi todos irrelevantes.
+:::
+
+::: {.caja-azul}
+<h4>Pregunta operacionalizada</h4>
+
+*Concepto 1:* uso de redes sociales <br>
+*Concepto 2:* sintomatología depresiva <br>
+*Población:* adolescentes (13–18) <br>
+*Diseño:* estudios longitudinales
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.5em; font-size:0.85em"}
+**Tip:** antes de tocar Google Scholar, escriban en una hoja sus 3–4 conceptos clave con al menos 2 sinónimos cada uno (en castellano y en inglés).
+:::
+
+------------------------------------------------------------------------
+
+## El mapa de conceptos y sinónimos
+
+Para cada concepto, anoten variantes terminológicas. Esto **es** la estrategia de búsqueda.
+
+<table style="font-size:0.72em; margin-top:0.4em">
+  <thead>
+    <tr>
+      <th>Concepto</th>
+      <th>Sinónimos / variantes (ES)</th>
+      <th>Sinónimos / variantes (EN)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Uso de redes sociales</strong></td>
+      <td>uso de Instagram; tiempo en pantalla; consumo digital</td>
+      <td>social media use; SNS use; screen time</td>
+    </tr>
+    <tr>
+      <td><strong>Depresión</strong></td>
+      <td>sintomatología depresiva; afecto negativo; malestar</td>
+      <td>depression; depressive symptoms; low mood</td>
+    </tr>
+    <tr>
+      <td><strong>Adolescentes</strong></td>
+      <td>jóvenes; estudiantes secundarios</td>
+      <td>adolescents; teens; youth</td>
+    </tr>
+  </tbody>
+</table>
+
+::: {.caja-ocre style="margin-top:0.6em; font-size:0.85em"}
+La mayoría de la literatura científica de psicología se publica en **inglés**. Buscar solo en castellano deja afuera muchas publicaciones.
+:::
+
+
+------------------------------------------------------------------------
+
+## Los tres operadores...
+
+:::::: {.cols-3 style="margin-top:0.6em; font-size:0.83em"}
+::: tarjeta
+<h4><span class="op">AND</span></h4>
+
+**Restringe.** Devuelve resultados que contengan *ambos* términos.
+
+[adolescents AND depression]{.codigo}
+
+→ solo trabajos que mencionen los dos.
+:::
+
+::: tarjeta
+<h4><span class="op">OR</span></h4>
+
+**Amplía.** Devuelve resultados con *cualquiera* de los términos.
+
+[adolescents OR teens]{.codigo}
+
+→ atrapa sinónimos.
+:::
+
+::: tarjeta
+<h4><span class="op">NOT</span></h4>
+
+**Excluye.** Quita resultados que contengan un término.
+
+[depression NOT bipolar]{.codigo}
+
+→ usar con cuidado: pueden perder material útil.
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.6em; font-size:0.85em"}
+Los operadores siempre van **en mayúscula** y se escriben tal cual: `AND`, `OR`, `NOT`.
+:::
+
+------------------------------------------------------------------------
+
+## Comillas, paréntesis y truncamiento
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: tarjeta
+<h4>Comillas: frase exacta</h4>
+
+[ "social media use" ]{.codigo}
+
+Sin comillas, el motor busca cada palabra por separado.
+
+[ "self-determination theory" ]{.codigo} es muy distinto a [ self determination theory ]{.codigo}.
+:::
+
+::: tarjeta
+<h4>Paréntesis: agrupación lógica</h4>
+
+[ (adolescents OR teens) AND depression ]{.codigo}
+
+Sin paréntesis, los motores aplican el AND primero y rompen la lógica.
+:::
+::::::
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: tarjeta
+<h4>Truncamiento: <span class="codigo">*</span></h4>
+
+[ depress* ]{.codigo} captura *depression*, *depressive*, *depressed*…
+
+Útil para no perder variantes morfológicas.
+:::
+
+::: tarjeta
+<h4>Comodín: <span class="codigo">?</span></h4>
+
+[ behavio?r ]{.codigo} captura *behavior* (EE.UU.) y *behaviour* (UK).
+
+No todas las bases lo soportan.
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Una búsqueda bien armada, paso a paso
+
+::: {.caja-crema style="margin-top:0.4em; font-size:0.86em"}
+**Pregunta:** uso de redes sociales y síntomas depresivos en adolescentes.
+:::
+
+<div style="font-family:'IBM Plex Mono', monospace; font-size:0.78em; background:#1d3557; color:#f8f4ec; padding:1em 1.2em; border-radius:6px; margin-top:0.6em; line-height:1.7">
+( "social media" OR "social network*" OR Instagram OR TikTok ) <br>
+&nbsp;&nbsp;<span style="color:#c89b3c">AND</span> <br>
+( depress* OR "depressive symptoms" OR "low mood" ) <br>
+&nbsp;&nbsp;<span style="color:#c89b3c">AND</span> <br>
+( adolescen* OR teen* OR youth )
+</div>
+
+::: {.caja-ocre style="margin-top:0.6em; font-size:0.84em"}
+**Tres bloques** (uno por concepto), unidos por `AND`. Dentro de cada bloque, sinónimos unidos por `OR`. Esto se llama estrategia **PICO/PEO simplificada**.
+:::
+
+
+------------------------------------------------------------------------
+
+## Tres niveles de fuentes
+
+:::::: {.cols-3 style="margin-top:0.6em; font-size:0.8em"}
+::: tarjeta
+<h4>Motores generales <span class="badge">amplio</span></h4>
+
+Google Scholar, Lens.org, BASE.
+
+**Indexan** mucho, **filtran** poco. Sirven para empezar y para snowballing.
+:::
+
+::: {.tarjeta .tarjeta-ocre}
+<h4>Bases especializadas <span class="badge badge-ocre">curado</span></h4>
+
+PsycInfo, Scopus, Web of Science, PubMed.
+
+**Curan** lo que indexan. Filtros sofisticados. El núcleo de una búsqueda seria.
+:::
+
+::: tarjeta
+<h4>Repositorios regionales <span class="badge">acceso</span></h4>
+
+SciELO, Redalyc, Dialnet, LILACS.
+
+Producción iberoamericana, en castellano y portugués. Imprescindible para contexto local.
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.6em; font-size:0.85em"}
+Una tesis seria **no se hace solo con Google Scholar**. Pero tampoco se hace ignorándolo. Cada fuente tiene un rol.
+:::
+
+------------------------------------------------------------------------
+
+## Google Scholar: virtudes y trampas
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.84em"}
+::: {style="font-size:0.95em"}
+<h4 style="color:#1d3557; font-family:'Crimson Pro', serif">Lo bueno</h4>
+
+::: lista-check
+- Indexa muchísimo, incluido material gris
+- Muestra cuántas veces fue citado un trabajo
+- "Citado por" → forward snowballing
+- "Versiones" → suele encontrar PDFs gratuitos
+- Funciona bien con búsquedas en castellano
+:::
+:::
+
+::: {style="font-size:0.95em"}
+<h4 style="color:#c0392b; font-family:'Crimson Pro', serif">Lo riesgoso</h4>
+
+::: lista-cross
+- No distingue revistas serias de predatorias
+- Indexa actas, blogs y trabajos no revisados
+- Algoritmo opaco: dos personas ven resultados distintos
+- Filtros muy pobres comparado con bases especializadas
+- Sesgo hacia lo más citado, no lo más relevante
+:::
+:::
+::::::
+
+::: {.caja-ocre style="margin-top:0.5em; font-size:0.84em"}
+**Regla:** Scholar como **punto de partida** y como **rastreador de citas**, no como única fuente.
+:::
+
+------------------------------------------------------------------------
+
+## Bases de datos especializadas
+
+<table style="font-size:0.7em; margin-top:0.4em">
+  <thead>
+    <tr>
+      <th>Base</th>
+      <th>Foco</th>
+      <th>Acceso</th>
+      <th>Cuándo usarla</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>PsycInfo</strong> (APA)</td>
+      <td>Psicología y disciplinas afines</td>
+      <td>Suscripción institucional</td>
+      <td>Casi siempre. Es la base de referencia del campo.</td>
+    </tr>
+    <tr>
+      <td><strong>Scopus</strong> (Elsevier)</td>
+      <td>Multidisciplinaria, alta calidad</td>
+      <td>Suscripción institucional</td>
+      <td>Búsquedas amplias, métricas, autores influyentes.</td>
+    </tr>
+    <tr>
+      <td><strong>Web of Science</strong></td>
+      <td>Multidisciplinaria, factor de impacto</td>
+      <td>Suscripción institucional</td>
+      <td>Análisis de citas, identificar revistas top.</td>
+    </tr>
+    <tr>
+      <td><strong>PubMed</strong></td>
+      <td>Biomédico (incluye psicología clínica y neuro)</td>
+      <td>Gratuito</td>
+      <td>Temas con base biológica, neuropsico, salud mental.</td>
+    </tr>
+    <tr>
+      <td><strong>SciELO / Redalyc</strong></td>
+      <td>Iberoamérica, acceso abierto</td>
+      <td>Gratuito</td>
+      <td>Investigación regional, contextos locales.</td>
+    </tr>
+    <tr>
+      <td><strong>Dialnet</strong></td>
+      <td>Producción en castellano</td>
+      <td>Gratuito (la mayoría)</td>
+      <td>Tesis, capítulos, revistas hispanoparlantes.</td>
+    </tr>
+  </tbody>
+</table>
+
+::: {.caja-crema style="margin-top:0.5em; font-size:0.84em"}
+La biblioteca de la **UAI** da acceso institucional a varias de estas bases. Pasen por la biblioteca o pidan las credenciales.
+:::
+
+------------------------------------------------------------------------
+
+## Cuando un paper está detrás de un paywall
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: tarjeta
+<h4>Vías legítimas</h4>
+
+- **Biblioteca UAI**: acceso institucional vía proxy
+- **Pedirlo al autor** por mail o ResearchGate (funciona sorprendentemente bien)
+- **Preprint del autor** en su web personal o repositorio institucional
+- **Open Access version** en PubMed Central, repositorios europeos (HAL, OAR)
+:::
+
+::: tarjeta
+<h4>Herramientas útiles</h4>
+
+- **Unpaywall** (extensión del navegador): busca versión legal abierta del PDF
+- **Open Access Button**
+- **Google Scholar → "Versiones"**: a menudo aparece un PDF gratuito
+- **CORE.ac.uk**: agregador de repositorios abiertos
+:::
+::::::
+
+::: {.caja-warning style="margin-top:0.5em"}
+**Sobre Sci-Hub:** existe, mucha gente lo usa, pero opera en zona gris legal. No lo recomendamos formalmente. La discusión sobre acceso al conocimiento es legítima; las consecuencias institucionales son problema de cada uno.
+:::
+
+------------------------------------------------------------------------
+
+
+
+## Una nueva herramienta
+
+En los últimos tres años aparecieron herramientas que usan IA para **resumir, mapear y vincular** literatura científica. No reemplazan la búsqueda tradicional: la **complementan**.
+
+::: {.caja-azul style="margin-top:0.6em; font-size:0.88em"}
+<h4>La regla de oro</h4>
+
+La IA les dice **qué leer**. No reemplaza **leer**. Y a veces **alucina** referencias que no existen.
+:::
+
+------------------------------------------------------------------------
+
+## Panorama de herramientas
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.78em"}
+::: tarjeta
+<h4>Elicit <span class="badge badge-ocre">síntesis</span></h4>
+
+Hace una pregunta en lenguaje natural y devuelve un resumen estructurado de papers relevantes (intervención, muestra, hallazgos).
+
+**Útil para:** entender rápido qué dice un campo.
+:::
+
+::: tarjeta
+<h4>Consensus <span class="badge badge-ocre">síntesis</span></h4>
+
+Responde preguntas tipo "¿X causa Y?" agregando evidencia de papers, con indicador de consenso.
+
+**Útil para:** verificar afirmaciones antes de citarlas.
+:::
+::::::
+
+:::::: {.cols-2 style="margin-top:0.4em; font-size:0.78em"}
+::: tarjeta
+<h4>Research Rabbit <span class="badge">grafos</span></h4>
+
+A partir de un paper semilla, mapea visualmente trabajos relacionados, autores y trayectorias.
+
+**Útil para:** snowballing visual y descubrir autores clave.
+:::
+
+::: tarjeta
+<h4>Connected Papers <span class="badge">grafos</span></h4>
+
+Genera un grafo de papers similares (no solo los citados). Excelente para mapear un subcampo.
+
+**Útil para:** ver el "vecindario" de un trabajo.
+:::
+::::::
+
+:::::: {.cols-2 style="margin-top:0.4em; font-size:0.78em"}
+::: tarjeta
+<h4>SciSpace <span class="badge badge-ocre">lectura</span></h4>
+
+Lee PDFs y permite hacer preguntas sobre el contenido. Explica fórmulas y secciones difíciles.
+
+**Útil para:** atravesar papers densos en una segunda lectura.
+:::
+
+::: tarjeta
+<h4>Semantic Scholar <span class="badge">motor</span></h4>
+
+Motor de búsqueda académico con IA. Resúmenes automáticos (TLDR) y filtros por tipo de paper.
+
+**Útil para:** búsquedas exploratorias rápidas.
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Lo que la IA NO puede hacer
+
+::: {.caja-warning style="margin-top:0.5em; font-size:0.86em"}
+<h4 style="color:#c0392b; font-family:'Crimson Pro', serif; margin:0 0 0.3em 0">Alucinaciones</h4>
+
+ChatGPT, Claude y Gemini **inventan referencias** con autores, títulos y DOIs falsos pero plausibles. Toda cita generada por una IA generalista debe ser **verificada manualmente**.
+:::
+
+::: {.caja-crema style="margin-top:0.5em; font-size:0.85em"}
+<h4 style="margin:0 0 0.3em 0">Otras limitaciones</h4>
+
+- **Sesgo de fuentes:** suelen indexar mejor lo anglo y reciente; menos lo iberoamericano y clásico
+- **Sin contexto teórico:** no distinguen autores influyentes de marginales
+- **Resúmenes simplificadores:** pierden matices, condicionalidad, limitaciones del estudio
+- **Sin juicio crítico:** no detectan p-hacking, conflicto de intereses, problemas metodológicos
+:::
+
+::: {.caja-ocre style="margin-top:0.5em; font-size:0.85em"}
+**Distinción clave:** Elicit, Consensus y SciScpace **trabajan sobre papers reales** (no inventan). ChatGPT/Claude/Gemini, en cambio, **pueden inventar**. No son lo mismo.
+:::
+
+------------------------------------------------------------------------
+
+## Un workflow integrado de búsqueda con IA
+
+```{mermaid}
+%%{init: {'theme':'base', 'themeVariables': {'primaryColor':'#a8c5d6','primaryTextColor':'#1d3557','lineColor':'#457b9d','tertiaryColor':'#ebe4d3'}}}%%
+flowchart LR
+  A[Pregunta de tesis] --> B[Búsqueda exploratoria<br/>Elicit / Consensus]
+  B --> C[Identificar 3-5 papers semilla]
+  C --> D[Connected Papers /<br/>Research Rabbit]
+  D --> E[Búsqueda formal en<br/>PsycInfo / Scopus]
+  E --> F[Snowballing manual:<br/>citas y referencias]
+  F --> G[Lectura crítica<br/>SciSpace si hace falta]
+```
+
+::: {.caja-crema style="margin-top:0.4em; font-size:0.83em"}
+La IA acelera **fases** del workflow, no lo reemplaza. La búsqueda formal en bases curadas sigue siendo el corazón.
+:::
+
+------------------------------------------------------------------------
+
+
+## Criterios para evaluar una publicación
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.84em"}
+::: tarjeta
+<h4>Sobre la revista</h4>
+
+- ¿Tiene **revisión por pares**?
+- ¿Está **indexada** en Scopus, WoS, PsycInfo?
+- ¿Tiene **factor de impacto** o **SJR**?
+- ¿Pertenece a una **editorial reconocida**? (APA, Sage, Wiley, Elsevier, Springer)
+- ¿Cuál es su **historial**? Antigüedad, regularidad de números
+:::
+
+::: tarjeta
+<h4>Sobre el artículo</h4>
+
+- ¿Quién es el/la autor/a? ¿Tiene producción consistente?
+- ¿La metodología es **replicable**? ¿Reportan limitaciones?
+- ¿Cita literatura **actualizada y diversa**?
+- ¿Hay **conflictos de interés** declarados?
+- ¿Cuántas veces fue **citado** y por quiénes?
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.5em; font-size:0.85em"}
+No todo lo indexado es bueno. No todo lo bueno está indexado. El **criterio se entrena** leyendo críticamente.
+:::
+
+------------------------------------------------------------------------
+
+## Revistas predatorias: cómo detectarlas
+
+::: {.caja-warning style="margin-top:0.4em; font-size:0.85em"}
+**Revistas predatorias:** publicaciones que cobran por publicar (APC) sin hacer una revisión por pares real. Aceptan casi cualquier cosa. Contaminan la literatura.
+:::
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.82em"}
+::: {style="font-size:0.95em"}
+<h4 style="color:#c0392b; font-family:'Crimson Pro', serif">Señales de alarma</h4>
+
+::: lista-cross
+- Mails masivos invitando a publicar
+- Promesas de revisión y publicación en pocos días
+- "Factor de impacto" inventado o de fuentes oscuras
+- Sitio web descuidado, errores de ortografía
+- Editores con afiliaciones poco verificables
+- Cobro de APC sin transparencia
+:::
+:::
+
+::: {style="font-size:0.95em"}
+<h4 style="color:#1d3557; font-family:'Crimson Pro', serif">Cómo verificar</h4>
+
+::: lista-check
+- Buscar la revista en **Scopus** y **WoS**
+- Consultar **DOAJ** (Directory of Open Access Journals)
+- Verificar en **Latindex** (Iberoamérica)
+- Buscar el ISSN en bases oficiales
+- Revisar **Think.Check.Submit.org**
+- Preguntar a directorxs y profesorxs
+:::
+:::
+::::::
+
+------------------------------------------------------------------------
+
+
+## La lectura en tres fases
+
+:::::: {.cols-3 style="margin-top:0.5em; font-size:0.8em"}
+::: tarjeta
+<h4>1ª fase · 5 min</h4>
+
+**Decidir si vale la pena.**
+
+- Título y resumen
+- Introducción (primeros y últimos párrafos)
+- Subtítulos
+- Conclusiones
+
+→ ¿Es relevante para mi tesis? Si no, descartar.
+:::
+
+::: {.tarjeta .tarjeta-ocre}
+<h4>2ª fase · 30 min</h4>
+
+**Captar la idea principal.**
+
+- Leer en orden, sin detenerse en detalles técnicos
+- Marcar argumentos clave
+- Mirar tablas y figuras
+- Anotar dudas
+
+→ ¿Puedo reconstruir el argumento general?
+:::
+
+::: tarjeta
+<h4>3ª fase · 1–2 h</h4>
+
+**Solo si es central.**
+
+- Reproducir mentalmente cada paso
+- Cuestionar supuestos y método
+- Comparar con otros trabajos
+- Tomar notas para citar
+
+→ ¿Lo voy a usar en mi tesis?
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.5em; font-size:0.85em"}
+Adaptado de Keshav (2007), *How to Read a Paper*. La mayoría de los papers solo merecen la **primera fase**.
+:::
+
+------------------------------------------------------------------------
+
+## Lectura activa: anotar con sistema
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: tarjeta
+<h4>Qué anotar de cada paper</h4>
+
+- **Pregunta** que se hace
+- **Diseño** y muestra
+- **Hallazgo principal** en una oración
+- **Limitaciones** declaradas y no declaradas
+- **Cómo se conecta** con mi tesis
+- **Cita textual** (si la hay) con número de página
+:::
+
+::: tarjeta
+<h4>Dónde anotar</h4>
+
+- **Zotero** (notas + tags por paper)
+- Documento maestro de lectura (Word/Notion/Obsidian)
+- Sistema de fichas si prefieren analógico
+
+Lo importante: que sea **buscable** dentro de seis meses.
+:::
+::::::
+
+
+
+------------------------------------------------------------------------
+
+## ¿Por qué Zotero?
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: tarjeta
+<h4>Lo que hace</h4>
+
+- Guarda referencias con un click desde el navegador
+- Adjunta el PDF automáticamente
+- Genera citas y bibliografía en cualquier formato (APA 7, Vancouver, etc.)
+- Sincroniza entre dispositivos
+- Permite tags, carpetas y notas
+- Plugin para Word/LibreOffice/Google Docs
+:::
+
+::: {.tarjeta .tarjeta-ocre}
+<h4>Por qué importa</h4>
+
+- **Gratis** y de código abierto
+- Estándar académico internacional
+- Reformatear citas en otra norma = **un click**
+- Recuperar la cita exacta de algo que leyeron hace ocho meses = **trivial**
+- La inversión inicial (1 hora) ahorra **decenas de horas** después
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.5em; font-size:0.85em"}
+Alternativas: Mendeley (Elsevier, gratuito pero con cuenta), EndNote (paga), Citavi. **Zotero es la más usada en investigación académica abierta.**
+:::
+
+------------------------------------------------------------------------
+
+## Por qué se cita
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: tarjeta
+<h4>Funciones de la cita</h4>
+
+- **Reconocer** ideas ajenas (honestidad intelectual)
+- **Permitir verificar** las afirmaciones (transparencia)
+- **Inscribir el trabajo en una conversación** (situarlo en el campo)
+- **Permitir que otros sigan la pista** de las fuentes
+:::
+
+::: tarjeta
+<h4>Qué citar</h4>
+
+- Toda **idea**, dato o argumento que no sea propio
+- Toda **definición** específica de un autor
+- Toda **cita textual** (con comillas y número de página)
+- Toda **figura, tabla o instrumento** tomado de otra fuente
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Plagio: las formas que toma
+
+::: {.caja-warning style="margin-top:0.4em; font-size:0.85em"}
+El plagio no es solo copiar y pegar. Hay formas más sutiles que también lo son.
+:::
+
+::: {.caja-crema style="margin-top:0.4em; font-size:0.84em"}
+- **Plagio directo**: copiar texto sin comillas ni cita
+- **Mosaico**: combinar fragmentos de varias fuentes sin citar
+- **Parafraseo encubierto**: reescribir con sinónimos pero conservando estructura, sin citar
+- **Autoplagio**: reutilizar texto propio publicado sin indicarlo
+- **Plagio de ideas**: presentar como propia una idea ajena, aun si está reformulada
+- **Plagio por IA**: pegar texto generado por IA sin transparentarlo
+:::
+
+------------------------------------------------------------------------
+
+## Uso ético de IA en la tesis
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.83em"}
+::: tarjeta
+<h4>Usos razonables</h4>
+
+::: lista-check
+- Brainstorm inicial de ideas
+- Mapear un campo desconocido
+- Revisar gramática y estilo
+- Generar versiones alternativas de un párrafo propio
+- Explicar un concepto que no terminan de entender
+- Identificar literatura relevante (luego verificada)
+:::
+:::
+
+::: tarjeta
+<h4>Usos problemáticos</h4>
+
+::: lista-cross
+- Generar texto y pegarlo como propio
+- Citar referencias generadas por IA sin verificar
+- Reemplazar la lectura crítica por resúmenes de IA
+- Generar resultados o datos
+- Hacer pasar análisis de IA por análisis propio
+:::
+:::
+::::::
+
+::: {.caja-ocre style="margin-top:0.5em; font-size:0.85em"}
+**Principio:** la IA puede ser un **asistente** del pensamiento, no un **sustituto**. Lo que firman como propio tiene que haber pasado por su cabeza.
+:::
+
+------------------------------------------------------------------------
+
+## Errores frecuentes que conviene evitar
+
+::: {.caja-crema style="margin-top:0.4em; font-size:0.85em"}
+- **Buscar solo en castellano** y perderse el grueso del campo
+- **Buscar solo en Google Scholar** y no usar bases curadas
+- **No registrar** las búsquedas que se hacen (después no saben qué probaron)
+- **Aceptar la primera tanda de resultados** sin refinar
+- **Citar sin haber leído** el paper completo (o al menos la 2ª pasada)
+- **Confiar en referencias generadas por IA** sin verificarlas
+- **Posponer Zotero** "para cuando tenga tiempo": no lo van a tener
+- **No releer** lo subrayado seis meses después
+:::
+
+------------------------------------------------------------------------
+
+## {background-color="#1e293b"}
+
+::: cierre-container
+<h2>Suerte con su búsqueda!</h2>
+
+:::

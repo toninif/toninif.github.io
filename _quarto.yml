@@ -18,6 +18,8 @@ website:
             text: "Psicología"
           - href: presentaciones/seminario_II/index.qmd
             text: "Seminario II - UAI"
+          - href: presentaciones/taller-tesis-uai/index.qmd
+            text: "Taller de Tesis - UAI"
       - href: publicaciones.qmd
         text: Publicaciones
     right:
