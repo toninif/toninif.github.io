@@ -1,0 +1,904 @@
+---
+title: ""
+format:
+  revealjs:
+    theme: [simple, proceso-emocional-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Psicología de la Motivación y Emoción · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+filters:
+  - lightbox
+lightbox: auto
+---
+
+##  {data-background-color="#ffffff"}
+
+
+<div style="position: absolute; top: 0; right: 0; width: 0; height: 0; border-top: 550px solid #3d3229; border-left: 500px solid transparent; z-index: 0;"></div>
+
+
+<div style="position: relative; z-index: 1; display: flex; flex-direction: column; justify-content: center; height: 75vh; padding-left: 1em;">
+
+[Psicología de la Emoción]{style="color: #c9a96e; font-size: 0.55em; font-weight: 300; letter-spacing: 0.2em; text-transform: uppercase;"}
+
+[El proceso emocional]{style="color: #3d3229; font-size: 1.4em; font-weight: 700; font-family: 'Libre Baskerville', serif; line-height: 1.2; display: block;"}
+
+<br>
+
+[Clase 8 · ]{style="color: #a09585; font-size: 0.5em;"}
+[Dr. Fernando Tonini]{style="color: #a09585; font-size: 0.5em;"}
+
+</div>
+
+------------------------------------------------------------------------
+
+##  {data-background-color="#ffffff"}
+
+:::::: {style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;"}
+<div>
+
+::: {style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;"}
+EMOCIÓN
+:::
+
+::: {style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;"}
+Perspectiva cognitiva
+:::
+
+</div>
+::::::
+
+------------------------------------------------------------------------
+
+## Proceso emocional
+
+::: {.subtitulo-slide}
+Desde la perspectiva cognitiva
+:::
+
+::: caja-cita
+::: {style="font-family:'Libre Baskerville', serif; font-size:1.05em; font-style:italic; line-height:1.6; color:#fff; text-align:center"}
+"Emoción = proceso desencadenado por la valoración cognitiva de una situación que produce una alteración en la activación del organismo."
+:::
+:::
+
+::: {.subtitulo-slide style="margin-top:0.8em"}
+Funciones de la emoción
+:::
+
+:::::: {.cols-3 style="margin-top:0.6em"}
+::: tarjeta
+<h4>Adaptativa</h4>
+
+<p>Prepara al organismo para responder a las demandas del ambiente.</p>
+:::
+
+::: tarjeta
+<h4>Social</h4>
+
+<p>Comunica estados internos y regula las interacciones.</p>
+:::
+
+::: tarjeta
+<h4>Motivacional</h4>
+
+<p>Energiza y dirige la conducta hacia la acción.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## El proceso
+
+::: {.subtitulo-slide}
+De un estímulo a un efecto observable
+:::
+
+::: {style="margin-top:1.5em; display:flex; justify-content:space-between; align-items:center; gap:0.5em"}
+
+::: {style="flex:1; background:#3d3229; color:#fff; padding:0.8em 0.5em; border-radius:8px; text-align:center; font-family:'Libre Baskerville', serif; font-weight:700; font-size:0.9em"}
+Estímulo
+:::
+
+::: {style="color:#c9a96e; font-size:1.5em; font-weight:700"}
+→
+:::
+
+::: {style="flex:1.3; background:#faf7f2; border:2px solid #c9a96e; padding:0.8em 0.5em; border-radius:8px; text-align:center; font-family:'Libre Baskerville', serif; font-weight:700; color:#3d3229; font-size:0.85em"}
+Evaluación<br>valorativa
+:::
+
+::: {style="color:#c9a96e; font-size:1.5em; font-weight:700"}
+→
+:::
+
+::: {style="flex:1; background:#faf7f2; border:2px solid #c9a96e; padding:0.8em 0.5em; border-radius:8px; text-align:center; font-family:'Libre Baskerville', serif; font-weight:700; color:#3d3229; font-size:0.85em"}
+Activación
+:::
+
+::: {style="color:#c9a96e; font-size:1.5em; font-weight:700"}
+→
+:::
+
+::: {style="flex:1.3; background:#faf7f2; border:2px solid #c9a96e; padding:0.8em 0.5em; border-radius:8px; text-align:center; font-family:'Libre Baskerville', serif; font-weight:700; color:#3d3229; font-size:0.85em"}
+Aprendizaje<br>y cultura
+:::
+
+::: {style="color:#c9a96e; font-size:1.5em; font-weight:700"}
+→
+:::
+
+::: {style="flex:1.2; background:#3d3229; color:#fff; padding:0.8em 0.5em; border-radius:8px; text-align:center; font-family:'Libre Baskerville', serif; font-weight:700; font-size:0.85em"}
+Efectos<br>observables
+:::
+
+:::
+
+::: {.caja-dorada style="margin-top:1.5em; font-size:0.85em"}
+Cada eslabón modula la respuesta emocional final. A lo largo de la clase iremos viendo en detalle qué ocurre en cada etapa: la <strong>evaluación valorativa</strong>, la <strong>activación</strong> y el rol del <strong>aprendizaje y la cultura</strong>.
+:::
+
+------------------------------------------------------------------------
+
+## a) Evaluación valorativa
+
+::: {.subtitulo-slide}
+Compuesta por doble proceso
+:::
+
+<table class="tabla-contenido" style="margin-top:0.6em; font-size:0.7em; table-layout:fixed">
+  <thead>
+    <tr>
+      <th style="width:50%">Evaluación afectiva</th>
+      <th style="width:50%">Valoración de la situación</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="vertical-align:top">
+        <ul style="margin:0; padding-left:1.2em">
+          <li>Automática</li>
+          <li>Rasgos innatos o previo aprendizaje</li>
+          <li>Sin conciencia (características del E)</li>
+          <li>Amígdala – Hipotálamo (vía 1ª)</li>
+        </ul>
+      </td>
+      <td style="vertical-align:top">
+        <ul style="margin:0; padding-left:1.2em">
+          <li>Según experiencia particular de cada persona</li>
+          <li>Con conciencia (significación subjetiva del E)</li>
+          <li>Corteza frontal – Amígdala (vía 2ª)</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align:top; background:#faf7f2">
+        <p style="margin:0 0 0.4em 0"><strong>Novedad</strong> · <em>¿sorpresividad? ¿familiaridad? ¿predictibilidad?</em></p>
+        <p style="margin:0 0 0.6em 0"><strong>Agrado</strong> · <em>¿agradable?</em></p>
+        <p style="margin:0; padding-top:0.4em; border-top:1px solid #e0d8cc"><strong style="color:#996b2f">Emociones 1ª — Universales</strong></p>
+      </td>
+      <td style="vertical-align:top; background:#faf7f2">
+        <p style="margin:0 0 0.3em 0"><strong>Significación</strong> · <em>¿relevancia? ¿expectación? ¿tendencia? ¿resultados? ¿urgencia?</em></p>
+        <p style="margin:0 0 0.3em 0"><strong>Afrontamiento</strong> · <em>¿agente? ¿motivo? ¿control? ¿poder? ¿ajuste?</em></p>
+        <p style="margin:0 0 0.5em 0"><strong>Normas</strong> · <em>¿externas? ¿internas?</em></p>
+        <p style="margin:0; padding-top:0.4em; border-top:1px solid #e0d8cc"><strong style="color:#996b2f">Emociones 2ª — Individuales</strong><br>
+        <span style="font-size:0.92em">→ actitudes emocionales · sesgos en aprend., memoria, interpret. · carácter patológico de la emoción</span></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## b) Activación emocional
+
+::: {.subtitulo-slide}
+Sólo la activación que es fruto de un proceso de valoración cognitiva es emocional
+:::
+
+<table class="tabla-contenido" style="margin-top:0.6em; font-size:0.72em">
+  <thead>
+    <tr>
+      <th style="width:25%">Dimensión</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Cambios en la actividad fisiológica</strong></td>
+      <td>Cambios y alteraciones en SNC, SNP y sistema endócrino.</td>
+    </tr>
+    <tr>
+      <td><strong>Expresión</strong></td>
+      <td>Comunicación y exteriorización de la emoción por expresión facial y comunicación no-verbal. Efectos en la interrelación social.</td>
+    </tr>
+    <tr>
+      <td><strong>Afrontamiento</strong></td>
+      <td>Cambios conductuales que producen las emociones y que hacen que las personas se preparen para la acción. <em>"Esfuerzos cognitivos y conductuales para adaptarse a las condiciones desencadenantes, que se desarrollan para manejar las demandas, tanto internas como externas, que son valoradas como desbordantes para los recursos de la persona."</em> (Lazarus y Folkman, 1984)</td>
+    </tr>
+    <tr>
+      <td><strong>Interpretación subjetiva</strong></td>
+      <td>Sentimiento y efectos subjetivos que produce la emoción (placer–displacer; tensión–relajación; control–descontrol).</td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## c) Aprendizaje y cultura
+
+:::::: {.cols-2 style="margin-top:0.8em; font-size:0.85em"}
+::: tarjeta
+<h4>Características</h4>
+
+<ul style="margin:0; padding-left:1.2em">
+<li>Control cultural de la manifestación de la respuesta emocional → <em>inhibición, exacerbación o distorsión</em></li>
+<li>Parte del proceso de socialización</li>
+<li>Actúa sobre todos los elementos de la respuesta emocional</li>
+</ul>
+:::
+
+::: tarjeta
+<h4>Sobre qué actúa</h4>
+
+<ul style="margin:0; padding-left:1.2em">
+<li>Autoinformes sesgados</li>
+<li>Expresión controlada</li>
+<li>Estilos de afrontamiento
+  <ul style="margin-top:0.2em">
+    <li><em>método:</em> activo · pasivo · evitación</li>
+    <li><em>focalización:</em> evaluación · problema · emocional</li>
+    <li><em>tipo de actividad:</em> cognitiva · conductual</li>
+  </ul>
+</li>
+<li>Arousal (menor control cultural)</li>
+</ul>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {data-background-color="#ffffff"}
+
+:::::: {style="display: flex; align-items: center; height: 70vh; padding-left: 0.5em;"}
+<div>
+
+::: {style="color: #c9a96e; font-size: 0.45em; letter-spacing: 0.2em; font-weight: 300; text-transform: uppercase; margin-bottom: 0.5em;"}
+EMOCIÓN
+:::
+
+::: {style="color: #3d3229; font-size: 1.4em; font-family: 'Libre Baskerville', serif; font-weight: 700; line-height: 1.3; border-left: 4px solid #c9a96e; padding-left: 0.5em;"}
+Emociones primarias y secundarias
+:::
+
+</div>
+::::::
+
+------------------------------------------------------------------------
+
+## Tipos de emociones
+
+<table class="tabla-contenido" style="margin-top:0.4em; font-size:0.62em">
+  <thead>
+    <tr>
+      <th style="width:50%">Emociones primarias</th>
+      <th style="width:50%">Emociones secundarias</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <ul style="margin:0; padding-left:1.2em">
+          <li>Alta carga genética</li>
+          <li>Vía 1ª de procesamiento (amígdala–hipotálamo)</li>
+          <li>Respuesta emocional preorganizada</li>
+          <li>Presentes en todas las culturas</li>
+          <li>Constancia en el afrontamiento</li>
+          <li>Expresión facial específica y universal</li>
+          <li>Respuesta puntual (fásica)</li>
+          <li>Origen inmediato</li>
+          <li>Umbral de activación medio</li>
+        </ul>
+      </td>
+      <td>
+        <ul style="margin:0; padding-left:1.2em">
+          <li>Producto del desarrollo individual</li>
+          <li>Vía 2ª de procesamiento (corteza frontal–amígdala)</li>
+          <li>Respuestas difieren entre personas</li>
+          <li>Diferencias culturales</li>
+          <li>No hay constancia en el afrontamiento</li>
+          <li>No hay expresión facial universal</li>
+          <li>Respuesta mantenida (tónica)</li>
+          <li>Origen próximo</li>
+          <li>Umbral de activación bajo</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+::: {.subtitulo-slide style="margin-top:0.6em; font-size:0.8em"}
+Valencia: positiva, neutra o negativa
+:::
+
+<table class="tabla-contenido" style="font-size:0.62em">
+  <thead>
+    <tr>
+      <th>Positiva</th>
+      <th>Neutra</th>
+      <th>Negativa</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        <ul style="margin:0; padding-left:1.2em">
+          <li>Sentimiento agradable</li>
+          <li>Valoración: situación beneficiosa</li>
+          <li>Moviliza escasos recursos de afrontamiento</li>
+          <li>Duración muy breve</li>
+        </ul>
+      </td>
+      <td>
+        <ul style="margin:0; padding-left:1.2em">
+          <li>No produce reacción ni agradable ni desagradable</li>
+          <li>Facilita aparición de emoción posterior</li>
+        </ul>
+      </td>
+      <td>
+        <ul style="margin:0; padding-left:1.2em">
+          <li>Sentimiento desagradable</li>
+          <li>Valoración: situación dañina</li>
+          <li>Moviliza muchos recursos de afrontamiento</li>
+        </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Emociones primarias — Tristeza
+
+::: {.caja-dorada style="margin-top:0.4em; font-size:0.85em"}
+Displacer que se produce ante la pérdida de un deseo apremiante, que se sabe imposible de satisfacer.
+:::
+
+::: {.subtitulo-slide style="margin-top:0.6em; font-size:0.8em"}
+Características de la tristeza
+:::
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th style="width:35%">Desencadenantes</th>
+      <th>Procesos cognitivos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Separación física o psicológica<br>
+        Pérdida<br>
+        Fracaso<br>
+        Suceso pasado del que nadie es responsable
+      </td>
+      <td>
+        <em>Novedad:</em> baja sorpresa<br>
+        <em>Agrado intrínseco:</em> bajo<br>
+        <em>Significado:</em> relevante para el orden, tendencia obstruyente, urgencia baja<br>
+        <em>Afrontamiento:</em> causa: negligencia, poder muy bajo, control muy bajo, ajuste medio
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Efectos de la tristeza
+
+![](img/caras-emocion.png){fig-align="center" width="25%"}
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th>Experiencia subjetiva</th>
+      <th>Efectos fisiológicos</th>
+      <th>Afrontamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Desánimo<br>
+        Pérdida de energía<br>
+        Atención focalizada en el interior<br>
+        Sesgos en el pensamiento (depresión)
+      </td>
+      <td>
+        <strong>Incrementa:</strong><br>
+        Frecuencia cardíaca<br>
+        Presión arterial<br>
+        Tensión muscular<br>
+        <strong>Reduce:</strong><br>
+        Volumen sanguíneo<br>
+        Temperatura periférica<br>
+        Disminución de energía en todo tipo de actividades
+      </td>
+      <td>
+        Reducción de actividades<br>
+        Reducción de atención<br>
+        <em>Autoexamen</em><br>
+        <em>Cohesión social (ayuda)</em>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Emociones primarias — Miedo
+
+::: {.caja-dorada style="margin-top:0.4em; font-size:0.85em"}
+Emoción primaria negativa producida por un peligro presente e inminente. Señal de advertencia de peligro físico o psíquico, que implica inseguridad → soportar o manejar la situación de amenaza. La intensidad de la respuesta depende de la incertidumbre de los resultados.
+:::
+
+::: {.subtitulo-slide style="margin-top:0.6em; font-size:0.8em"}
+Características del miedo
+:::
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th style="width:35%">Desencadenantes</th>
+      <th>Procesos cognitivos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Percepción de peligro o daño<br>
+        Estímulos condicionados (ej. fobia)
+      </td>
+      <td>
+        <em>Novedad:</em> alta sorpresa, baja predictibilidad<br>
+        <em>Agrado intrínseco:</em> bajo<br>
+        <em>Significado:</em> relevante para el cuerpo, expectativas disonantes, tendencia obstruyente, urgencia media<br>
+        <em>Afrontamiento:</em> agente: otros o naturaleza, poder bajo, ajuste bajo
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Efectos del miedo
+
+![](img/caras-emocion.png){fig-align="center" width="25%"}
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th>Experiencia subjetiva</th>
+      <th>Efectos fisiológicos</th>
+      <th>Afrontamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Tensión<br>
+        Malestar<br>
+        Pérdida de control<br>
+        Preocupación por la salud
+      </td>
+      <td>
+        <strong>Incrementa:</strong><br>
+        Frec. cardíaca<br>
+        Presión arterial<br>
+        Frec. respiratoria<br>
+        Tensión muscular<br>
+        <strong>Reduce:</strong><br>
+        Volumen sanguíneo<br>
+        Temperatura periférica
+      </td>
+      <td>
+        Escape<br>
+        Evitación<br>
+        Focalización atencional (respuesta veloz, intensa)<br>
+        <em>Protección personal</em>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Emociones primarias — Ira
+
+::: {.caja-dorada style="margin-top:0.4em; font-size:0.85em"}
+Reacción emocional primaria negativa, caracterizada por irritación y furia causada por sentir vulnerado un derecho. Genera un impulso apremiante por hacer algo que elimine el agente causante de la limitación. Tiene un gran componente motivacional.
+:::
+
+::: {.subtitulo-slide style="margin-top:0.6em; font-size:0.8em"}
+Características de la ira
+:::
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th style="width:35%">Desencadenantes</th>
+      <th>Procesos cognitivos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Engaño<br>
+        Traición<br>
+        Abuso<br>
+        Control externo
+      </td>
+      <td>
+        <em>Novedad:</em> alta sorpresa, baja predictibilidad<br>
+        <em>Agrado intrínseco:</em> bajo<br>
+        <em>Significado:</em> relevante para el orden, expectativas disonantes, tendencia obstruyente, urgencia media<br>
+        <em>Afrontamiento:</em> agente: otros con causa intencionada, poder alto
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Efectos de la ira
+
+![](img/caras-emocion.png){fig-align="center" width="25%"}
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th>Experiencia subjetiva</th>
+      <th>Efectos fisiológicos</th>
+      <th>Afrontamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Irritación<br>
+        Enojo<br>
+        Furia<br>
+        Obnubilación<br>
+        Impulsividad
+      </td>
+      <td>
+        <strong>Incrementa:</strong><br>
+        Frec. cardíaca<br>
+        Presión arterial<br>
+        Frec. respiratoria<br>
+        Tensión muscular<br>
+        <strong>Reduce:</strong><br>
+        Volumen sanguíneo<br>
+        Temperatura periférica
+      </td>
+      <td>
+        Moviliza energía<br>
+        Autodefensa<br>
+        Ataque<br>
+        <em>Eliminar obstáculos que generan frustración</em>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Emociones primarias — Asco
+
+::: {.caja-dorada style="margin-top:0.4em; font-size:0.85em"}
+Respuesta emocional de rechazo de un objeto deteriorado, acontecimientos psicológicos o valores morales repugnantes.
+:::
+
+::: {.subtitulo-slide style="margin-top:0.6em; font-size:0.8em"}
+Características del asco
+:::
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th style="width:35%">Desencadenantes</th>
+      <th>Procesos cognitivos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Estímulo desagradable, peligroso o molesto
+      </td>
+      <td>
+        <em>Novedad:</em> baja familiaridad, baja predictibilidad<br>
+        <em>Agrado intrínseco:</em> muy bajo<br>
+        <em>Significado:</em> relevante para el cuerpo, urgencia alta
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Efectos del asco
+
+![](img/caras-emocion.png){fig-align="center" width="25%"}
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th>Experiencia subjetiva</th>
+      <th>Efectos fisiológicos</th>
+      <th>Afrontamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Necesidad de alejarse del estímulo<br>
+        Náuseas<br>
+        Sensaciones gástricas
+      </td>
+      <td>
+        <strong>Incrementa:</strong><br>
+        Reactividad gástrica<br>
+        Frec. cardíaca<br>
+        Frec. respiratoria<br>
+        Tensión muscular<br>
+        <strong>Reduce:</strong><br>
+        Volumen sanguíneo<br>
+        Temperatura periférica
+      </td>
+      <td>
+        Rechazo<br>
+        Escape<br>
+        Evitación<br>
+        <em>Potenciar hábitos saludables, higiénicos y adaptativos</em>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Emociones primarias — Alegría
+
+::: {.caja-dorada style="margin-top:0.4em; font-size:0.85em"}
+Emoción que se complace en la posesión de algún bien.
+:::
+
+::: {.subtitulo-slide style="margin-top:0.6em; font-size:0.8em"}
+Características de la alegría
+:::
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th style="width:35%">Desencadenantes</th>
+      <th>Procesos cognitivos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Éxitos<br>
+        Logros
+      </td>
+      <td>
+        <em>Novedad:</em> baja sorpresa, media predictibilidad<br>
+        <em>Agrado intrínseco:</em> alto<br>
+        <em>Significado:</em> expectativa consonante, tendencia conducente, urgencia baja<br>
+        <em>Afrontamiento:</em> causa intencionada (propia u otros), ajuste alto
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Efectos de la felicidad
+
+![](img/caras-emocion.png){fig-align="center" width="25%"}
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th>Experiencia subjetiva</th>
+      <th>Efectos fisiológicos</th>
+      <th>Afrontamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Alegría<br>
+        Gozo<br>
+        Bienestar<br>
+        Tranquilidad<br>
+        Autoestima
+      </td>
+      <td>
+        <strong>Incrementa:</strong><br>
+        Frecuencia cardíaca<br>
+        Frecuencia respiratoria<br>
+        Presión arterial<br>
+        Tensión muscular<br>
+        <strong>Reduce:</strong><br>
+        Volumen sanguíneo<br>
+        Temperatura periférica
+      </td>
+      <td>
+        Capacidad de disfrute<br>
+        Altruismo<br>
+        Empatía<br>
+        Vigorosidad
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Emociones primarias — Sorpresa
+
+::: {.caja-dorada style="margin-top:0.4em; font-size:0.85em"}
+Reacción causada por algo imprevisto o extraño. Emoción breve y neutra, que facilita la aparición de otra emoción congruente con el tipo de estímulo desencadenante.
+:::
+
+::: {.subtitulo-slide style="margin-top:0.6em; font-size:0.8em"}
+Características de la sorpresa
+:::
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th style="width:35%">Desencadenantes</th>
+      <th>Procesos cognitivos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Estímulo novedoso, inesperado<br>
+        Cambio brusco
+      </td>
+      <td>
+        <em>Novedad:</em> muy alta sorpresa, baja familiaridad, baja predictibilidad<br>
+        <em>Significado:</em> urgencia alta<br>
+        <em>Afrontamiento:</em> agente: otros o naturaleza
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Efectos de la sorpresa
+
+![](img/caras-emocion.png){fig-align="center" width="25%"}
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th>Experiencia subjetiva</th>
+      <th>Efectos fisiológicos</th>
+      <th>Afrontamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Incertidumbre<br>
+        Duración breve
+      </td>
+      <td>
+        <strong>Incrementa:</strong><br>
+        Frec. cardíaca<br>
+        Tensión muscular<br>
+        Volumen sanguíneo cefálico<br>
+        <strong>Reduce:</strong><br>
+        Volumen sanguíneo periférico<br>
+        Frec. respiratoria
+      </td>
+      <td>
+        Exploración<br>
+        Curiosidad<br>
+        Facilitación de procesos atencionales
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Emociones secundarias — Ansiedad
+
+::: {.caja-dorada style="margin-top:0.4em; font-size:0.82em"}
+Estado de agitación e inquietud carente de estímulo desencadenante concreto. Existen dos tipos: específica e inespecífica.<br><br>
+<strong>Miedo →</strong> peligro real; reacción proporcionada.<br>
+<strong>Ansiedad →</strong> desproporción entre peligro y respuesta.
+:::
+
+::: {.subtitulo-slide style="margin-top:0.5em; font-size:0.8em"}
+Características de la ansiedad
+:::
+
+<table class="tabla-contenido" style="font-size:0.66em">
+  <thead>
+    <tr>
+      <th style="width:35%">Desencadenantes</th>
+      <th>Procesos cognitivos</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Amenaza<br>
+        Expectativa aprendida de peligro<br>
+        <em>* Estado de alteración fisiológica con causa desconocida</em><br>
+        <em>* En patología: recuerdo, imagen, pensamiento de situación desagradable</em>
+      </td>
+      <td>
+        <em>Novedad:</em> baja sorpresa<br>
+        <em>Significado:</em> relevante para el orden, tendencia obstruyente, urgencia media<br>
+        <em>Afrontamiento:</em> agente: otros o naturaleza, poder muy bajo, ajuste medio
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Efectos de la ansiedad
+
+<table class="tabla-contenido" style="font-size:0.7em">
+  <thead>
+    <tr>
+      <th>Experiencia subjetiva</th>
+      <th>Efectos fisiológicos</th>
+      <th>Afrontamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>
+        Tensión<br>
+        Nervios<br>
+        Malestar<br>
+        Preocupación<br>
+        Pavor<br>
+        Dificultad cognitiva
+      </td>
+      <td>
+        <strong>Incrementa:</strong><br>
+        Frec. cardíaca<br>
+        Frec. respiratoria<br>
+        Presión arterial<br>
+        Tensión muscular<br>
+        Adrenalina – noradrenalina<br>
+        <strong>Reduce:</strong><br>
+        Temperatura periférica
+      </td>
+      <td>
+        Hipervigilancia<br>
+        Exploración del medio<br>
+        Atención selectiva<br>
+        Amplificación
+      </td>
+    </tr>
+  </tbody>
+</table>

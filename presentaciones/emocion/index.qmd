@@ -42,6 +42,10 @@ Material de clase del curso de Psicología de la Motivación y Emoción, Univers
 
 ::: {.pub-item}
 **[Clase 7](07-intro-emocion.html){target="_blank"}** · Introducción a la psicología de la emoción. Perspectivas, clasificación y modelo de Ekman
-
 :::
+
+::: {.pub-item}
+**[Clase 8](08-proceso-emocional.html){target="_blank"}** · Emociones desde la perspectiva cognitiva.
+:::
+
 
