@@ -1,0 +1,628 @@
+---
+title: ""
+subtitle: ""
+author: ""
+format:
+  revealjs:
+    theme: simple
+    css: seminario-uai-style.css
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Seminario Taller de Integración II · UAI"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+## {.portada}
+
+::: portada-container
+::: portada-materia
+Seminario Taller de Integración II
+:::
+
+::: portada-titulo
+Objetivos e hipótesis en investigación cuantitativa
+:::
+
+::: portada-subtitulo
+De la pregunta de investigación al diseño contrastable
+:::
+
+::: portada-autor
+**Dr. Fernando Tonini**  
+:::
+:::
+
+------------------------------------------------------------------------
+
+## Hoja de ruta
+
+::: highlight-box
+Hoy vamos a articular tres elementos que estructuran cualquier proyecto de investigación: **objetivos**, **variables** e **hipótesis**.
+:::
+
+1. De la pregunta al objetivo general
+2. Objetivos específicos: criterios y errores
+3. Hipótesis en el paradigma cuantitativo
+4. Tipos de hipótesis 
+5. Variables y su rol en la hipótesis
+6. Criterios para una buena hipótesis
+7. Errores frecuentes
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+De la pregunta a los objetivos
+:::
+::::
+------------------------------------------------------------------------
+
+## La cadena lógica del proyecto
+
+:::::: {.cols-3 style="margin-top:1em"}
+::: tarjeta
+<h4>Problema</h4>
+<p>¿Qué quiero saber? ¿Qué vacío de conocimiento existe?</p>
+:::
+
+::: tarjeta
+<h4>Pregunta</h4>
+<p>Formulación interrogativa, precisa y delimitada.</p>
+:::
+
+::: tarjeta
+<h4>Objetivo</h4>
+<p>Reformulación afirmativa de la pregunta: qué se va <em>a hacer</em>.</p>
+:::
+::::::
+
+::: {.highlight-box style="margin-top:1em"}
+El objetivo **no agrega contenido nuevo** respecto de la pregunta: la traduce a una acción de investigación verificable.
+:::
+
+------------------------------------------------------------------------
+
+## ¿Qué es un objetivo de investigación?
+
+::: {.example-box}
+Los **objetivos** señalan a lo que se aspira en la investigación y deben expresarse con claridad, pues son las guías del estudio.
+:::
+
+::: {style="margin-top:0.8em"}
+Un objetivo bien formulado responde a tres preguntas:
+:::
+
+- **¿Qué** se va a hacer? → verbo en infinitivo
+- **Sobre qué** o **sobre quiénes**? → población o variable
+- **¿En qué contexto**? → delimitación espacio-temporal
+
+------------------------------------------------------------------------
+
+## Objetivo general
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.92em"}
+::: tarjeta
+<h4>Función</h4>
+<p>Expresa el <strong>propósito central</strong> del estudio. Hay <strong>uno solo</strong> y se deriva directamente de la pregunta de investigación.</p>
+:::
+
+::: tarjeta
+<h4>Características</h4>
+<p>Amplio pero acotado. Contiene las variables centrales y la población. No describe procedimientos.</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.8em; font-size:0.85em"}
+[**Estructura tipo:**]{style="color:#FDF6EE"} [Verbo en infinitivo + variable(s) + población + contexto]{style="color:#000"}
+:::
+
+------------------------------------------------------------------------
+
+## Verbos para el objetivo general
+
+:::::: {.cols-3 style="margin-top:0.8em; font-size:0.85em"}
+::: tarjeta
+<h4>Alcance descriptivo</h4>
+<p>describir · caracterizar · identificar · medir · estimar</p>
+:::
+
+::: tarjeta
+<h4>Alcance correlacional</h4>
+<p>analizar la relación · examinar la asociación · determinar el vínculo</p>
+:::
+
+::: tarjeta
+<h4>Alcance explicativo</h4>
+<p>establecer el efecto · evaluar el impacto · explicar · comprobar</p>
+:::
+::::::
+
+::: {.warning-box style="margin-top:0.8em; font-size:0.82em"}
+Evitar verbos vagos o no verificables: *conocer*, *entender*, *reflexionar*, *concientizar*, *profundizar*.
+:::
+
+------------------------------------------------------------------------
+
+## Ejemplo: débil vs. bueno
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: {.warning-box}
+<h4 style="color:#A82040">Débil</h4>
+<p>"Conocer la ansiedad en estudiantes universitarios."</p>
+<p style="font-size:0.85em; color:#5C5C5C">Verbo no verificable, sin contexto, sin delimitación.</p>
+:::
+
+::: {.example-box}
+<h4 style="color:#996B2F">Bueno</h4>
+<p>"Analizar la relación entre niveles de ansiedad académica y rendimiento en estudiantes de 1° año de Psicología de la UAI durante el ciclo 2025."</p>
+<p style="font-size:0.85em; color:#5C5C5C">Verbo claro, dos variables, población y contexto definidos.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Objetivos específicos
+:::
+::::
+
+------------------------------------------------------------------------
+
+## ¿Qué son los objetivos específicos?
+
+::: {.highlight-box}
+Los objetivos específicos **descomponen** el objetivo general en pasos concretos que, en conjunto, permiten alcanzarlo.
+:::
+
+:::::: {.cols-2 style="margin-top:0.8em; font-size:0.88em"}
+::: tarjeta
+<h4>Cantidad</h4>
+<p>Entre <strong>3 y 5</strong> habitualmente. Demasiados fragmentan, mientras que muy pocos no cubren el general.</p>
+:::
+
+::: tarjeta
+<h4>Suma lógica</h4>
+<p>La sumatoria de los específicos debe equivaler al general —> ni menos, ni más.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Criterios de formulación
+
+<table style="font-size:0.78em; margin-top:0.5em">
+<thead>
+<tr><th>Criterio</th><th>¿Qué significa?</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Específico</strong></td><td>Apunta a un solo aspecto, sin ambigüedad.</td></tr>
+<tr><td><strong>Medible</strong></td><td>Se puede operacionalizar en variables e indicadores.</td></tr>
+<tr><td><strong>Alcanzable</strong></td><td>Realista en términos de tiempo, recursos y acceso a datos.</td></tr>
+<tr><td><strong>Relevante</strong></td><td>Contribuye al objetivo general; no es un anexo decorativo.</td></tr>
+<tr><td><strong>Acotado</strong></td><td>Delimitado en población, espacio y tiempo.</td></tr>
+</tbody>
+</table>
+
+::: {.ref}
+Adaptado de Hernández Sampieri et al. (2014).
+:::
+
+------------------------------------------------------------------------
+
+## Secuencia lógica entre específicos
+
+::: {style="font-size:0.9em; margin-top:0.5em"}
+En investigación cuantitativa los específicos suelen seguir un orden:
+:::
+
+1. **Describir** las variables centrales en la muestra
+2. **Comparar** subgrupos o categorías
+3. **Relacionar** o **explicar** vínculos entre variables
+
+::: {.example-box style="margin-top:0.8em; font-size:0.85em"}
+Esta secuencia refleja el alcance creciente del estudio: descriptivo → correlacional → explicativo. Ojo! No todos los estudios tienen este alcance.
+:::
+
+------------------------------------------------------------------------
+
+## Errores frecuentes en objetivos
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: {.warning-box}
+<h4 style="color:#A82040">De forma</h4>
+<ul style="margin:0">
+<li>Verbos vagos (<em>comprender</em>, <em>analizar genéricamente</em>)</li>
+<li>Confundir objetivo con actividad</li>
+<li>Encadenar dos verbos en un mismo objetivo</li>
+</ul>
+:::
+
+::: {.warning-box}
+<h4 style="color:#A82040">De fondo</h4>
+<ul style="margin:0">
+<li>Específicos que exceden al general</li>
+<li>Específicos que no aportan al general</li>
+<li>Confundir objetivo con hipótesis</li>
+</ul>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Hipótesis
+:::
+::::
+------------------------------------------------------------------------
+
+## ¿Qué es una hipótesis?
+
+::: {.example-box style="margin-top:0.5em"}
+"Las hipótesis son **explicaciones tentativas** del fenómeno investigado, formuladas a manera de proposiciones".
+:::
+
+::: {style="margin-top:0.8em; font-size:0.92em"}
+Una hipótesis no es:
+:::
+
+- una opinión personal
+- una creencia sin fundamento
+- una pregunta disfrazada
+- una afirmación moral
+
+::: {.highlight-box style="margin-top:0.6em"}
+Es una **proposición contrastable empíricamente derivada del marco teórico**.
+:::
+
+------------------------------------------------------------------------
+
+## ¿Cuándo se formulan hipótesis?
+
+<table style="font-size:0.78em; margin-top:0.5em">
+<thead>
+<tr><th>Alcance del estudio</th><th>¿Hipótesis?</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Exploratorio</strong></td><td>No (no hay base previa suficiente)</td></tr>
+<tr><td><strong>Descriptivo</strong></td><td>Solo si se pronostica un dato o valor</td></tr>
+<tr><td><strong>Correlacional</strong></td><td>Sí —> afirman relación entre variables</td></tr>
+<tr><td><strong>Explicativo (causal)</strong></td><td>Sí —> afirman relación causal</td></tr>
+</tbody>
+</table>
+
+::: {.ref}
+Hernández Sampieri et al. (2014).
+:::
+
+------------------------------------------------------------------------
+
+## Funciones de la hipótesis
+
+:::::: {.cols-3 style="margin-top:0.8em; font-size:0.82em"}
+::: tarjeta
+<h4>Guía</h4>
+<p>Orienta la investigación: qué medir y cómo analizarlo.</p>
+:::
+
+::: tarjeta
+<h4>Vincula</h4>
+<p>Conecta el marco teórico con los datos empíricos.</p>
+:::
+
+::: tarjeta
+<h4>Prueba</h4>
+<p>Permite poner a prueba la teoría mediante contrastación estadística.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Tipos de Hipótesis
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Clasificación 
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.88em"}
+::: tarjeta
+<h4>Hipótesis de investigación</h4>
+<p>Lo que se <strong>espera encontrar</strong>. Se simbolizan como <strong>Hi</strong> o H₁, H₂...</p>
+:::
+
+::: tarjeta
+<h4>Hipótesis nulas</h4>
+<p>Niegan o refutan la Hi. Sirven como contraparte estadística. Se simbolizan <strong>H₀</strong>.</p> (No aparecen explícitamente en el manuscrito)
+:::
+
+::: tarjeta
+<h4>Hipótesis alternativas</h4>
+<p>Posibilidades distintas a la Hi y la H₀. Se usan cuando hay más de dos resultados posibles.</p> (Se mencionan en discusión)
+:::
+
+::: tarjeta
+<h4>Hipótesis estadísticas</h4>
+<p>Traducción de las anteriores al lenguaje matemático (medias, proporciones, correlaciones).</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Hipótesis de investigación: 4 subtipos
+
+<table style="font-size:0.74em; margin-top:0.4em">
+<thead>
+<tr><th>Tipo</th><th>Afirma</th><th>Ejemplo</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Descriptivas</strong></td>
+<td>Un valor o dato esperado</td>
+<td>"La prevalencia de ansiedad en estudiantes de 1° año será mayor al 30%."</td>
+</tr>
+<tr>
+<td><strong>Correlacionales</strong></td>
+<td>Relación entre dos o más variables</td>
+<td>"A mayor ansiedad académica, menor rendimiento."</td>
+</tr>
+<tr>
+<td><strong>Diferencia de grupos</strong></td>
+<td>Diferencias entre grupos (sin afirmar causa)</td>
+<td>"Las mujeres reportan mayores niveles de ansiedad que los varones."</td>
+</tr>
+<tr>
+<td><strong>Causales</strong></td>
+<td>Relación causa-efecto entre variables</td>
+<td>"La intervención cognitivo-conductual reduce la ansiedad académica."</td>
+</tr>
+</tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Hipótesis nula y alternativa
+
+::: {style="font-size:0.9em; margin-top:0.5em"}
+Toda Hi tiene una H₀ asociada que se utiliza para la **prueba estadística**:
+:::
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.85em"}
+::: {.example-box}
+<h4 style="color:#996B2F">Hi (investigación)</h4>
+<p>"Existe relación entre ansiedad académica y rendimiento en estudiantes de 1° año."</p>
+:::
+
+::: {.warning-box}
+<h4 style="color:#A82040">H₀ (nula)</h4>
+<p>"No existe relación entre ansiedad académica y rendimiento en estudiantes de 1° año."</p>
+:::
+::::::
+
+::: {.highlight-box style="margin-top:0.7em; font-size:0.85em"}
+La estadística inferencial **no prueba la Hi**: lo que hace es *rechazar* o *no rechazar* la H₀.
+:::
+
+------------------------------------------------------------------------
+
+## Hipótesis estadística
+
+::: {style="font-size:0.9em; margin-top:0.4em"}
+Es la traducción **simbólica** de las hipótesis de investigación al lenguaje de los parámetros:
+:::
+
+<table style="font-size:0.78em; margin-top:0.5em">
+<thead>
+<tr><th>Lenguaje verbal</th><th>Lenguaje estadístico</th></tr>
+</thead>
+<tbody>
+<tr><td>"La media de ansiedad es mayor a 25"</td><td>H₁: μ &gt; 25</td></tr>
+<tr><td>"No hay diferencias entre grupos"</td><td>H₀: μ₁ = μ₂</td></tr>
+<tr><td>"Existe correlación entre X e Y"</td><td>H₁: ρ ≠ 0</td></tr>
+</tbody>
+</table>
+
+::: {.ref}
+Hernández Sampieri et al. (2014, cap. 6).
+:::
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Y las variables?
+:::
+::::
+
+
+------------------------------------------------------------------------
+
+## Tipos de variables según su función
+
+:::::: {.cols-3 style="margin-top:0.8em; font-size:0.82em"}
+::: tarjeta
+<h4>Independiente (VI)</h4>
+<p>Causa supuesta. Es la que <em>el investigador manipula o mide como antecedente</em>.</p>
+:::
+
+::: tarjeta
+<h4>Dependiente (VD)</h4>
+<p>Efecto supuesto. Es la que <em>se observa como resultado</em>.</p>
+:::
+
+::: tarjeta
+<h4>Control / intervinientes</h4>
+<p>Variables que pueden afectar la relación VI–VD y deben mantenerse constantes o medirse.</p>
+:::
+::::::
+
+::: {.example-box style="margin-top:0.8em; font-size:0.85em"}
+**Ejemplo:** "La intervención CC (VI) reduce la ansiedad académica (VD) en estudiantes de 1° año, controlando por género y rendimiento previo."
+:::
+
+------------------------------------------------------------------------
+
+## Operacionalización: del concepto al dato
+
+::: {style="font-size:0.9em; margin-top:0.4em"}
+Para que una hipótesis sea contrastable, sus variables deben **operacionalizarse**:
+:::
+
+<table style="font-size:0.76em; margin-top:0.5em">
+<thead>
+<tr><th>Nivel</th><th>Ejemplo (ansiedad académica)</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>Concepto teórico</strong></td><td>Ansiedad académica</td></tr>
+<tr><td><strong>Definición conceptual</strong></td><td>Respuesta emocional ante demandas evaluativas</td></tr>
+<tr><td><strong>Definición operacional</strong></td><td>Puntaje en el Inventario de Ansiedad ante Exámenes</td></tr>
+<tr><td><strong>Indicadores</strong></td><td>Ítems del instrumento</td></tr>
+</tbody>
+</table>
+
+------------------------------------------------------------------------
+
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Criterios y errores
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Criterios para una buena hipótesis
+
+::: {style="font-size:0.88em; margin-top:0.4em"}
+Se proponen cinco condiciones:
+:::
+
+1. **Referencia a una situación real**: el fenómeno debe poder observarse.
+2. **Términos claros y precisos**: variables comprensibles y delimitadas.
+3. **Relación clara y verosímil**: la conexión propuesta debe ser plausible.
+4. **Términos observables y medibles**: nada de conceptos puramente abstractos.
+5. **Disponibilidad de técnicas para probarla**: instrumentos y procedimientos accesibles.
+
+::: {.ref}
+Hernández Sampieri et al. (2014)
+:::
+
+------------------------------------------------------------------------
+
+## "Errores" frecuentes en hipótesis
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.84em"}
+::: {.warning-box}
+<h4 style="color:#A82040">De formulación</h4>
+<ul style="margin:0">
+<li>Hipótesis demasiado amplias o ambiguas</li>
+<li>Variables sin definición operacional</li>
+<li>Términos valorativos ("mejor", "adecuado")</li>
+</ul>
+:::
+
+::: {.warning-box}
+<h4 style="color:#A82040">De lógica</h4>
+<ul style="margin:0">
+<li>Afirmar causalidad sin diseño que la sustente</li>
+<li>Hipótesis que repiten el objetivo</li>
+<li>Hi que ya contiene su propia respuesta (tautológica)</li>
+</ul>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Articulación: pregunta → objetivo → hipótesis
+
+<table style="font-size:0.74em; margin-top:0.4em">
+<thead>
+<tr><th>Elemento</th><th>Ejemplo</th></tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Pregunta</strong></td>
+<td>¿Existe relación entre ansiedad académica y rendimiento en estudiantes de 1° año de Psicología (UAI, 2025)?</td>
+</tr>
+<tr>
+<td><strong>Objetivo general</strong></td>
+<td>Analizar la relación entre ansiedad académica y rendimiento en estudiantes de 1° año de Psicología (UAI, 2025).</td>
+</tr>
+<tr>
+<td><strong>Hipótesis (Hi)</strong></td>
+<td>A mayor ansiedad académica, menor rendimiento académico.</td>
+</tr>
+<tr>
+<td><strong>Hipótesis nula (H₀)</strong></td>
+<td>No existe relación entre ansiedad académica y rendimiento académico.</td>
+</tr>
+</tbody>
+</table>
+
+::: {.highlight-box style="margin-top:0.7em; font-size:0.85em"}
+Los tres elementos deben hablar el **mismo idioma**: mismas variables, misma población, mismo contexto.
+:::
+
+------------------------------------------------------------------------
+
+## Para llevarse de hoy
+
+::: {.caja-verde style="margin-top:0.6em; font-size:0.9em"}
+[**Tres ideas centrales:**]{style="color:#FDF6EE"}
+:::
+
+1. El **objetivo general** traduce la pregunta a una acción de investigación; los **específicos** la descomponen en pasos verificables.
+2. La **hipótesis** es una proposición contrastable, no una opinión: nace del marco teórico y se traduce a variables operacionalizables.
+3. **Pregunta, objetivo e hipótesis** son tres formulaciones del mismo problema —> deben ser internamente coherentes.
+
+------------------------------------------------------------------------
+
+## Bibliografía
+
+::: {style="font-size:0.7em; margin-top:0.6em; line-height:1.7"}
+Hernández Sampieri, R., Fernández Collado, C., & Baptista Lucio, P. (2014). *Metodología de la investigación* (6.ª ed.). McGraw-Hill.
+
+Sautu, R., Boniolo, P., Dalle, P., & Elbert, R. (2005). *Manual de metodología: Construcción del marco teórico, formulación de los objetivos y elección de la metodología*. CLACSO.
+:::
+
+------------------------------------------------------------------------
+
+## {.cierre-slide background-color="#8B1A2B"}
+
+::: cierre-container
+<h2>A trabajar!!</h2>
+
+<p style="font-family:'Lora', serif; font-size:1em; color:white; margin-top:0.6em; font-style:italic">"En el campo de la observación, el azar solo favorece a las mentes preparadas."</p>
+
+<p style="font-size:0.7em; color:var(--uai-arena-light); margin-top:0.4em">— Louis Pasteur</p>
+
+<p style="font-family:'Lora', serif; font-size:1em; color:white; margin-top:0.6em; font-style:italic">"Una hipótesis bien formulada es media investigación resuelta."</p>
+
+<p style="font-size:0.7em; color:var(--uai-arena-light); margin-top:0.4em">— Algo modificado de lo que dijo Charles Kettering</p>
+
+:::
+
+
+
