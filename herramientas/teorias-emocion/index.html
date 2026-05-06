@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Visualizador interactivo de las vías neuroanatómicas postuladas por las teorías clásicas de la emoción. Material de estudio para Psicología de la Motivación y Emoción.">
+<meta name="author" content="Fernando Tonini">
+<title>Vías neuroanatómicas de las teorías de la emoción</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+<div class="container">
+<h1>Vías neuroanatómicas de las teorías de la emoción</h1>
+<p class="subtitle">Visualizador interactivo. Material de estudio.</p>
+</div>
+</header>
+
+<main class="container">
+
+<section class="intro">
+<p>Las teorías clásicas de la emoción no compiten por describir el fenómeno. Compiten por explicar el <em>mecanismo</em>. Cada una propone un orden causal distinto entre estímulo, cognición, fisiología y experiencia. Esta herramienta permite visualizar las vías neuroanatómicas que sustentan cada teoría sobre un corte sagital del cerebro.</p>
+<p class="hint">Elegí una teoría, recorré los pasos, y pasá el cursor sobre cada estructura para conocer su función.</p>
+</section>
+
+<section class="theory-selector" aria-label="Selector de teoría">
+<button class="theory-btn active" data-theory="james">James-Lange</button>
+<button class="theory-btn" data-theory="cannon">Cannon-Bard</button>
+<button class="theory-btn" data-theory="arnold">Arnold</button>
+<button class="theory-btn" data-theory="schachter">Schachter-Singer</button>
+<button class="theory-btn" data-theory="zajonc">Zajonc</button>
+<button class="theory-btn" data-theory="lazarus">Lazarus</button>
+<button class="theory-btn compare-btn" data-theory="compare">Comparar</button>
+</section>
+
+<section id="single-view" class="view active">
+
+<div class="theory-info">
+<div class="theory-header">
+<h2 id="theory-name"></h2>
+<span id="theory-year"></span>
+</div>
+<p id="theory-claim"></p>
+</div>
+
+<div class="brain-container" id="brain-container">
+<svg width="100%" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg" id="brain-svg" role="img" aria-labelledby="brain-title brain-desc">
+<title id="brain-title">Corte sagital del cerebro</title>
+<desc id="brain-desc">Vista lateral izquierda del cerebro humano con estructuras subcorticales y áreas corticales relevantes para el procesamiento emocional.</desc>
+
+<defs>
+<marker id="arrow-active" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+<path d="M2 1L9 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<radialGradient id="cortex-gradient" cx="50%" cy="50%" r="60%">
+<stop offset="0%" stop-color="#F2E4CC"/>
+<stop offset="100%" stop-color="#C9A878"/>
+</radialGradient>
+<linearGradient id="cerebellum-gradient" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#B89060"/>
+<stop offset="100%" stop-color="#8C6A40"/>
+</linearGradient>
+<linearGradient id="brainstem-gradient" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0%" stop-color="#A8855A"/>
+<stop offset="100%" stop-color="#6B4F2D"/>
+</linearGradient>
+<pattern id="cortex-texture" patternUnits="userSpaceOnUse" width="8" height="8">
+<path d="M0,4 Q2,2 4,4 T8,4" stroke="#8B6F47" stroke-width="0.4" fill="none" opacity="0.4"/>
+</pattern>
+</defs>
+
+<g id="brain-anatomy">
+
+<path d="M 95 250 Q 75 130, 200 85 Q 320 50, 460 60 Q 600 70, 670 130 Q 715 175, 705 240 Q 720 285, 685 320 Q 660 345, 615 350 L 580 350 Q 565 365, 540 365 L 230 365 Q 195 365, 170 345 Q 115 320, 100 290 Q 90 270, 95 250 Z"
+fill="url(#cortex-gradient)" stroke="#7A5C38" stroke-width="1.2"/>
+
+<path d="M 95 250 Q 75 130, 200 85 Q 320 50, 460 60 Q 600 70, 670 130 Q 715 175, 705 240 Q 720 285, 685 320 Q 660 345, 615 350 L 580 350 Q 565 365, 540 365 L 230 365 Q 195 365, 170 345 Q 115 320, 100 290 Q 90 270, 95 250 Z"
+fill="url(#cortex-texture)" stroke="none"/>
+
+<path d="M 130 145 Q 155 125, 185 140 Q 175 155, 150 158 Z" stroke="#7A5C38" stroke-width="0.5" fill="none" opacity="0.55"/>
+<path d="M 220 105 Q 255 90, 290 105 Q 270 120, 240 122 Z" stroke="#7A5C38" stroke-width="0.5" fill="none" opacity="0.55"/>
+<path d="M 320 80 Q 365 72, 405 85 Q 380 100, 340 100 Z" stroke="#7A5C38" stroke-width="0.5" fill="none" opacity="0.55"/>
+<path d="M 440 78 Q 485 80, 520 100 Q 490 110, 455 105 Z" stroke="#7A5C38" stroke-width="0.5" fill="none" opacity="0.55"/>
+<path d="M 555 105 Q 595 115, 625 145 Q 600 155, 570 145 Z" stroke="#7A5C38" stroke-width="0.5" fill="none" opacity="0.55"/>
+<path d="M 645 175 Q 670 195, 670 230 Q 645 230, 635 210 Z" stroke="#7A5C38" stroke-width="0.5" fill="none" opacity="0.55"/>
+<path d="M 200 320 Q 240 320, 280 318" stroke="#7A5C38" stroke-width="0.5" fill="none" opacity="0.55"/>
+<path d="M 320 325 Q 360 327, 400 325" stroke="#7A5C38" stroke-width="0.5" fill="none" opacity="0.55"/>
+
+<path d="M 685 295 Q 730 305, 745 350 Q 752 400, 720 430 Q 685 445, 655 425 Q 638 405, 645 380 L 670 360 Q 678 330, 685 295 Z"
+fill="url(#cerebellum-gradient)" stroke="#6B4F2D" stroke-width="1"/>
+<path d="M 660 320 Q 715 332, 740 375" stroke="#5A4126" stroke-width="0.4" fill="none"/>
+<path d="M 658 345 Q 715 357, 735 395" stroke="#5A4126" stroke-width="0.4" fill="none"/>
+<path d="M 650 370 Q 705 380, 720 410" stroke="#5A4126" stroke-width="0.4" fill="none"/>
+
+<path d="M 555 350 Q 562 380, 585 415 Q 590 450, 600 480"
+stroke="url(#brainstem-gradient)" stroke-width="18" fill="none" stroke-linecap="round"/>
+<path d="M 555 350 Q 562 380, 585 415 Q 590 450, 600 480"
+stroke="#5A4126" stroke-width="0.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+
+<ellipse cx="385" cy="240" rx="32" ry="16" fill="#E8D4A8" stroke="#8B6F47" stroke-width="0.5" opacity="0.7"/>
+<path d="M 350 180 Q 365 200, 360 230" stroke="#8B6F47" stroke-width="2" fill="none" opacity="0.5"/>
+
+</g>
+
+<g id="brain-structures">
+
+<g class="struct" id="s-stimulus" data-name="Estímulo" data-info="Información sensorial que ingresa al sistema (visual, auditiva, somatosensorial)">
+<circle cx="55" cy="245" r="22" fill="#7A6B5D" stroke="#3D362E" stroke-width="0.8"/>
+<text class="struct-inner-label" x="55" y="249" text-anchor="middle" font-size="11" fill="white" font-weight="500">Est.</text>
+</g>
+
+<g class="struct" id="s-thalamus" data-name="Tálamo" data-info="Centro de relevo sensorial. Distribuye información a corteza y a estructuras subcorticales">
+<ellipse cx="395" cy="235" rx="38" ry="22" fill="#D85A30" stroke="#712B13" stroke-width="0.8"/>
+</g>
+
+<g class="struct" id="s-hypothalamus" data-name="Hipotálamo" data-info="Controla el SNA y el eje endocrino. Genera la respuesta autonómica de lucha o huida">
+<ellipse cx="378" cy="278" rx="22" ry="13" fill="#F0997B" stroke="#712B13" stroke-width="0.7"/>
+</g>
+
+<g class="struct" id="s-amygdala" data-name="Amígdala" data-info="Núcleo del procesamiento afectivo rápido. Detecta relevancia emocional, valencia y amenaza">
+<ellipse cx="320" cy="285" rx="20" ry="15" fill="#D4537E" stroke="#72243E" stroke-width="0.8"/>
+</g>
+
+<g class="struct" id="s-hippocampus" data-name="Hipocampo" data-info="Memoria contextual y declarativa. Integra el estímulo presente con experiencias previas">
+<path d="M 270 295 Q 263 320, 290 325 Q 308 322, 305 300 Q 300 288, 280 290 Z" fill="#ED93B1" stroke="#72243E" stroke-width="0.7"/>
+</g>
+
+<g class="struct" id="s-insula" data-name="Ínsula" data-info="Sustrato neural de la interocepción. Percibe estados corporales internos (latido, respiración, vísceras)">
+<path d="M 215 215 Q 208 240, 220 260 Q 245 268, 258 245 Q 252 215, 230 210 Z" fill="#1D9E75" stroke="#085041" stroke-width="0.8"/>
+</g>
+
+<g class="struct" id="s-vmpfc" data-name="Corteza ventromedial y orbitofrontal" data-info="Evaluación de valor y significado afectivo. Toma de decisiones con carga emocional">
+<path d="M 155 215 Q 138 240, 150 270 Q 170 285, 195 275 Q 200 250, 188 225 Q 175 215, 155 215 Z" fill="#7F77DD" stroke="#3C3489" stroke-width="0.7"/>
+</g>
+
+<g class="struct" id="s-acc" data-name="Corteza cingulada anterior" data-info="Integración afectivo-cognitiva. Monitoreo de conflicto y regulación emocional">
+<path d="M 265 155 Q 305 138, 350 142 Q 385 148, 405 165 Q 380 178, 345 175 Q 300 175, 265 178 Z" fill="#AFA9EC" stroke="#3C3489" stroke-width="0.7"/>
+</g>
+
+<g class="struct" id="s-dlpfc" data-name="Corteza prefrontal dorsolateral" data-info="Appraisal secundaria. Evaluación de recursos de afrontamiento y control cognitivo">
+<path d="M 195 120 Q 230 100, 270 108 Q 285 130, 260 145 Q 230 152, 200 145 Q 185 132, 195 120 Z" fill="#378ADD" stroke="#0C447C" stroke-width="0.7"/>
+</g>
+
+<g class="struct" id="s-somato" data-name="Corteza somatosensorial" data-info="Recibe aferencias propioceptivas e interoceptivas del cuerpo">
+<path d="M 425 105 Q 465 92, 505 102 Q 518 125, 500 138 Q 465 145, 430 138 Q 418 122, 425 105 Z" fill="#5DCAA5" stroke="#085041" stroke-width="0.7"/>
+</g>
+
+<g class="struct" id="s-cortex-assoc" data-name="Corteza asociativa posterior" data-info="Procesamiento perceptivo elaborado. Reconocimiento e integración multimodal">
+<path d="M 540 130 Q 585 118, 625 138 Q 640 160, 625 185 Q 590 195, 555 185 Q 535 160, 540 130 Z" fill="#CECBF6" stroke="#3C3489" stroke-width="0.7"/>
+</g>
+
+<g class="struct" id="s-sna" data-name="Sistema nervioso autónomo y vísceras" data-info="Cuerpo: corazón, pulmones, vísceras, glándulas. Sustrato de la respuesta fisiológica">
+<rect x="500" y="445" width="220" height="42" rx="21" fill="#D85A30" stroke="#712B13" stroke-width="0.8"/>
+<text class="struct-inner-label" x="610" y="471" text-anchor="middle" font-size="12" fill="white" font-weight="500">Cuerpo (SNA y vísceras)</text>
+</g>
+
+</g>
+
+<g id="paths-layer"></g>
+
+<g id="leader-labels"></g>
+
+</svg>
+</div>
+
+<div class="controls">
+<button id="prev-btn" class="control-btn" aria-label="Paso anterior">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+Atrás
+</button>
+<button id="next-btn" class="control-btn primary" aria-label="Paso siguiente">
+Siguiente
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+</button>
+<button id="all-btn" class="control-btn">Ver vía completa</button>
+<button id="reset-btn" class="control-btn">Reiniciar</button>
+<span id="step-counter" class="step-counter"></span>
+</div>
+
+<div class="step-trail" id="step-trail"></div>
+
+<div class="hover-info" id="hover-info">
+<span class="hover-hint">Pasá el cursor sobre las estructuras para ver su nombre y función</span>
+</div>
+
+<details class="glossary">
+<summary>Glosario de estructuras</summary>
+<div class="glossary-content" id="glossary-content"></div>
+</details>
+
+<details class="references">
+<summary>Referencias</summary>
+<div class="references-content">
+<p>Arnold, M. B. (1960). <em>Emotion and personality</em>. Columbia University Press.</p>
+<p>Bard, P. (1928). A diencephalic mechanism for the expression of rage with special reference to the sympathetic nervous system. <em>American Journal of Physiology</em>, 84(3), 490-515.</p>
+<p>Cannon, W. B. (1927). The James-Lange theory of emotions: A critical examination and an alternative theory. <em>The American Journal of Psychology</em>, 39(1/4), 106-124.</p>
+<p>Damasio, A. R. (1996). The somatic marker hypothesis and the possible functions of the prefrontal cortex. <em>Philosophical Transactions of the Royal Society B</em>, 351(1346), 1413-1420.</p>
+<p>James, W. (1884). What is an emotion? <em>Mind</em>, 9(34), 188-205.</p>
+<p>Lazarus, R. S. (1982). Thoughts on the relations between emotion and cognition. <em>American Psychologist</em>, 37(9), 1019-1024.</p>
+<p>LeDoux, J. E. (1996). <em>The emotional brain: The mysterious underpinnings of emotional life</em>. Simon &amp; Schuster.</p>
+<p>Schachter, S., &amp; Singer, J. E. (1962). Cognitive, social, and physiological determinants of emotional state. <em>Psychological Review</em>, 69(5), 379-399.</p>
+<p>Scherer, K. R. (2009). The dynamic architecture of emotion: Evidence for the component process model. <em>Cognition and Emotion</em>, 23(7), 1307-1351.</p>
+<p>Zajonc, R. B. (1980). Feeling and thinking: Preferences need no inferences. <em>American Psychologist</em>, 35(2), 151-175.</p>
+</div>
+</details>
+
+</section>
+
+<section id="compare-view" class="view">
+<div class="compare-controls">
+<div class="compare-selector">
+<label>Teoría A</label>
+<select id="compare-a">
+<option value="james">James-Lange</option>
+<option value="cannon">Cannon-Bard</option>
+<option value="arnold">Arnold</option>
+<option value="schachter">Schachter-Singer</option>
+<option value="zajonc" selected>Zajonc</option>
+<option value="lazarus">Lazarus</option>
+</select>
+</div>
+<div class="compare-selector">
+<label>Teoría B</label>
+<select id="compare-b">
+<option value="james">James-Lange</option>
+<option value="cannon">Cannon-Bard</option>
+<option value="arnold">Arnold</option>
+<option value="schachter">Schachter-Singer</option>
+<option value="zajonc">Zajonc</option>
+<option value="lazarus" selected>Lazarus</option>
+</select>
+</div>
+</div>
+<div class="compare-grid">
+<div class="compare-panel" id="compare-panel-a"></div>
+<div class="compare-panel" id="compare-panel-b"></div>
+</div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+<div class="container">
+<p>Fernando Tonini · Universidad de Palermo</p>
+<p class="footer-note">Material elaborado para uso académico. Última actualización: 2026.</p>
+</div>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
