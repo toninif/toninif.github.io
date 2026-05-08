@@ -32,4 +32,8 @@ Material de clase del curso de Psicología. Hacé click en cualquier presentaci�
 **[Clase 4](04-clase-conciencia.qmd){target="_blank"}** · Atención - Conciencia - Estados alterados de conciencia.
 :::
 
+::: {.pub-item}
+**[Clase 5](05-clase-motivacion-emocion.qmd){target="_blank"}** · Introducción a la psicología de la motivación y la emoción.
+:::
+
 :::
