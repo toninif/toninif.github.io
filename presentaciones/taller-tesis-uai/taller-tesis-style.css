@@ -142,11 +142,12 @@
   overflow: hidden !important;
   display: flex !important;
   flex-direction: column !important;
-  justify-content: flex-end !important;
+  justify-content: center !important;
+  padding-bottom: 60px !important;
   text-align: left !important;
-  box-shadow: inset 0 -110px 0 0 #faf8f5;
+  box-shadow: inset 0 -110px 0 0
+#faf8f5;
 }
-
 .reveal #title-slide::before {
   content: '';
   position: absolute;
@@ -158,7 +159,6 @@
   background: rgba(180, 83, 9, 0.08);
   pointer-events: none;
 }
-
 .reveal #title-slide::after {
   content: '';
   position: absolute;
@@ -170,10 +170,10 @@
   border: 2px solid rgba(180, 83, 9, 0.15);
   pointer-events: none;
 }
-
 .reveal #title-slide h1.title {
   font-family: 'DM Serif Display', serif !important;
-  color: #faf8f5 !important;
+  color:
+#faf8f5 !important;
   font-size: 1.65em !important;
   line-height: 1.18 !important;
   font-weight: 400 !important;
@@ -184,7 +184,6 @@
   position: relative;
   z-index: 2;
 }
-
 .reveal #title-slide p.subtitle {
   font-family: 'DM Sans', sans-serif !important;
   font-size: 0.55em !important;
@@ -197,7 +196,6 @@
   position: relative;
   z-index: 2;
 }
-
 .reveal #title-slide p.author {
   font-family: 'DM Serif Display', serif !important;
   font-size: 0.72em !important;
@@ -207,7 +205,6 @@
   padding: 22px 80px 4px 80px !important;
   display: block !important;
 }
-
 .reveal #title-slide p.institute {
   font-family: 'DM Sans', sans-serif !important;
   font-size: 0.52em !important;
@@ -218,7 +215,6 @@
   padding: 0 80px 28px 80px !important;
   display: block !important;
 }
-
 .reveal #title-slide p.date {
   display: none !important;
 }

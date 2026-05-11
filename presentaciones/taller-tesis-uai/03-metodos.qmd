@@ -1,0 +1,289 @@
+---
+title: "Diseños de investigación: cuantitativo - cualitativo - mixto"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: [simple, taller-tesis-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Taller de Tesis · UAI"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+## Bienvenida [no se ve, es la portada nativa de Quarto] {visibility="hidden"}
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>El punto de partida: el problema</h2>
+::::
+
+------------------------------------------------------------------------
+
+## El problema define el camino
+
+El **diseño** no se elige por preferencia ni por afinidad ideológica. Se elige a partir de lo que **el problema de investigación exige**.
+
+::: {.highlight-box style="margin-top:0.8em"}
+En el planteamiento del problema ya están contenidos los elementos que orientan la decisión metodológica: las **variables**, la **población**, el **tiempo**, el **espacio** y el **enfoque** desde el cual se aborda el fenómeno.
+:::
+
+:::::: {.cols-3 style="margin-top:0.9em; font-size:0.88em"}
+::: tarjeta
+<h4>Enfoque cuantitativo</h4>
+<p>Variables medibles, datos numéricos, hipótesis a contrastar.</p>
+:::
+
+::: tarjeta
+<h4>Enfoque cualitativo</h4>
+<p>Significados, procesos, contextos. Datos no numéricos.</p>
+:::
+
+::: tarjeta
+<h4>Enfoque mixto</h4>
+<p>Combinación deliberada de componentes cuantitativos y cualitativos.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## La pregunta orienta el método
+
+[Hernández-Sampieri et al. (2014)]{.accent} sostienen que la discusión sobre **qué enfoque es mejor** está superada. La investigación no parte de un paradigma para luego buscar un problema: parte de **un problema que exige una respuesta** y elige las herramientas más adecuadas para producirla.
+
+::: {.caja-azul style="margin-top:0.8em"}
+La pregunta pasa de ser "¿Qué paradigma sigo?" a... "¿Qué método responde mejor a este planteamiento?"
+:::
+
+
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Diseños cuantitativos</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Diseños cuantitativos: panorama
+
+Recolección y análisis de **datos numéricos**. Se dividen en dos grandes ramas según el grado de control sobre las variables.
+
+:::::: {.cols-2 style="margin-top:0.9em; font-size:0.88em"}
+::: tarjeta
+<h4>Experimentales</h4>
+<p>El investigador <strong>manipula</strong> al menos una variable independiente para observar su efecto.</p>
+<ul style="margin-top:0.3em; font-size:0.95em">
+<li>Preexperimentales</li>
+<li>Cuasi experimentales</li>
+<li>Experimentales puros</li>
+</ul>
+:::
+
+::: tarjeta
+<h4>No experimentales</h4>
+<p>No hay manipulación: el fenómeno se observa <strong>tal como ocurre</strong>.</p>
+<ul style="margin-top:0.3em; font-size:0.95em">
+<li>Transaccionales (transversales)</li>
+<li>Longitudinales</li>
+</ul>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Diseños experimentales
+
+:::::: {.cols-3 style="margin-top:0.5em; font-size:0.82em"}
+::: tarjeta
+<h4>Preexperimentales</h4>
+<p>Grado mínimo de control. Útiles para <strong>aproximaciones iniciales</strong> al fenómeno, como sondeos exploratorios o estudios piloto.</p>
+:::
+
+::: tarjeta
+<h4>Cuasi experimentales</h4>
+<p>Se manipula la variable independiente, pero los <strong>grupos no se asignan al azar</strong>. Frecuentes cuando se trabaja con grupos ya constituidos (aulas, equipos, comunidades).</p>
+:::
+
+::: tarjeta
+<h4>Experimentales puros</h4>
+<p><strong>Control total</strong>: asignación aleatoria, manipulación de la variable independiente, control de variables extrañas. Típicos del trabajo en laboratorio.</p>
+:::
+::::::
+
+::: {.highlight-box style="margin-top:0.8em; font-size:0.82em"}
+La elección depende de **cuánto control** sea posible sobre las variables. Cuando no se pueden controlar todas, el diseño cuasi experimental suele ser la opción más realista.
+:::
+
+------------------------------------------------------------------------
+
+## Diseños no experimentales
+
+Se observa el fenómeno sin intervención. La distinción clave es **temporal**.
+
+:::::: {.cols-2 style="margin-top:0.8em; font-size:0.86em"}
+::: tarjeta
+<h4>Transaccionales (transversales)</h4>
+<p>Los datos se recogen en <strong>un único momento</strong>. Fotografía del fenómeno en un punto del tiempo.</p>
+<p style="margin-top:0.4em; font-size:0.92em"><em>Subtipos:</em> exploratorios, descriptivos, correlacionales-causales.</p>
+:::
+
+::: tarjeta
+<h4>Longitudinales</h4>
+<p>Los datos se recogen <strong>a lo largo del tiempo</strong>: meses, años, incluso décadas.</p>
+<p style="margin-top:0.4em; font-size:0.92em"><em>Subtipos:</em> de tendencia, de evolución de grupo (cohorte), de panel.</p>
+:::
+::::::
+
+::: {.example-box style="margin-top:0.6em; font-size:0.82em"}
+Un estudio de prevalencia de ansiedad en estudiantes universitarios en mayo de 2026 es **transaccional**. Seguir a esa misma cohorte durante cinco años para ver cómo evoluciona la ansiedad es **longitudinal**.
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Diseños cualitativos</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Diseños cualitativos: panorama
+
+Su objetivo es identificar **categorías de significados, descripción de prácticas, narrativas y contextos**. Cada diseño responde a un tipo de pregunta distinto.
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.82em"}
+::: tarjeta
+<h4>Teoría fundamentada</h4>
+<p>Genera teoría desde los datos. Útil cuando no hay marco teórico previo suficiente.</p>
+:::
+
+::: tarjeta
+<h4>Etnográficos</h4>
+<p>Describen e interpretan grupos, comunidades o culturas. Pueden trabajar con grupos pequeños o amplios.</p>
+:::
+
+::: tarjeta
+<h4>Narrativos / biográficos</h4>
+<p>Reconstruyen la <strong>historia de vida</strong> de un sujeto o grupo: un líder comunitario, un empresario, un protagonista de un proceso social.</p>
+:::
+
+::: tarjeta
+<h4>Investigación-acción</h4>
+<p>El investigador interviene junto a la comunidad para <strong>transformar</strong> una situación a la vez que la estudia.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Un caso particular: el diseño realista
+
+::: {.highlight-box style="margin-top:0.5em"}
+Un diseño cualitativo **puede incorporar datos numéricos**. Lo que cambia no es el dato, sino la **lectura** que se hace de él.
+:::
+
+<p style="margin-top:0.8em">En el diseño realista, una cifra (porcentajes, frecuencias, edades) no se interpreta como una magnitud estadística, sino como un **indicio cualitativo** dentro de una trama más amplia de significados.</p>
+
+::: {.example-box style="margin-top:0.7em; font-size:0.86em"}
+Que el 80% de los entrevistados mencione "el miedo" al describir su barrio no se lee como un parámetro poblacional, sino como un **dato cultural**: hay una narrativa compartida sobre la inseguridad que organiza la experiencia del grupo.
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Diseños mixtos</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Diseños mixtos
+
+Se eligen cuando la investigación tiene **al menos una variable cuantitativa y una cualitativa**, o cuando el problema requiere combinar ambos tipos de evidencia. Se clasifican según **cómo se articulan los componentes**.
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.82em"}
+::: tarjeta
+<h4>Secuenciales</h4>
+<p>Un componente <strong>después</strong> del otro. Por ejemplo: primero exploración cualitativa, después medición cuantitativa basada en lo emergente. O al revés.</p>
+:::
+
+::: tarjeta
+<h4>Concurrentes</h4>
+<p>Ambos componentes se desarrollan <strong>al mismo tiempo</strong> y luego se integran en la interpretación.</p>
+:::
+
+::: tarjeta
+<h4>Anidados</h4>
+<p>Un componente queda <strong>contenido dentro</strong> del otro. Por ejemplo: dentro de un estudio cuantitativo sobre productividad laboral, se incrusta un componente cualitativo sobre la experiencia del salario.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Síntesis: cómo elegir el diseño
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.86em"}
+::: {.caja-verde style="background:var(--uai-bordo); color:var(--uai-crema); padding:0.9em 1.1em; border-radius:6px"}
+<p style="color:var(--uai-crema); margin:0"><strong style="color:var(--uai-arena-light)">No empezar por el método.</strong> Empezar por la pregunta. El método es una <em>consecuencia</em> del planteamiento, no su punto de partida.</p>
+:::
+
+::: {.caja-verde style="background:var(--uai-bordo); color:var(--uai-crema); padding:0.9em 1.1em; border-radius:6px"}
+<p style="color:var(--uai-crema); margin:0"><strong style="color:var(--uai-arena-light)">El enfoque condiciona el diseño.</strong> Cuantitativo → diseños cuantitativos. Cualitativo → diseños cualitativos. Mixto → diseños mixtos.</p>
+:::
+::::::
+
+::: {.highlight-box style="margin-top:0.8em; font-size:0.88em"}
+Tres preguntas guía antes de cerrar la decisión:
+
+1. ¿Qué tipo de datos necesito para responder mi pregunta?  
+2. ¿Cuánto control tengo sobre las variables relevantes?  
+3. ¿En qué temporalidad ocurre el fenómeno que quiero observar?
+:::
+
+------------------------------------------------------------------------
+
+## Lectura recomendada
+
+::: {.highlight-box style="margin-top:0.8em"}
+**Hernández-Sampieri, R., Fernández Collado, C. & Baptista Lucio, P.** (2014).  
+*Metodología de la Investigación* (6ª ed.). México: McGraw-Hill Interamericana.
+
+Capítulo 1: *Definición de los enfoques cuantitativo y cualitativo, sus similitudes y diferencias*.
+:::
+
+<p style="margin-top:1em; font-style:italic; color:var(--uai-gris); font-size:0.88em">El capítulo profundiza en las características de cada enfoque, sus puntos de contacto y los criterios para decidir cuál (o cuál combinación) responde mejor a un planteamiento de investigación dado.</p>
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Ahora hablemos de sus proyectos...</h2>
+::::

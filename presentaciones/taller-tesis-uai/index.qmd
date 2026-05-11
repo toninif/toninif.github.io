@@ -21,5 +21,9 @@ Material de clase del curso de Taller de Tesis, UAI. Hacé click en cualquier pr
 **[Clase 2](02-busqueda-bibliografica.html){target="_blank"}** · Búsqueda bibliogáfica y criterios de selección de artículos
 :::
 
+::: {.pub-item}
+**[Clase 3](03-metodos.html){target="_blank"}** · Distinción entre metodología cuantitativa y cualitativa
+:::
+
 :::
 
