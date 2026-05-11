@@ -1,0 +1,809 @@
+---
+title: ""
+subtitle: ""
+author: ""
+format:
+  revealjs:
+    theme: simple
+    css: seminario-uai-style.css
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Seminario Taller de Integración II · UAI"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+## {.portada}
+
+::: portada-container
+::: portada-materia
+Seminario Taller de Integración II
+:::
+
+::: portada-titulo
+Métodos cuantitativos
+:::
+
+::: portada-subtitulo
+Diseño - Tipo de Estudio - Participantes
+:::
+
+::: portada-autor
+**Dr. Fernando Tonini**  
+:::
+:::
+
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+De la pregunta al diseño y en ese orden...
+:::
+::::
+
+------------------------------------------------------------------------
+
+## El lugar del diseño en el proceso {.smaller}
+
+Hasta ahora venimos trabajando con el [planteamiento del problema, los objetivos y las hipótesis]{.accent}. El **diseño** es el paso siguiente: la estrategia concreta para responderlos.
+
+<br>
+
+::: highlight-box
+<p>Una vez que se precisó el planteamiento del problema, se definió el alcance inicial y se formularon las hipótesis, el investigador debe visualizar la <strong>manera práctica y concreta</strong> de contestar las preguntas de investigación.</p>
+<p style="text-align:right; font-size:0.85em; font-style:italic; margin-top:0.5em">— Hernández-Sampieri et al. (2014)</p>
+:::
+
+<br>
+
+El diseño no es un capricho técnico: es lo que conecta una pregunta con datos que efectivamente puedan responderla.
+
+------------------------------------------------------------------------
+
+## ¿Qué decisiones implica el diseño? {.smaller}
+
+::::::: cols-3
+::: tarjeta
+<h4>Alcance</h4>
+<p>¿Hasta dónde llega el estudio?</p>
+<p>Exploratorio · Descriptivo · Correlacional · Explicativo</p>
+:::
+
+::: tarjeta
+<h4>Tipo de diseño</h4>
+<p>¿Manipulamos variables?</p>
+<p>Experimental · No experimental</p>
+:::
+
+::: tarjeta
+<h4>Enfoque</h4>
+<p>¿Cómo trabajamos los datos?</p>
+<p>Cuantitativo · Cualitativo · Mixto</p>
+:::
+:::::::
+
+<br>
+
+::: example-box
+Estas tres decisiones [no son independientes]{.accent}: el alcance condiciona el tipo de diseño, y el enfoque atraviesa todo. Hoy nos enfocamos en el camino cuantitativo.
+:::
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Diseño de la investigación
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Alcance del estudio {.smaller}
+
+Repasamos brevemente los cuatro alcances (ya trabajados en clases previas). [No son excluyentes:]{.accent} una investigación puede tener más de uno.
+
+::::::: cols-2
+::: tarjeta
+<h4>Exploratorio</h4>
+<p>Examinar un problema poco estudiado. Familiarizarse con un fenómeno relativamente desconocido.</p>
+:::
+
+::: tarjeta
+<h4>Descriptivo</h4>
+<p>Especificar propiedades, características y perfiles de personas, grupos o fenómenos.</p>
+:::
+:::::::
+
+<br>
+
+::::::: cols-2
+::: tarjeta
+<h4>Correlacional</h4>
+<p>Conocer la relación o grado de asociación entre dos o más variables en una muestra o contexto.</p>
+:::
+
+::: tarjeta
+<h4>Explicativo</h4>
+<p>Establecer las causas de eventos, sucesos o fenómenos. Ir más allá de describir o relacionar.</p>
+:::
+:::::::
+
+------------------------------------------------------------------------
+
+## La gran divisoria: experimental o no experimental {.smaller}
+
+La pregunta clave es: [¿el investigador manipula intencionalmente alguna variable?]{.accent}
+
+::::::: cols-2
+::: tarjeta
+<h4>Experimental</h4>
+<p>Se manipula intencionalmente una o más <strong>variables independientes</strong> para analizar sus efectos sobre variables dependientes, en una situación de control.</p>
+<p style="margin-top:0.4em; font-style:italic; font-size:0.9em">"Construye" una realidad.</p>
+:::
+
+::: tarjeta
+<h4>No experimental</h4>
+<p>Se observan los fenómenos <strong>tal como se dan en su contexto natural</strong>. Las variables independientes ya ocurrieron y no es posible manipularlas.</p>
+<p style="margin-top:0.4em; font-style:italic; font-size:0.9em">"Fotografía" lo que ya existe.</p>
+:::
+:::::::
+
+<br>
+
+::: example-box
+<strong>Un ejemplo coloquial:</strong> hacer enojar intencionalmente a una persona y ver sus reacciones (experimento) vs. observar las reacciones de una persona cuando llega enojada (no experimento).
+:::
+
+------------------------------------------------------------------------
+
+## ¿Cuándo conviene cada uno? {.smaller}
+
+Ninguno es "mejor" que el otro. La elección depende del problema, el alcance y la viabilidad.
+
+<br>
+
+::: warning-box
+<strong>Hay variables que no se pueden o no se deben manipular:</strong>
+<ul style="margin-top:0.4em; margin-bottom:0">
+<li><strong>Por razones éticas:</strong> consumo de alcohol o tabaco en menores, agresiones físicas, separación parental.</li>
+<li><strong>Porque son inherentes:</strong> rasgos de personalidad, género, edad, nacionalidad.</li>
+<li><strong>Porque ya ocurrieron:</strong> hechos históricos, exposición a un trauma, enfermedades previas.</li>
+</ul>
+:::
+
+<br>
+
+En psicología, esta restricción explica por qué [una porción muy grande de la investigación es no experimental]{.accent}, especialmente en clínica, social y del desarrollo.
+
+------------------------------------------------------------------------
+
+## Diseños experimentales: tres variantes {.smaller}
+
+::::::: cols-3
+::: tarjeta
+<h4>Preexperimento</h4>
+<p>Un solo grupo, grado de control mínimo. Útil como aproximación inicial.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Ej.: medir antes y después sin grupo control.</p>
+:::
+
+::: tarjeta
+<h4>Cuasiexperimento</h4>
+<p>Hay grupos de comparación, pero <strong>no</strong> hay asignación aleatoria: se trabaja con grupos intactos.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Ej.: comparar dos cursos completos.</p>
+:::
+
+::: tarjeta
+<h4>Experimento "puro"</h4>
+<p>Asignación aleatoria a los grupos + grupo control + manipulación de la VI.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Ej.: ensayo clínico aleatorizado.</p>
+:::
+:::::::
+
+<br>
+
+::: highlight-box
+La diferencia central es el [grado de control]{.accent} que el investigador logra ejercer sobre las variables extrañas. A mayor control, mayor confianza para inferir relaciones causales.
+:::
+
+------------------------------------------------------------------------
+
+## Diseños no experimentales: la dimensión temporal {.smaller}
+
+La pregunta clave para clasificarlos: [¿en cuántos momentos recolectamos datos?]{.accent}
+
+::::::: cols-2
+::: tarjeta
+<h4>Transversal (transeccional)</h4>
+<p>Recolección de datos en <strong>un solo momento</strong>, un tiempo único.</p>
+<p style="font-size:0.9em; margin-top:0.4em">Es como tomar una fotografía de algo que sucede.</p>
+:::
+
+::: tarjeta
+<h4>Longitudinal</h4>
+<p>Recolección de datos en <strong>varios momentos</strong> para analizar cambios a través del tiempo.</p>
+<p style="font-size:0.9em; margin-top:0.4em">Es un estudio de seguimiento.</p>
+:::
+:::::::
+
+<br>
+
+::: example-box
+La mayoría de las tesis de grado en psicología son [transversales]{.accent}, simplemente por viabilidad temporal. Los longitudinales son más costosos y requieren seguimiento prolongado.
+:::
+
+------------------------------------------------------------------------
+
+## Diseños transversales: tres subtipos {.smaller}
+
+::::::: cols-3
+::: tarjeta
+<h4>Exploratorio</h4>
+<p>Aproximación inicial a una variable, comunidad o contexto poco conocido.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Sondeo de un problema nuevo.</p>
+:::
+
+::: tarjeta
+<h4>Descriptivo</h4>
+<p>Indagar la incidencia o nivel de una o más variables en una población.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Describe variables, no las vincula.</p>
+:::
+
+::: tarjeta
+<h4>Correlacional-causal</h4>
+<p>Describir relaciones entre dos o más variables en un momento determinado.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">A veces solo correlación; a veces causalidad.</p>
+:::
+:::::::
+
+<br>
+
+::: warning-box
+<strong>Cuidado con "correlacional-causal":</strong> aun cuando el diseño busque relaciones causales, [no hay manipulación]{.accent}. La causalidad la infiere el investigador desde la teoría, no la prueba el diseño. La causalidad implica correlación, pero no toda correlación es causal.
+:::
+
+------------------------------------------------------------------------
+
+## Diseños longitudinales: tres subtipos {.smaller}
+
+::::::: cols-3
+::: tarjeta
+<h4>De tendencia</h4>
+<p>Se sigue a una <strong>población</strong> a través del tiempo. Las personas cambian, la población se mantiene.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Ej.: actitudes de universitarios cada 5 años.</p>
+:::
+
+::: tarjeta
+<h4>De cohorte</h4>
+<p>Se sigue a una <strong>subpoblación</strong> definida por una característica común (edad, evento).</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Ej.: nacidos en 2000 en Argentina.</p>
+:::
+
+::: tarjeta
+<h4>Panel</h4>
+<p>Se sigue a <strong>los mismos individuos</strong> en todas las mediciones.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Ej.: 50 pacientes evaluados cada 6 meses.</p>
+:::
+:::::::
+
+<br>
+
+::: highlight-box
+Solo el diseño [panel]{.accent} permite analizar trayectorias individuales. Los otros dos describen el cambio agregado pero no quién cambió.
+:::
+
+------------------------------------------------------------------------
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Participantes
+:::
+::::
+------------------------------------------------------------------------
+
+## Tres conceptos para no confundir {.smaller}
+
+::::::: cols-3
+::: tarjeta
+<h4>Población</h4>
+<p>Conjunto de <strong>todos</strong> los casos que concuerdan con determinadas especificaciones (contenido, lugar, tiempo).</p>
+:::
+
+::: tarjeta
+<h4>Muestra</h4>
+<p>Subgrupo de la población del cual se recolectan datos. Debe ser representativo (en el enfoque cuantitativo).</p>
+:::
+
+::: tarjeta
+<h4>Unidad de análisis</h4>
+<p>El tipo de caso que estudiamos: individuos, parejas, organizaciones, episodios, etc.</p>
+:::
+:::::::
+
+<br>
+
+::: example-box
+<strong>Ejemplo:</strong> en una tesis sobre satisfacción laboral en empleados de empresas tecnológicas de CABA en 2026, la <strong>unidad de análisis</strong> es el empleado, la <strong>población</strong> son todos los empleados de ese sector y la <strong>muestra</strong> es el subconjunto que efectivamente responde el cuestionario.
+:::
+
+------------------------------------------------------------------------
+
+## Delimitar la población: contenido, lugar y tiempo {.smaller}
+
+Una población mal delimitada hace inviable el estudio. La delimitación debe ser [específica y coherente con la pregunta]{.accent}.
+
+<br>
+
+::: warning-box
+<strong>Tres errores frecuentes:</strong>
+<ul style="margin-top:0.4em; margin-bottom:0">
+<li><strong>Población demasiado amplia:</strong> "todos los adolescentes" → imposible de generalizar y de muestrear.</li>
+<li><strong>Unidad de análisis incoherente con la pregunta:</strong> preguntar por la comunicación entre médico y paciente y entrevistar solo a pacientes.</li>
+<li><strong>Confundir muestra con población:</strong> describir solo a quienes respondieron como si fueran "todos".</li>
+</ul>
+:::
+
+<br>
+
+::: highlight-box
+<strong>Un estudio no es mejor por tener una población más grande.</strong> La calidad está en delimitar con precisión sobre la base del planteamiento del problema.
+:::
+
+------------------------------------------------------------------------
+
+## Dos grandes familias de muestreo {.smaller}
+
+::::::: cols-2
+::: tarjeta
+<h4>Probabilístico</h4>
+<p>Todos los elementos de la población tienen la <strong>misma probabilidad</strong> de ser elegidos.</p>
+<p style="font-size:0.9em; margin-top:0.4em">Selección aleatoria o mecánica.</p>
+<p style="font-size:0.85em; margin-top:0.4em; font-style:italic">Permite calcular error de estimación y generalizar.</p>
+:::
+
+::: tarjeta
+<h4>No probabilístico (dirigido)</h4>
+<p>La elección depende de <strong>criterios del investigador</strong>, no del azar.</p>
+<p style="font-size:0.9em; margin-top:0.4em">Selección intencional.</p>
+<p style="font-size:0.85em; margin-top:0.4em; font-style:italic">No permite calcular error con precisión, generaliza con cautela.</p>
+:::
+:::::::
+
+<br>
+
+::: example-box
+En tesis de grado y posgrado en psicología, [predomina el muestreo no probabilístico]{.accent}, principalmente por accesibilidad. Esto no invalida el estudio, pero condiciona el alcance de las conclusiones.
+:::
+
+------------------------------------------------------------------------
+
+## Muestreo probabilístico: cuatro técnicas {.smaller}
+
+::::::: cols-2
+::: tarjeta
+<h4>Aleatorio simple</h4>
+<p>Cada caso tiene idéntica probabilidad. Requiere listado completo de la población.</p>
+:::
+
+::: tarjeta
+<h4>Sistemático</h4>
+<p>Se elige cada k-ésimo caso de un listado ordenado, partiendo de un punto aleatorio.</p>
+:::
+:::::::
+
+<br>
+
+::::::: cols-2
+::: tarjeta
+<h4>Estratificado</h4>
+<p>Se divide la población en estratos (edad, sexo, NSE…) y se muestrea dentro de cada uno.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Mejora representatividad por variables clave.</p>
+:::
+
+::: tarjeta
+<h4>Por conglomerados</h4>
+<p>Se eligen unidades agrupadas (escuelas, barrios, hospitales) y se mide a todos sus integrantes.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Eficiente en poblaciones grandes y dispersas.</p>
+:::
+:::::::
+
+<p class="ref">Otzen y Manterola (2017); Hernández-Sampieri et al. (2014)</p>
+
+------------------------------------------------------------------------
+
+## Muestreo no probabilístico: tres técnicas {.smaller}
+
+::::::: cols-3
+::: tarjeta
+<h4>Intencional</h4>
+<p>Se eligen casos <strong>característicos</strong> o "típicos" según criterios del investigador.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Útil en estudios cualitativos o muy específicos.</p>
+:::
+
+::: tarjeta
+<h4>Por conveniencia</h4>
+<p>Se eligen los casos <strong>accesibles</strong> que aceptan participar.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">El más común en tesis. Económico y rápido, pero con sesgo.</p>
+:::
+
+::: tarjeta
+<h4>Accidental / consecutivo</h4>
+<p>Se reclutan casos hasta completar la muestra deseada, en un lugar y tiempo definidos.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Frecuente en investigación clínica.</p>
+:::
+:::::::
+
+<br>
+
+::: warning-box
+Si su muestreo es no probabilístico (y es muy probable que lo sea), [hay que decirlo y justificarlo]{.accent}. No alcanza con "se seleccionaron 80 participantes": hay que explicar cómo y por qué.
+:::
+
+------------------------------------------------------------------------
+
+## Criterios de inclusión y exclusión {.smaller}
+
+Ningún estudio reúne "a cualquiera". Los criterios delimitan [quién entra y quién no]{.accent}, y deben fundamentarse.
+
+<br>
+
+::::::: cols-2
+::: tarjeta
+<h4>Inclusión</h4>
+<p>Características clínicas, demográficas, temporales y geográficas que <strong>deben</strong> cumplir los participantes.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Ej.: mujeres de 18 a 35 años, residentes en CABA, estudiantes universitarias activas.</p>
+:::
+
+::: tarjeta
+<h4>Exclusión</h4>
+<p>Características que <strong>impedirían</strong> participar, por interferir con la calidad de los datos o la interpretación.</p>
+<p style="font-size:0.85em; font-style:italic; margin-top:0.4em">Ej.: diagnóstico psiquiátrico activo, consumo de psicofármacos, embarazo.</p>
+:::
+:::::::
+
+<br>
+
+::: example-box
+Los criterios de exclusión [no son lo opuesto]{.accent} a los de inclusión. La exclusión opera <strong>sobre</strong> quienes ya cumplen los de inclusión: son un segundo filtro.
+:::
+
+------------------------------------------------------------------------
+
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+¿Cuántos participantes? El tamaño muestral...
+:::
+::::
+
+------------------------------------------------------------------------
+
+## No hay una sola respuesta {.smaller}
+
+La pregunta "¿cuántos participantes necesito?" admite [varias respuestas legítimas]{.accent}, según el criterio que se adopte. Las repasamos.
+
+<br>
+
+::: highlight-box
+<strong>Lo que no hay que hacer:</strong> elegir un número sin justificarlo, o ponerlo después de recolectar los datos. La justificación del N va <strong>en el anteproyecto</strong>, antes de empezar.
+:::
+
+------------------------------------------------------------------------
+
+## Criterio 1: fórmula clásica para poblaciones finitas {.smaller}
+
+Se calcula el N a partir del tamaño poblacional, el error admisible y el nivel de confianza.
+
+<br>
+
+::: example-box
+<p>Para una población de 50.000 estudiantes universitarios, con 95% de confianza y 5% de error, la fórmula sugiere alrededor de <strong>n = 381</strong>.</p>
+<p style="margin-top:0.4em; font-size:0.9em">Hay calculadoras online (Raosoft, SurveyMonkey) que aplican esta lógica.</p>
+:::
+
+<br>
+
+::::::: cols-2
+::: tarjeta
+<h4>Ventaja</h4>
+<p>Da un número defendible cuando se conoce el tamaño poblacional.</p>
+:::
+
+::: tarjeta
+<h4>Limitación</h4>
+<p>Asume muestreo probabilístico. Aplicada a muestreo por conveniencia, el cálculo pierde su sentido estadístico estricto.</p>
+:::
+:::::::
+
+------------------------------------------------------------------------
+
+## Criterio 2: tamaños mínimos según el análisis previsto {.smaller}
+
+Hernández-Sampieri retoma a Cohen y propone N mínimos según la prueba estadística que se va a usar.
+
+<br>
+
+::: highlight-box
+<table style="font-size:0.85em">
+<thead>
+<tr><th>Tipo de análisis</th><th>N mínimo recomendado</th></tr>
+</thead>
+<tbody>
+<tr><td>Análisis de correlación</td><td>64 (una cola) · 82 (dos colas)</td></tr>
+<tr><td>Comparación entre grupos (no experimental)</td><td>51 por grupo (una cola) · 64 (dos colas)</td></tr>
+<tr><td>Comparación en diseños experimentales</td><td>21 por grupo (una cola) · 27 (dos colas)</td></tr>
+</tbody>
+</table>
+<p style="font-size:0.8em; margin-top:0.5em">Basado en tamaño del efecto mediano, potencia .80, α = .05</p>
+:::
+
+<br>
+
+Para muchas tesis cuantitativas en psicología, esta tabla resulta [un punto de partida razonable]{.accent} y defendible.
+
+------------------------------------------------------------------------
+
+## Criterio 3: análisis de potencia *a priori* {.smaller}
+
+El estándar actual en publicación científica en psicología: calcular el N necesario con [software especializado]{.accent} (G*Power, simr en R).
+
+<br>
+
+::::::: cols-2
+::: tarjeta
+<h4>Qué se especifica</h4>
+<p>Prueba estadística, tamaño del efecto esperado, potencia deseada (1−β, usualmente .80), nivel α.</p>
+:::
+
+::: tarjeta
+<h4>Qué devuelve</h4>
+<p>El N mínimo para detectar ese efecto con esa potencia.</p>
+:::
+:::::::
+
+<br>
+
+::: example-box
+Para una correlación esperada de r = .30, con α = .05 y potencia .80, G*Power devuelve [n = 84]{.accent}. Si esperamos r = .20, sube a [n = 193]{.accent}. El N depende fuertemente de qué efecto se considera "detectable".
+:::
+
+------------------------------------------------------------------------
+
+## Criterio 4: pragmático {.smaller}
+
+A veces el N se decide por [factores que no son estadísticos]{.accent}: accesibilidad, presupuesto, tiempo, características de la población.
+
+<br>
+
+::::::: cols-2
+::: tarjeta
+<h4>Por costumbre disciplinar</h4>
+<p>"En este tipo de estudios suele usarse entre 100 y 200 participantes." Frecuente y no necesariamente incorrecto, pero conviene reconocerlo.</p>
+:::
+
+::: tarjeta
+<h4>Por accesibilidad</h4>
+<p>"Trabajaremos con todos los pacientes que asistan al servicio durante 3 meses." Muestreo consecutivo: el N es el que da el período.</p>
+:::
+:::::::
+
+<br>
+
+::: warning-box
+Decir "se eligieron 100 participantes" sin explicar de dónde salió ese número es la situación más frecuente y también [la más débil]{.accent}. Si el criterio es pragmático, hay que decirlo: es preferible a inventar una justificación estadística.
+:::
+
+------------------------------------------------------------------------
+
+## Recomendación práctica para proyectos {.smaller}
+
+::: highlight-box
+<p>Justifiquen el N con un <strong>criterio explícito</strong>. Cualquiera de los cuatro es defendible si está fundamentado.</p>
+:::
+
+<br>
+
+Un párrafo de método con tamaño muestral bien justificado dice algo así:
+
+::: example-box
+<p style="font-style:italic">"Se trabajó con una muestra de 84 participantes. Este tamaño fue estimado mediante análisis de potencia a priori (G*Power 3.1) para detectar correlaciones de magnitud media (r = .30) con una potencia de .80 y un nivel de significación α = .05 (Cohen, 1992)."</p>
+:::
+
+<br>
+
+O, en el caso pragmático:
+
+::: example-box
+<p style="font-style:italic">"Se trabajó con una muestra por conveniencia de 120 estudiantes, conformada por la totalidad de quienes aceptaron participar durante el período de recolección (marzo a junio de 2026)."</p>
+:::
+
+------------------------------------------------------------------------
+
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Del diseño al manuscrito
+:::
+::::
+
+------------------------------------------------------------------------
+
+## La sección "Método" en APA 7 {.smaller}
+
+Toda la planificación que vimos debe quedar reflejada en una sección del anteproyecto (y luego del manuscrito) llamada [Método]{.accent}. Su función es permitir que un colega [replique el estudio]{.accent}.
+
+<br>
+
+::: highlight-box
+<strong>Estructura estándar (cuatro subsecciones):</strong>
+<ol style="margin-top:0.4em; margin-bottom:0">
+<li>Diseño</li>
+<li>Participantes</li>
+<li>Instrumentos (o Materiales / Medidas)</li>
+<li>Procedimiento</li>
+</ol>
+<p style="margin-top:0.5em">Suele agregarse una quinta: <strong>Análisis de datos</strong>.</p>
+:::
+
+<br>
+
+::: warning-box
+El método implica un descripción técnica, precisa, clara y redactada de modo que otro investigador pueda reproducir el estudio.
+:::
+
+------------------------------------------------------------------------
+
+## Subsección: Diseño {.smaller}
+
+::: highlight-box
+<strong>Qué reportar:</strong>
+<ul style="margin-top:0.4em; margin-bottom:0">
+<li>Alcance del estudio (exploratorio / descriptivo / correlacional / explicativo)</li>
+<li>Tipo de diseño (experimental / no experimental)</li>
+<li>Si es no experimental: transversal o longitudinal, y subtipo</li>
+<li>Enfoque (cuantitativo, en este caso)</li>
+</ul>
+:::
+
+<br>
+
+::: example-box
+Suele resolverse en [un único párrafo breve]{.accent}, no requiere extensión. Lo importante es que esté correctamente nombrado y justificado por la naturaleza del problema, no como una decisión arbitraria.
+:::
+
+------------------------------------------------------------------------
+
+## Subsección: Participantes {.smaller}
+
+::: highlight-box
+<strong>Qué reportar:</strong>
+<ul style="margin-top:0.4em; margin-bottom:0">
+<li>Población de la que proviene la muestra</li>
+<li>Tipo de muestreo (probabilístico o no, y técnica específica)</li>
+<li>Tamaño muestral (N) y su justificación</li>
+<li>Criterios de inclusión y exclusión</li>
+<li>Características demográficas relevantes (edad, sexo, nivel educativo, etc.)</li>
+<li>Procedimiento de reclutamiento</li>
+</ul>
+:::
+
+<br>
+
+::: warning-box
+Los datos demográficos se reportan [una vez recolectados]{.accent}, no en el anteproyecto. En el anteproyecto va el criterio para incluirlos, no los valores observados.
+:::
+
+------------------------------------------------------------------------
+
+## Subsección: Instrumentos {.smaller}
+
+::: highlight-box
+<strong>Qué reportar para cada instrumento:</strong>
+<ul style="margin-top:0.4em; margin-bottom:0">
+<li>Nombre completo y autor(es) originales</li>
+<li>Adaptación local (si la hay) y autores de la adaptación</li>
+<li>Constructo que mide</li>
+<li>Estructura: número de ítems, dimensiones o subescalas</li>
+<li>Formato de respuesta (escala Likert, dicotómica, etc.)</li>
+<li>Propiedades psicométricas reportadas (confiabilidad y validez)</li>
+<li>Cómo se obtiene el puntaje</li>
+</ul>
+:::
+
+<br>
+
+::: example-box
+Si el instrumento es un [cuestionario propio]{.accent} construido para el estudio, también hay que describirlo con el mismo nivel de detalle y aclarar que se trata de un instrumento ad hoc.
+:::
+
+------------------------------------------------------------------------
+
+## Subsección: Procedimiento {.smaller}
+
+::: highlight-box
+<strong>Qué reportar:</strong>
+<ul style="margin-top:0.4em; margin-bottom:0">
+<li>Paso a paso de la recolección de datos</li>
+<li>Modalidad (presencial, online, autoadministrado, entrevista)</li>
+<li>Tiempo aproximado de aplicación</li>
+<li>Consentimiento informado y resguardo de la confidencialidad</li>
+<li>Aprobación por comité de ética (si corresponde)</li>
+<li>Período en que se desarrolla el trabajo de campo</li>
+</ul>
+:::
+
+<br>
+
+::: warning-box
+El procedimiento es el lugar donde se hacen visibles los [aspectos éticos]{.accent} del estudio. No basta con "se respetaron principios éticos": hay que indicar cuáles y cómo.
+:::
+
+------------------------------------------------------------------------
+
+## Subsección: Análisis de datos {.smaller}
+
+::: highlight-box
+<strong>Qué reportar:</strong>
+<ul style="margin-top:0.4em; margin-bottom:0">
+<li>Pruebas estadísticas previstas para cada objetivo / hipótesis</li>
+<li>Software a utilizar (SPSS, R, Jamovi, JASP…)</li>
+<li>Nivel de significación adoptado</li>
+<li>Estrategia para datos perdidos o casos atípicos, si aplica</li>
+</ul>
+:::
+
+<br>
+
+::: example-box
+En el anteproyecto este apartado suele ser breve, pero conviene que esté: muestra que las pruebas elegidas son [coherentes con las hipótesis]{.accent} y con el nivel de medición de las variables.
+:::
+
+------------------------------------------------------------------------
+
+
+##  {.no-title data-background-color="#FFFFFF"}
+
+:::: transition-slide
+::: section-title
+Para la próxima clase... La presentación parcial 😱
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Consigna {.smaller}
+
+::: highlight-box
+<p>Avanzar en el anteproyecto incorporando la sección <strong>Método</strong>, con foco en:</p>
+<ol style="margin-top:0.5em; margin-bottom:0">
+<li><strong>Diseño:</strong> alcance, tipo, enfoque (justificado).</li>
+<li><strong>Participantes:</strong> población, tipo de muestreo, tamaño muestral (con criterio explícito), criterios de inclusión y exclusión.</li>
+<li><strong>Instrumentos:</strong> si ya los tienen identificados.</li>
+<li><strong>Procedimiento:</strong> si se animan al menos un borrador de esta sección.</li>
+</ol>
+:::
+
+<br>
+
+::: example-box
+Recuerden: estas decisiones [no son posteriores a la pregunta y los objetivos]{.accent}, sino una continuación natural de ellos. Si la pregunta cambia, el método tiene que ajustarse; si el método no es viable, conviene revisar la pregunta.
+:::
+
+<br>
+
+<p class="ref">Lecturas: Hernández-Sampieri et al. (2014), capítulos 7 y 8 (selección). Otzen y Manterola (2017).</p>

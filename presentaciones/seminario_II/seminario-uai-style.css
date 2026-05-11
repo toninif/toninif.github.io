@@ -318,3 +318,16 @@
   display: flex;
   justify-content: center;
 }
+
+
+/* === AJUSTE PORTADA: subir contenido === */
+/* Appendear al final de seminario-uai-style.css */
+
+.reveal .slides section.portada {
+  padding: 0 !important;
+}
+
+.portada-container {
+  justify-content: flex-start;
+  padding-top: 140px;
+}
