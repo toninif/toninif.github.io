@@ -1,0 +1,1096 @@
+---
+title: "Aprendizaje y Memoria"
+subtitle: "Psicología General"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: [simple, psico-general-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Psicología General · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Parte I — Aprendizaje</h2>
+::::
+
+------------------------------------------------------------------------
+
+## ¿Qué es el aprendizaje?
+
+::: {.caja-crema style="margin-top:0.4em"}
+El **aprendizaje** es un cambio relativamente permanente en la conducta (o en la disposición a conducirse) producto de la **experiencia**.
+:::
+
+<p style="margin-top:0.8em">Una de las tesis centrales del programa conductista es que **las leyes del aprendizaje son comunes** a los seres humanos y a otros animales. Por lo tanto, estudiar el aprendizaje en cualquiera de los dos grupos permite derivar principios generales.</p>
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.88em"}
+<p style="color:#f5f0e8; margin:0">Dos referentes mayores del aprendizaje conductual:</p>
+
+<p style="color:#f5f0e8; margin:0.3em 0 0 0">→ [Watson]{style="color:#95c17a; font-weight:700"} — aprendizaje como relación entre **estímulos y respuestas** (condicionamiento clásico)</p>
+
+<p style="color:#f5f0e8; margin:0.2em 0 0 0">→ [Skinner]{style="color:#95c17a; font-weight:700"} — aprendizaje como relación entre **la conducta y sus consecuencias** (condicionamiento operante)</p>
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Watson · Condicionamiento clásico</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Términos clave
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.9em"}
+::: tarjeta
+<h4>Estímulo incondicionado (EI)</h4>
+
+<p>Estímulo que provoca una respuesta de manera <strong>natural e innata</strong>, sin aprendizaje previo.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Ej.: la comida en la boca.</em></p>
+:::
+
+::: tarjeta
+<h4>Respuesta incondicionada (RI)</h4>
+
+<p>Respuesta natural e innata provocada por el EI.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Ej.: la salivación frente a la comida.</em></p>
+:::
+
+::: tarjeta
+<h4>Estímulo neutral (EN)</h4>
+
+<p>Estímulo que <strong>no guarda relación natural</strong> con la respuesta de interés.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Ej.: el sonido de una campana, en relación con la salivación.</em></p>
+:::
+
+::: tarjeta
+<h4>Estímulo condicionado (EC)</h4>
+
+<p>EN que, tras emparejarse repetidamente con el EI, adquiere las propiedades de éste y pasa a evocar la respuesta.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## El paradigma de Pavlov
+
+<p style="margin-top:0.4em">**Antes del aprendizaje:**</p>
+
+::: {.caja-crema style="font-size:0.88em"}
+Comida (EI) → Salivación (RI) — relación natural, innata
+
+Campana (EN) → sin respuesta relevante
+:::
+
+<p style="margin-top:0.7em">**Durante el aprendizaje** — emparejamiento repetido:</p>
+
+::: {.caja-crema style="font-size:0.88em"}
+Campana (EN) + Comida (EI) → Salivación (RI)
+:::
+
+<p style="margin-top:0.7em">**Después del aprendizaje:**</p>
+
+::: {.caja-verde style="font-size:0.88em"}
+<p style="color:#f5f0e8; margin:0">[Campana (EC) → Salivación (RC)]{style="color:#f5f0e8; font-weight:700"}</p>
+
+<p style="color:#f5f0e8; margin:0.3em 0 0 0; font-size:0.92em">La campana adquiere las propiedades del estímulo de comida por **contigüidad temporal**.</p>
+:::
+
+------------------------------------------------------------------------
+
+## Tipos de emparejamiento EI–EN
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.86em"}
+::: tarjeta
+<h4>1 · Simultáneo</h4>
+
+<p>EI y EN se presentan al mismo tiempo.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Ej.: el torno del dentista (sonido y dolor simultáneos).</em></p>
+:::
+
+::: tarjeta
+<h4>2 · Huella</h4>
+
+<p>EN se retira <strong>antes</strong> de que aparezca el EI. Es el emparejamiento <strong>más débil</strong>.</p>
+:::
+
+::: tarjeta
+<h4>3 · Adelantado</h4>
+
+<p>EN se presenta antes y permanece durante el EI. Es el emparejamiento <strong>más usado en laboratorio</strong>.</p>
+:::
+
+::: tarjeta
+<h4>4 · Retroactivo</h4>
+
+<p>EN se presenta <strong>después</strong> del EI.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>En otros animales no suele generar aprendizaje; es habitual en publicidad.</em></p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Skinner · Condicionamiento operante</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Reforzadores y castigos
+
+<p style="margin-top:0.4em">El motor del aprendizaje operante son las **consecuencias** que siguen a la conducta. Esas consecuencias pueden aumentar o disminuir la probabilidad de emisión de la conducta a futuro.</p>
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.88em"}
+::: tarjeta
+<h4>Reforzador</h4>
+
+<p>Consecuencia que <strong>aumenta</strong> la probabilidad de la conducta a futuro.</p>
+
+<p style="margin-top:0.4em">P(conducta futura) &gt; P(conducta pasada)</p>
+:::
+
+::: tarjeta
+<h4>Castigo</h4>
+
+<p>Consecuencia que <strong>disminuye</strong> la probabilidad de la conducta a futuro.</p>
+
+<p style="margin-top:0.4em">P(conducta futura) &lt; P(conducta pasada)</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Reforzamiento positivo y negativo
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.86em"}
+::: tarjeta
+<h4>Reforzamiento positivo (R+)</h4>
+
+<p>La conducta queda asociada a la <strong>aparición de un estímulo apetitivo</strong>.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Ej.: jugar a la ruleta queda reforzado cuando esa conducta produce la aparición de dinero ganado.</em></p>
+:::
+
+::: tarjeta
+<h4>Reforzamiento negativo (R−)</h4>
+
+<p>La conducta queda asociada a la <strong>desaparición de un estímulo aversivo</strong>.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Ej.: tomar una pastilla de la marca X queda reforzado cuando esa conducta hace desaparecer el dolor de cabeza.</em></p>
+:::
+::::::
+
+<p style="margin-top:0.7em">Ambos casos **aumentan** la probabilidad de emisión de la conducta. La diferencia está en si lo que sigue a la conducta es la *aparición* de algo apetitivo o la *retirada* de algo aversivo.</p>
+
+------------------------------------------------------------------------
+
+## Castigo
+
+::: {.caja-verde style="margin-top:0.5em; font-size:0.9em"}
+<p style="color:#f5f0e8; margin:0">El **castigo** disminuye la probabilidad de emisión de la conducta. La conducta queda asociada a la **aparición de un estímulo aversivo** (o a la retirada de uno apetitivo).</p>
+:::
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.9em"}
+<em>Ej.: la probabilidad de poner los dedos en el enchufe baja porque esa conducta estuvo vinculada a la aparición de un estímulo aversivo (dolor, incomodidad corporal).</em>
+:::
+
+------------------------------------------------------------------------
+
+## Un problema con esta forma de presentarlo
+
+::: {.caja-crema style="margin-top:0.5em"}
+La descripción anterior es la versión habitual de los manuales: positivo significa que **aparece** algo apetitivo o aversivo; negativo, que **se retira**. Es útil para empezar, pero es **técnicamente imprecisa**.
+:::
+
+<p style="margin-top:0.7em">Skinner mismo no definió el reforzador por su valencia hedónica, sino por su **efecto sobre la conducta**. Y eso abre dos problemas en la versión de manual:</p>
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.86em"}
+::: tarjeta
+<h4>Lo "apetitivo" no garantiza nada</h4>
+
+<p>Un estímulo que <em>parece</em> apetitivo puede no funcionar como reforzador para un sujeto particular; uno que parece aversivo puede no castigar. La definición funcional pasa por el <strong>efecto observado</strong>, no por el valor hedónico supuesto.</p>
+:::
+
+::: tarjeta
+<h4>"Positivo/negativo" no es "aparece/desaparece"</h4>
+
+<p>Que muchas veces coincidan es <strong>accidental</strong>, no definitorio. Hace falta una definición más precisa de qué quiere decir el signo positivo o negativo en estos procedimientos.</p>
+:::
+::::::
+
+<p style="margin-top:0.6em; font-size:0.9em">Para ganar precisión, conviene introducir un concepto previo: el de **contingencia**.</p>
+
+------------------------------------------------------------------------
+
+## Contingencia
+
+::: {.caja-crema style="margin-top:0.5em"}
+La contingencia **contingencia** implica una **relación de probabilidad** entre dos eventos. ¿Qué tan probable es que ocurra el evento X dado que antes ocurrió el evento Z?
+:::
+
+<p style="margin-top:0.7em">Una **relación de contingencia** es una **diferencia de probabilidades**:</p>
+
+::: {.caja-verde style="margin-top:0.4em; font-size:0.95em"}
+<p style="color:#f5f0e8; margin:0; text-align:center">
+[P(evento X | ocurrió evento Z) − P(evento X | no ocurrió evento Z)]{style="color:#f5f0e8; font-weight:700"}
+</p>
+:::
+
+<p style="margin-top:0.7em; font-size:0.9em"><em>Ej.: ¿qué tan probable es distraerme mientras estudio si tengo el celular sobre el escritorio? ¿Y si lo dejé en otra habitación? Si esas probabilidades son distintas, la presencia del celular altera la probabilidad de distraerme: hay una relación de contingencia entre el celular y la distracción.</em></p>
+
+
+------------------------------------------------------------------------
+
+
+## El signo de la contingencia
+
+<p style="margin-top:0.4em">El resultado de esa resta puede tener tres signos, y cada uno tiene un nombre:</p>
+
+:::::: {.cols-3 style="margin-top:0.6em; font-size:0.84em"}
+::: tarjeta
+<h4>Resta &gt; 0</h4>
+
+<p><strong>Contingencia positiva.</strong></p>
+
+<p>El primer evento <strong>aumenta</strong> la probabilidad del segundo.</p>
+:::
+
+::: tarjeta
+<h4>Resta &lt; 0</h4>
+
+<p><strong>Contingencia negativa.</strong></p>
+
+<p>El primer evento <strong>disminuye</strong> la probabilidad del segundo.</p>
+:::
+
+::: tarjeta
+<h4>Resta = 0</h4>
+
+<p><strong>No hay contingencia.</strong></p>
+
+<p>Un evento no cambia la probabilidad del otro.</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.9em"}
+<p style="color:#f5f0e8; margin:0">Cuando en condicionamiento operante hablamos de procedimientos [positivos]{style="color:#95c17a; font-weight:700"} o [negativos]{style="color:#95c17a; font-weight:700"}, no nos referimos a estímulos agradables o desagradables, ni a que algo se ponga o se quite. El signo se refiere **únicamente al tipo de relación probabilística** entre la respuesta y su consecuencia.</p>
+:::
+
+
+------------------------------------------------------------------------
+
+## Dos preguntas, cuatro procedimientos
+
+<p style="margin-top:0.3em; font-size:0.92em">Identificar qué tipo de procedimiento opera en una situación implica **dos preguntas independientes**:</p>
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.86em"}
+::: tarjeta
+<h4>1 · ¿Reforzamiento o castigo?</h4>
+
+<p>Lo define el <strong>efecto sobre la conducta</strong>.</p>
+
+<p>→ Conducta aumenta: reforzamiento.</p>
+<p>→ Conducta disminuye: castigo.</p>
+:::
+
+::: tarjeta
+<h4>2 · ¿Positivo o negativo?</h4>
+
+<p>Lo define el <strong>signo de la contingencia</strong> entre la respuesta y la consecuencia.</p>
+
+<p>→ Resta &gt; 0: positivo.</p>
+<p>→ Resta &lt; 0: negativo.</p>
+:::
+::::::
+
+<table style="font-size:0.74em; margin-top:0.6em">
+  <thead>
+    <tr>
+      <th style="width:24%"></th>
+      <th>Conducta ↑ <em>(reforzamiento)</em></th>
+      <th>Conducta ↓ <em>(castigo)</em></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Contingencia positiva</strong><br><em>la R aumenta P(C)</em></td>
+      <td><strong>Reforzamiento positivo</strong><br>Apostar aumenta P(ganar); apostar se repite más.</td>
+      <td><strong>Castigo positivo</strong><br>Meter los dedos en el enchufe aumenta P(dolor); la conducta disminuye.</td>
+    </tr>
+    <tr>
+      <td><strong>Contingencia negativa</strong><br><em>la R disminuye P(C)</em></td>
+      <td><strong>Reforzamiento negativo</strong><br>Abrochar el cinturón disminuye P(sonido); la conducta se repite más.</td>
+      <td><strong>Castigo negativo</strong><br>Portarse mal disminuye P(usar el celu esa tarde); la conducta disminuye.</td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Releyendo un caso · el cinturón de seguridad
+
+<p style="margin-top:0.3em; font-size:0.92em">Pedro suele conducir sin abrochar el cinturón. Cambia de auto: el nuevo emite un sonido agudo y molesto al arrancar si el cinturón no está puesto; el sonido se calla sólo cuando lo abrocha. Con el tiempo, Pedro empieza a abrocharse el cinturón **antes** de encender el auto, y lo hace cada vez con más frecuencia.</p>
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.84em"}
+::: tarjeta
+<h4>Paso 1 · ¿Reforzamiento o castigo?</h4>
+
+<p>La pregunta es: ¿qué pasa con la probabilidad de emisión de la conducta a futuro?</p>
+
+<p style="margin-top:0.3em">La conducta de abrocharse el cinturón <strong>aumenta</strong> en frecuencia.</p>
+
+<p style="margin-top:0.3em">→ Es un procedimiento de [reforzamiento]{style="color:#2d6a4f; font-weight:700"}.</p>
+:::
+
+::: tarjeta
+<h4>Paso 2 · ¿Positivo o negativo?</h4>
+
+<p>Calculamos la contingencia entre la conducta (R) y la consecuencia (C = sonido agudo):</p>
+
+<p style="margin-top:0.3em">P(sonido | abrocha) = <strong>0</strong></p>
+<p>P(sonido | no abrocha) = <strong>1</strong></p>
+<p style="margin-top:0.3em">Resta: 0 − 1 = <strong>−1</strong></p>
+
+<p style="margin-top:0.3em">Resta menor que cero → contingencia [negativa]{style="color:#2d6a4f; font-weight:700"}.</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.6em; font-size:0.9em"}
+<p style="color:#f5f0e8; margin:0">→ Estamos ante un procedimiento de [reforzamiento negativo]{style="color:#95c17a; font-weight:700"}. Lo "negativo" no significa que el sonido "se quite": significa que la conducta de Pedro **reduce** la probabilidad del sonido.</p>
+:::
+
+------------------------------------------------------------------------
+
+## Programas de reforzamiento
+
+<p style="margin-top:0.4em">El **programa de reforzamiento** describe la regla según la cual una conducta es seguida o no por un reforzador. La pregunta clave es: ¿cuán resistente a la **extinción** será la conducta cuando el reforzador deje de aparecer?</p>
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.86em"}
+::: tarjeta
+<h4>Reforzamiento continuo</h4>
+
+<p>Cada emisión de la conducta es reforzada.</p>
+
+<p style="margin-top:0.3em"><strong>Resistencia a la extinción:</strong> baja. Bastan pocas emisiones no reforzadas para que la conducta se extinga.</p>
+:::
+
+::: tarjeta
+<h4>Reforzamiento variable</h4>
+
+<p>La conducta se refuerza cada cierto número de emisiones, en promedio (razón variable) o cada cierto tiempo, en promedio (intervalo variable).</p>
+
+<p style="margin-top:0.3em"><strong>Resistencia a la extinción:</strong> alta.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Ej.: juegos de azar — el jugador continúa emitiendo la conducta de apuesta aunque no obtenga reforzador durante muchas emisiones.</em></p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Modelos alternativos al conductismo radical</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Tres líneas que abren la caja negra
+
+:::::: {.cols-3 style="margin-top:0.6em; font-size:0.82em"}
+::: tarjeta
+<h4>Tolman</h4>
+
+<p><strong>Conductismo cognitivo.</strong> El aprendizaje no se reduce a vínculos E–R: los organismos construyen <strong>mapas mentales</strong> y expectativas sobre el ambiente.</p>
+:::
+
+::: tarjeta
+<h4>Köhler</h4>
+
+<p><strong>Aprendizaje por insight.</strong> Uno de los fundadores de la Gestalt. El aprendizaje puede ocurrir de modo súbito, por <strong>reorganización perceptiva</strong> del problema, sin ensayo y error gradual.</p>
+:::
+
+::: tarjeta
+<h4>Bandura</h4>
+
+<p><strong>Aprendizaje social.</strong> Buena parte del aprendizaje humano ocurre por <strong>modelado</strong>: observar a otros y reproducir sus conductas, sin necesidad de reforzamiento directo.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Tolman · Aprendizaje latente
+
+<p style="margin-top:0.4em">Tres grupos de ratas deben aprender a salir de un laberinto:</p>
+
+:::::: {.cols-3 style="margin-top:0.6em; font-size:0.85em"}
+::: tarjeta
+<h4>Grupo 1</h4>
+
+<p>Reforzada en cada ensayo.</p>
+
+<p><strong>Aprende rápido.</strong></p>
+:::
+
+::: tarjeta
+<h4>Grupo 2</h4>
+
+<p>Nunca reforzada.</p>
+
+<p><strong>No aprende</strong> (no mejora su desempeño).</p>
+:::
+
+::: tarjeta
+<h4>Grupo 3</h4>
+
+<p>Sin reforzador los primeros 10 días; reforzada a partir del día 11.</p>
+
+<p><strong>Tras introducir el reforzador, aprende tan rápido como el Grupo 1.</strong></p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.9em"}
+<p style="color:#f5f0e8; margin:0">En el Grupo 3 el aprendizaje habría quedado [latente]{style="color:#95c17a; font-weight:700"}: las ratas construyeron un **mapa mental** del laberinto durante la fase no reforzada, mapa que se hizo visible en la conducta sólo cuando hubo un motivo para usarlo.</p>
+:::
+
+------------------------------------------------------------------------
+
+## Tolman · Curva de aprendizaje latente
+
+```{r tolman, fig.width=9, fig.height=5, fig.align='center'}
+library(ggplot2)
+library(dplyr)
+
+# Datos simulados del experimento de Tolman
+set.seed(42)
+
+dias <- 1:17
+
+# G1: Siempre reforzada - aprende rápido y se estabiliza bajo
+g1 <- c(20, 16, 13, 10, 8, 6, 5, 4.5, 4, 3.5, 3, 3, 3, 3, 3, 3, 3) + 
+      rnorm(17, 0, 0.4)
+
+# G2: Nunca reforzada - mejora muy poco, queda alto
+g2 <- c(22, 22, 21, 22, 20, 21, 20, 21, 20, 21, 20, 21, 20, 21, 20, 21, 20) + 
+      rnorm(17, 0, 0.6)
+
+# G3: Sin reforzar hasta día 11, luego cae abruptamente como G1
+g3 <- c(21, 21, 20, 21, 20, 21, 20, 21, 20, 21, 20,   # días 1-11
+        12, 7, 4.5, 3.5, 3, 3) +                       # días 12-17
+      rnorm(17, 0, 0.5)
+
+datos_tolman <- data.frame(
+  dia = rep(dias, 3),
+  tiempo = c(g1, g2, g3),
+  grupo = factor(rep(c("G1 · Siempre reforzada",
+                       "G2 · Nunca reforzada",
+                       "G3 · Reforzada desde día 11"),
+                     each = 17),
+                 levels = c("G2 · Nunca reforzada",
+                            "G1 · Siempre reforzada",
+                            "G3 · Reforzada desde día 11"))
+)
+
+# Paleta verde de la materia
+colores <- c("G1 · Siempre reforzada"        = "#1a3d2b",
+             "G2 · Nunca reforzada"          = "#95c17a",
+             "G3 · Reforzada desde día 11"   = "#2d6a4f")
+
+ggplot(datos_tolman, aes(x = dia, y = tiempo, color = grupo)) +
+  # Línea vertical marcando el inicio del reforzamiento en G3
+  geom_vline(xintercept = 11, linetype = "dashed",
+             color = "red", linewidth = 0.95) +
+  annotate("text", x = 11.2, y = 24,
+           label = "Inicio del reforzamiento\nen el Grupo 3",
+           hjust = 0, size = 3.2, color = "#3d5247",
+           fontface = "italic") +
+  geom_line(linewidth = 1.1) +
+  geom_point(size = 2.2) +
+  scale_color_manual(values = colores) +
+  scale_x_continuous(breaks = seq(1, 17, 2)) +
+  scale_y_continuous(limits = c(0, 26), breaks = seq(0, 25, 5)) +
+  labs(
+    x = "Día",
+    y = "Tiempo de salida (minutos)",
+    color = NULL
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    text = element_text(family = "Source Sans 3"),
+    plot.title = element_text(family = "Playfair Display",
+                              face = "bold", size = 15,
+                              color = "#1a3d2b"),
+    plot.subtitle = element_text(color = "#3d5247", size = 11,
+                                 margin = margin(b = 12)),
+    legend.position = "bottom",
+    legend.text = element_text(size = 10),
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "#e8dfc9"),
+    axis.title = element_text(color = "#3d5247"),
+    axis.text = element_text(color = "#3d5247")
+  )
+
+
+```
+
+<p style="font-size:0.7em; color:#3d5247; text-align:center; margin-top:0.4em"><em>Tiempo de salida del laberinto a lo largo de los días. La flecha marca el día 11, cuando el Grupo 3 comienza a recibir reforzador.</em></p>
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Parte II — Memoria</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Aprendizaje y memoria
+
+::: {.caja-crema style="margin-top:0.5em"}
+La memoria es una parte **crucial** del proceso de aprendizaje. Sin memoria, las experiencias se perderían y el organismo no podría beneficiarse de la experiencia pasada.
+:::
+
+<p style="margin-top:0.7em">En sentido amplio:</p>
+
+:::::: {.cols-2 style="margin-top:0.4em; font-size:0.9em"}
+::: tarjeta
+<h4>Aprendizaje</h4>
+
+<p>Adquisición de conocimiento. Corresponde al aspecto de <strong>almacenamiento</strong> (guardar).</p>
+:::
+
+::: tarjeta
+<h4>Memoria</h4>
+
+<p>Almacenamiento de una <strong>representación interna</strong> de ese conocimiento y su <strong>recuperación</strong>.</p>
+:::
+::::::
+
+<p style="margin-top:0.6em; font-size:0.9em">En el sentido común se usa "memoria" sólo como recuperación; en psicología abarca registro, almacenamiento y recuperación.</p>
+
+------------------------------------------------------------------------
+
+## Apuntes históricos
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.88em"}
+::: tarjeta
+<h4>Ebbinghaus (1885)</h4>
+
+<p>Pionero del estudio experimental de la memoria. Estudia <strong>curvas de aprendizaje</strong> y <strong>curvas de olvido</strong> usando sílabas sin sentido para controlar la influencia del significado previo.</p>
+:::
+
+::: tarjeta
+<h4>William James (1890)</h4>
+
+<p>Propone los términos <strong>memoria primaria</strong> (antecedente de la memoria de corto plazo) y <strong>memoria secundaria</strong> (antecedente de la memoria de largo plazo).</p>
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.88em"}
+Durante la primera mitad del siglo XX, el predominio del conductismo desplazó el estudio de la memoria. Recobra fuerza con el giro **cognitivo** de mediados de siglo.
+:::
+
+------------------------------------------------------------------------
+
+## Memoria: tres procesos
+
+<p style="margin-top:0.5em">La memoria es un **constructo hipotético** que refiere a tres procesos diferenciados pero relacionados:</p>
+
+:::::: {.cols-3 style="margin-top:0.6em; font-size:0.85em"}
+::: tarjeta
+<h4>1 · Registro</h4>
+
+<p>Información que impacta en los sentidos.</p>
+
+<p><strong>No todo lo que se registra se almacena.</strong></p>
+:::
+
+::: tarjeta
+<h4>2 · Almacenamiento</h4>
+
+<p>Información que queda guardada.</p>
+
+<p><strong>No todo lo que se guarda se recupera.</strong></p>
+:::
+
+::: tarjeta
+<h4>3 · Recuperación</h4>
+
+<p>Acceso a lo almacenado. Distinguir <strong>disponibilidad</strong> (si está guardado) de <strong>accesibilidad</strong> (si puede recuperarse).</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.88em"}
+<p style="color:#f5f0e8; margin:0">Sólo el [≈1%]{style="color:#95c17a; font-weight:700"} de la información sensorial llega a ser consciente; y de la información consciente, sólo el [≈5%]{style="color:#95c17a; font-weight:700"} se almacena de forma estable.</p>
+:::
+
+------------------------------------------------------------------------
+
+## Formas de recuperación
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.82em"}
+::: tarjeta
+<h4>Rememoración</h4>
+
+<p>Recuperar información de modo libre (dar un final oral, contar la propia historia).</p>
+:::
+
+::: tarjeta
+<h4>Reconocimiento</h4>
+
+<p>Identificar la respuesta correcta entre opciones (examen multiple choice; probar sabores).</p>
+:::
+
+::: tarjeta
+<h4>Reaprendizaje</h4>
+
+<p>Volver a estudiar algo previamente aprendido (repaso antes de un examen).</p>
+:::
+
+::: tarjeta
+<h4>Memoria reconstructiva</h4>
+
+<p>Recuerdo de un testigo ocular reconstruido en parte a partir de información posterior (Loftus).</p>
+:::
+
+::: tarjeta
+<h4>Reintegración</h4>
+
+<p>Reminiscencias del pasado disparadas por una clave (oler un perfume).</p>
+:::
+
+::: tarjeta
+<h4>Imaginería</h4>
+
+<p>Estrategias de agrupación y representación para facilitar el recuerdo.</p>
+:::
+::::::
+
+<p style="margin-top:0.5em; font-size:0.85em"><em>Aparte: la **fabulación** es la generación de recuerdos inventados, frecuente en ciertos cuadros amnésicos.</em></p>
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Modelo multialmacén · Atkinson y Shiffrin</h2>
+::::
+
+------------------------------------------------------------------------
+
+## El modelo en bloque
+
+![](img/multialmacen.png){fig-align="center" width="78%"}
+
+<p style="font-size:0.7em; color:#3d5247; text-align:center; margin-top:0.4em"><em>El modelo postula tres almacenes secuenciales: sensorial, de corto plazo y de largo plazo, con procesos de transferencia y olvido.</em></p>
+
+------------------------------------------------------------------------
+
+## Memoria sensorial
+
+::: {.caja-crema style="margin-top:0.5em"}
+Conserva una **copia exacta del estímulo** durante un período muy breve luego de la exposición. Almacena los estímulos discriminados sólo por sus **rasgos físicos** (tamaño, forma, color, localización), no por su significado.
+:::
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.85em"}
+::: tarjeta
+<h4>Icónica</h4>
+
+<p>Visual. Dura aproximadamente <strong>0,5 s</strong>.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Permite, por ejemplo, ver una película como flujo continuo.</em></p>
+:::
+
+::: tarjeta
+<h4>Ecoica</h4>
+
+<p>Auditiva. Dura aproximadamente <strong>2 s</strong>.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Permite unir sonidos en palabras al escuchar.</em></p>
+:::
+
+::: tarjeta
+<h4>Háptica</h4>
+
+<p>Táctil. Conserva brevemente la información del contacto con la piel.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Corto plazo vs. largo plazo
+
+<table style="font-size:0.78em; margin-top:0.5em">
+  <thead>
+    <tr>
+      <th>Característica</th>
+      <th>Memoria de corto plazo</th>
+      <th>Memoria de largo plazo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Capacidad</strong></td>
+      <td>7 ± 2 unidades (<em>chunks</em>); puede incrementarse agrupando información</td>
+      <td>Ilimitada</td>
+    </tr>
+    <tr>
+      <td><strong>Duración</strong></td>
+      <td>15–30 segundos sin repaso</td>
+      <td>De segundos a muchos años</td>
+    </tr>
+    <tr>
+      <td><strong>Codificación</strong></td>
+      <td>Principalmente acústica y visual</td>
+      <td>Semántica, visual, acústica</td>
+    </tr>
+  </tbody>
+</table>
+
+<p style="margin-top:0.7em; font-size:0.88em">El paso de corto a largo plazo se logra principalmente mediante **repaso** y, sobre todo, **procesamiento profundo** (semántico).</p>
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Alternativas y refinamientos del modelo</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Tres alternativas al modelo multialmacén
+
+:::::: {.cols-3 style="margin-top:0.6em; font-size:0.85em"}
+::: tarjeta
+<h4>Sistemas múltiples en MLP</h4>
+
+<p>La MLP no es un almacén único: se distinguen memoria <strong>episódica</strong>, <strong>semántica</strong> y <strong>procedural</strong>.</p>
+:::
+
+::: tarjeta
+<h4>Niveles de procesamiento</h4>
+
+<p>Craik y Lockhart: la durabilidad del recuerdo depende de la <strong>profundidad</strong> con que se procesa la información, no de un trasvase entre almacenes.</p>
+:::
+
+::: tarjeta
+<h4>Memoria de trabajo</h4>
+
+<p>Baddeley y Hitch: la memoria de corto plazo no es pasiva, sino un sistema <strong>activo</strong> de mantenimiento y manipulación.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Sistemas de memoria a largo plazo
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.85em"}
+::: tarjeta
+<h4>Explícita / declarativa</h4>
+
+<p>Información que puede recuperarse <strong>conscientemente</strong> y expresarse verbalmente.</p>
+
+<p style="margin-top:0.3em">→ <strong>Episódica:</strong> recuerdos autobiográficos, situados en tiempo y lugar. <em>Ej.: ver a Argentina ganar la copa.</em></p>
+
+<p style="margin-top:0.2em">→ <strong>Semántica:</strong> conocimiento general del mundo, conceptos, reglas, lenguaje. <em>Ej.: saber la capital de Buenos Aires.</em></p>
+:::
+
+::: tarjeta
+<h4>Implícita / no declarativa</h4>
+
+<p>Información que <strong>no</strong> puede inspeccionarse conscientemente, pero influye en el desempeño.</p>
+
+<p style="margin-top:0.3em">→ <strong>Procedimental:</strong> habilidades motoras y cognitivas automatizadas. <em>Ej.: atarse los cordones, andar en bici.</em></p>
+
+<p style="margin-top:0.2em">→ <strong>Emocional:</strong> respuestas afectivas condicionadas a estímulos.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Medidas de memoria
+
+<table style="font-size:0.78em; margin-top:0.5em">
+  <thead>
+    <tr>
+      <th>Medidas directas</th>
+      <th>Tipo</th>
+      <th>Medidas indirectas</th>
+      <th>Tipo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pruebas de reconocimiento</td>
+      <td><strong>Explícita</strong></td>
+      <td>Pruebas de conocimiento perceptual</td>
+      <td><strong>Implícita</strong></td>
+    </tr>
+    <tr>
+      <td>Pruebas de evocación</td>
+      <td><strong>Explícita</strong></td>
+      <td>Pruebas de conocimiento procedimental</td>
+      <td><strong>Implícita</strong></td>
+    </tr>
+    <tr>
+      <td>Recuerdo serial / libre</td>
+      <td><strong>Explícita</strong></td>
+      <td>Prueba de respuesta evaluadora</td>
+      <td><strong>Implícita</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+::: {.caja-crema style="margin-top:0.6em; font-size:0.86em"}
+La **doble disociación** entre medidas directas e indirectas en pacientes amnésicos es uno de los hallazgos más sólidos a favor de distinguir sistemas de memoria: en tareas directas su desempeño cae marcadamente; en tareas indirectas se acerca al de personas sin daño.
+:::
+
+------------------------------------------------------------------------
+
+## Pongmos a *trabajar* la memoria
+
+::: {.caja-crema style="margin-top:0.5em; font-size:0.95em"}
+Antes de seguir, vamos a hacer una **pequeña experiencia** para sentir cómo trabaja la memoria de trabajo. La consigna es simple:
+:::
+
+<div style="margin-top:0.7em; font-size:0.95em">
+<p style="margin-bottom:0.4em">→ Cuando yo les indique, <strong>cierren los ojos</strong>.</p>
+
+<p style="margin-bottom:0.4em">→ Recorran mentalmente su casa, habitación por habitación.</p>
+
+<p style="margin-bottom:0.4em">→ Cuenten <strong>cuántas ventanas</strong> hay en total.</p>
+
+<p style="margin-bottom:0;">→ Cuando crean tenerlo, levanten la mano sin abrir los ojos.</p>
+</div>
+
+<div style="margin-top:1em; display:flex; justify-content:center; align-items:center; gap:1.2em;">
+
+<div id="timer-display" style="font-family:'Playfair Display', serif; font-size:2.6em; font-weight:700; color:#1a3d2b; min-width:2.4em; text-align:center; background:#f5f0e8; padding:0.05em 0.35em; border-radius:8px; border:2px solid #2d6a4f;">0:30</div>
+
+<div style="display:flex; flex-direction:column; gap:0.4em;">
+<button id="timer-start" onclick="window.startTimer()" style="font-family:'Source Sans 3', sans-serif; font-size:0.55em; padding:0.5em 1.2em; background:#2d6a4f; color:#f5f0e8; border:none; border-radius:4px; cursor:pointer; font-weight:600;">Iniciar</button>
+<button id="timer-reset" onclick="window.resetTimer()" style="font-family:'Source Sans 3', sans-serif; font-size:0.55em; padding:0.5em 1.2em; background:#f5f0e8; color:#1a3d2b; border:1px solid #2d6a4f; border-radius:4px; cursor:pointer; font-weight:600;">Reset</button>
+</div>
+
+</div>
+
+<script>
+(function() {
+  let segundos = 30;
+  let intervalo = null;
+  const inicial = 30;
+
+  function mostrar() {
+    const display = document.getElementById('timer-display');
+    if (!display) return;
+    const m = Math.floor(segundos / 60);
+    const s = segundos % 60;
+    display.textContent = m + ':' + String(s).padStart(2, '0');
+  }
+
+  window.startTimer = function() {
+    if (intervalo) return;
+    const display = document.getElementById('timer-display');
+    intervalo = setInterval(function() {
+      segundos--;
+      mostrar();
+      if (segundos <= 5 && segundos > 0) {
+        display.style.color = '#8B1A2B';
+      }
+      if (segundos <= 0) {
+        clearInterval(intervalo);
+        intervalo = null;
+        display.style.color = '#2d6a4f';
+        display.textContent = 'Listo';
+      }
+    }, 1000);
+  };
+
+  window.resetTimer = function() {
+    if (intervalo) {
+      clearInterval(intervalo);
+      intervalo = null;
+    }
+    segundos = inicial;
+    const display = document.getElementById('timer-display');
+    if (display) {
+      display.style.color = '#1a3d2b';
+      mostrar();
+    }
+  };
+})();
+</script>
+
+------------------------------------------------------------------------
+
+## Memoria de trabajo
+
+::: {.caja-crema style="margin-top:0.5em"}
+**Baddeley y Hitch (1974).** La memoria de corto plazo no es un almacén pasivo, sino un sistema **activo** que mantiene la información al mismo tiempo que la **manipula**.
+:::
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.84em"}
+::: tarjeta
+<h4>Ejecutivo central</h4>
+
+<p>Sistema atencional supervisor: coordina los otros componentes, asigna recursos, controla y manipula la información.</p>
+:::
+
+::: tarjeta
+<h4>Bucle fonológico</h4>
+
+<p>"Voz interna". Almacena y repasa información verbal y acústica.</p>
+:::
+
+::: tarjeta
+<h4>Agenda visoespacial</h4>
+
+<p>"Ojo interno". Almacena y manipula imágenes y relaciones espaciales.</p>
+:::
+::::::
+
+<p style="margin-top:0.6em; font-size:0.85em"><em>En revisiones posteriores Baddeley agrega un cuarto componente, el </em><strong>buffer episódico</strong><em>, que integra información de los demás componentes con la MLP.</em></p>
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Amnesia</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Causas comunes
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.88em"}
+::: tarjeta
+<h4>Causas neurológicas</h4>
+
+<p>→ Traumatismo craneoencefálico</p>
+<p>→ Síndrome de Korsakoff (deficiencia severa de vitamina B1, asociada a alcoholismo crónico)</p>
+<p>→ Enfermedad de Alzheimer</p>
+<p>→ Daño al <strong>hipocampo</strong> y a estructuras <strong>talámicas</strong></p>
+:::
+
+::: tarjeta
+<h4>Causas iatrogénicas y farmacológicas</h4>
+
+<p>→ <strong>TEC</strong> (terapia electroconvulsiva)</p>
+<p>→ <strong>Midazolam</strong> y otras benzodiacepinas: amnesia inducida farmacológicamente</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Tipos de amnesia
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.88em"}
+::: tarjeta
+<h4>Retrógrada</h4>
+
+<p>Dificultad para <strong>recordar información previa</strong> a la lesión.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Ej.: el personaje de una telenovela que tras un golpe no reconoce a su familia.</em></p>
+:::
+
+::: tarjeta
+<h4>Anterógrada</h4>
+
+<p>Dificultad para <strong>formar nuevos recuerdos</strong>, posteriores a la lesión.</p>
+
+<p style="font-size:0.85em; color:#3d5247"><em>Ej.: el caso de Clive Wearing; el marinero perdido (Oliver Sacks); la trama de </em>50 First Dates<em>.</em></p>
+:::
+::::::
+
+![](img/linea-tiempo-amnesia.png){fig-align="center" width="65%"}
+
+<p style="font-size:0.7em; color:#3d5247; text-align:center; margin-top:0.3em"><em>La lesión define dos períodos: lo anterior (retrógrado) y lo posterior (anterógrado).</em></p>
+
+------------------------------------------------------------------------
+
+## Disociación entre sistemas
+
+::: {.caja-verde style="margin-top:0.5em"}
+<p style="color:#f5f0e8; margin:0">El caso **Clive Wearing** (encefalitis por herpes con daño al hipocampo) y el caso **H. M.** (extirpación bilateral del hipocampo por epilepsia refractaria) mostraron que, pese a la amnesia severa para nuevos hechos:</p>
+
+<p style="color:#f5f0e8; margin:0.4em 0 0 0">→ Conservan el lenguaje, la marcha, la lectura, habilidades musicales previas.</p>
+
+<p style="color:#f5f0e8; margin:0.2em 0 0 0">→ Pueden [adquirir nuevas habilidades procedimentales]{style="color:#95c17a; font-weight:700"} (por ejemplo, dibujar a través de un espejo) sin tener recuerdo episódico de haber practicado.</p>
+:::
+
+<p style="margin-top:0.6em; font-size:0.9em">Esta disociación es uno de los argumentos clínicos más fuertes para distinguir entre **memoria declarativa** (afectada) y **memoria procedimental** (preservada).</p>
+
+------------------------------------------------------------------------
+
+## Cierre · ideas para llevarse
+
+:::::: {.cols-2 style="margin-top:0.5em; font-size:0.86em"}
+::: tarjeta
+<h4>Aprendizaje</h4>
+
+<p>→ El conductismo describe el aprendizaje a través de relaciones observables entre estímulos, respuestas y consecuencias.</p>
+
+<p>→ Watson y Skinner aportan dos paradigmas complementarios.</p>
+
+<p>→ Tolman, Köhler y Bandura introducen variables internas y sociales que el conductismo radical no explica.</p>
+:::
+
+::: tarjeta
+<h4>Memoria</h4>
+
+<p>→ La memoria no es un almacén único: hay sistemas con propiedades distintas (sensorial, MCP, MLP; declarativa vs. procedimental).</p>
+
+<p>→ El recuerdo depende tanto de cómo se codifica como de cómo se recupera.</p>
+
+<p>→ La clínica de la amnesia es una herramienta clave para mapear esos sistemas.</p>
+:::
+::::::
+
