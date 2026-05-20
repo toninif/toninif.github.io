@@ -12,6 +12,12 @@ website:
         text: Inicio
       - href: about.qmd
         text: Sobre mí
+      - text: Herramientas
+        menu:
+          - href: herramientas/iowa-gambling-task/index.html
+            text: "Iowa Gambling Task"
+          - href: herramientas/teorias-emocion/index.html
+            text: "Teorías clásicas de la emoción"
       - text: Presentaciones
         menu:
           - href: presentaciones/emocion/index.qmd

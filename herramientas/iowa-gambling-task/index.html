@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iowa Gambling Task · Versión exprés</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+</head>
+<body>
+
+  <!-- ──────────────── INTRO ──────────────── -->
+  <section id="intro" class="screen active">
+    <div class="container">
+      <h1>Iowa Gambling Task</h1>
+      <p class="subtitulo">Versión exprés · 30 cartas</p>
+
+      <div class="caja-intro">
+        <p>Vas a ver cuatro mazos de cartas: <strong>A, B, C, D</strong>. En cada ronda elegís un mazo y das vuelta una carta. Algunas cartas te dan dinero, otras te lo quitan.</p>
+
+        <p><strong>Tu objetivo:</strong> ganar la mayor cantidad de dinero posible en 30 cartas.</p>
+
+        <p>No sabés qué mazo es bueno y cuál no. Tampoco podés calcular: tenés que probar y decidir.</p>
+      </div>
+
+      <div class="caja-tip">
+        <p><strong>Empezás con $2000.</strong> Algunos mazos parecen muy generosos al principio... pero las cosas pueden cambiar.</p>
+      </div>
+
+      <button id="btn-start" class="btn-principal">Empezar el experimento</button>
+
+      <p class="ref">Adaptado de Bechara, Damasio, Damasio &amp; Anderson (1994).</p>
+    </div>
+  </section>
+
+  <!-- ──────────────── JUEGO ──────────────── -->
+  <section id="juego" class="screen">
+    <div class="container">
+
+      <div class="hud">
+        <div class="hud-item">
+          <span class="hud-label">Dinero</span>
+          <span class="hud-valor" id="dinero">$2000</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">Carta</span>
+          <span class="hud-valor" id="carta-num">1 / 30</span>
+        </div>
+      </div>
+
+      <div class="instruccion" id="instruccion">
+        Elegí un mazo
+      </div>
+
+      <div class="barajas">
+        <button class="baraja" data-mazo="A">
+          <div class="baraja-letra">A</div>
+          <div class="baraja-fondo"></div>
+        </button>
+        <button class="baraja" data-mazo="B">
+          <div class="baraja-letra">B</div>
+          <div class="baraja-fondo"></div>
+        </button>
+        <button class="baraja" data-mazo="C">
+          <div class="baraja-letra">C</div>
+          <div class="baraja-fondo"></div>
+        </button>
+        <button class="baraja" data-mazo="D">
+          <div class="baraja-letra">D</div>
+          <div class="baraja-fondo"></div>
+        </button>
+      </div>
+
+      <div class="historial">
+        <span class="historial-label">Tus elecciones:</span>
+        <div class="historial-puntos" id="historial-puntos"></div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ──────────────── RESULTADO ──────────────── -->
+  <section id="resultado" class="screen">
+    <div class="container">
+
+      <h1>Resultado</h1>
+
+      <div class="resumen-final">
+        <div class="resumen-item">
+          <span class="resumen-label">Dinero final</span>
+          <span class="resumen-valor" id="dinero-final">$0</span>
+        </div>
+        <div class="resumen-item">
+          <span class="resumen-label">Ganancia neta</span>
+          <span class="resumen-valor" id="ganancia-neta">$0</span>
+        </div>
+      </div>
+
+      <div class="resultado-card">
+        <h3>Tu curva de elecciones</h3>
+        <p class="resultado-explicacion">El gráfico muestra qué proporción de cartas elegiste de los <strong>mazos buenos (C+D)</strong> en cada bloque de 10 cartas, comparado con las curvas típicas de controles sanos y pacientes con lesión prefrontal.</p>
+        <div class="chart-wrap">
+          <canvas id="grafico-curva"></canvas>
+        </div>
+      </div>
+
+      <div class="resultado-card">
+        <h3>Lo que mostró el experimento original</h3>
+        <p>Bechara y colaboradores observaron que los <strong>controles sanos</strong> aprenden, dentro de los primeros 30-40 ensayos, a evitar los mazos A y B. Más sorprendente aún: <em>desarrollan respuestas de conductancia de la piel anticipatorias</em> ante los mazos malos <strong>antes</strong> de poder explicar por qué son malos.</p>
+
+        <p>Los <strong>pacientes con lesión prefrontal ventromedial</strong> nunca generan esas señales somáticas anticipatorias y siguen prefiriendo los mazos A y B aun después de perder repetidamente. Conocen los premios y castigos, pero no pueden "sentir" la diferencia entre las opciones.</p>
+      </div>
+
+      <div class="resultado-card resaltado">
+        <h3>Composición real de los mazos</h3>
+        <table class="tabla-mazos">
+          <thead>
+            <tr>
+              <th>Mazo</th>
+              <th>Paga</th>
+              <th>Castigo</th>
+              <th>Balance c/10 cartas</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="mazo-malo">
+              <td><strong>A</strong></td>
+              <td>$100</td>
+              <td>Frecuente, mediano</td>
+              <td>−$250</td>
+            </tr>
+            <tr class="mazo-malo">
+              <td><strong>B</strong></td>
+              <td>$100</td>
+              <td>Raro, muy grande</td>
+              <td>−$250</td>
+            </tr>
+            <tr class="mazo-bueno">
+              <td><strong>C</strong></td>
+              <td>$50</td>
+              <td>Frecuente, chico</td>
+              <td>+$250</td>
+            </tr>
+            <tr class="mazo-bueno">
+              <td><strong>D</strong></td>
+              <td>$50</td>
+              <td>Raro, mediano</td>
+              <td>+$250</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <button id="btn-reiniciar" class="btn-principal">Volver a jugar</button>
+
+      <p class="ref">
+        Bechara, A., Damasio, A. R., Damasio, H., &amp; Anderson, S. W. (1994). Insensitivity to future consequences following damage to human prefrontal cortex. <em>Cognition</em>, 50, 7–15.
+      </p>
+
+    </div>
+  </section>
+
+<!-- ──────────────── MODAL DE RESULTADO ──────────────── -->
+<div class="modal-overlay" id="modal-overlay">
+  <div class="modal" id="modal">
+    <div class="modal-mazo">Mazo <span id="modal-letra">A</span></div>
+
+    <div class="modal-detalle">
+      <div class="modal-linea ganancia">
+        <span class="modal-label">Ganaste</span>
+        <span class="modal-valor" id="modal-ganancia">$0</span>
+      </div>
+      <div class="modal-linea perdida" id="modal-linea-perdida">
+        <span class="modal-label">Perdiste</span>
+        <span class="modal-valor" id="modal-perdida">$0</span>
+      </div>
+    </div>
+
+    <div class="modal-balance" id="modal-balance">
+      <span class="modal-balance-label">Balance</span>
+      <span class="modal-balance-valor" id="modal-balance-valor">$0</span>
+    </div>
+
+    <button class="btn-continuar" id="btn-continuar">Continuar</button>
+  </div>
+</div>
+
+  <script src="js/igt.js"></script>
+</body>
+</html>

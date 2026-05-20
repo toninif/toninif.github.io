@@ -1,0 +1,586 @@
+/* ──────────────────────────────────────────────────────────────
+   Iowa Gambling Task · paleta Motivación y Emoción
+   ────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --marron:       #3d3229;
+  --marron-claro: #5a4a3a;
+  --dorado:       #c9a96e;
+  --dorado-oscuro:#996b2f;
+  --dorado-claro: #e8d5a8;
+  --crema:        #faf7f2;
+  --crema-borde:  #e8d5b0;
+  --texto:        #2a2a2a;
+  --gris-calido:  #a09585;
+  --rojo-suave:   #b04a3f;
+  --verde-suave:  #5a8c4e;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--crema);
+  color: var(--texto);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ── Screens (pantallas que se alternan) ── */
+.screen {
+  display: none;
+  min-height: 100vh;
+  padding: 2.5em 1.5em;
+}
+
+.screen.active {
+  display: block;
+  animation: fadein 0.4s ease;
+}
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.container {
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+/* ── Tipografía ── */
+h1 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.2em;
+  font-weight: 700;
+  color: var(--marron);
+  margin-bottom: 0.1em;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.25em;
+  color: var(--marron);
+  margin-bottom: 0.5em;
+}
+
+.subtitulo {
+  font-size: 1em;
+  color: var(--gris-calido);
+  font-style: italic;
+  margin-bottom: 1.8em;
+  letter-spacing: 0.02em;
+}
+
+p { margin-bottom: 0.8em; }
+
+.ref {
+  font-size: 0.78em;
+  color: var(--gris-calido);
+  margin-top: 2em;
+  font-style: italic;
+  text-align: center;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   INTRO
+   ────────────────────────────────────────────────────────────── */
+.caja-intro {
+  background: white;
+  border: 1.5px solid var(--crema-borde);
+  border-top: 4px solid var(--dorado);
+  border-radius: 6px;
+  padding: 1.5em 1.8em;
+  margin-bottom: 1em;
+  font-size: 0.96em;
+}
+
+.caja-tip {
+  background: var(--crema);
+  border-left: 5px solid var(--dorado);
+  border-radius: 0 6px 6px 0;
+  padding: 1em 1.5em;
+  margin-bottom: 2em;
+  font-size: 0.9em;
+}
+
+/* ── Botón principal ── */
+.btn-principal {
+  display: block;
+  background: var(--marron);
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.05em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 1em 2.5em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin: 1.5em auto;
+  transition: all 0.2s ease;
+}
+
+.btn-principal:hover {
+  background: var(--marron-claro);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(61, 50, 41, 0.2);
+}
+
+.btn-principal:active {
+  transform: translateY(0);
+}
+
+/* ──────────────────────────────────────────────────────────────
+   JUEGO
+   ────────────────────────────────────────────────────────────── */
+.hud {
+  display: flex;
+  justify-content: space-between;
+  background: var(--marron);
+  color: white;
+  border-radius: 8px;
+  padding: 1em 1.6em;
+  margin-bottom: 1.5em;
+}
+
+.hud-item { display: flex; flex-direction: column; }
+
+.hud-label {
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--dorado-claro);
+  margin-bottom: 0.2em;
+}
+
+.hud-valor {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+/* ── Feedback de la última jugada ── */
+.feedback {
+  text-align: center;
+  margin-bottom: 1.5em;
+  min-height: 3em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feedback-texto {
+  font-size: 1.05em;
+  color: var(--marron-claro);
+  font-style: italic;
+}
+
+.feedback.gano .feedback-texto {
+  color: var(--verde-suave);
+  font-weight: 600;
+  font-style: normal;
+}
+
+.feedback.perdio .feedback-texto {
+  color: var(--rojo-suave);
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* ── Las cuatro barajas ── */
+.barajas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1em;
+  margin-bottom: 2em;
+}
+
+.baraja {
+  position: relative;
+  aspect-ratio: 2 / 3;
+  background: var(--marron);
+  border: 3px solid var(--dorado);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: all 0.15s ease;
+  padding: 0;
+}
+
+.baraja:hover:not(:disabled) {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 22px rgba(61, 50, 41, 0.35);
+  border-color: var(--dorado-claro);
+}
+
+.baraja:active:not(:disabled) {
+  transform: translateY(-2px);
+}
+
+.baraja:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.baraja-letra {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'Libre Baskerville', serif;
+  font-size: 3em;
+  font-weight: 700;
+  color: var(--dorado-claro);
+  z-index: 2;
+}
+
+.baraja-fondo {
+  position: absolute;
+  inset: 0;
+  background:
+    repeating-linear-gradient(
+      45deg,
+      transparent 0,
+      transparent 8px,
+      rgba(201, 169, 110, 0.08) 8px,
+      rgba(201, 169, 110, 0.08) 12px
+    );
+}
+
+/* Animación de "carta jugada" */
+.baraja.jugada {
+  animation: jugar 0.4s ease;
+}
+
+@keyframes jugar {
+  0%   { transform: scale(1); }
+  50%  { transform: scale(0.94) rotate(-2deg); }
+  100% { transform: scale(1); }
+}
+
+/* ── Historial de elecciones ── */
+.historial {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  flex-wrap: wrap;
+}
+
+.historial-label {
+  font-size: 0.8em;
+  color: var(--gris-calido);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.historial-puntos {
+  display: flex;
+  gap: 0.3em;
+  flex-wrap: wrap;
+}
+
+.punto {
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7em;
+  font-weight: 700;
+  color: white;
+}
+
+.punto.A, .punto.B { background: var(--marron); }
+.punto.C, .punto.D { background: var(--dorado); color: var(--marron); }
+
+/* ──────────────────────────────────────────────────────────────
+   RESULTADO
+   ────────────────────────────────────────────────────────────── */
+.resumen-final {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  margin: 1.5em 0;
+}
+
+.resumen-item {
+  background: var(--marron);
+  color: white;
+  border-radius: 8px;
+  padding: 1.2em;
+  text-align: center;
+}
+
+.resumen-label {
+  display: block;
+  font-size: 0.72em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--dorado-claro);
+  margin-bottom: 0.3em;
+}
+
+.resumen-valor {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.resultado-card {
+  background: white;
+  border: 1.5px solid var(--crema-borde);
+  border-top: 4px solid var(--dorado);
+  border-radius: 6px;
+  padding: 1.4em 1.7em;
+  margin-bottom: 1.2em;
+}
+
+.resultado-card.resaltado {
+  background: var(--crema);
+}
+
+.resultado-explicacion {
+  font-size: 0.92em;
+  color: var(--marron-claro);
+  margin-bottom: 1em;
+}
+
+.chart-wrap {
+  position: relative;
+  height: 320px;
+  margin-top: 1em;
+}
+
+/* ── Tabla de mazos ── */
+.tabla-mazos {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9em;
+  margin-top: 0.7em;
+}
+
+.tabla-mazos th {
+  background: var(--marron);
+  color: white;
+  text-align: left;
+  padding: 0.6em 0.9em;
+  font-weight: 600;
+  font-size: 0.85em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.tabla-mazos td {
+  padding: 0.5em 0.9em;
+  border-bottom: 1px solid var(--crema-borde);
+}
+
+.tabla-mazos tr.mazo-malo td:first-child {
+  color: var(--rojo-suave);
+  font-weight: 700;
+}
+
+.tabla-mazos tr.mazo-bueno td:first-child {
+  color: var(--verde-suave);
+  font-weight: 700;
+}
+
+/* ──────────────────────────────────────────────────────────────
+   RESPONSIVE
+   ────────────────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  h1 { font-size: 1.7em; }
+  .container { padding: 0; }
+  .barajas { gap: 0.5em; }
+  .baraja-letra { font-size: 2.2em; }
+  .resumen-final { grid-template-columns: 1fr; }
+  .resumen-valor { font-size: 1.6em; }
+  .hud-valor { font-size: 1.3em; }
+  .punto { width: 20px; height: 20px; font-size: 0.62em; }
+  .tabla-mazos { font-size: 0.78em; }
+  .tabla-mazos th, .tabla-mazos td { padding: 0.4em 0.5em; }
+}
+
+
+/* ──────────────────────────────────────────────────────────────
+   MODAL DE RESULTADO
+   ────────────────────────────────────────────────────────────── */
+
+/* Reemplaza el viejo .feedback por una instrucción simple */
+.instruccion {
+  text-align: center;
+  font-size: 1.05em;
+  color: var(--gris-calido);
+  font-style: italic;
+  margin-bottom: 1.5em;
+  min-height: 1.5em;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(61, 50, 41, 0.65);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  padding: 1em;
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
+}
+
+.modal-overlay.visible {
+  display: flex;
+  animation: modal-fadein 0.25s ease;
+}
+
+@keyframes modal-fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.modal {
+  background: white;
+  border-radius: 12px;
+  padding: 2em 2.5em;
+  max-width: 420px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+  animation: modal-pop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes modal-pop {
+  from { transform: scale(0.85); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
+
+.modal-mazo {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.1em;
+  color: var(--gris-calido);
+  margin-bottom: 1em;
+  letter-spacing: 0.04em;
+}
+
+.modal-mazo span {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: var(--marron);
+}
+
+.modal-detalle {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6em;
+  margin-bottom: 1.5em;
+}
+
+.modal-linea {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8em 1.2em;
+  border-radius: 6px;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.modal-linea.ganancia {
+  background: rgba(90, 140, 78, 0.12);
+  border-left: 4px solid var(--verde-suave);
+}
+
+.modal-linea.perdida {
+  background: rgba(176, 74, 63, 0.12);
+  border-left: 4px solid var(--rojo-suave);
+}
+
+.modal-linea.perdida.oculta {
+  display: none;
+}
+
+.modal-label {
+  font-size: 0.85em;
+  color: var(--marron-claro);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+}
+
+.modal-valor {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.modal-linea.ganancia .modal-valor { color: var(--verde-suave); }
+.modal-linea.perdida  .modal-valor { color: var(--rojo-suave); }
+
+.modal-balance {
+  background: var(--marron);
+  color: white;
+  border-radius: 8px;
+  padding: 1em 1.4em;
+  margin-bottom: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-balance-label {
+  font-size: 0.78em;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--dorado-claro);
+  font-weight: 600;
+}
+
+.modal-balance-valor {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.6em;
+  font-weight: 700;
+}
+
+.modal-balance.positivo .modal-balance-valor { color: var(--dorado-claro); }
+.modal-balance.negativo .modal-balance-valor { color: #ffb3a8; }
+
+.btn-continuar {
+  background: var(--dorado);
+  color: var(--marron);
+  font-family: 'Inter', sans-serif;
+  font-size: 1em;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding: 0.85em 2em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.15s ease;
+}
+
+.btn-continuar:hover {
+  background: var(--dorado-oscuro);
+  color: white;
+}
+
+.btn-continuar:active {
+  transform: scale(0.98);
+}
+
+/* Mobile: ajustes del modal */
+@media (max-width: 600px) {
+  .modal { padding: 1.5em 1.5em; }
+  .modal-valor { font-size: 1.25em; }
+  .modal-balance-valor { font-size: 1.3em; }
+}
+
+
+
+
