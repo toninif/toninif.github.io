@@ -1,0 +1,348 @@
+/* ── Motivación y Emoción: Estilo general ── */
+/* Estilo académico, tipografía serif, tonos cálidos */
+
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+/* ── Variables ── */
+:root {
+  --marron: #3d3229;
+  --dorado: #c9a96e;
+  --crema: #faf7f2;
+  --borde-crema: #e8d5b0;
+  --texto: #2a2a2a;
+  --texto-claro: #5a4a3a;
+}
+
+.reveal {
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  color: var(--texto);
+}
+
+.reveal h2 {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.35em;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 0.6em;
+  border-bottom: 2px solid var(--dorado);
+  padding-bottom: 0.25em;
+}
+
+.reveal h3 {
+  font-family: "Libre Baskerville", serif;
+  font-weight: 700;
+  color: #1a1a1a;
+}
+
+/* ── Acento dorado inline ── */
+.dorado {
+  color: #996b2f;
+  font-weight: 600;
+}
+
+.accent {
+  color: #996b2f;
+  font-weight: 600;
+}
+
+.clarito {
+  color: #e8d5b0;
+  font-weight: 600;
+}
+
+/* ── Slides de transición / sección ── */
+.slide-titulo {
+  background-color: var(--marron) !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.slide-titulo h2 {
+  border-bottom: none;
+}
+
+.barra-vertical {
+  position: absolute;
+  left: 32%;
+  top: 25%;
+  width: 4px;
+  height: 50%;
+  background: var(--dorado);
+  border-radius: 2px;
+}
+
+.contenido-titulo {
+  font-family: "Libre Baskerville", serif;
+  font-size: 1.6em;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ── Subtítulo dentro de slides de contenido ── */
+.subtitulo-slide {
+  font-family: "Libre Baskerville", serif;
+  font-size: 0.85em;
+  font-weight: 700;
+  color: var(--marron);
+  text-align: center;
+  margin-bottom: 0.6em;
+  letter-spacing: 0.02em;
+}
+
+/* ── Tablas ── */
+.reveal table {
+  font-size: 0.78em;
+}
+
+.reveal table th {
+  background-color: var(--marron);
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+}
+
+.reveal table td {
+  border-bottom: 1px solid #e0d8cc;
+}
+
+.tabla-contenido {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78em;
+}
+
+.tabla-contenido th {
+  background-color: var(--marron);
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 0.85em;
+  letter-spacing: 0.04em;
+  padding: 0.5em 0.7em;
+}
+
+.tabla-contenido td {
+  border-bottom: 1px solid #e0d8cc;
+  padding: 0.5em 0.7em;
+  vertical-align: top;
+}
+
+.tabla-pequeña {
+  font-size: 0.7em;
+}
+
+.tabla-pequeña td,
+.tabla-pequeña th {
+  padding: 0.35em 0.6em;
+}
+
+/* ── Listas ── */
+.reveal li {
+  margin-bottom: 0.4em;
+}
+
+/* ── Blockquotes ── */
+.reveal blockquote {
+  border-left: 3px solid var(--dorado);
+  font-style: italic;
+  font-family: "Libre Baskerville", serif;
+  color: #555;
+}
+
+/* ── Slides de sección (clase legacy) ── */
+.reveal .section-slide {
+  background-color: var(--marron);
+}
+
+/* ── Footer ── */
+.reveal .footer {
+  font-size: 0.42em;
+  color: #999;
+}
+
+/* ── Columnas ── */
+.reveal .columns {
+  gap: 1.5em;
+}
+
+/* ── Fondo uniforme ── */
+.reveal .slides section {
+  background-color: #ffffff;
+}
+
+/* ── Mermaid ── */
+.reveal .mermaid {
+  text-align: center;
+  transform: scale(1.3);
+  transform-origin: center center;
+  margin-top: 1em;
+}
+
+/* ── Clases auxiliares de contenido ── */
+.formula-box {
+  background: var(--crema);
+  border: 2px solid var(--dorado);
+  border-radius: 8px;
+  padding: 0.6em 1.2em;
+  text-align: center;
+  margin: 0.7em auto;
+  font-size: 1.1em;
+}
+
+.tarjeta {
+  background: var(--crema);
+  border: 1.5px solid var(--borde-crema);
+  border-top: 4px solid var(--dorado);
+  border-radius: 6px;
+  padding: 0.6em 0.85em;
+  font-size: 0.82em;
+  line-height: 1.5;
+}
+
+.tarjeta h4 {
+  font-family: 'Libre Baskerville', serif;
+  color: var(--marron);
+  font-size: 0.95em;
+  margin: 0 0 0.35em 0;
+}
+
+.caja-dorada {
+  background: var(--borde-crema);
+  border-left: 5px solid var(--dorado);
+  border-radius: 0 6px 6px 0;
+  padding: 0.5em 0.9em;
+  margin: 0.5em 0;
+  font-size: 0.88em;
+  line-height: 1.5;
+}
+
+.caja-oscura {
+  background: var(--marron);
+  color: #ffffff;
+  border-radius: 6px;
+  padding: 0.5em 0.9em;
+  margin: 0.4em 0;
+  font-size: 0.88em;
+}
+
+.cols-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5em;
+  align-items: start;
+}
+
+.cols-3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.2em;
+  align-items: start;
+}
+
+
+.reveal p,
+.reveal li {
+  font-size: 1em;
+}
+
+
+
+
+/* ── Slide tipo frase destacada ── */
+.slide-frase {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.caja-frase {
+  background: var(--marron);
+  padding: 1.2em 2.5em;
+  border-left: 5px solid var(--dorado);
+}
+
+.caja-frase p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  font-style: italic;
+  color: #ffffff;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  margin: 0;
+  text-align: center;
+}
+
+/* ── Slide tipo cita destacada ── */
+.slide-cita {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
+
+.slide-cita h2 {
+  display: none;
+}
+
+.caja-cita {
+  background: var(--marron);
+  padding: 1.5em 2.5em;
+  border-radius: 4px;
+  width: 85%;
+}
+
+.caja-cita p {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 0.95em;
+  font-weight: 400;
+  color: #ffffff;
+  line-height: 1.6;
+  margin: 0;
+  text-align: center;
+}
+
+
+/* ── Slide de transición ── */
+.slide-transicion {
+  display: flex !important;
+  align-items: center !important;
+  background-color: #ffffff !important;
+  padding: 0 !important;
+}
+
+.slide-transicion .transicion-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.8em;
+  padding: 0 1.2em;
+  width: 100%;
+}
+
+.slide-transicion .barra-acento {
+  width: 7px;
+  height: 1.6em;
+  background: var(--dorado);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.slide-transicion h2 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.5em;
+  color: var(--marron);
+  margin: 0;
+  line-height: 1.2;
+  border-bottom: none;
+}

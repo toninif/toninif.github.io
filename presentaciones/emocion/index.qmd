@@ -56,4 +56,8 @@ Material de clase del curso de Psicología de la Motivación y Emoción, Univers
 **[Clase 10](10-memoria-emocional.html){target="_blank"}** · Memoria y emoción.
 :::
 
+::: {.pub-item}
+**[Clase 11](11-emocion-decisiones.html){target="_blank"}** · Emociones y su influencia en el proceso decisorio.
+:::
+
 
