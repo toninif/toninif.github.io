@@ -1,5 +1,5 @@
 ---
-title: "Sensación y Percepción"
+title: "Qué es la inteligencia?"
 subtitle: "Psicología General"
 author: "Dr. Fernando Tonini"
 format:
@@ -18,26 +18,6 @@ execute:
 filters:
   - lightbox
 lightbox: auto
----
-
----
-title: "Inteligencia"
-subtitle: "Psicología General"
-author: "Dr. Fernando Tonini"
-institute: "Universidad de Palermo"
-format:
-  revealjs:
-    theme: [simple, psico-general-style.css]
-    slide-number: true
-    transition: fade
-    chalkboard: true
-    footer: "Psicología · UP"
-    logo: ""
-    width: 1280
-    height: 720
-execute:
-  echo: false
-  warning: false
 ---
 
 ------------------------------------------------------------------------
