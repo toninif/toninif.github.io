@@ -36,4 +36,16 @@ Material de clase del curso de Psicología. Hacé click en cualquier presentaci�
 **[Clase 5](05-clase-motivacion-emocion.qmd){target="_blank"}** · Introducción a la psicología de la motivación y la emoción.
 :::
 
+::: {.pub-item}
+**[Clase 6](aprendizaje-memoria.qmd){target="_blank"}** · Psicología del aprendizaje y la memoria
+:::
+
+::: {.pub-item}
+**[Clase 7](07-clase-senspercep.qmd){target="_blank"}** · Psicología de la sensación y la percepción
+:::
+
+::: {.pub-item}
+**[Clase 8](08-inteligencia.qmd){target="_blank"}** · Inteligencia
+:::
+
 :::
