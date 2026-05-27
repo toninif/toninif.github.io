@@ -1,0 +1,201 @@
+---
+title: ""
+date: "2026-05-27"
+description: "Actualización - Modelos de la emoción"
+format:
+  revealjs:
+    theme: simple
+    slide-number: true
+    transition: fade
+    footer: "Psicología de la Motivación y Emoción · UP"
+    chalkboard: true
+    title-slide-attributes:
+      data-background-color: "#ffffff"
+      data-visibility: hidden
+    css: clase1-style.css
+---
+
+## {.slide-titulo}
+
+::: {.contenido-titulo}
+Lo que pasó después
+:::
+
+<div style="text-align: center; color: #c9a96e; font-family: 'Inter', sans-serif; font-size: 0.55em; letter-spacing: 0.15em; text-transform: uppercase; margin-top: 1em;">
+Los modelos de la emoción bajo la lupa de la replicación
+</div>
+
+## ¿Por qué esta clase?
+
+::: {.subtitulo-slide}
+ENCUADRE
+:::
+
+No hay tema nuevo hoy. Volvemos sobre lo que ya vimos para preguntarnos algo distinto.
+
+::: {.caja-dorada}
+Los modelos que estudiamos son de los años **60 a 80**. ¿Qué les pasó en la última década?
+:::
+
+La respuesta corta: ninguno se cayó, pero todos tuvieron que **precisarse**. La psicología de la emoción es un campo vivo, no un capítulo cerrado del manual. Vamos a recorrer cuatro modelos conocidos y ver dónde está hoy la discusión.
+
+## El gran debate de fondo
+
+::: {.subtitulo-slide}
+EKMAN HOY
+:::
+
+El modelo de emociones básicas tiene hoy un rival serio.
+
+::: {.cols-2}
+::: {.tarjeta}
+<h4>Emociones básicas (Ekman)</h4>
+Un set de emociones discretas, evolutivas, con firma fisiológica propia y expresión facial universal.
+:::
+
+::: {.tarjeta}
+<h4>Emoción construida (Barrett)</h4>
+La emoción no viene "de fábrica". El cerebro la construye en cada situación, con conceptos aprendidos y el contexto.
+:::
+:::
+
+::: {.caja-dorada}
+Las dos posturas dominan hoy la investigación en emoción. La pregunta de fondo es vieja: ¿las emociones son **entidades naturales** o **construcciones**?
+:::
+
+## ¿Quién tiene razón?
+
+::: {.subtitulo-slide}
+EKMAN HOY · CONTINUACIÓN
+:::
+
+La discusión ya no se plantea como un ganador y un perdedor.
+
+::: {.cols-2}
+::: {.tarjeta}
+<h4>Lo que aporta cada lado</h4>
+Ekman: evidencia de reconocimiento facial entre culturas. Barrett: enorme variabilidad fisiológica dentro de una misma emoción.
+:::
+
+::: {.tarjeta}
+<h4>La propuesta de síntesis</h4>
+Un trabajo reciente sugiere que las teorías responden **preguntas distintas**: las básicas explican el *origen evolutivo*; la construida, *cómo se produce* la emoción aquí y ahora.
+:::
+:::
+
+::: {.caja-oscura}
+Lección para la materia: en ciencia, qué pregunta estás respondiendo importa tanto como la respuesta. Dos teorías pueden no ser rivales si miran cosas diferentes.
+:::
+
+## ¿Estrellas o constelaciones?
+
+::: {.subtitulo-slide}
+MODELO DIMENSIONAL
+:::
+
+El mismo debate, visto desde el modelo dimensional (Olivera-La Rosa et al., 2016).
+
+::: {.cols-2}
+::: {.tarjeta}
+<h4>Estrellas</h4>
+Emociones discretas, separadas, cada una con identidad propia. La mirada de Ekman.
+:::
+
+::: {.tarjeta}
+<h4>Constelaciones</h4>
+Puntos en un espacio continuo de valencia y activación. Los límites entre emociones son borrosos.
+:::
+:::
+
+::: {.caja-dorada}
+**Actualización:** hoy se discute si dos dimensiones alcanzan. Las emociones complejas son difíciles de ubicar solo con valencia y activación. Y la **dominancia** (la tercera dimensión del IAPS/IADS) aparece y desaparece según el estudio.
+:::
+
+## La universalidad, matizada
+
+::: {.subtitulo-slide}
+EXPRESIONES FACIALES
+:::
+
+¿Las expresiones faciales son universales? La evidencia más fuerte hoy viene del **cuerpo**, no de la cara.
+
+::: {.caja-oscura}
+Un estudio mostró que expresiones **corporales** de enojo, miedo y tristeza son reconocidas por los Mayangna de Nicaragua, una sociedad aislada sin acceso a internet, TV ni cine.
+:::
+
+Si nunca vieron una película occidental, difícilmente lo aprendieron por transmisión cultural. La universalidad sigue en pie, pero más **acotada**: el contrapunto es que las tareas clásicas de Ekman usaban respuesta forzada, que tiende a inflar el reconocimiento.
+
+## El caso testigo de la replicación
+
+::: {.subtitulo-slide}
+FEEDBACK FACIAL
+:::
+
+La hipótesis del lápiz entre los dientes (Strack, 1988): sonreír te hace encontrar las cosas más graciosas.
+
+::: {.cols-3}
+::: {.tarjeta}
+<h4>1988</h4>
+El estudio original: diferencia de 0,82 puntos entre la condición "sonrisa" y "no sonrisa".
+:::
+
+::: {.tarjeta}
+<h4>2016</h4>
+17 laboratorios replican con el mismo protocolo. La diferencia cae a 0,03 puntos. No se replica.
+:::
+
+::: {.tarjeta}
+<h4>2022</h4>
+*Many Smiles*: 18 labs rediseñan la prueba. El efecto reaparece, pero depende del contexto.
+:::
+:::
+
+::: {.caja-dorada}
+La hipótesis no murió. El **efecto del lápiz** específicamente no se sostuvo.
+:::
+
+## ¿Por qué falló la replicación?
+
+::: {.subtitulo-slide}
+FEEDBACK FACIAL · CONTINUACIÓN
+:::
+
+El fracaso de la replicación no significa que el efecto sea falso. Significa que era **frágil** a los detalles.
+
+::: {.cols-2}
+::: {.tarjeta}
+<h4>Lo que cambió en 2016</h4>
+Caricaturas nuevas, una cámara grabando a los participantes, y casi sin interacción con el experimentador. Pequeños cambios, gran impacto.
+:::
+
+::: {.tarjeta}
+<h4>La hipótesis del contexto</h4>
+Algunos proponen que la cámara hizo a la gente autoconsciente. El feedback facial podría necesitar un contexto sin observadores para funcionar.
+:::
+:::
+
+::: {.caja-oscura}
+Una lección de epistemología envuelta en un tema conocido: un efecto real puede no replicarse si las condiciones que lo sostienen no se reproducen.
+:::
+
+## La emoción en el cuerpo
+
+::: {.subtitulo-slide}
+MÉTODOS NUEVOS, PREGUNTAS VIEJAS
+:::
+
+La pregunta de James y Cannon —¿la emoción se siente en el cuerpo?— se reabrió con un método nuevo.
+
+::: {.caja-dorada}
+Nummenmaa y colegas (2014) pidieron a participantes de distintas culturas marcar en una silueta **dónde sienten** cada emoción.
+:::
+
+Los mapas resultaron consistentes y distintos entre sí: manos "encendidas" en el enojo, extremidades "apagadas" en la tristeza, activación generalizada en la felicidad. El patrón se replicó en muestras europeas y de Asia oriental, lo que sugiere una base **corporal y universal** de la experiencia emocional.
+
+## {.slide-frase}
+
+::: {.caja-frase}
+::: {style="font-size: 0.95em;"}
+Los modelos no se cayeron.<br>La última década los obligó a medirse con más rigor.
+:::
+:::
