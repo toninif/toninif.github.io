@@ -1,0 +1,654 @@
+---
+title: "Pensamiento y Lenguaje"
+subtitle: "Psicología General"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: [simple, psico-general-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Psicología General · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+filters:
+  - lightbox
+lightbox: auto
+---
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Bloque 1 — Pensamiento</h2>
+::::
+
+------------------------------------------------------------------------
+
+## ¿Qué es pensar?
+
+Pensar es la **transformación sistemática de representaciones mentales** (Holyoak & Morrison, 2005). Es lo que hacemos cuando manipulamos información en la cabeza para llegar a algún lado.
+
+:::::: cols-2
+::: tarjeta
+<h4>Productos</h4>
+
+<p>Creencias, juicios, decisiones. El <em>resultado</em> de pensar.</p>
+:::
+
+::: tarjeta
+<h4>Procesos</h4>
+
+<p>Planificar, comparar, deducir, resolver problemas. El <em>cómo</em> se piensa.</p>
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.8em; font-size:0.85em"}
+**Función adaptativa:** anticipar desafíos antes de que ocurran. Planificar el menú de la semana según lo que hay en la heladera y quiénes vienen a comer es pensamiento en acción.
+:::
+
+------------------------------------------------------------------------
+
+## Razonamiento deductivo
+
+De premisas verdaderas se extraen conclusiones **necesariamente** verdaderas. Si las premisas son ciertas, la conclusión no puede ser falsa.
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.9em"}
+::: tarjeta
+<h4>Silogismo</h4>
+
+<p>Todos los mamíferos tienen corazón.</p>
+<p>Las ballenas son mamíferos.</p>
+<p><strong>∴ Las ballenas tienen corazón.</strong></p>
+:::
+
+::: tarjeta
+<h4>Transitividad</h4>
+
+<p>Si A > B y B > C,</p>
+<p><strong>entonces A > C.</strong></p>
+<p>Juan gana más que María; María gana más que Pedro; Juan gana más que Pedro.</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.88em"}
+<p style="color:#f5f0e8"><strong>Característica clave:</strong> va de lo general a lo particular. La conclusión ya estaba contenida en las premisas.</p>
+:::
+
+------------------------------------------------------------------------
+
+## Razonamiento inductivo
+
+De casos particulares se generaliza a una conclusión **probable**, no certera. Cuantos más casos, mayor la probabilidad, pero nunca llegamos a la certeza absoluta.
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.9em"}
+::: tarjeta
+<h4>Ejemplo cotidiano</h4>
+
+<p>Los primeros 100 cisnes que vi eran blancos.</p>
+<p><strong>∴ Todos los cisnes son blancos.</strong></p>
+<p><em>Hasta que aparece un cisne negro en Australia.</em></p>
+:::
+
+::: tarjeta
+<h4>En ciencia</h4>
+
+<p>El paracetamol bajó la fiebre en 10.000 pacientes del ensayo.</p>
+<p><strong>∴ El paracetamol baja la fiebre.</strong></p>
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.6em; font-size:0.85em"}
+La base normativa de la inducción es la **estadística bayesiana** (Tversky & Kahneman, 1974). Toda generalización es revisable ante nueva evidencia.
+:::
+
+------------------------------------------------------------------------
+
+## Heurísticos: atajos del pensamiento
+
+Reglas intuitivas rápidas para tomar decisiones cuando el análisis exhaustivo sería demasiado costoso. Cambian precisión por velocidad.
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.9em"}
+<p style="color:#f5f0e8">Los heurísticos funcionan bien la mayor parte del tiempo, pero introducen <strong style="color:#f5f0e8">sesgos sistemáticos</strong>.</p>
+:::
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.82em"}
+::: tarjeta
+<h4>Representatividad</h4>
+
+<p>Juzgar por similitud al prototipo.</p>
+:::
+
+::: tarjeta
+<h4>Disponibilidad</h4>
+
+<p>Estimar por facilidad de evocar ejemplos.</p>
+:::
+
+::: tarjeta
+<h4>Anclaje y ajuste</h4>
+
+<p>Partir de un valor de referencia y ajustar poco.</p>
+:::
+::::::
+
+<p style="font-size:0.78em; color:var(--texto-mid); margin-top:0.6em">Tversky & Kahneman (1974) los identificaron como los tres heurísticos centrales en la toma de decisiones bajo incertidumbre.</p>
+
+------------------------------------------------------------------------
+
+## Heurístico de representatividad
+
+Juzgamos la probabilidad de que algo pertenezca a una categoría por **cuánto se parece al prototipo** que tenemos de esa categoría, ignorando información estadística más útil.
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.88em"}
+**Ejemplo:** Laura es callada, lee poesía y tiene anteojos. ¿Es más probable que sea **bibliotecaria** o **vendedora**?
+
+La mayoría responde "bibliotecaria" porque encaja con el prototipo. Pero en Argentina hay muchas más vendedoras que bibliotecarias. Estadísticamente, lo más probable es que sea vendedora.
+:::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.85em"}
+<p style="color:#f5f0e8"><strong style="color:#f5f0e8">Sesgo asociado:</strong> ignorar las tasas base (cuán frecuente es cada categoría en la población).</p>
+:::
+
+------------------------------------------------------------------------
+
+## Heurístico de disponibilidad
+
+Estimamos la frecuencia de un evento por **qué tan fácil nos viene a la cabeza** un ejemplo. Si recordamos casos rápido, lo juzgamos frecuente.
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.88em"}
+**Ejemplo:** después de ver dos noticias seguidas sobre ataques de tiburón, mucha gente decide no meterse al mar. Pero la probabilidad real de ser atacada por un tiburón es ínfima comparada con la de ahogarse o ser atropellada yendo a la playa.
+:::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.85em"}
+<p style="color:#f5f0e8"><strong style="color:#f5f0e8">Sesgo asociado:</strong> los medios y la memoria emocional inflan la frecuencia percibida de eventos vívidos y raros.</p>
+:::
+
+------------------------------------------------------------------------
+
+## Heurístico de anclaje y ajuste
+
+Tomamos un **valor inicial de referencia** (el ancla) y ajustamos desde ahí. El problema: el ancla influye incluso cuando es arbitraria o irrelevante, y el ajuste suele quedar corto.
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.88em"}
+**Ejemplo:** un departamento publicado a USD 200.000 pero "rebajado" a USD 170.000 parece una oportunidad. Si el mismo departamento se hubiera publicado desde el inicio a USD 170.000, parecería caro. El ancla original (200K) condiciona la valoración.
+:::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.85em"}
+<p style="color:#f5f0e8"><strong style="color:#f5f0e8">Sesgo asociado:</strong> el ancla pesa más de lo que debería, incluso cuando sabemos que es arbitraria.</p>
+:::
+
+------------------------------------------------------------------------
+
+## Sistema 1 y Sistema 2
+
+Kahneman (2011) propone que la mente opera con dos sistemas que conviven en cada decisión.
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.86em"}
+::: tarjeta
+<h4>Sistema 1 — Intuitivo</h4>
+
+<p>Rápido, automático, inconsciente. Trabaja con heurísticos. Bajo costo cognitivo.</p>
+
+<p><em>Frenar al ver que un auto se cruza.</em></p>
+
+<p><em>Reconocer la cara de un amigo.</em></p>
+:::
+
+::: tarjeta
+<h4>Sistema 2 — Analítico</h4>
+
+<p>Lento, controlado, consciente. Sigue reglas. Alto costo cognitivo.</p>
+
+<p><em>Calcular el interés compuesto de un plazo fijo.</em></p>
+
+<p><em>Comparar departamentos en una planilla.</em></p>
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.6em; font-size:0.85em"}
+Los heurísticos son herramientas del **Sistema 1**. El Sistema 2 corrige cuando detecta que algo no cierra, pero pocas veces se activa por sí solo.
+:::
+
+------------------------------------------------------------------------
+
+## El Sistema 1 en acción
+
+Dos tareas para mostrar la diferencia entre procesamiento automático y reflexivo.
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.88em"}
+::: tarjeta
+<h4>Tarea 1</h4>
+
+<p>¿Quién está feliz en las fotos de abajo?</p>
+
+<p><em>La respuesta llega antes de pensarla. Eso es Sistema 1: reconocimiento facial automático.</em></p>
+
+![](img/pensamiento_rapido.png){width="25%"}
+:::
+
+::: tarjeta
+<h4>Tarea 2</h4>
+
+<p style="font-size:1.4em; text-align:center; margin:0.8em 0"><strong>18 + 29 + 54 + 42</strong></p>
+
+<p><em>La respuesta no llega sola. Hay que activar el Sistema 2: cálculo lento, controlado, esforzado.</em></p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Bloque 2 — Conceptos: la unidad básica</h2>
+::::
+
+------------------------------------------------------------------------
+
+## La unidad básica del pensamiento
+
+Para pensar, primero hay que **clasificar**. Los conceptos son categorías mentales que agrupan objetos, personas o situaciones según características comunes.
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.9em"}
+Ver tres objetos distintos (una silla de madera antigua, una silla de oficina, un taburete) y reconocer que todos son **sillas** es formar y aplicar un concepto.
+:::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.88em"}
+<p style="color:#f5f0e8">Sin conceptos no hay pensamiento posible: tendríamos que tratar cada objeto del mundo como único e irrepetible.</p>
+:::
+
+<p style="font-size:0.78em; color:var(--texto-mid); margin-top:0.7em">La pregunta de fondo: <em>¿qué tiene que cumplir algo para entrar en una categoría?</em> Bruner, Goodnow & Austin (1956) describieron tres formas básicas.</p>
+
+------------------------------------------------------------------------
+
+## Conceptos conjuntivos
+
+Un objeto pertenece a la categoría solo si cumple **todos** los atributos a la vez. Si falta uno, queda afuera.
+
+::: {.caja-verde style="margin-top:0.5em; font-size:0.85em"}
+<p style="color:#f5f0e8; text-align:center; margin:0"><strong style="color:#f5f0e8">Regla lógica: A Y B</strong></p>
+:::
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.85em"}
+::: tarjeta
+<h4>Mamífero</h4>
+
+<p>Tiene pelo <strong>Y</strong> alimenta crías con leche.</p>
+
+<p>Un reptil con pelo (imposible, pero hipotéticamente) no sería mamífero. Una vaca sin pelo (rara) tampoco.</p>
+:::
+
+::: tarjeta
+<h4>Soltero</h4>
+
+<p>Adulto <strong>Y</strong> no casado.</p>
+
+<p>Un niño no casado no es soltero. Un adulto casado tampoco.</p>
+:::
+::::::
+
+<p style="font-size:0.78em; color:var(--texto-mid); margin-top:0.6em">Son los más comunes en el lenguaje cotidiano y los más fáciles de aprender. La mente busca naturalmente "qué tienen en común" todos los miembros.</p>
+
+------------------------------------------------------------------------
+
+## Conceptos relacionales
+
+La pertenencia depende de la **relación** del objeto con otro. Mirar el objeto aislado no alcanza para saber si pertenece a la categoría.
+
+::: {.caja-verde style="margin-top:0.5em; font-size:0.85em"}
+<p style="color:#f5f0e8; text-align:center; margin:0"><strong style="color:#f5f0e8">Regla lógica: depende del vínculo con otro objeto</strong></p>
+:::
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.85em"}
+::: tarjeta
+<h4>Tío</h4>
+
+<p>No es una propiedad de la persona en sí: es alguien que tiene un sobrino.</p>
+
+<p>Sin sobrino, no hay tío. La misma persona pasa a ser tío cuando nace su sobrino, sin que nada cambie en ella.</p>
+:::
+
+::: tarjeta
+<h4>Más caro que</h4>
+
+<p>Un café de 3000 pesos es caro comparado con uno de un bar de barrio, pero barato comparado con uno de Palermo.</p>
+
+<p>El "ser caro" no está en el precio absoluto: depende con qué se compare.</p>
+:::
+::::::
+
+<p style="font-size:0.78em; color:var(--texto-mid); margin-top:0.6em">Cuestan más de aprender porque exigen comparar, no solo observar el objeto.</p>
+
+------------------------------------------------------------------------
+
+## Conceptos disyuntivos
+
+Basta con cumplir **al menos uno** de varios atributos posibles. Distintos miembros de la categoría pueden entrar por razones diferentes.
+
+::: {.caja-verde style="margin-top:0.5em; font-size:0.85em"}
+<p style="color:#f5f0e8; text-align:center; margin:0"><strong style="color:#f5f0e8">Regla lógica: A O B O C</strong></p>
+:::
+
+:::::: {.cols-2 style="margin-top:0.7em; font-size:0.85em"}
+::: tarjeta
+<h4>Ciudadano argentino</h4>
+
+<p>Por nacimiento en el país <strong>O</strong> por padres argentinos <strong>O</strong> por naturalización.</p>
+
+<p>Tres argentinos pueden serlo por tres vías distintas, sin compartir ninguna.</p>
+:::
+
+::: tarjeta
+<h4>Salir expulsado en fútbol</h4>
+
+<p>Doble amarilla <strong>O</strong> roja directa <strong>O</strong> agresión al árbitro.</p>
+
+<p>Cada expulsión puede tener una causa distinta. No hay un único atributo común.</p>
+:::
+::::::
+
+<p style="font-size:0.78em; color:var(--texto-mid); margin-top:0.6em">Son los más difíciles de aprender: el aprendiz busca "qué tienen en común" todos los casos, y la respuesta es que no hay un atributo único compartido.</p>
+
+------------------------------------------------------------------------
+
+## Síntesis: los tres tipos
+
+| Tipo | Regla lógica | Pregunta clave | Ejemplo |
+|------|--------------|----------------|---------|
+| **Conjuntivo** | A Y B | ¿Cumple **todos** los atributos? | Mamífero |
+| **Relacional** | depende del vínculo | ¿En qué **se relaciona** con otro? | Tío |
+| **Disyuntivo** | A O B | ¿Cumple **al menos uno**? | Ciudadano |
+
+::: {.caja-crema style="margin-top:0.8em; font-size:0.88em"}
+La mente cotidiana funciona bien con los conjuntivos. Los relacionales y disyuntivos requieren más entrenamiento y suelen aparecer en ámbitos especializados (derecho, deportes, ciencia).
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Bloque 3 — Pensamiento y lenguaje</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Lenguaje, habla, escritura, seña
+
+Conviene distinguir tres niveles que en la vida cotidiana se mezclan.
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.82em"}
+::: tarjeta
+<h4>Lenguaje</h4>
+
+<p>Sistema mental abstracto de símbolos y reglas.</p>
+
+<p>Incluye <em>pragmática, semántica, sintaxis, fonología</em>.</p>
+:::
+
+::: tarjeta
+<h4>Habla</h4>
+
+<p>Realización física del lenguaje a través del aparato fonador.</p>
+
+<p>Sonidos, entonación, ritmo.</p>
+:::
+
+::: tarjeta
+<h4>Escritura y seña</h4>
+
+<p>Otras realizaciones físicas: gráfica (escritura) o gestual (lengua de señas).</p>
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.85em"}
+Una persona sorda usuaria de lengua de señas tiene **lenguaje** pleno aunque no use el **habla**. El lenguaje es la capacidad cognitiva; el habla es solo uno de sus canales.
+:::
+
+------------------------------------------------------------------------
+
+## Semántica: el significado
+
+La semántica estudia cómo las palabras significan. Toda palabra tiene dos capas de significado.
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.86em"}
+::: tarjeta
+<h4>Denotativo</h4>
+
+<p>Sentido literal y objetivo, el que aparece en el diccionario.</p>
+
+<p><strong>Casa:</strong> construcción destinada a vivienda humana.</p>
+
+<p><strong>Serpiente:</strong> reptil ofidio sin extremidades.</p>
+:::
+
+::: tarjeta
+<h4>Connotativo</h4>
+
+<p>Cargas emocionales, valoraciones, asociaciones personales y culturales.</p>
+
+<p><strong>Casa:</strong> calidez, hogar, seguridad ("volver a casa").</p>
+
+<p><strong>Serpiente:</strong> traición, peligro ("rodeado de serpientes en la oficina").</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.85em"}
+<p style="color:#f5f0e8">La connotación es lo que hace que dos palabras "sinónimas" no sean intercambiables: <em>flaco</em> y <em>esquelético</em> denotan algo parecido, connotan cosas muy distintas.</p>
+:::
+
+------------------------------------------------------------------------
+
+## ¿Qué relación tienen pensamiento y lenguaje?
+
+Cuatro posturas clásicas, cada una con un autor representativo.
+
+:::::: {.cols-2 style="margin-top:0.8em; font-size:0.88em"}
+::: tarjeta
+<h4>01 · Sapir-Whorf</h4>
+
+<p>El pensamiento <strong>depende</strong> del lenguaje.</p>
+:::
+
+::: tarjeta
+<h4>02 · Berlin & Kay / Piaget</h4>
+
+<p>El lenguaje <strong>depende</strong> del pensamiento.</p>
+:::
+::::::
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.88em"}
+::: tarjeta
+<h4>03 · Vygotsky</h4>
+
+<p>Pensamiento y lenguaje son <strong>independientes</strong> y luego se unen.</p>
+:::
+
+::: tarjeta
+<h4>04 · Watson</h4>
+
+<p>Pensamiento y lenguaje son <strong>lo mismo</strong>.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## 01 — El pensamiento depende del lenguaje
+
+**Sapir y Whorf** formularon la **hipótesis de la relatividad lingüística**: el idioma que hablamos determina los conceptos disponibles para pensar.
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.88em"}
+<p style="color:#f5f0e8; font-style:italic; text-align:center"><strong style="color:#f5f0e8">"Los límites de mi idioma son los límites de mi mundo"</strong></p>
+<p style="color:#e8dfc9; font-size:0.85em; text-align:center; margin-top:0.3em">— Wittgenstein, Tractatus 5.6</p>
+:::
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.86em"}
+**Tesis fuerte (determinismo lingüístico):** si una lengua no tiene cierta categoría, sus hablantes no pueden pensarla.
+
+**Tesis débil (relatividad):** la lengua que hablamos influye en cómo categorizamos el mundo, sin determinarlo del todo.
+:::
+
+------------------------------------------------------------------------
+
+## El caso de los esquimales: nota crítica
+
+El ejemplo clásico para ilustrar Sapir-Whorf: "los esquimales tienen 20 palabras para nieve, los europeos una sola, entonces los esquimales perciben 20 nieves distintas".
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.85em"}
+<p style="color:#f5f0e8"><strong style="color:#f5f0e8">El problema:</strong> el ejemplo es un mito lingüístico (Pullum, 1991, <em>The Great Eskimo Vocabulary Hoax</em>). Las lenguas inuit no tienen significativamente más raíces para "nieve" que el inglés o el español.</p>
+:::
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.86em"}
+**Evidencia más sólida (Boroditsky, 2011):** los hablantes de **Kuuk Thaayorre** (aborígenes australianos) no usan "izquierda/derecha" sino puntos cardinales ("la taza está al norte de tu mano"). Tienen una orientación espacial absoluta notablemente superior a la de hablantes de inglés o español.
+
+Acá la lengua sí parece moldear una habilidad cognitiva real, aunque sin "determinar" la posibilidad de pensar el espacio.
+:::
+
+------------------------------------------------------------------------
+
+## 02 — El lenguaje depende del pensamiento
+
+Las posturas **universalistas** invierten la relación: el pensamiento es previo, y el lenguaje lo expresa.
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.85em"}
+::: tarjeta
+<h4>Berlin & Kay (colores)</h4>
+
+<p>Aunque las lenguas tienen distinta cantidad de palabras para colores, todas siguen una <strong>jerarquía universal</strong>: si una lengua tiene 3 términos, son blanco, negro y rojo.</p>
+
+<p>Los bebés discriminan colores antes de tener palabras para ellos: la percepción es previa al lenguaje.</p>
+:::
+
+::: tarjeta
+<h4>Piaget</h4>
+
+<p>El lenguaje refleja el nivel de desarrollo cognitivo alcanzado.</p>
+
+<p>El niño entiende "tanto como" recién cuando ya domina la conservación de la cantidad. La palabra llega <em>después</em> del concepto.</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.85em"}
+<p style="color:#f5f0e8">El lenguaje se acomoda a estructuras cognitivas previas, no las crea.</p>
+:::
+
+------------------------------------------------------------------------
+
+## 03 — Pensamiento y lenguaje independientes
+
+**Vygotsky** sostuvo que pensamiento y lenguaje empiezan separados y se entrelazan durante el desarrollo.
+
+:::::: {.cols-3 style="margin-top:0.7em; font-size:0.78em"}
+::: tarjeta
+<h4>Hasta los 2 años</h4>
+
+<p><strong>Lenguaje preintelectual:</strong> llantos, balbuceos, expresiones afectivas sin contenido conceptual.</p>
+
+<p><strong>Pensamiento prelingüístico:</strong> sensaciones y percepciones sin palabras.</p>
+:::
+
+::: tarjeta
+<h4>Entre los 2 y 7 años</h4>
+
+<p><strong>Discurso egocéntrico:</strong> el niño habla en voz alta sobre sus planes, pero sin intención comunicativa. No distingue habla para sí de habla para otros.</p>
+:::
+
+::: tarjeta
+<h4>Desde los 7 años</h4>
+
+<p><strong>Discurso racional:</strong> lenguaje para comunicar.</p>
+
+<p><strong>Discurso interno:</strong> lenguaje para pensar. Hereda al discurso egocéntrico y organiza ideas.</p>
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.85em"}
+El discurso interno es la clave vygotskiana: pensamos "hablándonos por dentro", pero ese habla interna se construyó socialmente primero.
+:::
+
+------------------------------------------------------------------------
+
+## 04 — Pensamiento y lenguaje son lo mismo
+
+**Watson** (conductismo) propuso el **periferalismo**: el pensamiento no ocurre en una "mente" interna, sino periféricamente en la laringe.
+
+::: {.caja-crema style="margin-top:0.7em; font-size:0.88em"}
+Los pensamientos serían sensaciones producidas por **micromovimientos del aparato fonador**, demasiado pequeños para oírse. Pensar = hablar en silencio.
+:::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.85em"}
+<p style="color:#f5f0e8"><strong style="color:#f5f0e8">Evidencia en contra:</strong></p>
+<p style="color:#f5f0e8; font-size:0.95em; margin-top:0.4em">• Pacientes con parálisis muscular total inducida farmacológicamente recuerdan haber pensado durante la parálisis.</p>
+<p style="color:#f5f0e8; font-size:0.95em">• Personas sordomudas de nacimiento, que no usan el aparato fonador, piensan con normalidad.</p>
+:::
+
+<p style="font-size:0.78em; color:var(--texto-mid); margin-top:0.6em">Hoy la postura tiene valor histórico: muestra hasta dónde llegó el conductismo intentando expulsar lo mental del estudio de la conducta.</p>
+
+------------------------------------------------------------------------
+
+## Las 4 posturas en una tabla
+
+| Postura | Autor | Tesis central |
+|---------|-------|---------------|
+| 1. Pensamiento depende del lenguaje | Sapir-Whorf | El idioma define qué se puede pensar |
+| 2. Lenguaje depende del pensamiento | Berlin & Kay / Piaget | El concepto precede a la palabra |
+| 3. Independientes y luego se unen | Vygotsky | Se entrelazan en el desarrollo |
+| 4. Son lo mismo | Watson | Pensar = hablar silenciosamente |
+
+::: {.caja-crema style="margin-top:0.8em; font-size:0.85em"}
+Hoy la psicología cognitiva tiende a posiciones intermedias: el lenguaje influye en algunos procesos cognitivos (versión débil de Whorf), pero no determina todo el pensamiento.
+:::
+
+------------------------------------------------------------------------
+
+## Para el parcial: lo que tiene que quedar
+
+:::::: {.cols-2 style="margin-top:0.6em; font-size:0.82em"}
+::: tarjeta
+<h4>Pensamiento</h4>
+
+<p>• Razonamiento <strong>deductivo</strong> (general → particular, certeza) vs <strong>inductivo</strong> (particular → general, probabilidad).</p>
+
+<p>• Los tres <strong>heurísticos</strong>: representatividad, disponibilidad, anclaje.</p>
+
+<p>• <strong>Sistema 1</strong> (rápido, intuitivo) y <strong>Sistema 2</strong> (lento, analítico).</p>
+:::
+
+::: tarjeta
+<h4>Conceptos y lenguaje</h4>
+
+<p>• Tres tipos de conceptos: <strong>conjuntivos</strong> (Y), <strong>relacionales</strong> (vínculo), <strong>disyuntivos</strong> (O).</p>
+
+<p>• Las <strong>4 posturas</strong> sobre la relación pensamiento-lenguaje, con su autor.</p>
+
+<p>• Diferencia entre lenguaje, habla y escritura/seña.</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.85em"}
+<p style="color:#f5f0e8; text-align:center"><strong style="color:#f5f0e8">Conviene poder dar un ejemplo propio de cada categoría.</strong></p>
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-cita}
+
+::: caja-verde
+<p style="color:#f5f0e8; font-family:'Playfair Display', serif; font-style:italic; font-size:1.3em; text-align:center; line-height:1.5; margin:0">
+"El lenguaje no es solo un vehículo del pensamiento, sino su forjador."
+</p>
+<p style="color:#95c17a; font-size:0.7em; text-align:center; margin-top:0.8em; letter-spacing:0.05em">— Lev Vygotsky, <em>Pensamiento y Lenguaje</em> (1934)</p>
+:::

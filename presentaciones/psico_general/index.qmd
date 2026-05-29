@@ -48,4 +48,8 @@ Material de clase del curso de Psicología. Hacé click en cualquier presentaci�
 **[Clase 8](08-inteligencia.qmd){target="_blank"}** · Inteligencia
 :::
 
+::: {.pub-item}
+**[Clase 9](09-clase-pensamiento-lenguaje.qmd){target="_blank"}** · Pensamiento y Lenguaje
+:::
+
 :::

@@ -237,7 +237,7 @@ Una comparación entre la **edad mental** y la **edad cronológica**.
 
 **¿Cómo se calcula?**
 
-Se mide la "edad mental" —es decir, la inteligencia— y se aplica la fórmula.
+Se mide la "edad mental" (aquello que se mide) y se aplica la fórmula.
 
 ::: {.caja-verde style="margin-top:0.6em; text-align:center; font-size:1em"}
 [CI = (EM / EC) × 100]{style="color:#f5f0e8; font-weight:700"}
@@ -245,7 +245,7 @@ Se mide la "edad mental" —es decir, la inteligencia— y se aplica la fórmula
 :::
 
 ::: {style="text-align:center"}
-![](img/ci-distribucion.png){width="92%"}
+![](img/ci1.png){width="92%"}
 
 [Distribución del CI · media = 100]{style="font-size:0.72em; color:#3d5247"}
 :::
@@ -257,7 +257,7 @@ Se mide la "edad mental" —es decir, la inteligencia— y se aplica la fórmula
 
 :::::: {.cols-2 style="margin-top:0.8em"}
 ::: {style="text-align:center"}
-![](img/ci-hombres-mujeres.png){width="95%"}
+![](img/ci2.png){width="95%"}
 :::
 
 ::: {style=""}
@@ -278,7 +278,7 @@ Las distribuciones difieren levemente en su dispersión, no en su media.
 
 :::::: {.cols-2 style="margin-top:0.8em"}
 ::: {style="text-align:center"}
-![](img/ci-exito.png){width="95%"}
+![](img/ci3.png){width="95%"}
 :::
 
 ::: {style=""}
@@ -360,7 +360,7 @@ La inteligencia modelada a través de **redes neuronales**.
 
 ## ¿Inteligencia en los LLM?
 
-![](img/paper-llm-inteligencia.png){width="72%"}
+![](img/paper_llm.png){width="72%"}
 
 ::: {style="font-size:0.7em; color:#3d5247; margin-top:0.4em; text-align:center"}
 Ilić & Gignac (2024). *Intelligence*, 106, 101858.
