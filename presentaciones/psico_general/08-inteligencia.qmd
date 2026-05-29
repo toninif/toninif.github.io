@@ -360,7 +360,7 @@ La inteligencia modelada a través de **redes neuronales**.
 
 ## ¿Inteligencia en los LLM?
 
-![](img/paper_llm.png){width="72%"}
+![](img/paper_LLM.png){width="72%"}
 
 ::: {style="font-size:0.7em; color:#3d5247; margin-top:0.4em; text-align:center"}
 Ilić & Gignac (2024). *Intelligence*, 106, 101858.
