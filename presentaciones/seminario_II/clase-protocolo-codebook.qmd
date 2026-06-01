@@ -1,0 +1,624 @@
+---
+title: ""
+subtitle: ""
+author: ""
+format:
+  revealjs:
+    theme: simple
+    css: seminario-uai-style.css
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Seminario Taller de Integración II · UAI"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+---
+
+## {data-state="portada"}
+
+:::: portada-container
+::: portada-materia
+Seminario Taller de Integración II
+:::
+
+::: portada-titulo
+Del protocolo de recolección al diccionario de datos
+:::
+
+::: portada-subtitulo
+Cómo documentar el instrumento para que los datos sean analizables y la investigación reproducible
+:::
+
+::: portada-autor
+**Dr. Fernando Tonini**\
+Universidad Abierta Interamericana
+:::
+::::
+
+------------------------------------------------------------------------
+
+## La consigna que vamos a desarmar
+
+::: highlight-box
+"Se deberá presentar una versión del protocolo de recolección de datos que incluya: los **reactivos o ítems** utilizados, la **modalidad de administración/recolección** de la información, y la **descripción de cada una de las variables** relevadas. Este documento deberá cumplir la función de **codebook** o **diccionario de datos**, permitiendo identificar claramente qué mide cada variable, cómo fue registrada y cómo debe interpretarse."
+:::
+
+La consigna pide, en realidad, **dos documentos que se complementan**: el protocolo (el instrumento) y el diccionario de datos (la documentación de las variables).
+
+------------------------------------------------------------------------
+
+## Qué vamos a ver hoy
+
+1. Por qué el instrumento no termina en "las preguntas"
+2. **El protocolo de recolección**: armarlo en un procesador de texto
+3. Su **pasaje a una versión virtual** (formularios online), cuando hace falta
+4. **El diccionario de datos (codebook)**: qué mide cada variable y cómo se interpreta
+5. Errores frecuentes y checklist final
+
+::: example-box
+Vamos a seguir **un único caso** de punta a punta para ver cómo las tres capas se conectan.
+:::
+
+------------------------------------------------------------------------
+
+## El malentendido más común
+
+Muchos creen que el "instrumento" es solo la lista de preguntas. En la práctica, una recolección bien documentada tiene **tres capas distintas**:
+
+| Capa | Qué es | Formato típico |
+|------|--------|----------------|
+| Protocolo / instrumento | Lo que ve y responde el participante | Word, PDF, formulario |
+| Datos crudos | Lo que queda registrado | Planilla, base de datos |
+| Diccionario de datos | La traducción entre ambos | Tabla / codebook |
+
+Sin la tercera capa, **nadie puede leer la segunda** —ni siquiera ustedes dentro de seis meses.
+
+------------------------------------------------------------------------
+
+##  {.transition-slide}
+
+::: section-label
+Primera capa
+:::
+
+::: section-title
+El protocolo de recolección de datos
+:::
+
+------------------------------------------------------------------------
+
+## Qué es el protocolo de recolección
+
+Es el **documento completo del instrumento**: todo lo que se le presenta al participante, en el orden en que se le presenta.
+
+No es solo el listado de ítems. Incluye:
+
+- La **presentación** del estudio y el **consentimiento informado**
+- Las **instrucciones** de respuesta
+- Los **reactivos o ítems**, con sus opciones de respuesta
+- La **modalidad** de administración (cómo y dónde se recolecta)
+- El **cierre** y agradecimiento
+
+------------------------------------------------------------------------
+
+## Nuestro caso de estudio
+
+::: example-box
+**Tema:** Procrastinación académica y bienestar en estudiantes universitarios.
+
+**Objetivo:** Describir la relación entre el nivel de procrastinación académica y el bienestar subjetivo percibido en estudiantes de grado.
+
+**Diseño:** Estudio descriptivo-correlacional, transversal. Encuesta autoadministrada.
+:::
+
+Vamos a construir su protocolo, pasarlo a formulario y luego documentarlo en un diccionario de datos.
+
+------------------------------------------------------------------------
+
+## Anatomía del protocolo (1/2)
+
+**Encabezado e identificación**
+
+- Título del estudio, investigador responsable, institución
+- Versión y fecha del protocolo (sí: el protocolo se versiona)
+
+**Presentación y consentimiento**
+
+- Breve descripción del estudio, voluntariedad, anonimato/confidencialidad, uso de los datos
+- Casilla o ítem de aceptación del consentimiento
+
+------------------------------------------------------------------------
+
+## Anatomía del protocolo (2/2)
+
+**Instrucciones generales**
+
+- Cómo responder, tiempo estimado, que no hay respuestas correctas o incorrectas
+
+**Secciones de ítems**
+
+- Datos sociodemográficos
+- Escalas e ítems principales (organizados por constructo)
+
+**Cierre**
+
+- Agradecimiento, datos de contacto, recursos de ayuda si el tema lo amerita
+
+------------------------------------------------------------------------
+
+## Los reactivos: tipos de ítem
+
+| Tipo de ítem | Ejemplo en nuestro caso | Cómo se responde |
+|--------------|-------------------------|------------------|
+| Cerrado nominal | Carrera que cursa | Selección de lista |
+| Cerrado ordinal | Año de cursada | Selección ordenada |
+| Likert | "Suelo postergar tareas hasta último momento" | 1 a 5 |
+| Numérico | Edad | Número |
+| Abierto | "¿Qué te ayuda a no procrastinar?" | Texto libre |
+
+Cada tipo de ítem condiciona **cómo se va a registrar** y **cómo se podrá analizar** después.
+
+------------------------------------------------------------------------
+
+## La modalidad de administración
+
+No alcanza con tener los ítems: hay que documentar **cómo llega el instrumento al participante**.
+
+:::: columns
+::: column
+**Decisiones a registrar**
+
+- Autoadministrado vs. administrado por encuestador
+- Presencial vs. virtual
+- Individual vs. grupal
+- Soporte: papel, formulario online, entrevista
+:::
+
+::: column
+**Por qué importa**
+
+- Afecta la tasa de respuesta y los sesgos
+- Define cómo se cargan los datos
+- Es parte de la **replicabilidad**: otro equipo debería poder repetirlo
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Ejemplo: ítems sociodemográficos del caso
+
+::: example-box
+**S1.** Edad (en años cumplidos): \_\_\_\_
+
+**S2.** Género: ☐ Mujer ☐ Varón ☐ No binario ☐ Prefiero no responder
+
+**S3.** Carrera: \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
+
+**S4.** Año de cursada: ☐ 1° ☐ 2° ☐ 3° ☐ 4° ☐ 5° o más
+
+**S5.** ¿Trabajás actualmente? ☐ Sí ☐ No
+:::
+
+Cada ítem ya tiene un **código** (S1, S2…). Eso no es decorativo: va a ser la llave que conecte el protocolo con el diccionario de datos.
+
+------------------------------------------------------------------------
+
+## Ejemplo: escala de procrastinación (Likert)
+
+::: example-box
+**Instrucción:** Indicá tu grado de acuerdo (1 = Totalmente en desacuerdo, 5 = Totalmente de acuerdo).
+
+**P1.** Suelo dejar las tareas académicas para último momento.
+
+**P2.** Empiezo a estudiar con suficiente anticipación. *(ítem inverso)*
+
+**P3.** Posterga el estudio aunque sé que me va a perjudicar.
+
+**P4.** Cumplo con los plazos de entrega sin apurarme. *(ítem inverso)*
+:::
+
+::: warning-box
+Los **ítems inversos** (P2, P4) se redactan al revés a propósito, pero **deben recodificarse** antes de calcular el puntaje total. Esto tiene que quedar documentado.
+:::
+
+------------------------------------------------------------------------
+
+## Buenas prácticas al redactar ítems
+
+- **Un solo concepto por ítem** (evitar preguntas dobles: "¿procrastinás y te estresás?")
+- Lenguaje claro y sin tecnicismos
+- Evitar la doble negación
+- Opciones de respuesta **exhaustivas y mutuamente excluyentes**
+- Escalas con el mismo sentido y cantidad de puntos dentro de una misma sección
+- Incluir, donde corresponda, "Prefiero no responder" / "No aplica"
+
+::: highlight-box
+Una buena regla: si un ítem se puede interpretar de dos maneras, **se va a responder de dos maneras**, y el dato pierde valor.
+:::
+
+------------------------------------------------------------------------
+
+## Por qué empezar en un procesador de texto
+
+Antes de tocar cualquier herramienta online, conviene tener el protocolo completo en **Word (o similar)**:
+
+- Permite **revisar la redacción** y el orden con el equipo y la cátedra
+- Es la **versión oficial y citable** del instrumento (la que va al anexo del trabajo)
+- Funciona como **fuente única de verdad**: el formulario online es una *copia* de este documento
+- Queda registro de **versiones** (v1, v2…) con control de cambios
+
+::: warning-box
+Si armás directamente el formulario sin pasar por el documento, perdés trazabilidad y suele aparecer el caos de "¿cuál era la versión final?".
+:::
+
+------------------------------------------------------------------------
+
+##  {.transition-slide}
+
+::: section-label
+Segunda capa
+:::
+
+::: section-title
+El pasaje a una versión virtual
+:::
+
+------------------------------------------------------------------------
+
+## ¿Cuándo conviene un formulario online?
+
+:::: columns
+::: column
+**Tiene sentido cuando…**
+
+- La muestra es grande o dispersa geográficamente
+- Se busca rapidez y carga automática de datos
+- El instrumento es autoadministrado
+- Se quiere reducir el error de transcripción manual
+:::
+
+::: column
+**Quizás no, cuando…**
+
+- La población tiene baja alfabetización digital
+- Hay que asegurar el control del contexto de respuesta
+- Se necesita acompañamiento del encuestador
+- El instrumento requiere materiales físicos
+:::
+::::
+
+------------------------------------------------------------------------
+
+## Herramientas habituales
+
+| Herramienta | Fuerte | A tener en cuenta |
+|-------------|--------|-------------------|
+| Google Forms | Gratuito, simple, exporta a planilla | Control limitado de la lógica |
+| Microsoft Forms | Integrado a Office/UAI | Similar a Google |
+| LimeSurvey | Lógica compleja, autoalojable | Curva de aprendizaje |
+| Qualtrics / REDCap | Estándar en investigación | Acceso institucional / pago |
+
+Para la mayoría de los trabajos de seminario, **Google Forms o Microsoft Forms** alcanzan perfectamente.
+
+------------------------------------------------------------------------
+
+## Del documento al formulario: la traducción
+
+El formulario debe ser una **traducción fiel** del protocolo en Word. Cada decisión del documento se mapea a una opción del formulario:
+
+| En el protocolo (Word) | En el formulario |
+|------------------------|------------------|
+| Ítem cerrado de una opción | Opción múltiple / desplegable |
+| Ítem cerrado de varias opciones | Casillas de verificación |
+| Likert | Escala lineal o cuadrícula |
+| Numérico | Respuesta corta con validación numérica |
+| Abierto | Párrafo |
+
+------------------------------------------------------------------------
+
+## Configuración que no hay que olvidar
+
+- **Consentimiento como primera sección obligatoria** (sin aceptar, no continúa)
+- Marcar ítems como **obligatorios** solo cuando corresponda (cuidado con forzar respuestas sensibles)
+- **Validación de datos**: edad como número en un rango razonable, etc.
+- **Secciones** que reproduzcan la estructura del documento
+- Activar **una respuesta por persona** si aplica
+- Revisar el **nombre de cada pregunta**: será el encabezado de columna en la planilla
+
+::: highlight-box
+Truco clave: que el **texto de cada pregunta del formulario** sea claro y único, porque se convierte automáticamente en el nombre de la variable al exportar.
+:::
+
+------------------------------------------------------------------------
+
+## Qué genera el formulario al exportar
+
+Cuando los participantes responden, el formulario produce una **planilla** (Google Sheets / Excel):
+
+- **Una fila por participante** (cada respuesta completa = un caso)
+- **Una columna por ítem** (cada pregunta = una variable)
+- Una columna de **marca temporal** automática
+
+::: example-box
+Esa planilla son los **datos crudos**. Pero las columnas suelen quedar con nombres largos o ambiguos, y las respuestas como texto ("Totalmente de acuerdo") en vez de números. Ahí entra la tercera capa.
+:::
+
+------------------------------------------------------------------------
+
+##  {.transition-slide}
+
+::: section-label
+Tercera capa
+:::
+
+::: section-title
+El diccionario de datos (codebook)
+:::
+
+------------------------------------------------------------------------
+
+## Qué es un diccionario de datos
+
+Es el documento que **describe cada variable** de la base de datos: qué mide, cómo fue registrada y cómo debe interpretarse.
+
+::: highlight-box
+Es el **manual de instrucciones de la base de datos**. Cualquier persona —incluido tu yo del futuro— debería poder abrir la planilla y, con el diccionario al lado, entender exactamente qué significa cada número.
+:::
+
+También se lo llama **codebook**, **libro de códigos** o **data dictionary**. Es lo que vuelve la investigación **reproducible**.
+
+------------------------------------------------------------------------
+
+## Por qué es imprescindible
+
+- Sin él, una columna con valores `1, 2, 3` **no significa nada**
+- Permite que **otra persona analice** los datos sin preguntarte
+- Documenta las **recodificaciones** (ítems inversos, agrupamientos)
+- Es exigencia de **ciencia abierta** y de muchas revistas y comités de ética
+- Te obliga a **pensar las variables antes de analizar**, no después
+
+::: warning-box
+Regla práctica: si tuvieras que entregar **solo la planilla** y nadie pudiera entenderla, te falta el diccionario.
+:::
+
+------------------------------------------------------------------------
+
+## Qué columnas tiene un buen codebook
+
+| Campo | Qué contiene |
+|-------|--------------|
+| Nombre de variable | Código corto, sin espacios (`edad`, `proc_p1`) |
+| Etiqueta | Descripción legible de qué mide |
+| Ítem original | El texto exacto de la pregunta |
+| Tipo | Nominal, ordinal, escala, numérica, texto |
+| Valores / códigos | `1 = Mujer; 2 = Varón…` |
+| Rango / unidad | Años, 1–5, etc. |
+| Tratamiento | Inverso, recodificado, calculado |
+| Faltantes | Cómo se codifica un dato ausente |
+
+------------------------------------------------------------------------
+
+## Convenciones para nombrar variables
+
+- **Cortas y sin espacios**: `proc_p1`, no "Procrastinación pregunta 1"
+- **Sin tildes ni caracteres especiales** (evitan problemas en el software)
+- **Consistentes**: prefijo por constructo (`proc_`, `bien_`)
+- **Minúsculas** y separación con guión bajo
+- Que el **mismo nombre** aparezca en la planilla y en el diccionario
+
+::: example-box
+`proc_p1`, `proc_p2`, `proc_p3`, `proc_p4` → ítems de procrastinación\
+`bien_1`, `bien_2`… → ítems de bienestar\
+`proc_total`, `bien_total` → puntajes calculados
+:::
+
+------------------------------------------------------------------------
+
+## Codebook de nuestro caso (sociodemográficas)
+
+<table style="font-size:0.62em; margin-top:0.3em">
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Etiqueta</th>
+      <th>Tipo</th>
+      <th>Valores / Rango</th>
+      <th>Faltante</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>edad</strong></td>
+      <td>Edad en años cumplidos</td>
+      <td>Numérica</td>
+      <td>17–80</td>
+      <td>vacío</td>
+    </tr>
+    <tr>
+      <td><strong>genero</strong></td>
+      <td>Género autopercibido</td>
+      <td>Nominal</td>
+      <td>1=Mujer; 2=Varón; 3=No binario; 9=Prefiere no responder</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td><strong>carrera</strong></td>
+      <td>Carrera que cursa</td>
+      <td>Nominal</td>
+      <td>texto</td>
+      <td>vacío</td>
+    </tr>
+    <tr>
+      <td><strong>anio</strong></td>
+      <td>Año de cursada</td>
+      <td>Ordinal</td>
+      <td>1; 2; 3; 4; 5 (5° o más)</td>
+      <td>vacío</td>
+    </tr>
+    <tr>
+      <td><strong>trabaja</strong></td>
+      <td>Trabaja actualmente</td>
+      <td>Nominal</td>
+      <td>0=No; 1=Sí</td>
+      <td>vacío</td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Codebook de nuestro caso (escala)
+
+<table style="font-size:0.62em; margin-top:0.3em">
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Ítem original</th>
+      <th>Tipo</th>
+      <th>Valores</th>
+      <th>Tratamiento</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>proc_p1</strong></td>
+      <td>Suelo dejar las tareas para último momento</td>
+      <td>Escala Likert</td>
+      <td>1–5</td>
+      <td>directo</td>
+    </tr>
+    <tr>
+      <td><strong>proc_p2</strong></td>
+      <td>Empiezo a estudiar con anticipación</td>
+      <td>Escala Likert</td>
+      <td>1–5</td>
+      <td><strong>inverso</strong> → recodificar</td>
+    </tr>
+    <tr>
+      <td><strong>proc_p3</strong></td>
+      <td>Posterga el estudio aunque me perjudica</td>
+      <td>Escala Likert</td>
+      <td>1–5</td>
+      <td>directo</td>
+    </tr>
+    <tr>
+      <td><strong>proc_p4</strong></td>
+      <td>Cumplo los plazos sin apurarme</td>
+      <td>Escala Likert</td>
+      <td>1–5</td>
+      <td><strong>inverso</strong> → recodificar</td>
+    </tr>
+    <tr>
+      <td><strong>proc_total</strong></td>
+      <td>Puntaje total de procrastinación</td>
+      <td>Calculada</td>
+      <td>4–20</td>
+      <td>suma de p1–p4 (p2, p4 recodificados)</td>
+    </tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Documentar las variables calculadas
+
+`proc_total` no se responde: **se construye**. Y eso tiene que estar escrito con la fórmula exacta.
+
+::: example-box
+**proc_total** = proc_p1 + (6 − proc_p2) + proc_p3 + (6 − proc_p4)
+
+Donde `(6 − x)` es la recodificación del ítem inverso en una escala de 1 a 5.
+:::
+
+::: warning-box
+Si no documentás la recodificación, alguien podría sumar los ítems "tal cual" y obtener un puntaje **sin sentido** (mezclando direcciones opuestas). Es uno de los errores más frecuentes y silenciosos.
+:::
+
+------------------------------------------------------------------------
+
+## Cómo se conectan las tres capas
+
+```{mermaid}
+%%{init: {'theme':'base', 'themeVariables': {'primaryColor': '#FDF6EE', 'primaryBorderColor': '#8B1A2B', 'lineColor': '#D4A574', 'fontFamily': 'Nunito Sans'}}}%%
+flowchart LR
+  A[Protocolo en Word<br/>ítems + códigos] --> B[Formulario online<br/>traducción fiel]
+  B --> C[Planilla de datos<br/>una fila por caso]
+  C --> D[Diccionario de datos<br/>qué significa cada columna]
+  A -.define.-> D
+```
+
+El código de cada ítem (S1, P1…) es el **hilo** que atraviesa las cuatro etapas.
+
+------------------------------------------------------------------------
+
+##  {.transition-slide}
+
+::: section-label
+Para la entrega
+:::
+
+::: section-title
+Errores frecuentes y checklist
+:::
+
+------------------------------------------------------------------------
+
+## Errores frecuentes
+
+- Entregar el formulario **sin** el documento fuente en Word
+- Nombres de variables con **espacios, tildes o mayúsculas** inconsistentes
+- **No documentar** los ítems inversos ni las recodificaciones
+- Codificar faltantes de forma ambigua (¿`0` es "No" o es "sin dato"?)
+- Escalas que **cambian de sentido** entre secciones sin avisar
+- Diccionario que describe variables que **no están** en la planilla (o viceversa)
+- Olvidar la **modalidad de administración** en el protocolo
+
+------------------------------------------------------------------------
+
+## Checklist de la entrega
+
+**Protocolo de recolección**
+
+- [ ] Encabezado, consentimiento, instrucciones, cierre
+- [ ] Todos los ítems con su código
+- [ ] Modalidad de administración explicitada
+- [ ] Versión y fecha
+
+**Diccionario de datos**
+
+- [ ] Una entrada por variable de la planilla
+- [ ] Nombre, etiqueta, tipo, valores, faltantes, tratamiento
+- [ ] Variables calculadas con su fórmula
+- [ ] Coincide exactamente con las columnas de los datos
+
+------------------------------------------------------------------------
+
+## Síntesis
+
+::: highlight-box
+El **protocolo** es lo que ve el participante.\
+La **planilla** es lo que queda registrado.\
+El **diccionario de datos** es lo que vuelve a la planilla **legible e interpretable**.
+:::
+
+Las tres capas tienen que ser **coherentes entre sí**. Esa coherencia es, en gran parte, lo que se evalúa: no que el instrumento sea "lindo", sino que cualquiera pueda **reconstruir qué hicieron y qué significan los datos**.
+
+------------------------------------------------------------------------
+
+## {.transition-slide}
+
+::: section-label
+Próxima entrega
+:::
+
+::: section-title
+Armen el protocolo y el diccionario de su propia investigación
+:::
+
+::: ref
+Hernández Sampieri, R., Fernández Collado, C. y Baptista Lucio, P. (2014). *Metodología de la investigación* (6.ª ed.). McGraw-Hill.
+:::
