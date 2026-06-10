@@ -1,0 +1,66 @@
+<svg viewBox="0 0 1000 485" xmlns="http://www.w3.org/2000/svg" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="arrM" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#3d3229"/>
+    </marker>
+    <marker id="arrG" markerWidth="9" markerHeight="9" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#a09585"/>
+    </marker>
+  </defs>
+
+  <!-- flechas entre cajas (ruta adaptativa) -->
+  <line x1="172" y1="90" x2="208" y2="90" stroke="#3d3229" stroke-width="2.5" marker-end="url(#arrM)"/>
+  <line x1="372" y1="90" x2="408" y2="90" stroke="#3d3229" stroke-width="2.5" marker-end="url(#arrM)"/>
+  <line x1="572" y1="90" x2="608" y2="90" stroke="#3d3229" stroke-width="2.5" marker-end="url(#arrM)"/>
+  <line x1="772" y1="90" x2="808" y2="90" stroke="#3d3229" stroke-width="2.5" marker-end="url(#arrM)"/>
+
+  <!-- B1 ESTRESOR -->
+  <rect x="12" y="50" width="160" height="80" rx="8" fill="#3d3229"/>
+  <text x="92" y="96" text-anchor="middle" fill="#ffffff" font-size="17" font-weight="700" letter-spacing="1">ESTRESOR</text>
+
+  <!-- B2 -->
+  <rect x="212" y="50" width="160" height="80" rx="8" fill="#faf7f2" stroke="#c9a96e" stroke-width="2"/>
+  <text x="292" y="86" text-anchor="middle" fill="#3d3229" font-size="14.5" font-weight="700">Reacción afectiva</text>
+  <text x="292" y="108" text-anchor="middle" fill="#a09585" font-size="11.5">¿es peligroso?</text>
+
+  <!-- B3 -->
+  <rect x="412" y="50" width="160" height="80" rx="8" fill="#faf7f2" stroke="#c9a96e" stroke-width="2"/>
+  <text x="492" y="86" text-anchor="middle" fill="#3d3229" font-size="14.5" font-weight="700">Valoración 1ª</text>
+  <text x="492" y="108" text-anchor="middle" fill="#a09585" font-size="11.5">¿me afecta?</text>
+
+  <!-- B4 -->
+  <rect x="612" y="50" width="160" height="80" rx="8" fill="#faf7f2" stroke="#c9a96e" stroke-width="2"/>
+  <text x="692" y="86" text-anchor="middle" fill="#3d3229" font-size="14.5" font-weight="700">Valoración 2ª</text>
+  <text x="692" y="108" text-anchor="middle" fill="#a09585" font-size="11.5">¿qué puedo hacer?</text>
+
+  <!-- B5 -->
+  <rect x="812" y="50" width="176" height="80" rx="8" fill="#faf7f2" stroke="#c9a96e" stroke-width="2"/>
+  <text x="900" y="86" text-anchor="middle" fill="#3d3229" font-size="13.5" font-weight="700">Selección de respuestas</text>
+  <text x="900" y="108" text-anchor="middle" fill="#a09585" font-size="11.5">¿cómo actúo?</text>
+
+  <!-- flechas punteadas hacia la respuesta de estrés -->
+  <line x1="492" y1="130" x2="492" y2="364" stroke="#a09585" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#arrG)"/>
+  <line x1="692" y1="130" x2="692" y2="364" stroke="#a09585" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#arrG)"/>
+  <line x1="900" y1="130" x2="900" y2="364" stroke="#a09585" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#arrG)"/>
+
+  <!-- fondo blanco bajo etiquetas para cortar la línea punteada -->
+  <rect x="440" y="240" width="104" height="18" fill="#ffffff"/>
+  <rect x="612" y="240" width="160" height="18" fill="#ffffff"/>
+  <rect x="864" y="240" width="72"  height="18" fill="#ffffff"/>
+
+  <!-- etiquetas de las rutas de falla -->
+  <text x="492" y="253" text-anchor="middle" fill="#996b2f" font-size="12.5" font-style="italic">daño / pérdida</text>
+  <text x="692" y="253" text-anchor="middle" fill="#996b2f" font-size="12.5" font-style="italic">estrategias no eficaces</text>
+  <text x="900" y="253" text-anchor="middle" fill="#996b2f" font-size="12.5" font-style="italic">pasividad</text>
+
+  <!-- caja SGA -->
+  <rect x="300" y="364" width="660" height="78" rx="8" fill="#3d3229"/>
+  <text x="630" y="398" text-anchor="middle" fill="#ffffff" font-size="18" font-weight="700">Respuesta de estrés</text>
+  <text x="630" y="423" text-anchor="middle" fill="#e8d5b0" font-size="13.5">Síndrome General de Adaptación (SGA)</text>
+
+  <!-- leyenda -->
+  <line x1="14" y1="470" x2="44" y2="470" stroke="#3d3229" stroke-width="2.5" marker-end="url(#arrM)"/>
+  <text x="52" y="474" fill="#a09585" font-size="11.5">ruta adaptativa</text>
+  <line x1="190" y1="470" x2="220" y2="470" stroke="#a09585" stroke-width="2" stroke-dasharray="3 4" marker-end="url(#arrG)"/>
+  <text x="228" y="474" fill="#a09585" font-size="11.5">hacia la respuesta de estrés</text>
+</svg>

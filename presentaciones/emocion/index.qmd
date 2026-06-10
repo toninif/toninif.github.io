@@ -60,4 +60,7 @@ Material de clase del curso de Psicología de la Motivación y Emoción, Univers
 **[Clase 11](11-emocion-decisiones.html){target="_blank"}** · Emociones y su influencia en el proceso decisorio.
 :::
 
+::: {.pub-item}
+**[Clase 12](12-clase-estres.html){target="_blank"}** · Estres: Desencadenantes - Proceso - Consecuencias
+:::
 
