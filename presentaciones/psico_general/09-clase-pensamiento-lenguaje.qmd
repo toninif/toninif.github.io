@@ -8,7 +8,7 @@ format:
     slide-number: true
     transition: fade
     chalkboard: true
-    footer: "Psicología General · UP"
+    footer: "Psicología · UP"
     logo: ""
     width: 1280
     height: 720

@@ -1,0 +1,617 @@
+---
+title: "Desarrollo: herencia, ambiente y los grandes modelos"
+subtitle: "Psicología General"
+author: "Dr. Fernando Tonini"
+format:
+  revealjs:
+    theme: [simple, psico-general-style.css]
+    slide-number: true
+    transition: fade
+    chalkboard: true
+    footer: "Psicología · UP"
+    logo: ""
+    width: 1280
+    height: 720
+execute:
+  echo: false
+  warning: false
+filters:
+  - lightbox
+lightbox: auto
+---
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>El eterno debate...</h2>
+::::
+
+------------------------------------------------------------------------
+
+## Heredado vs. adquirido
+
+::: caja-crema
+**¿En qué forma la herencia y el ambiente afectan el desarrollo a lo largo de la vida?**
+:::
+
+La **herencia** (naturaleza) y el **ambiente** (crianza) son fuerzas en interacción, ambas necesarias para el desarrollo humano. 
+
+::: {.caja-verde style="margin-top:0.7em"}
+[Un matiz importante: los cuidadores solo pueden influir sobre el ambiente. La dotación genética viene dada.]{style="color:#f5f0e8; font-weight:600"}
+:::
+
+------------------------------------------------------------------------
+
+## Genes: las instrucciones de base
+
+Los **cromosomas** y los **genes** de cada célula transmiten las instrucciones hereditarias.
+
+:::::: {.cols-2 style="margin-top:0.6em"}
+::: tarjeta
+<h4>Herencia poligénica</h4>
+
+<p>Muchas características no dependen de un solo gen, sino del efecto combinado de varios.</p>
+:::
+
+::: tarjeta
+<h4>Dominante y recesivo</h4>
+
+<p>Los genes dominantes se expresan aun en una sola copia; los recesivos necesitan dos.</p>
+:::
+::::::
+
+::: caja-crema
+La mayoría de los rasgos psicológicos relevantes (temperamento, aspectos de la inteligencia) son **poligénicos** --> Np hay "un gen para X".
+:::
+
+------------------------------------------------------------------------
+
+## Desarrollo prenatal y teratógenos
+
+El ambiente influye **desde antes de nacer**. Un **teratógeno** es cualquier agente que puede alterar el desarrollo prenatal.
+
+:::::: {.cols-3 style="margin-top:0.6em"}
+::: tarjeta
+<h4>Enfermedades</h4>
+
+<p>Infecciones de la persona gestante que cruzan la placenta.</p>
+:::
+
+::: tarjeta
+<h4>Sustancias</h4>
+
+<p>Medicamentos, alcohol y otras drogas; también la radiación.</p>
+:::
+
+::: tarjeta
+<h4>Dieta y salud</h4>
+
+<p>El estado nutricional y de salud general durante el embarazo.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Maduración
+
+La **maduración** del cuerpo y del sistema nervioso es el despliegue ordenado, biológicamente pautado, que sostiene el desarrollo de:
+
+:::::: {.cols-2}
+::: {style="font-size:0.92em"}
+- Habilidades **motoras** y perceptuales
+- Habilidades **cognitivas**
+:::
+
+::: {style="font-size:0.92em"}
+- **Emociones**
+- **Lenguaje**
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.5em"}
+[La secuencia tiende a ser la misma para todos, pero la velocidad varía de una persona a otra. "Más tarde" no es necesariamente "malo".]{style="color:#f5f0e8; font-weight:600"}
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Los primeros hitos</h2>
+::::
+
+------------------------------------------------------------------------
+
+## El starter pack 
+
+Un humeno recién nacido no es una hoja en blanco. Trae **reflejos adaptativos** que favorecen la supervivencia y el vínculo:
+
+:::::: {.cols-3 style="margin-top:0.6em"}
+::: tarjeta
+<h4>Prensión</h4>
+
+<p>Cierra la mano con fuerza ante el contacto en la palma.</p>
+:::
+
+::: tarjeta
+<h4>Búsqueda</h4>
+
+<p>Gira la cabeza hacia el estímulo que roza su mejilla.</p>
+:::
+
+::: tarjeta
+<h4>Succión</h4>
+
+<p>Succiona de forma automática ante el contacto en los labios.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Lo que el bebé prefiere mirar
+
+Aunque su visión es limitada, el recién nacido **no mira al azar**. Tiene preferencias sistemáticas:
+
+::: {style="margin-top:0.5em"}
+- Prefiere **patrones complejos** antes que simples
+- Prefiere los **rostros humanos**, y muy especialmente los **familiares**
+:::
+
+![](img/preferencia-rostros.png){width="70%"}
+
+::: caja-crema
+Esta atracción temprana por las caras es una de las bases del **apego**: el bebé está predispuesto a orientarse hacia las personas.
+:::
+
+------------------------------------------------------------------------
+
+## Hitos motores: una secuencia ordenada
+
+Del control de la cabeza a la marcha autónoma, en aproximadamente el primer año:
+
+![](img/hitos-motores.png){width="78%"}
+
+::: {.caja-verde style="margin-top:0.4em"}
+[Las edades son promedios orientativos, no exámenes. La secuencia importa más que el calendario exacto.]{style="color:#f5f0e8; font-weight:600"}
+:::
+
+------------------------------------------------------------------------
+
+## El desarrollo del lenguaje
+
+Sigue una progresión reconocible, compartida entre lenguas y culturas:
+
+::: {.caja-crema style="text-align:center; font-size:0.95em"}
+llanto → arrullo → balbuceo → primeras palabras → habla telegráfica
+:::
+
+El **habla telegráfica** son esas combinaciones de dos palabras con lo esencial: *"mamá agua"*, *"upa nene"* — como un telegrama, sin conectores.
+
+------------------------------------------------------------------------
+
+## La explosión léxica
+
+Alrededor de los **18 meses**, tras acumular sus primeras ~50 palabras, el ritmo de adquisición se dispara.
+
+```{r}
+#| fig-width: 9
+#| fig-height: 3.6
+#| fig-align: center
+library(ggplot2)
+
+edad <- seq(10, 30, by = 1)
+# Curva tipo explosión léxica: lento hasta ~18m, despegue posterior
+vocab <- 10 / (1 + exp(-0.45 * (edad - 19)))
+vocab <- vocab^2 * 6
+df <- data.frame(edad = edad, vocab = vocab)
+
+ggplot(df, aes(x = edad, y = vocab)) +
+  geom_line(linewidth = 1.8, color = "#2d6a4f") +
+  geom_vline(xintercept = 18, linetype = "dashed",
+             color = "#b5651d", linewidth = 0.7) +
+  annotate("text", x = 18, y = max(vocab) * 0.92,
+           label = "~18 meses", hjust = -0.1,
+           color = "#b5651d", size = 4.5, fontface = "italic") +
+  labs(x = "Edad (meses)", y = "Palabras (aprox.)") +
+  theme_minimal(base_size = 14) +
+  theme(
+    panel.grid.minor = element_blank(),
+    panel.grid.major = element_line(color = "#e8dfc9"),
+    axis.title = element_text(color = "#3d5247"),
+    axis.text = element_text(color = "#3d5247"),
+    plot.background = element_rect(fill = "#f5f0e8", color = NA),
+    panel.background = element_rect(fill = "#f5f0e8", color = NA)
+  )
+```
+
+::: {style="font-size:0.7em; color:#3d5247; font-style:italic"}
+Curva ilustrativa con datos simulados.
+:::
+
+------------------------------------------------------------------------
+
+## El cerebro también se "poda"
+
+El desarrollo neural no es solo crecer: hay **crecimiento** de conexiones seguido de **poda sináptica**, que elimina las menos usadas y vuelve más eficiente al sistema.
+
+![](img/poda-sinaptica.png){width="72%"}
+
+::: caja-crema
+"Menos pero mejor conectado": la poda es parte normal y necesaria de la maduración, sobre todo en la adolescencia.
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Piaget y el desarrollo cognitivo</h2>
+::::
+
+------------------------------------------------------------------------
+
+## La idea central: el esquema
+
+Para Piaget, el conocimiento se organiza en **esquemas**: estructuras mentales que agrupan lo aprendido.
+
+::: {.caja-verde style="margin-top:0.5em"}
+[Un nene arma el esquema "perro" a fuerza de cruzarse perros: cuatro patas, cola, hace "guau".]{style="color:#f5f0e8; font-weight:600"}
+:::
+
+El desarrollo cognitivo avanza ajustando esos esquemas mediante dos procesos complementarios.
+
+------------------------------------------------------------------------
+
+## Asimilación y acomodación
+
+:::::: {.cols-2 style="margin-top:0.5em"}
+::: tarjeta
+<h4>Asimilación</h4>
+
+<p>Incorporar lo nuevo a un esquema que <strong>ya existe</strong>.</p>
+
+<p style="margin-top:0.4em">El nene ve un carpincho por primera vez y lo mete en el esquema "perro": un perro raro y gigante.</p>
+:::
+
+::: tarjeta
+<h4>Acomodación</h4>
+
+<p>Modificar el esquema previo para ajustarlo a la <strong>experiencia nueva</strong>.</p>
+
+<p style="margin-top:0.4em">Al notar que no ladra ni se comporta como perro, crea un esquema nuevo: "carpincho".</p>
+:::
+::::::
+
+::: {.caja-crema style="margin-top:0.5em"}
+Hay una tendencia innata a **equilibrar** ambos procesos. Ese balance es el motor del desarrollo cognitivo.
+:::
+
+------------------------------------------------------------------------
+
+## Los cuatro estadios
+
+<table style="font-size:0.74em; margin-top:0.4em">
+  <thead>
+    <tr>
+      <th>Estadio</th>
+      <th>Edad aprox.</th>
+      <th>Rasgo central</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Sensoriomotor</strong></td>
+      <td>0 – 2 años</td>
+      <td>Inteligencia ligada a la acción; permanencia de objeto</td>
+    </tr>
+    <tr>
+      <td><strong>Preoperacional</strong></td>
+      <td>2 – 7 años</td>
+      <td>Pensamiento simbólico y lenguaje; egocentrismo</td>
+    </tr>
+    <tr>
+      <td><strong>Operaciones concretas</strong></td>
+      <td>7 – 11 años</td>
+      <td>Lógica sobre objetos concretos; conservación</td>
+    </tr>
+    <tr>
+      <td><strong>Operaciones formales</strong></td>
+      <td>+11 años</td>
+      <td>Pensamiento abstracto e hipotético-deductivo</td>
+    </tr>
+  </tbody>
+</table>
+
+::: {style="font-size:0.8em; margin-top:0.5em"}
+Según Piaget, la secuencia es **fija**: cada estadio prepara al siguiente.
+:::
+
+------------------------------------------------------------------------
+
+## Sensoriomotor (0–2 años)
+
+La inteligencia se basa en **acciones sensoriales y motoras**: el bebé conoce el mundo tocándolo, chupándolo, golpeándolo.
+
+::: {.caja-verde style="margin-top:0.6em"}
+[Logro clave: la permanencia de objeto — entender que las cosas siguen existiendo aunque no se las vea.]{style="color:#f5f0e8; font-weight:600"}
+:::
+
+Antes de lograrla, para el bebé un juguete tapado con una manta sencillamente **dejó de existir**.
+
+------------------------------------------------------------------------
+
+## Preoperacional (2–7 años)
+
+Aparecen con fuerza el **pensamiento simbólico** y el **lenguaje**: una escoba puede ser un caballo, un dibujo representa a mamá.
+
+Pero hay dos límites característicos:
+
+:::::: {.cols-2 style="margin-top:0.5em"}
+::: tarjeta
+<h4>Falta de conservación</h4>
+
+<p>No entiende que la cantidad se mantiene si cambia la forma: el mismo líquido en un vaso alto "parece más".</p>
+:::
+
+::: tarjeta
+<h4>Egocentrismo</h4>
+
+<p>Le cuesta tomar el punto de vista del otro; asume que todos ven lo que él ve.</p>
+:::
+::::::
+
+![](img/conservacion.png){width="42%"}
+
+------------------------------------------------------------------------
+
+## Operaciones concretas (7–11 años)
+
+Empieza el **pensamiento lógico**, pero todavía anclado a **objetos concretos** y situaciones reales.
+
+Tres logros típicos:
+
+:::::: {.cols-3 style="margin-top:0.5em"}
+::: tarjeta
+<h4>Conservación</h4>
+
+<p>La cantidad se mantiene aunque cambie la forma.</p>
+:::
+
+::: tarjeta
+<h4>Clasificación</h4>
+
+<p>Agrupar objetos según propiedades compartidas.</p>
+:::
+
+::: tarjeta
+<h4>Seriación</h4>
+
+<p>Ordenar elementos según una dimensión, como el tamaño.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Operaciones formales (+11 años)
+
+Llega el **pensamiento abstracto** y el razonamiento **hipotético-deductivo**: ya se puede formular y poner a prueba hipótesis sistemáticamente.
+
+:::::: {.cols-2 style="margin-top:0.5em"}
+::: {.caja-crema}
+**Antes de los 11**
+
+— *"¿Qué pasaría si los humanos volaran?"*
+
+— "Las personas no vuelan." (rechaza la premisa)
+:::
+
+::: {.caja-crema}
+**Desde los 11**
+
+— Misma pregunta
+
+— Imagina escenarios donde eso es posible y razona desde ahí.
+:::
+::::::
+
+------------------------------------------------------------------------
+
+## Una nota crítica sobre Piaget
+
+El modelo es enorme y sigue siendo una referencia, pero la evidencia posterior lo **matizó**:
+
+::: {.lista-crisis style="margin-top:0.5em; font-size:0.92em"}
+- Estudios de **violación de expectativa** (Baillargeon) muestran indicios de permanencia de objeto **mucho antes** de lo que Piaget estimaba.
+- El desarrollo parece más **continuo y gradual** que una escalera de etapas bien separadas.
+- El desempeño depende mucho de **cómo se presenta la tarea**: con consignas más simples, los chicos "rinden" antes.
+:::
+
+::: {.caja-verde style="margin-top:0.4em"}
+[Se construye sobre Piaget. Lo leemos como un marco potente que la investigación siguió corrigiendo.]{style="color:#f5f0e8; font-weight:600"}
+:::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Otros modelos...</h2>
+::::
+
+------------------------------------------------------------------------
+
+## ¿Existen modelos alternativos?
+
+Antes de Piaget, y en paralelo, hubo otras grandes teorías del desarrollo.
+
+::: {.caja-crema style="margin-top:0.6em"}
+Las miramos desde una **perspectiva histórica y crítica**: fueron muy influyentes en su momento, pero hoy presentan **limitaciones empíricas importantes**.
+:::
+
+------------------------------------------------------------------------
+
+## Freud: las etapas psicosexuales
+
+Para Freud, el desarrollo es un **proceso de maduración pulsional**, con la sexualidad infantil como eje central.
+
+<table style="font-size:0.7em; margin-top:0.3em">
+  <thead>
+    <tr>
+      <th>Etapa</th>
+      <th>Edad</th>
+      <th>Eje</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>Oral</strong></td><td>0 – 1</td><td>Dependencia e incorporación</td></tr>
+    <tr><td><strong>Anal</strong></td><td>1 – 3</td><td>Control y orden</td></tr>
+    <tr><td><strong>Fálica</strong></td><td>3 – 6</td><td>Complejo de Edipo</td></tr>
+    <tr><td><strong>Latencia</strong></td><td>6 – 11</td><td>Inhibición y habilidades sociales</td></tr>
+    <tr><td><strong>Genital</strong></td><td>pubertad +</td><td>Sexualidad adulta</td></tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Freud: las limitaciones
+
+::: {.lista-crisis style="margin-top:0.6em"}
+- Conceptos **no operacionalizables**: difíciles de medir y definir con precisión.
+- **Escasa evidencia empírica** que sostenga el modelo.
+- Etapas **rígidas** y con marcado **sesgo cultural** de su época.
+- Confunde el **desarrollo normal** con la **psicopatología**.
+:::
+
+------------------------------------------------------------------------
+
+## Erikson: el modelo psicosocial
+
+Erikson integra **psicoanálisis, sociología e historia**. Corre el foco de las pulsiones hacia el **entorno**, y plantea un desarrollo **vitalicio** organizado en crisis psicosociales.
+
+<table style="font-size:0.66em; margin-top:0.3em">
+  <thead>
+    <tr>
+      <th>#</th><th>Crisis</th>
+      <th>#</th><th>Crisis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>Confianza vs. Desconfianza</td><td>5</td><td>Identidad vs. Confusión</td></tr>
+    <tr><td>2</td><td>Autonomía vs. Vergüenza</td><td>6</td><td>Intimidad vs. Aislamiento</td></tr>
+    <tr><td>3</td><td>Iniciativa vs. Culpa</td><td>7</td><td>Generatividad vs. Estancamiento</td></tr>
+    <tr><td>4</td><td>Laboriosidad vs. Inferioridad</td><td>8</td><td>Integridad vs. Desesperación</td></tr>
+  </tbody>
+</table>
+
+------------------------------------------------------------------------
+
+## Erikson: las limitaciones
+
+::: {.lista-crisis style="margin-top:0.6em"}
+- Etapas **rígidas y secuenciales**.
+- Datos empíricos **limitados**.
+- Fuerte **sesgo occidental**.
+- Crisis formuladas de manera muy **amplia** y difíciles de evaluar.
+- Funciona como **marco narrativo** del desarrollo, no como evidencia científica.
+:::
+
+------------------------------------------------------------------------
+
+## Entonces, estos modelos… ¿sí o no?
+
+:::::: {.cols-2 style="margin-top:0.5em"}
+::: {.tarjeta style="border-top-color:#52b788"}
+<h4>Lo que aportan</h4>
+
+<p>✓ Valiosos como <strong>historia del pensamiento</strong> psicológico.</p>
+
+<p>✓ Introducen categorías útiles: <strong>identidad</strong>, <strong>autonomía</strong>, <strong>vínculo temprano</strong>.</p>
+:::
+
+::: {.tarjeta style="border-top-color:#b5651d"}
+<h4>Lo que falla</h4>
+
+<p>⮾ No describen el desarrollo con <strong>evidencia moderna</strong>.</p>
+
+<p>⮾ Asumen <strong>etapas rígidas</strong>.</p>
+
+<p>⮾ Toman <strong>normas culturales</strong> como universales.</p>
+
+<p>⮾ Escasa <strong>replicabilidad</strong> u operacionalización.</p>
+:::
+::::::
+
+------------------------------------------------------------------------
+
+##  {.slide-transicion}
+
+:::: transicion-inner
+::: barra-acento
+:::
+
+<h2>Actividad de cierre</h2>
+::::
+
+------------------------------------------------------------------------
+
+## ¿En qué estadio piagetiano está cada chico?
+
+Leé cada viñeta y clasificá. Justificá con el rasgo central del estadio.
+
+:::::: {.cols-2 style="margin-top:0.4em"}
+::: {.tarjeta style="font-size:0.8em"}
+<h4>Caso A</h4>
+
+<p>Mateo (4) tapás su auto con un trapo y arranca a llorar como si hubiera desaparecido para siempre.</p>
+:::
+
+::: {.tarjeta style="font-size:0.8em"}
+<h4>Caso B</h4>
+
+<p>Lola (9) ordena diez lápices del más corto al más largo sin equivocarse.</p>
+:::
+
+::: {.tarjeta style="font-size:0.8em"}
+<h4>Caso C</h4>
+
+<p>Joaco (3) insiste en que tiene "más jugo" porque se lo pasaron a un vaso más alto y finito.</p>
+:::
+
+::: {.tarjeta style="font-size:0.8em"}
+<h4>Caso D</h4>
+
+<p>Emma (14) discute qué pasaría con la sociedad si nadie tuviera que dormir, y arma argumentos.</p>
+:::
+::::::
+
+::: {style="font-size:0.62em; color:#3d5247; font-style:italic; margin-top:0.3em"}
+Soluciones: A preoperacional · B operaciones concretas (seriación) · C preoperacional (falta de conservación) · D operaciones formales.
+:::
+
+------------------------------------------------------------------------
+
+## Para llevarse
+
+::: {.caja-verde style="margin-top:0.8em"}
+[Herencia y ambiente no compiten: interactúan. La maduración pauta la secuencia; el ambiente, desde antes de nacer, modula el resultado.]{style="color:#f5f0e8; font-weight:600"}
+:::
+
+::: {.caja-crema style="margin-top:0.5em"}
+**Piaget** dio el marco más influyente del desarrollo cognitivo; la evidencia posterior lo matizó hacia un proceso más continuo.
+:::
+
+::: {.caja-crema style="margin-top:0.4em"}
+**Freud** y **Erikson** valen como historia y como fuente de categorías, pero no como descripción empírica del desarrollo.
+:::
