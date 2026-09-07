@@ -204,8 +204,60 @@ body {
   transition: opacity 0.4s ease;
 }
 
-.struct.dim { opacity: 0.18; }
+.struct.dim { opacity: 0.22; }
 .struct.active { opacity: 1; }
+
+.brain-container > svg { display: block; }
+
+.brain-anatomy { pointer-events: none; }
+
+.cortical-fold, .cortical-fold-highlight {
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.cortical-fold {
+  stroke: #a17c70;
+  stroke-width: 2;
+  opacity: 0.65;
+}
+
+.cortical-fold-highlight {
+  stroke: #fff4e8;
+  stroke-width: 3.5;
+  opacity: 0.7;
+}
+
+.anatomy-orientation {
+  fill: var(--color-text-soft);
+  font-family: var(--font-sans);
+  font-size: 9px;
+  letter-spacing: 2px;
+}
+
+.anatomy-orientation path {
+  stroke: var(--color-border);
+  stroke-width: 1;
+}
+
+.anatomy-caption {
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 0.5rem 0.5rem 0;
+}
+
+.struct.active > path, .struct.active > ellipse {
+  filter: drop-shadow(0 1px 1.5px #513b3830);
+}
+
+.struct:hover, .struct:focus-visible { opacity: 1; }
+
+.struct:focus-visible {
+  outline: 2px solid var(--color-active);
+  outline-offset: 3px;
+}
 
 .struct-inner-label {
   pointer-events: none;
@@ -259,6 +311,11 @@ body {
   font-size: 11px;
   fill: var(--color-text);
   font-weight: 500;
+  paint-order: stroke fill;
+  stroke: var(--color-surface);
+  stroke-width: 3px;
+  stroke-linejoin: round;
+  pointer-events: none;
 }
 
 .leader-label-secondary {

@@ -191,7 +191,7 @@
     });
   }
 
-  function buildCompareSvg(theoryKey) {
+  function buildCompareSvg(theoryKey, panelId) {
     const theory = theories[theoryKey];
     const lastStep = theory.steps[theory.steps.length - 1];
     const activeStructs = lastStep.structs;
@@ -202,97 +202,41 @@
     svg.setAttribute('viewBox', '0 0 800 500');
     svg.setAttribute('xmlns', svgNS);
 
-    const defs = document.createElementNS(svgNS, 'defs');
-    defs.innerHTML = `
-      <marker id="arrow-cmp-${theoryKey}" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
-        <path d="M2 1L9 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-      </marker>
-      <radialGradient id="cortex-grad-${theoryKey}" cx="50%" cy="50%" r="60%">
-        <stop offset="0%" stop-color="#F2E4CC"/>
-        <stop offset="100%" stop-color="#C9A878"/>
-      </radialGradient>
-    `;
-    svg.appendChild(defs);
-
-    const cortex = document.createElementNS(svgNS, 'path');
-    cortex.setAttribute('d', 'M 95 250 Q 75 130, 200 85 Q 320 50, 460 60 Q 600 70, 670 130 Q 715 175, 705 240 Q 720 285, 685 320 Q 660 345, 615 350 L 580 350 Q 565 365, 540 365 L 230 365 Q 195 365, 170 345 Q 115 320, 100 290 Q 90 270, 95 250 Z');
-    cortex.setAttribute('fill', `url(#cortex-grad-${theoryKey})`);
-    cortex.setAttribute('stroke', '#7A5C38');
-    cortex.setAttribute('stroke-width', '1.2');
-    svg.appendChild(cortex);
-
-    const cerebellum = document.createElementNS(svgNS, 'path');
-    cerebellum.setAttribute('d', 'M 685 295 Q 730 305, 745 350 Q 752 400, 720 430 Q 685 445, 655 425 Q 638 405, 645 380 L 670 360 Q 678 330, 685 295 Z');
-    cerebellum.setAttribute('fill', '#A8855A');
-    cerebellum.setAttribute('stroke', '#6B4F2D');
-    cerebellum.setAttribute('stroke-width', '1');
-    svg.appendChild(cerebellum);
-
-    const brainstem = document.createElementNS(svgNS, 'path');
-    brainstem.setAttribute('d', 'M 555 350 Q 562 380, 585 415 Q 590 450, 600 480');
-    brainstem.setAttribute('stroke', '#A8855A');
-    brainstem.setAttribute('stroke-width', '18');
-    brainstem.setAttribute('fill', 'none');
-    brainstem.setAttribute('stroke-linecap', 'round');
-    svg.appendChild(brainstem);
-
-    const structureData = {
-      's-stimulus': { type: 'circle', cx: 55, cy: 245, r: 22, fill: '#7A6B5D' },
-      's-thalamus': { type: 'ellipse', cx: 395, cy: 235, rx: 38, ry: 22, fill: '#D85A30' },
-      's-hypothalamus': { type: 'ellipse', cx: 378, cy: 278, rx: 22, ry: 13, fill: '#F0997B' },
-      's-amygdala': { type: 'ellipse', cx: 320, cy: 285, rx: 20, ry: 15, fill: '#D4537E' },
-      's-hippocampus': { type: 'path', d: 'M 270 295 Q 263 320, 290 325 Q 308 322, 305 300 Q 300 288, 280 290 Z', fill: '#ED93B1' },
-      's-insula': { type: 'path', d: 'M 215 215 Q 208 240, 220 260 Q 245 268, 258 245 Q 252 215, 230 210 Z', fill: '#1D9E75' },
-      's-vmpfc': { type: 'path', d: 'M 155 215 Q 138 240, 150 270 Q 170 285, 195 275 Q 200 250, 188 225 Q 175 215, 155 215 Z', fill: '#7F77DD' },
-      's-acc': { type: 'path', d: 'M 265 155 Q 305 138, 350 142 Q 385 148, 405 165 Q 380 178, 345 175 Q 300 175, 265 178 Z', fill: '#AFA9EC' },
-      's-dlpfc': { type: 'path', d: 'M 195 120 Q 230 100, 270 108 Q 285 130, 260 145 Q 230 152, 200 145 Q 185 132, 195 120 Z', fill: '#378ADD' },
-      's-somato': { type: 'path', d: 'M 425 105 Q 465 92, 505 102 Q 518 125, 500 138 Q 465 145, 430 138 Q 418 122, 425 105 Z', fill: '#5DCAA5' },
-      's-cortex-assoc': { type: 'path', d: 'M 540 130 Q 585 118, 625 138 Q 640 160, 625 185 Q 590 195, 555 185 Q 535 160, 540 130 Z', fill: '#CECBF6' },
-      's-sna': { type: 'rect', x: 500, y: 445, width: 220, height: 42, rx: 21, fill: '#D85A30' }
-    };
-
-    Object.entries(structureData).forEach(([id, data]) => {
-      const isActive = activeStructs.includes(id);
-      const opacity = isActive ? 1 : 0.18;
-
-      let el;
-      if (data.type === 'circle') {
-        el = document.createElementNS(svgNS, 'circle');
-        el.setAttribute('cx', data.cx);
-        el.setAttribute('cy', data.cy);
-        el.setAttribute('r', data.r);
-      } else if (data.type === 'ellipse') {
-        el = document.createElementNS(svgNS, 'ellipse');
-        el.setAttribute('cx', data.cx);
-        el.setAttribute('cy', data.cy);
-        el.setAttribute('rx', data.rx);
-        el.setAttribute('ry', data.ry);
-      } else if (data.type === 'path') {
-        el = document.createElementNS(svgNS, 'path');
-        el.setAttribute('d', data.d);
-      } else if (data.type === 'rect') {
-        el = document.createElementNS(svgNS, 'rect');
-        el.setAttribute('x', data.x);
-        el.setAttribute('y', data.y);
-        el.setAttribute('width', data.width);
-        el.setAttribute('height', data.height);
-        el.setAttribute('rx', data.rx);
-      }
-      el.setAttribute('fill', data.fill);
-      el.setAttribute('opacity', opacity);
-      el.setAttribute('stroke', '#444');
-      el.setAttribute('stroke-width', '0.5');
-      svg.appendChild(el);
+    // Reuse the main illustration so both views share anatomy and structures.
+    // Namespace every SVG reference, including when both panels show one theory.
+    const prefix = `${panelId}-`;
+    const source = document.getElementById('brain-svg');
+    const defs = source.querySelector('defs').cloneNode(true);
+    const anatomy = document.getElementById('brain-anatomy').cloneNode(true);
+    const structures = document.getElementById('brain-structures').cloneNode(true);
+    structures.querySelectorAll('.struct').forEach(structure => {
+      const isActive = activeStructs.includes(structure.id);
+      structure.classList.toggle('active', isActive);
+      structure.classList.toggle('dim', !isActive);
+      structure.removeAttribute('tabindex');
     });
+    [defs, anatomy, structures].forEach(layer => {
+      [layer, ...layer.querySelectorAll('*')].forEach(element => {
+        if (element.id) element.id = prefix + element.id;
+        [...element.attributes].forEach(attribute => {
+          if (attribute.value.includes('url(#')) {
+            element.setAttribute(attribute.name, attribute.value.replace(/url\(#([^)]+)\)/g, `url(#${prefix}$1)`));
+          }
+        });
+      });
+      svg.appendChild(layer);
+    });
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', `${theory.name}: vía completa, vista esquemática con áreas proyectadas`);
 
     paths.forEach(p => {
       const path = document.createElementNS(svgNS, 'path');
       path.setAttribute('d', curvedPath(p[0], p[1]));
       path.setAttribute('fill', 'none');
-      path.setAttribute('stroke', '#534AB7');
+      path.setAttribute('stroke', 'var(--color-active)');
       path.setAttribute('stroke-width', '2.5');
       path.setAttribute('stroke-linecap', 'round');
-      path.setAttribute('marker-end', `url(#arrow-cmp-${theoryKey})`);
+      path.setAttribute('marker-end', `url(#${prefix}arrow-active)`);
       path.setAttribute('opacity', '0.85');
       svg.appendChild(path);
     });
@@ -304,7 +248,7 @@
       text.setAttribute('x', label.lx);
       text.setAttribute('y', label.ly);
       text.setAttribute('text-anchor', label.anchor);
-      text.setAttribute('font-size', '11');
+      text.setAttribute('class', 'leader-label');
       text.setAttribute('font-family', 'Inter, sans-serif');
       text.setAttribute('font-weight', '500');
       text.setAttribute('fill', 'currentColor');
@@ -327,7 +271,7 @@
         <p class="year">${theory.year}</p>
         <p class="compare-claim">${theory.claim}</p>
       `;
-      panel.appendChild(buildCompareSvg(theoryKey));
+      panel.appendChild(buildCompareSvg(theoryKey, panelId));
     });
   }
 
