@@ -39,7 +39,7 @@ h1, h2, h3, h4, h5, h6,
 
 h1, .title {
   font-weight: 700;
-  font-size: 2.2rem;
+  font-size: clamp(1.9rem, 6vw, 2.2rem);
   line-height: 1.2;
 }
 
@@ -97,9 +97,27 @@ h1, .title {
 
 // Contenido principal
 #quarto-content {
-  max-width: 780px;
+  max-width: 1100px;
   margin: 0 auto;
   padding-top: 2.5rem;
+}
+
+.quarto-title-block {
+  width: 100%;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.quarto-title-block .quarto-title,
+.quarto-title-block .quarto-title-meta {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+// La descripción pertenece a los metadatos; el contenido visible usa la apertura editorial.
+.quarto-title-block .description {
+  display: none;
 }
 
 // Links con underline sutil
@@ -111,6 +129,13 @@ a {
   &:hover {
     border-bottom-color: $link-hover-color;
   }
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #7f925f;
+  outline-offset: 3px;
 }
 
 // Navbar links sin border-bottom
@@ -225,7 +250,7 @@ blockquote {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #999;
+    color: #6b6862;
     margin-bottom: 0.8rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #2d2d2d;
@@ -277,7 +302,7 @@ blockquote {
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    color: #999;
+    color: #6b6862;
     margin-bottom: 1rem;
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #2d2d2d;
@@ -302,4 +327,571 @@ blockquote {
   max-width: 780px;
   margin: 0 auto;
   padding: 1.5rem 1rem 3rem;
+}
+
+// ── Inicio: tres áreas profesionales y contacto ──
+
+.home-pillars {
+  padding-bottom: 1.5rem;
+}
+
+.contact-strip {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 1.75rem 1rem 3rem;
+  border-top: 1px solid #e0ddd6;
+
+  h3 {
+    margin-bottom: 1.25rem;
+    font-size: 1.15rem;
+  }
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.contact-group {
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: #555;
+
+  p {
+    margin-bottom: 0;
+  }
+
+  strong {
+    color: #2d2d2d;
+  }
+}
+
+.about-secondary {
+  padding-top: 0;
+}
+
+// ── Landing: tres áreas profesionales ──
+
+.area-gateway {
+  width: 100%;
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 2.5rem 1rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.area-panel {
+  min-height: 330px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid #2d2d2d;
+  border-right: 1px solid #d8d4cc;
+  border-bottom: 1px solid #d8d4cc;
+  transition: background-color 0.2s ease;
+
+  &:first-child {
+    border-left: 1px solid #d8d4cc;
+  }
+
+  &:hover {
+    background-color: #f2f0eb;
+  }
+
+  h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.65rem;
+  }
+
+  p {
+    color: #555;
+  }
+
+  .area-link {
+    margin-top: auto;
+    align-self: flex-start;
+    padding-bottom: 0.15rem;
+    border-bottom: 1px solid $link-color;
+    font-size: 0.9rem;
+    font-weight: 600;
+  }
+}
+
+.landing-footer {
+  width: calc(100% - 2rem);
+  max-width: 1008px;
+  margin: 0 auto;
+  padding: 2rem 0 3rem;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 2.5rem;
+  border-top: 1px solid #d8d4cc;
+}
+
+.landing-footer-group {
+  h3 {
+    margin-bottom: 0.75rem;
+    font-size: 1.05rem;
+  }
+
+  p {
+    margin-bottom: 0.5rem;
+    font-size: 0.88rem;
+    line-height: 1.6;
+    color: #555;
+  }
+}
+
+// ── Portales de Docencia e Investigación ──
+
+.portal-intro,
+.portal-section,
+.portal-feature,
+.portal-note {
+  width: 100%;
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.portal-intro {
+  padding: 2.5rem 1rem 2.75rem;
+  border-bottom: 1px solid #d8d4cc;
+  font-family: $font-family-serif;
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: #4f4d49;
+
+  p {
+    margin: 0;
+  }
+}
+
+.portal-directory,
+.research-lines {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2.75rem 1rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem 3rem;
+}
+
+.portal-entry,
+.research-line {
+  padding-top: 1.25rem;
+  border-top: 2px solid #2d2d2d;
+
+  h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.35rem;
+  }
+
+  p {
+    font-size: 0.93rem;
+    line-height: 1.65;
+    color: #555;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.portal-section {
+  padding: 2.5rem 1rem;
+  border-top: 1px solid #d8d4cc;
+
+  > h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.55rem;
+  }
+}
+
+.resource-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2.5rem;
+}
+
+.resource-item {
+  h3 {
+    margin-bottom: 0.6rem;
+    font-family: $font-family-serif;
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+    line-height: 1.65;
+    color: #555;
+  }
+}
+
+.portal-feature {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(190px, 0.7fr);
+  gap: 3rem;
+  align-items: center;
+  background-color: #f2f0eb;
+
+  h2 {
+    font-size: 1.55rem;
+  }
+}
+
+.publication-topics ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    padding: 0.55rem 0;
+    border-bottom: 1px solid #d1cdc4;
+    font-size: 0.86rem;
+    color: #555;
+  }
+}
+
+.profile-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid #d8d4cc;
+
+  p {
+    display: contents;
+  }
+
+  a {
+    min-height: 54px;
+    padding: 0.8rem 0;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #d8d4cc;
+    font-weight: 500;
+  }
+}
+
+.portal-note {
+  padding: 1.25rem 1rem;
+  border-top: 1px solid #d8d4cc;
+  font-size: 0.85rem;
+  color: #6b6862;
+
+  p {
+    margin: 0;
+  }
+}
+
+// ── Atención psicológica ──
+
+.clinic-hero,
+.clinic-section,
+.clinic-contact {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clinic-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 3rem;
+  align-items: center;
+  padding: 2.75rem 1rem 3rem;
+  border-bottom: 1px solid #e0ddd6;
+}
+
+.clinic-hero-copy {
+  font-family: $font-family-serif;
+  font-size: 1.08rem;
+  line-height: 1.75;
+  color: #4f4d49;
+
+  > p:first-child {
+    font-size: 1.18rem;
+    color: #2d2d2d;
+  }
+}
+
+.availability-note {
+  margin: 1.75rem 0 1.25rem;
+  padding: 0.75rem 0 0.75rem 1rem;
+  border-left: 3px solid $link-color;
+  font-family: $font-family-sans-serif;
+  font-size: 0.92rem;
+  color: #4f4d49;
+
+  p {
+    margin: 0;
+  }
+}
+
+.profile-placeholder {
+  min-height: 245px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  border: 1px solid #d8d4cc;
+  background-color: #f2f0eb;
+  color: #6b6862;
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.profile-monogram {
+  font-family: $font-family-serif;
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1;
+  color: #858d79;
+}
+
+.action-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+
+  p {
+    display: contents;
+  }
+}
+
+.action-primary,
+.action-secondary {
+  display: inline-flex;
+  min-height: 44px;
+  padding: 0.65rem 1rem;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid $link-color;
+  border-radius: 2px;
+  font-family: $font-family-sans-serif;
+  font-size: 0.88rem;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.action-primary {
+  background-color: $link-color;
+  color: #fff;
+
+  &:hover {
+    border-color: $link-hover-color;
+    background-color: $link-hover-color;
+    color: #fff;
+  }
+}
+
+.action-secondary {
+  background-color: transparent;
+  color: $link-hover-color;
+
+  &:hover {
+    background-color: #ebe9e3;
+    color: $link-hover-color;
+  }
+}
+
+.clinic-section {
+  padding: 2.5rem 1rem;
+  border-bottom: 1px solid #e0ddd6;
+
+  h2 {
+    margin-bottom: 1.25rem;
+    font-size: 1.55rem;
+  }
+
+  > p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.reasons-list ul {
+  columns: 2;
+  column-gap: 3rem;
+  margin: 1.5rem 0;
+
+  li {
+    break-inside: avoid;
+    margin-bottom: 0.65rem;
+  }
+}
+
+.clinic-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  margin: 1.5rem 0;
+  border-top: 1px solid #d8d4cc;
+}
+
+.detail-item {
+  padding: 1.25rem 1.25rem 1.25rem 0;
+  border-bottom: 1px solid #d8d4cc;
+
+  &:nth-child(odd) {
+    padding-right: 2rem;
+  }
+
+  h3 {
+    margin-bottom: 0.45rem;
+    font-family: $font-family-sans-serif;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2d2d2d;
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.92rem;
+    color: #555;
+  }
+}
+
+.professional-note {
+  background-color: #f2f0eb;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.faq-section {
+  h3 {
+    margin-top: 1.75rem;
+    margin-bottom: 0.4rem;
+    font-family: $font-family-sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #2d2d2d;
+  }
+
+  h3:first-of-type {
+    margin-top: 0;
+  }
+
+  p {
+    color: #555;
+  }
+}
+
+.clinic-contact {
+  padding: 2.75rem 1rem 1rem;
+
+  h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.55rem;
+  }
+
+  .action-group {
+    margin: 1.5rem 0 2rem;
+  }
+}
+
+.emergency-note {
+  padding: 1rem 1.25rem;
+  border: 1px solid #d8d4cc;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  color: #555;
+
+  p {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  #quarto-content {
+    padding-top: 1.75rem;
+  }
+
+  .hero {
+    padding-top: 2rem;
+  }
+
+  .contact-grid,
+  .clinic-details,
+  .area-gateway,
+  .landing-footer,
+  .portal-directory,
+  .research-lines,
+  .resource-list,
+  .portal-feature,
+  .profile-links {
+    grid-template-columns: 1fr;
+  }
+
+  .area-gateway {
+    gap: 1.5rem;
+    padding-top: 1.75rem;
+  }
+
+  .area-panel {
+    min-height: 260px;
+    border-left: 1px solid #d8d4cc;
+  }
+
+  .landing-footer {
+    gap: 1.5rem;
+  }
+
+  .portal-directory,
+  .research-lines {
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .portal-feature {
+    gap: 1.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .contact-grid {
+    gap: 1.25rem;
+  }
+
+  .clinic-hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 2rem;
+  }
+
+  .profile-placeholder {
+    min-height: 180px;
+  }
+
+  .reasons-list ul {
+    columns: 1;
+  }
+
+  .detail-item,
+  .detail-item:nth-child(odd) {
+    padding-right: 0;
+  }
+
+  .professional-note {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .action-primary,
+  .action-secondary {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+  }
 }

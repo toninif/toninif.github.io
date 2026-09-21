@@ -1,41 +1,64 @@
 ---
-title: "Fernando Tonini, Ph.D"
-subtitle: "Docente · Investigador"
+title: "Fernando Tonini"
+subtitle: "Psicólogo · Investigador · Docente"
+description: "Psicólogo, investigador y docente. Atención psicológica online para adultos, publicaciones, materiales de clase y recursos académicos."
+canonical-url: "https://fernandotonini.com.ar/"
 toc: false
 page-layout: custom
 ---
 
 ::: {.hero}
-En esta web vas a encontrar mis presentaciones de clase, publicaciones y recursos. Todo el material está organizado según su categoría y disponible para consultar en cualquier momento.
+Mi actividad profesional reúne tres áreas: la atención psicológica, el estudio de los procesos emocionales y cognitivos, y la enseñanza universitaria.
+
+Elegí el área que querés explorar.
 :::
 
-::: {.grid-section}
+::: {.area-gateway}
 
-::: {.grid-card}
-### Docencia
-Presentaciones y materiales de mis cursos.
+::: {.area-panel}
+## Atención psicológica
+Atención individual online para personas adultas en toda la Argentina, desde un enfoque cognitivo-conductual centrado en procesos.
 
-[Motivación y Emoción →](presentaciones/emocion/)
-
-[Psicoloǵia →](presentaciones/psico_general/)
+[Ingresar a Atención psicológica](atencion-psicologica/index.qmd){.area-link}
 :::
 
-::: {.grid-card}
-### Investigación
-- Psicología cognitiva - Motivación y emoción
-- Competencias digitales e inteligencia artificial
-- Ciencia abierta y reproducibilidad
+::: {.area-panel}
+## Docencia
+Cursos, presentaciones, herramientas interactivas y materiales para acompañar el aprendizaje de la psicología y la investigación.
 
-[Publicaciones →](publicaciones.qmd)
+[Ingresar a Docencia](docencia/index.qmd){.area-link}
 :::
 
-::: {.grid-card}
+::: {.area-panel}
+## Investigación
+Líneas de trabajo, publicaciones y recursos vinculados con la psicología cognitiva, la emoción y la ciencia abierta.
+
+[Ingresar a Investigación](investigacion/index.qmd){.area-link}
+:::
+
+:::
+
+::: {.landing-footer}
+
+::: {.landing-footer-group}
+### Sobre mí
+Psicólogo y Doctor en Psicología. Desarrollo mi actividad clínica, académica y docente en Buenos Aires.
+
+[Conocer mi trayectoria](about.qmd)
+:::
+
+::: {.landing-footer-group}
 ### Contacto
-[ftonin@palermo.edu](mailto:ftonin@palermo.edu)
+[Atención psicológica](mailto:consultas@fernandotonini.com.ar)
 
-[Research Gate](https://www.researchgate.net/profile/Fernando-Tonini/research) · [X](https://x.com/toninifer) 
+[Contacto académico](mailto:ftonin@palermo.edu)
+:::
 
-[GitHub](https://github.com/toninif) · [ORCID](https://orcid.org/0000-0001-6435-8923)
+::: {.landing-footer-group}
+### Perfiles
+[ORCID](https://orcid.org/0000-0001-6435-8923) · [ResearchGate](https://www.researchgate.net/profile/Fernando-Tonini/research)
+
+[GitHub](https://github.com/toninif) · [X](https://x.com/toninifer)
 :::
 
 :::

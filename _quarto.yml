@@ -1,35 +1,34 @@
 project:
   type: website
   output-dir: docs
+  render:
+    - "**/*.qmd"
+    - "!docs/**"
   resources:
     - "herramientas/**"
+    - "robots.txt"
+
+lang: es
 
 website:
-  title: "Mi web laboral"
+  title: "Fernando Tonini"
+  site-url: "https://fernandotonini.com.ar"
+  description: "Sitio profesional de Fernando Tonini, psicólogo, investigador y docente. Atención psicológica online, publicaciones y recursos académicos."
+  open-graph: true
+  twitter-card: true
   navbar:
+    collapse-below: lg
     left:
       - href: index.qmd
         text: Inicio
+      - href: atencion-psicologica/index.qmd
+        text: Atención psicológica
+      - href: docencia/index.qmd
+        text: Docencia
+      - href: investigacion/index.qmd
+        text: Investigación
       - href: about.qmd
         text: Sobre mí
-      - text: Herramientas
-        menu:
-          - href: herramientas/iowa-gambling-task/index.html
-            text: "Iowa Gambling Task"
-          - href: herramientas/teorias-emocion/index.html
-            text: "Teorías clásicas de la emoción"
-      - text: Presentaciones
-        menu:
-          - href: presentaciones/emocion/index.qmd
-            text: "Psicología de la Motivación y Emoción"
-          - href: presentaciones/psico_general/index.qmd
-            text: "Psicología"
-          - href: presentaciones/seminario_II/index.qmd
-            text: "Seminario II - UAI"
-          - href: presentaciones/taller-tesis-uai/index.qmd
-            text: "Taller de Tesis - UAI"
-      - href: publicaciones.qmd
-        text: Publicaciones
     right:
       - icon: github
         href: https://github.com/toninif
@@ -41,4 +40,6 @@ format:
     theme:
       - default
       - custom.scss
+    include-in-header: includes/schema-person.html
+    canonical-url: true
     toc: false

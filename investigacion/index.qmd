@@ -1,0 +1,67 @@
+---
+title: "Investigación"
+subtitle: "Psicología cognitiva, emoción y ciencia abierta"
+description: "Líneas de investigación, publicaciones y perfiles académicos de Fernando Tonini en psicología cognitiva, emoción y ciencia abierta."
+canonical-url: "https://fernandotonini.com.ar/investigacion/"
+toc: false
+page-layout: custom
+---
+
+::: {.portal-intro}
+Mi trabajo de investigación se centra en la relación entre emoción y cognición, con especial interés en la construcción y validación de estímulos afectivos, la memoria prospectiva y las prácticas de ciencia abierta.
+:::
+
+::: {.research-lines}
+
+::: {.research-line}
+## Emoción y cognición
+Estudio de la forma en que la valencia emocional y otros atributos afectivos intervienen en la memoria, la percepción y otros procesos cognitivos.
+:::
+
+::: {.research-line}
+## Estímulos afectivos
+Adaptación, validación y producción de datos normativos para sonidos, imágenes, textos y emojis en población argentina.
+:::
+
+::: {.research-line}
+## Tecnología y educación
+Competencias digitales, inteligencia artificial y uso de tecnologías en contextos universitarios y de investigación.
+:::
+
+::: {.research-line}
+## Ciencia abierta
+Prácticas orientadas a mejorar la transparencia, la reproducibilidad y el acceso a datos, código y materiales científicos.
+:::
+
+:::
+
+::: {.portal-feature}
+::: {.portal-feature-copy}
+## Publicaciones
+Artículos, contribuciones en congresos, datos normativos y trabajos sobre ciencia abierta, emoción y cognición.
+
+[Consultar publicaciones](../publicaciones.qmd){.action-secondary}
+:::
+
+::: {.publication-topics aria-label="Temas principales"}
+- Emoción y memoria
+- Normas afectivas
+- Cognición y tecnología
+- Ciencia abierta
+:::
+:::
+
+::: {.portal-section}
+## Perfiles y producción académica
+
+::: {.profile-links}
+[Google Scholar](https://scholar.google.com/citations?hl=es&user=qgsX4fwAAAAJ&view_op=list_works&sortby=pubdate)
+[ORCID](https://orcid.org/0000-0001-6435-8923)
+[ResearchGate](https://www.researchgate.net/profile/Fernando-Tonini/research)
+[GitHub](https://github.com/toninif)
+:::
+:::
+
+::: {.portal-note}
+Para colaboraciones académicas o consultas sobre publicaciones: [ftonin@palermo.edu](mailto:ftonin@palermo.edu).
+:::

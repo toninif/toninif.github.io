@@ -1,0 +1,68 @@
+---
+title: "Docencia"
+subtitle: "Cursos, materiales y herramientas para aprender psicología"
+description: "Cursos, presentaciones y herramientas docentes de Fernando Tonini sobre psicología, motivación, emoción y metodología de la investigación."
+canonical-url: "https://fernandotonini.com.ar/docencia/"
+toc: false
+page-layout: custom
+---
+
+::: {.portal-intro}
+En este espacio reúno presentaciones, actividades y recursos que utilizo en mis cursos. Los materiales están organizados por asignatura y se pueden consultar en cualquier momento.
+:::
+
+::: {.portal-directory}
+
+::: {.portal-entry}
+## Psicología de la Motivación y Emoción
+Presentaciones sobre motivación, procesos emocionales, memoria, toma de decisiones y estrés.
+
+[Explorar el curso](../presentaciones/emocion/index.qmd)
+:::
+
+::: {.portal-entry}
+## Psicología
+Materiales introductorios sobre las principales áreas, perspectivas y procesos psicológicos.
+
+[Explorar el curso](../presentaciones/psico_general/index.qmd)
+:::
+
+::: {.portal-entry}
+## Seminario de integración
+Recursos para formular problemas, construir marcos teóricos y desarrollar proyectos de investigación.
+
+[Ver Seminario II](../presentaciones/seminario_II/index.qmd)
+:::
+
+::: {.portal-entry}
+## Taller de tesis
+Materiales para revisar anteproyectos, realizar búsquedas bibliográficas y tomar decisiones metodológicas.
+
+[Ver Taller de Tesis](../presentaciones/taller-tesis-uai/index.qmd)
+:::
+
+:::
+
+::: {.portal-section}
+## Herramientas interactivas
+
+::: {.resource-list}
+::: {.resource-item}
+### Teorías clásicas de la emoción
+Explorador interactivo para comparar las explicaciones de James-Lange, Cannon-Bard, Arnold, Schachter-Singer, Zajonc y Lazarus.
+
+[Abrir la herramienta](../herramientas/teorias-emocion/index.html)
+:::
+
+::: {.resource-item}
+### Iowa Gambling Task
+Versión interactiva de la tarea para explorar decisiones bajo condiciones de incertidumbre.
+
+[Abrir la herramienta](../herramientas/iowa-gambling-task/index.html)
+:::
+:::
+:::
+
+::: {.portal-note}
+Los materiales están destinados a la enseñanza y pueden actualizarse durante el desarrollo de los cursos.
+:::

@@ -1,0 +1,158 @@
+---
+title: "Atención psicológica"
+subtitle: "Atención online para personas adultas"
+description: "Atención psicológica online para adultos en toda la Argentina. Enfoque cognitivo-conductual, sesiones individuales y agenda con disponibilidad limitada."
+canonical-url: "https://fernandotonini.com.ar/atencion-psicologica/"
+toc: false
+page-layout: custom
+format:
+  html:
+    include-in-header:
+      - ../includes/schema-person.html
+      - schema-professional-service.html
+---
+
+::: {.clinic-hero}
+::: {.clinic-hero-copy}
+Ofrezco un espacio de atención psicológica individual desde un enfoque cognitivo-conductual, con una perspectiva centrada en procesos y énfasis en intervenciones basadas en evidencia.
+
+El trabajo se orienta a comprender las dificultades actuales, establecer objetivos concretos y desarrollar recursos que favorezcan cambios posibles y sostenibles.
+
+::: {.availability-note}
+**Agenda abierta** con disponibilidad limitada.
+:::
+
+::: {.action-group}
+[Consultar por WhatsApp](https://wa.me/5491167422355){.action-primary}
+[Escribir por email](mailto:consultas@fernandotonini.com.ar){.action-secondary}
+:::
+:::
+
+::: {.profile-placeholder role="img" aria-label="Espacio reservado para una fotografía profesional"}
+::: {.profile-monogram aria-hidden="true"}
+FT
+:::
+Fotografía profesional próximamente
+:::
+:::
+
+::: {.clinic-section}
+## Motivos de consulta
+
+Algunos de los motivos que podemos trabajar son:
+
+::: {.reasons-list}
+- Problemas de motivación.
+- Dificultades para iniciar o sostener cambios.
+- Cambio de hábitos.
+- Desarrollo personal.
+- Ansiedad.
+- Dificultades en la regulación emocional.
+- Procesos de cambio personal, académico o laboral.
+:::
+
+Esta lista es orientativa. Si tu motivo de consulta no aparece, podés contactarme para evaluar si puedo acompañarte o si resulta más adecuada otra alternativa profesional.
+:::
+
+::: {.clinic-section}
+## Cómo trabajo
+
+El proceso comienza con una primera entrevista destinada a conocer tu motivo de consulta, comprender tu situación actual y conversar sobre qué esperás encontrar en el espacio terapéutico.
+
+A partir de allí definimos objetivos de trabajo de manera conjunta. Durante el proceso podemos revisar patrones de pensamiento, emoción y comportamiento, identificar los factores que mantienen una dificultad y desarrollar estrategias ajustadas a tus necesidades.
+
+La propuesta no consiste en aplicar soluciones idénticas para todas las personas. El trabajo se organiza en función de cada situación, sus objetivos y la evolución del proceso.
+:::
+
+::: {.clinic-section}
+## Modalidad de atención
+
+::: {.clinic-details}
+::: {.detail-item}
+### Destinatarios
+Atención individual para personas adultas.
+:::
+
+::: {.detail-item}
+### Modalidad
+Exclusivamente online, para residentes en toda la Argentina.
+:::
+
+::: {.detail-item}
+### Duración
+Sesiones de aproximadamente 50 minutos.
+:::
+
+::: {.detail-item}
+### Frecuencia
+Habitualmente semanal, ajustable según tus necesidades y los objetivos que establezcamos.
+:::
+:::
+
+La atención es particular. Los honorarios y las condiciones del encuadre se informan al coordinar la primera entrevista.
+:::
+
+::: {.clinic-section}
+## Primer contacto
+
+Podés escribirme por WhatsApp o por correo electrónico para consultar disponibilidad y coordinar una primera entrevista.
+
+Los mensajes se revisan y responden durante el día, en el horario habitual de atención. No es necesario que envíes información personal o clínica detallada en el primer contacto.
+
+Durante la primera entrevista conversaremos sobre el motivo de consulta, los objetivos iniciales, la modalidad de trabajo y las condiciones del encuadre, incluida la política de cancelación.
+:::
+
+::: {.clinic-section .professional-note}
+## Información profesional
+
+Soy psicólogo y Doctor en Psicología, con formación y actividad académica en psicología y ciencias cognitivas. Mi trabajo se especializa en el estudio de los procesos emocionales y cognitivos.
+
+Mi práctica clínica se desarrolla desde un enfoque cognitivo-conductual, con una perspectiva centrada en procesos y en intervenciones basadas en evidencia.
+
+**Matrícula profesional: M.N. 62.795.**
+
+[Conocé más sobre mi trayectoria](../about.qmd)
+:::
+
+::: {.clinic-section .faq-section}
+## Preguntas frecuentes
+
+### ¿La atención es presencial?
+
+No. La atención es exclusivamente online.
+
+### ¿Atendés personas de cualquier lugar de la Argentina?
+
+Sí. La atención online está disponible para personas adultas residentes en toda la Argentina.
+
+### ¿Cuánto dura cada sesión?
+
+Las sesiones individuales tienen una duración aproximada de 50 minutos.
+
+### ¿Con qué frecuencia se realizan?
+
+La frecuencia es habitualmente semanal, aunque puede ajustarse según tus necesidades y los objetivos que establezcamos.
+
+### ¿Cómo puedo conocer los honorarios?
+
+Los honorarios se informan al realizar la consulta inicial.
+
+### ¿Necesito explicar mi motivo de consulta por WhatsApp o email?
+
+No. Para el primer contacto alcanza con consultar por disponibilidad. No es necesario enviar información clínica detallada por esos medios.
+:::
+
+::: {.clinic-contact}
+## Contacto
+
+Actualmente cuento con agenda abierta y disponibilidad limitada.
+
+::: {.action-group}
+[Consultar por WhatsApp](https://wa.me/5491167422355){.action-primary}
+[consultas@fernandotonini.com.ar](mailto:consultas@fernandotonini.com.ar){.action-secondary}
+:::
+
+::: {.emergency-note}
+Este canal no está destinado a situaciones de urgencia ni ofrece atención inmediata. Si estás atravesando una situación de riesgo, comunicate con el servicio de emergencias de tu localidad o acercate a la guardia más cercana.
+:::
+:::

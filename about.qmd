@@ -1,12 +1,15 @@
 ---
 title: "Sobre mí"
-subtitle: "Docente · Investigador · Universidad de Palermo"
+subtitle: "Psicólogo · Investigador · Docente"
+description: "Formación, práctica profesional, investigación y actividad docente de Fernando Tonini, psicólogo y Doctor en Psicología."
 toc: false
 page-layout: custom
 ---
 
 ::: {.hero}
-Soy psicólogo, docente e investigador. Trabajo principalmente en la Universidad de Palermo (Buenos Aires, Argentina). Mi trabajo se centra en la intersección entre emoción y cognición, con especial interés en el procesamiento de estímulos afectivos. Todo desde un marco de ciencia abierta.
+Soy psicólogo, investigador y docente. Mi actividad profesional integra la atención psicológica con la investigación en procesos emocionales y cognitivos y la enseñanza universitaria.
+
+Trabajo principalmente en la Universidad de Palermo, en Buenos Aires, y desarrollo mi actividad académica desde un marco de ciencia abierta y reproducibilidad.
 :::
 
 ::: {.grid-section .grid-2col}
@@ -15,9 +18,19 @@ Soy psicólogo, docente e investigador. Trabajo principalmente en la Universidad
 ### Formación
 - Doctor en Psicología · Universidad de Palermo
 - Licenciado en Psicología · Universidad de Palermo
+- Matrícula profesional · M.N. 62.795
+:::
 
+::: {.grid-card}
+### Práctica profesional
+Atención psicológica online para personas adultas desde un enfoque cognitivo-conductual, con una perspectiva centrada en procesos y énfasis en intervenciones basadas en evidencia.
+
+[Conocer la propuesta de atención](atencion-psicologica/index.qmd)
+:::
 
 :::
+
+::: {.grid-section .grid-2col}
 
 ::: {.grid-card}
 ### Líneas de investigación
@@ -38,9 +51,18 @@ Soy psicólogo, docente e investigador. Trabajo principalmente en la Universidad
 - Prácticas de Investigación
 :::
 
+:::
+
+::: {.grid-section .grid-2col .about-secondary}
+
 ::: {.grid-card}
 ### Herramientas
 R · Quarto · Git · Python
+:::
+
+::: {.grid-card}
+### Perfiles académicos
+[Publicaciones](publicaciones.qmd) · [ORCID](https://orcid.org/0000-0001-6435-8923) · [ResearchGate](https://www.researchgate.net/profile/Fernando-Tonini/research)
 :::
 
 :::
