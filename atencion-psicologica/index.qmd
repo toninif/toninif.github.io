@@ -1,7 +1,7 @@
 ---
-title: "Atención psicológica"
-subtitle: "Atención online para personas adultas"
-description: "Atención psicológica online para adultos en toda la Argentina. Enfoque cognitivo-conductual, sesiones individuales y agenda con disponibilidad limitada."
+title: "Psicólogo online para adultos en Argentina"
+subtitle: "Atención psicológica con enfoque cognitivo-conductual"
+description: "Psicólogo online para adultos en Argentina. Atención psicológica individual con enfoque cognitivo-conductual basado en evidencia y agenda con cupos limitados."
 canonical-url: "https://fernandotonini.com.ar/atencion-psicologica/"
 toc: false
 page-layout: custom
@@ -15,7 +15,7 @@ format:
 
 ::: {.clinic-hero}
 ::: {.clinic-hero-copy}
-Ofrezco un espacio de atención psicológica individual desde un enfoque cognitivo-conductual, con una perspectiva centrada en procesos y énfasis en intervenciones basadas en evidencia.
+Como psicólogo, ofrezco atención psicológica online para personas adultas residentes en toda la Argentina. Trabajo desde un enfoque cognitivo-conductual, con una perspectiva centrada en procesos y énfasis en intervenciones basadas en evidencia.
 
 El trabajo se orienta a comprender las dificultades actuales, establecer objetivos concretos y desarrollar recursos que favorezcan cambios posibles y sostenibles.
 
