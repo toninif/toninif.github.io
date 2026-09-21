@@ -8,6 +8,7 @@ page-layout: custom
 format:
   html:
     include-in-header:
+      - ../includes/google-site-verification.html
       - ../includes/schema-person.html
       - schema-professional-service.html
 ---

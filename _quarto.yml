@@ -40,6 +40,8 @@ format:
     theme:
       - default
       - custom.scss
-    include-in-header: includes/schema-person.html
+    include-in-header:
+      - includes/google-site-verification.html
+      - includes/schema-person.html
     canonical-url: true
     toc: false
