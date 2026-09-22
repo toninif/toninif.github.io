@@ -1,14 +1,33 @@
 # Evaluaciones
 
-Prototipo y base del MVP para `evaluaciones.fernandotonini.com.ar`.
+Aplicación en `fernandotonini.com.ar/evaluaciones/`.
 
 ## Estado actual
 
 - Interfaz navegable para profesional y paciente.
-- Datos ficticios para probar el flujo.
+- Pacientes y evaluaciones guardados en Supabase.
 - Esquema inicial de base de datos en `supabase-schema.sql`.
 - Funciones de acceso privado para pacientes en `supabase-patient-access.sql`.
-- Todavía no hay login, persistencia remota ni envío de correos.
+- Login, respuestas por ítem, puntaje y revisión profesional. Sin envío de correos.
+
+## Actualización de estabilización
+
+Ejecutar `supabase-stabilize.sql` completo en SQL Editor, después de las otras
+migraciones. No elimina datos. Valida cinco enteros entre 1 y 7, calcula el
+puntaje en el servidor, envía en una transacción y bloquea reenvíos. Habilita
+`review_evaluation` para el propietario. No volver a ejecutar la migración
+de acceso antigua después de esta actualización.
+
+Pruebas locales: `node --test evaluaciones/tests/workflow.test.cjs`.
+
+Prueba manual posterior a la migración: crear paciente ficticio, copiar enlace,
+responder 1, 2, 3, 4, 5 en incógnito, comprobar total 15 e ítems individuales,
+marcar revisada y comprobar filtros y contadores. Reabrir el enlace: debe
+rechazar nuevos envíos. Probar también pacientes homónimos.
+
+Solo SWLS está habilitada. El enlace se muestra una vez al crearlo: aún no hay
+recuperación o revocación en el panel. Sin baremos o interpretación automática.
+La versión lingüística requiere revisión profesional.
 
 ## Próximo paso
 

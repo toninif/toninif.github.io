@@ -1,1 +1,6 @@
 .access-link-result{background:#eef3e5;border:1px solid #dce7c6;padding:13px;margin-top:15px;color:#68805f;font-size:11px}.access-link-result strong,.access-link-result code{display:block}.access-link-result code{font-size:10px;color:#49645e;word-break:break-all;margin:7px 0 10px}.copy-access-link{background:#164b52;color:#fff;padding:8px 10px;border-radius:3px;font-size:10px}.empty-directory{padding:35px 18px;color:#708087;font-size:12px;text-align:center}
+[hidden]{display:none!important}
+.drawer{overflow-y:auto}.drawer-status-action{margin-top:20px}
+button:disabled{opacity:.6;cursor:not-allowed}
+#evaluation-patient{display:block;width:100%;padding:12px;margin-top:8px;border:1px solid #b6c9bf;background:white;color:#172b34}
+.drawer-section p{line-height:1.6}

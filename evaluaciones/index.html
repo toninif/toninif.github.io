@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="app-extra.css" />
   </head>
   <body>
-    <section class="auth-screen" id="auth-screen" aria-labelledby="auth-title">
+    <section class="auth-screen visible" id="auth-screen" aria-labelledby="auth-title">
       <div class="auth-card">
         <a class="brand auth-brand" href="#"><span class="brand-mark">ft</span><span><strong>Evaluaciones</strong><small>espacio profesional</small></span></a>
         <p class="eyebrow">Acceso privado</p>
@@ -25,7 +25,7 @@
         <p class="auth-footnote"><span class="lock">⌑</span> Tus evaluaciones están protegidas.</p>
       </div>
     </section>
-    <div class="app-shell">
+    <div class="app-shell" style="display:none">
       <aside class="sidebar">
         <a class="brand" href="#inicio" data-view="inicio" aria-label="Inicio de Evaluaciones">
           <span class="brand-mark">ft</span>
@@ -38,7 +38,7 @@
         <nav class="main-nav" aria-label="Navegación principal">
           <p class="nav-label">Workspace</p>
           <button class="nav-item active" data-view="inicio"><span>⌂</span> Inicio</button>
-          <button class="nav-item" data-view="evaluaciones"><span>◫</span> Evaluaciones <b>8</b></button>
+          <button class="nav-item" data-view="evaluaciones"><span>◫</span> Evaluaciones <b>0</b></button>
           <button class="nav-item" data-view="baterias"><span>☷</span> Baterías</button>
           <button class="nav-item" data-view="pacientes"><span>○</span> Pacientes</button>
         </nav>
@@ -68,24 +68,21 @@
           </div>
 
           <div class="signal-row">
-            <article class="signal-card signal-main"><div class="signal-label">En curso <span class="status-pip"></span></div><strong>8</strong><p>evaluaciones activas</p><a href="#evaluaciones" data-view="evaluaciones">Ver todas <span>→</span></a></article>
-            <article class="signal-card"><div class="signal-label">Para revisar</div><strong>3</strong><p>respuestas recibidas</p><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
-            <article class="signal-card"><div class="signal-label">Este mes</div><strong>12</strong><p>baterías completadas</p><span class="trend">↑ 20% <small>vs. mes anterior</small></span></article>
+            <article class="signal-card signal-main"><div class="signal-label">En curso <span class="status-pip"></span></div><strong>0</strong><p>evaluaciones activas</p><a href="#evaluaciones" data-view="evaluaciones">Ver todas <span>→</span></a></article>
+            <article class="signal-card"><div class="signal-label">Para revisar</div><strong>0</strong><p>respuestas recibidas</p><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
+            <article class="signal-card"><div class="signal-label">Este mes</div><strong>0</strong><p>baterías completadas</p></article>
           </div>
 
           <div class="content-grid">
             <section class="panel recent-panel"><div class="panel-header"><div><p class="eyebrow">Seguimiento</p><h2>Evaluaciones recientes</h2></div><a href="#evaluaciones" data-view="evaluaciones">Ver todas</a></div>
               <div class="evaluation-list">
-                <button class="evaluation-row" data-detail="maria"><div class="patient-avatar peach">MG</div><div class="evaluation-info"><strong>María González</strong><span>Batería inicial · 5 módulos</span></div><div class="row-status review">Para revisar</div><div class="row-date">Hoy, 09:42 <b>›</b></div></button>
-                <button class="evaluation-row" data-detail="juan"><div class="patient-avatar blue">JP</div><div class="evaluation-info"><strong>Juan Pérez</strong><span>Ansiedad y funcionamiento · 3 módulos</span></div><div class="row-status progress">En progreso</div><div class="row-date">Ayer <b>›</b></div></button>
-                <button class="evaluation-row" data-detail="sofia"><div class="patient-avatar green">SL</div><div class="evaluation-info"><strong>Sofía López</strong><span>Entrevista inicial · 1 módulo</span></div><div class="row-status done">Completa</div><div class="row-date">18 sep <b>›</b></div></button>
               </div>
             </section>
             <aside class="panel quick-panel"><p class="eyebrow">Acceso rápido</p><h2>Preparar una batería</h2><p class="muted">Combiná módulos para crear una evaluación a medida.</p><button class="outline-action" data-view="baterias">Ver mis baterías <span>→</span></button><div class="quote-mark">“</div><p class="quiet-quote">La herramienta ordena el proceso.<br />La lectura clínica sigue siendo tuya.</p></aside>
           </div>
         </section>
 
-        <section id="view-evaluaciones" class="view"><div class="page-heading"><div><p class="eyebrow">Workspace</p><h1>Evaluaciones</h1><p class="intro">Todo lo que está en movimiento, en un solo lugar.</p></div><button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button></div><div class="filter-row"><button class="filter active">Todas <b>8</b></button><button class="filter">En progreso <b>4</b></button><button class="filter">Para revisar <b>3</b></button><button class="filter">Completas <b>1</b></button><div class="search">⌕ <input placeholder="Buscar paciente" /></div></div><section class="panel full-panel"><div class="table-head"><span>Paciente</span><span>Batería</span><span>Estado</span><span>Última actividad</span><span></span></div><div class="table-body"><button class="table-row" data-detail="maria"><div class="patient-cell"><div class="patient-avatar peach">MG</div><strong>María González</strong></div><span>Batería inicial</span><span class="row-status review">Para revisar</span><span>Hoy, 09:42</span><b>›</b></button><button class="table-row" data-detail="juan"><div class="patient-cell"><div class="patient-avatar blue">JP</div><strong>Juan Pérez</strong></div><span>Ansiedad y funcionamiento</span><span class="row-status progress">En progreso</span><span>Ayer, 16:20</span><b>›</b></button><button class="table-row" data-detail="sofia"><div class="patient-cell"><div class="patient-avatar green">SL</div><strong>Sofía López</strong></div><span>Entrevista inicial</span><span class="row-status done">Completa</span><span>18 sep, 11:05</span><b>›</b></button></div></section></section>
+        <section id="view-evaluaciones" class="view"><div class="page-heading"><div><p class="eyebrow">Workspace</p><h1>Evaluaciones</h1><p class="intro">Todo lo que está en movimiento, en un solo lugar.</p></div><button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button></div><div class="filter-row"><button class="filter active">Todas <b>0</b></button><button class="filter">En progreso <b>0</b></button><button class="filter">Para revisar <b>0</b></button><button class="filter">Completas <b>0</b></button><div class="search">⌕ <input placeholder="Buscar paciente" /></div></div><section class="panel full-panel"><div class="table-head"><span>Paciente</span><span>Batería</span><span>Estado</span><span>Última actividad</span><span></span></div><div class="table-body"></div></section></section>
 
         <section id="view-baterias" class="view"><div class="page-heading"><div><p class="eyebrow">Biblioteca</p><h1>Mis baterías</h1><p class="intro">Combinaciones listas para volver a usar.</p></div><button class="primary-action" data-view="nueva"><span>＋</span> Armar batería</button></div><div class="battery-grid"><article class="battery-card featured"><span class="battery-number">01</span><h2>Batería inicial</h2><p>Un primer mapa para ordenar la entrevista y abrir hipótesis de trabajo.</p><div class="battery-meta"><span>5 módulos</span><span>≈ 35 min</span></div><button data-view="nueva">Usar esta batería <span>→</span></button></article><article class="battery-card"><span class="battery-number">02</span><h2>Ansiedad y funcionamiento</h2><p>Exploración breve de síntomas, recursos y funcionamiento cotidiano.</p><div class="battery-meta"><span>3 módulos</span><span>≈ 20 min</span></div><button data-view="nueva">Usar esta batería <span>→</span></button></article><article class="battery-card dashed"><span class="plus-large">＋</span><h2>Crear una nueva</h2><p>Elegí tus módulos y guardá una combinación propia.</p><button data-view="nueva">Empezar <span>→</span></button></article></div></section>
 
@@ -99,6 +96,6 @@
     <div class="modal" id="patient-modal" aria-hidden="true"><div class="modal-scrim"></div><section class="modal-card"><button class="modal-close" aria-label="Cerrar">×</button><p class="eyebrow">Archivo</p><h2>Nuevo paciente</h2><p class="muted">Guardá solo la información necesaria para iniciar una evaluación.</p><form id="patient-form"><label>Nombre completo<input id="patient-name" required placeholder="Nombre y apellido" /></label><label>Email <span class="optional">opcional</span><input id="patient-email" type="email" placeholder="persona@ejemplo.com" /></label><label>Nota privada <span class="optional">opcional</span><textarea id="patient-notes" placeholder="Motivo breve o nota de trabajo..."></textarea></label><p class="form-message" id="patient-message" role="status"></p><button class="primary-action" type="submit">Guardar paciente <span>→</span></button></form></section></div>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="supabase-config.js"></script>
-    <script src="app.js"></script>
+    <script src="app.js?v=stability-1"></script>
   </body>
 </html>
