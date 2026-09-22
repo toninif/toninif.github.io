@@ -121,11 +121,14 @@ function statusLabel(status) {
 }
 
 async function loadEvaluations(userId) {
+  const table = document.querySelector('#view-evaluaciones .table-body');
+  const recent = document.querySelector('#view-inicio .evaluation-list');
+  if (table) table.innerHTML = '';
+  if (recent) recent.innerHTML = '';
   const { data, error } = await supabaseClient.from('evaluations').select('id, status, created_at, patients(full_name), batteries(name)').eq('professional_id', userId).order('created_at', { ascending: false });
   if (error) throw error;
   const evaluations = data || [];
-  const table = document.querySelector('#view-evaluaciones .table-body');
-  const recent = document.querySelector('#view-inicio .evaluation-list');
+  updateDashboardStats(evaluations);
   const empty = '<div class="empty-directory">Todavía no hay evaluaciones. Creá la primera desde “Nueva evaluación”.</div>';
   if (!evaluations.length) {
     if (table) table.innerHTML = empty;
@@ -145,21 +148,43 @@ async function loadEvaluations(userId) {
   document.querySelectorAll('[data-real-evaluation]').forEach((row) => row.addEventListener('click', () => openRealEvaluation(row.dataset.realEvaluation)));
 }
 
+function updateDashboardStats(evaluations) {
+  const active = evaluations.filter((evaluation) => evaluation.status !== 'archived').length;
+  const toReview = evaluations.filter((evaluation) => evaluation.status === 'to_review').length;
+  const now = new Date();
+  const completedThisMonth = evaluations.filter((evaluation) => {
+    const date = new Date(evaluation.created_at);
+    return date.getMonth() === now.getMonth() && date.getFullYear() === now.getFullYear() && ['completed', 'to_review'].includes(evaluation.status);
+  }).length;
+  const stats = document.querySelectorAll('#view-inicio .signal-card strong');
+  if (stats[0]) stats[0].textContent = active;
+  if (stats[1]) stats[1].textContent = toReview;
+  if (stats[2]) stats[2].textContent = completedThisMonth;
+  const filters = document.querySelectorAll('#view-evaluaciones .filter b');
+  if (filters[0]) filters[0].textContent = evaluations.length;
+  if (filters[1]) filters[1].textContent = evaluations.filter((evaluation) => ['invited', 'in_progress'].includes(evaluation.status)).length;
+  if (filters[2]) filters[2].textContent = toReview;
+  if (filters[3]) filters[3].textContent = evaluations.filter((evaluation) => evaluation.status === 'completed').length;
+}
+
 async function openRealEvaluation(evaluationId) {
   const { data: evaluation, error: evaluationError } = await supabaseClient.from('evaluations').select('id, status, created_at, patients(full_name), batteries(name)').eq('id', evaluationId).single();
   if (evaluationError) {
     window.alert(`No se pudo abrir la evaluación: ${evaluationError.message}`);
     return;
   }
-  const { data: responses, error: responsesError } = await supabaseClient.from('responses').select('id, score, completed_at, modules(name)').eq('evaluation_id', evaluationId).order('completed_at');
+  const { data: responses, error: responsesError } = await supabaseClient.from('responses').select('id, score, completed_at, module_id').eq('evaluation_id', evaluationId).order('completed_at');
   if (responsesError) {
     window.alert(`No se pudieron cargar las respuestas: ${responsesError.message}`);
     return;
   }
+  const moduleIds = (responses || []).map((response) => response.module_id);
+  const { data: modules } = moduleIds.length ? await supabaseClient.from('modules').select('id, name').in('id', moduleIds) : { data: [] };
+  const moduleNames = new Map((modules || []).map((module) => [module.id, module.name]));
   const [label, tone] = statusLabel(evaluation.status);
   const patientName = evaluation.patients?.full_name || 'Paciente sin nombre';
   const batteryName = evaluation.batteries?.name || 'Batería sin nombre';
-  const modulesHtml = (responses || []).map((response) => `<div class="drawer-module"><div><strong>${escapeHtml(response.modules?.name || 'Módulo')}</strong><small>Puntaje: ${escapeHtml(String(response.score?.total ?? 'Sin puntaje'))}</small></div><span class="check">✓</span></div>`).join('');
+  const modulesHtml = (responses || []).map((response) => `<div class="drawer-module"><div><strong>${escapeHtml(moduleNames.get(response.module_id) || 'Módulo')}</strong><small>Puntaje: ${escapeHtml(String(response.score?.total ?? 'Sin puntaje'))}</small></div><span class="check">✓</span></div>`).join('');
   drawerContent.innerHTML = `<p class="eyebrow">Detalle de evaluación</p><h2>${escapeHtml(patientName)}</h2><p class="drawer-meta">${escapeHtml(batteryName)} · <span class="row-status ${tone}">${label}</span></p><div class="drawer-section"><h3>Respuestas recibidas</h3>${modulesHtml || '<p class="muted">Todavía no hay respuestas guardadas.</p>'}</div><div class="drawer-note">La interpretación clínica y las conclusiones quedan bajo tu revisión profesional.</div>`;
   drawer.classList.add('open');
   drawer.setAttribute('aria-hidden', 'false');
