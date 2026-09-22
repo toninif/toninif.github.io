@@ -25,6 +25,7 @@ const authForm = document.querySelector('#auth-form');
 const authMessage = document.querySelector('#auth-message');
 let workspaceInitialized = false;
 let workspacePatients = [];
+let workspaceEvaluations = [];
 
 function setAuthMessage(message, isSuccess = false) {
   authMessage.textContent = message;
@@ -128,6 +129,7 @@ async function loadEvaluations(userId) {
   const { data, error } = await supabaseClient.from('evaluations').select('id, status, created_at, patients(full_name), batteries(name)').eq('professional_id', userId).order('created_at', { ascending: false });
   if (error) throw error;
   const evaluations = data || [];
+  workspaceEvaluations = evaluations;
   updateDashboardStats(evaluations);
   const empty = '<div class="empty-directory">Todavía no hay evaluaciones. Creá la primera desde “Nueva evaluación”.</div>';
   if (!evaluations.length) {
@@ -141,11 +143,13 @@ async function loadEvaluations(userId) {
     const initials = name.split(' ').map((part) => part[0]).slice(0, 2).join('').toUpperCase();
     const [label, tone] = statusLabel(evaluation.status);
     const date = new Date(evaluation.created_at).toLocaleDateString('es-AR', { day: '2-digit', month: 'short' });
-    return { id: evaluation.id, name, battery, initials, label, tone, date };
+    return { id: evaluation.id, name, battery, initials, label, tone, date, status: evaluation.status };
   });
   if (table) table.innerHTML = rows.map((row) => `<button class="table-row" data-real-evaluation="${row.id}"><div class="patient-cell"><div class="patient-avatar blue">${escapeHtml(row.initials)}</div><strong>${escapeHtml(row.name)}</strong></div><span>${escapeHtml(row.battery)}</span><span class="row-status ${row.tone}">${row.label}</span><span>${row.date}</span><b>›</b></button>`).join('');
   if (recent) recent.innerHTML = rows.slice(0, 5).map((row) => `<button class="evaluation-row" data-real-evaluation="${row.id}"><div class="patient-avatar blue">${escapeHtml(row.initials)}</div><div class="evaluation-info"><strong>${escapeHtml(row.name)}</strong><span>${escapeHtml(row.battery)}</span></div><div class="row-status ${row.tone}">${row.label}</div><div class="row-date">${row.date} <b>›</b></div></button>`).join('');
+  table?.querySelectorAll('.table-row').forEach((row, index) => { row.dataset.status = rows[index].status; });
   document.querySelectorAll('[data-real-evaluation]').forEach((row) => row.addEventListener('click', () => openRealEvaluation(row.dataset.realEvaluation)));
+  bindEvaluationFilters();
 }
 
 function updateDashboardStats(evaluations) {
@@ -165,6 +169,21 @@ function updateDashboardStats(evaluations) {
   if (filters[1]) filters[1].textContent = evaluations.filter((evaluation) => ['invited', 'in_progress'].includes(evaluation.status)).length;
   if (filters[2]) filters[2].textContent = toReview;
   if (filters[3]) filters[3].textContent = evaluations.filter((evaluation) => evaluation.status === 'completed').length;
+}
+
+function bindEvaluationFilters() {
+  document.querySelectorAll('#view-evaluaciones .filter').forEach((filter, index) => {
+    if (filter.dataset.bound) return;
+    filter.dataset.bound = 'true';
+    filter.addEventListener('click', () => {
+      const statuses = [['all'], ['invited', 'in_progress'], ['to_review'], ['completed']][index] || ['all'];
+      document.querySelectorAll('#view-evaluaciones .filter').forEach((item) => item.classList.remove('active'));
+      filter.classList.add('active');
+      document.querySelectorAll('#view-evaluaciones .table-row').forEach((row) => {
+        row.style.display = statuses.includes('all') || statuses.includes(row.dataset.status) ? 'grid' : 'none';
+      });
+    });
+  });
 }
 
 async function openRealEvaluation(evaluationId) {
@@ -188,6 +207,22 @@ async function openRealEvaluation(evaluationId) {
   drawerContent.innerHTML = `<p class="eyebrow">Detalle de evaluación</p><h2>${escapeHtml(patientName)}</h2><p class="drawer-meta">${escapeHtml(batteryName)} · <span class="row-status ${tone}">${label}</span></p><div class="drawer-section"><h3>Respuestas recibidas</h3>${modulesHtml || '<p class="muted">Todavía no hay respuestas guardadas.</p>'}</div><div class="drawer-note">La interpretación clínica y las conclusiones quedan bajo tu revisión profesional.</div>`;
   drawer.classList.add('open');
   drawer.setAttribute('aria-hidden', 'false');
+  const actionLabel = evaluation.status === 'to_review' ? 'Marcar como revisada' : evaluation.status === 'completed' ? 'Evaluación revisada' : 'Marcar como completada';
+  const actionDisabled = evaluation.status === 'completed' ? ' disabled' : '';
+  drawerContent.insertAdjacentHTML('beforeend', `<button class="primary-action drawer-status-action"${actionDisabled}>${actionLabel} <span>✓</span></button>`);
+  drawerContent.querySelector('.drawer-status-action')?.addEventListener('click', () => updateEvaluationStatus(evaluationId));
+}
+
+async function updateEvaluationStatus(evaluationId) {
+  const { error } = await supabaseClient.from('evaluations').update({ status: 'completed', completed_at: new Date().toISOString() }).eq('id', evaluationId);
+  if (error) {
+    window.alert(`No se pudo actualizar el estado: ${error.message}`);
+    return;
+  }
+  closeDrawer();
+  const { data: sessionData } = await supabaseClient.auth.getSession();
+  if (sessionData.session?.user) await loadEvaluations(sessionData.session.user.id);
+  showView('evaluaciones');
 }
 
 function openPatientModal() {
