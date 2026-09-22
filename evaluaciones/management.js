@@ -107,7 +107,7 @@ async function openPatientHistory(patientId) {
       const row = document.createElement('button');
       row.type = 'button'; row.className = 'history-row';
       const [label] = statusLabel(evaluation.status);
-      row.innerHTML = `<strong>${escapeHtml(evaluation.batteries?.name || 'Evaluación')}</strong><span>${escapeHtml(label)}</span><small>Creada: ${escapeHtml(formatEvaluationDate(evaluation.created_at))}</small><small>Enviada: ${escapeHtml(formatEvaluationDate(evaluation.completed_at))}</small>`;
+      row.innerHTML = `<strong>${escapeHtml(displayInstrumentName(evaluation.batteries?.name))}</strong><span>${escapeHtml(label)}</span><small>Creada: ${escapeHtml(formatEvaluationDate(evaluation.created_at))}</small><small>Enviada: ${escapeHtml(formatEvaluationDate(evaluation.completed_at))}</small>`;
       row.onclick = () => openRealEvaluation(evaluation.id);
       drawerContent.append(row);
     }

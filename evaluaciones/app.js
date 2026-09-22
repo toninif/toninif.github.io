@@ -15,9 +15,6 @@ const swlsQuestions = [
 
 if (supabaseClient && !isPatientMode) {
   window.evaluacionesSupabase = supabaseClient;
-  console.info('Supabase conectado. Falta ejecutar el esquema y agregar autenticación.');
-} else {
-  console.info('Modo demo: no hay configuración de Supabase disponible.');
 }
 
 const authScreen = document.querySelector('#auth-screen');
@@ -75,21 +72,6 @@ function configureSwlsWorkflow() {
     };
     step.append(back);
   });
-  const moduleStep = document.querySelectorAll('.form-step')[1];
-  moduleStep.querySelector('h2').textContent = 'Instrumento incluido';
-  moduleStep.querySelector('.muted').textContent = 'Esta versión permite administrar Satisfacción con la vida (SWLS).';
-  moduleStep.querySelectorAll('.module-option').forEach(option => option.remove());
-  moduleStep.insertAdjacentHTML('afterbegin', '<p class="patient-note">SWLS · 5 ítems · respuestas de 1 a 7</p>');
-  const last = document.querySelectorAll('.form-step')[2];
-  last.querySelector('h2').textContent = 'Generar enlace privado';
-  last.querySelector('.muted').textContent = 'Copiá el enlace y compartilo con la persona evaluada.';
-  last.querySelector('label')?.remove();
-  last.querySelector('.access-box p').textContent = 'El enlace se muestra una vez al guardar. Copialo antes de salir.';
-  document.querySelector('.preview-panel').innerHTML = '<h2>Satisfacción con la vida</h2><p>5 afirmaciones, con respuestas de 1 (muy en desacuerdo) a 7 (muy de acuerdo).</p><p>Solo este instrumento está habilitado en esta versión.</p>';
-  document.querySelector('.battery-grid').innerHTML = '<article class="battery-card"><h2>Satisfacción con la vida (SWLS)</h2><p>Instrumento disponible: 5 ítems. Los otros módulos aún no están habilitados.</p><button id="use-swls">Crear evaluación</button></article>';
-  document.querySelector('#use-swls').onclick = () => showView('nueva');
-  document.querySelector('.sidebar-note strong').textContent = 'Evaluaciones';
-  document.querySelector('.sidebar-note p').textContent = 'Datos guardados en tu cuenta.';
 }
 
 function resetWizard() {
@@ -101,6 +83,7 @@ function resetWizard() {
   button.disabled = false;
   button.textContent = 'Guardar y generar enlace';
   button.style.background = '';
+  document.querySelector('#view-nueva .draft-label').textContent = 'Sin guardar';
   document.querySelector('#evaluation-patient')?.setAttribute('aria-label', 'Paciente');
   document.querySelectorAll('.form-step')[0].querySelector('textarea').value = '';
 }
@@ -112,22 +95,19 @@ async function ensureDefaultBattery(userId) {
   let battery = existing;
   if (!battery) {
     const { data: createdBattery, error: batteryError } = await supabaseClient
-      .from('batteries').insert({ professional_id: userId, name: 'Batería inicial', description: 'Batería inicial de evaluación', estimated_minutes: 40 }).select('id').single();
+      .from('batteries').insert({ professional_id: userId, name: 'Batería inicial', description: 'Satisfacción con la vida (SWLS)', estimated_minutes: 5 }).select('id').single();
     if (batteryError) throw batteryError;
     battery = createdBattery;
   }
   const modules = [
-    ['Entrevista inicial', 'Antecedentes y motivo de consulta', 1, {}],
-    ['Datos sociodemográficos', 'Contexto personal y cotidiano', 2, {}],
-    ['Cuestionario de ansiedad', 'Escala breve de auto-reporte', 3, {}],
-    ['Satisfacción con la vida (SWLS)', '5 ítems · escala de acuerdo de 1 a 7', 4, { instrument: 'SWLS', item_count: 5, response_min: 1, response_max: 7, scoring: 'sum', citation: 'Diener, Emmons, Larsen y Griffin (1985)', questions: swlsQuestions }]
+    ['Satisfacción con la vida (SWLS)', '5 ítems · escala de acuerdo de 1 a 7', 1, { instrument: 'SWLS', item_count: 5, response_min: 1, response_max: 7, scoring: 'sum', citation: 'Diener, Emmons, Larsen y Griffin (1985)', questions: swlsQuestions }]
   ];
   const { data: currentModules, error: currentError } = await supabaseClient.from('modules').select('id, name, config').eq('battery_id', battery.id);
   if (currentError) throw currentError;
   const currentNames = new Set((currentModules || []).map((module) => module.name));
   const existingSwls = (currentModules || []).find((module) => module.name === 'Satisfacción con la vida (SWLS)');
   if (existingSwls && !existingSwls.config?.questions) {
-    const { error: updateError } = await supabaseClient.from('modules').update({ config: modules[3][3] }).eq('id', existingSwls.id);
+    const { error: updateError } = await supabaseClient.from('modules').update({ config: modules[0][3] }).eq('id', existingSwls.id);
     if (updateError) throw updateError;
   }
   const missingModules = modules.filter(([name]) => !currentNames.has(name)).map(([name, description, position, config]) => ({ battery_id: battery.id, name, description, position, config }));
@@ -168,6 +148,10 @@ function escapeHtml(value = '') {
   return value.replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[character]));
 }
 
+function displayInstrumentName(name) {
+  return name === 'Batería inicial' ? 'Satisfacción con la vida (SWLS)' : (name || 'Instrumento sin nombre');
+}
+
 function statusLabel(status) {
   const labels = { draft: ['Borrador', 'progress'], invited: ['Invitada', 'progress'], in_progress: ['En progreso', 'progress'], to_review: ['Para revisar', 'review'], completed: ['Completa', 'done'], archived: ['Archivada', 'review'] };
   return labels[status] || ['Borrador', 'progress'];
@@ -191,7 +175,7 @@ async function loadEvaluations(userId) {
   }
   const rows = evaluations.map((evaluation) => {
     const name = evaluation.patients?.full_name || 'Paciente sin nombre';
-    const battery = evaluation.batteries?.name || 'Batería sin nombre';
+    const battery = displayInstrumentName(evaluation.batteries?.name);
     const initials = name.split(' ').map((part) => part[0]).slice(0, 2).join('').toUpperCase();
     const [label, tone] = statusLabel(evaluation.status);
     const date = new Date(evaluation.created_at).toLocaleDateString('es-AR', { day: '2-digit', month: 'short' });
@@ -205,7 +189,7 @@ async function loadEvaluations(userId) {
 }
 
 function updateDashboardStats(evaluations) {
-  const active = evaluations.filter((evaluation) => ['draft', 'invited', 'in_progress', 'to_review'].includes(evaluation.status)).length;
+  const active = evaluations.filter((evaluation) => ['invited', 'in_progress'].includes(evaluation.status)).length;
   const toReview = evaluations.filter((evaluation) => evaluation.status === 'to_review').length;
   const now = new Date();
   const completedThisMonth = evaluations.filter((evaluation) => {
@@ -276,7 +260,7 @@ async function openRealEvaluation(evaluationId) {
   const moduleNames = new Map((modules || []).map((module) => [module.id, module.name]));
   const [label, tone] = statusLabel(evaluation.status);
   const patientName = evaluation.patients?.full_name || 'Paciente sin nombre';
-  const batteryName = evaluation.batteries?.name || 'Batería sin nombre';
+  const batteryName = displayInstrumentName(evaluation.batteries?.name);
   const modulesHtml = (responses || []).map((response) => `<div class="drawer-module"><div><strong>${escapeHtml(moduleNames.get(response.module_id) || 'Módulo')}</strong><small>Puntaje: ${escapeHtml(String(response.score?.total ?? 'Sin puntaje'))}</small></div><span class="check">✓</span></div>`).join('');
   drawerContent.innerHTML = `<p class="eyebrow">Detalle de evaluación</p><h2>${escapeHtml(patientName)}</h2><p class="drawer-meta">${escapeHtml(batteryName)} · <span class="row-status ${tone}">${label}</span></p><div class="drawer-section"><h3>Respuestas recibidas</h3>${modulesHtml || '<p class="muted">Todavía no hay respuestas guardadas.</p>'}</div><div class="drawer-note">La interpretación clínica y las conclusiones quedan bajo tu revisión profesional.</div>`;
   drawer.classList.add('open');
@@ -402,15 +386,6 @@ async function initializeWorkspace(user) {
   await ensureDefaultBattery(user.id);
   await loadPatients(user.id);
   await loadEvaluations(user.id);
-  const modulesStep = document.querySelectorAll('.form-step')[1];
-  if (modulesStep && !modulesStep.querySelector('[data-module="swls"]')) {
-    const continueButton = modulesStep.querySelector('.next-step');
-    const option = document.createElement('label');
-    option.className = 'module-option';
-    option.dataset.module = 'swls';
-    option.innerHTML = '<input type="checkbox" checked /><span><strong>Satisfacción con la vida (SWLS)</strong><small>5 ítems · escala de acuerdo de 1 a 7</small></span>';
-    modulesStep.insertBefore(option, continueButton);
-  }
   const patientHeader = document.querySelector('#view-pacientes .page-heading');
   if (patientHeader && !document.querySelector('[data-action="new-patient"]')) {
     const actions = document.createElement('div');
@@ -452,7 +427,7 @@ if (supabaseClient && !isPatientMode) {
 
 const navItems = [...document.querySelectorAll('[data-view]')];
 const breadcrumb = document.querySelector('#breadcrumb-current');
-const names = { inicio: 'Inicio', evaluaciones: 'Evaluaciones', baterias: 'Baterías', pacientes: 'Pacientes', nueva: 'Nueva evaluación' };
+const names = { inicio: 'Inicio', evaluaciones: 'Evaluaciones', baterias: 'Instrumentos', pacientes: 'Pacientes', nueva: 'Nueva evaluación' };
 
 function showView(name) {
   if (name === 'nueva') resetWizard();
@@ -467,19 +442,6 @@ navItems.forEach((item) => item.addEventListener('click', () => showView(item.da
 
 const drawer = document.querySelector('#detail-drawer');
 const drawerContent = document.querySelector('#drawer-content');
-const people = {
-  maria: { initials: 'MG', tone: 'peach', name: 'María González', battery: 'Batería inicial', status: 'Para revisar', note: 'Hay respuestas nuevas para revisar. La técnica proyectiva todavía no fue interpretada.', modules: [['Entrevista inicial', 'Completada'], ['Datos sociodemográficos', 'Completada'], ['Cuestionario de ansiedad', 'Completado'], ['Técnica proyectiva', 'Pendiente']] },
-  juan: { initials: 'JP', tone: 'blue', name: 'Juan Pérez', battery: 'Ansiedad y funcionamiento', status: 'En progreso', note: 'La persona completó 2 de 3 módulos.', modules: [['Datos sociodemográficos', 'Completado'], ['Cuestionario de ansiedad', 'Completado'], ['Funcionamiento cotidiano', 'Pendiente']] },
-  sofia: { initials: 'SL', tone: 'green', name: 'Sofía López', battery: 'Entrevista inicial', status: 'Completa', note: 'Evaluación lista para incorporar a la historia clínica.', modules: [['Entrevista inicial', 'Completada']] }
-};
-
-document.querySelectorAll('[data-detail]').forEach((row) => row.addEventListener('click', () => {
-  const person = people[row.dataset.detail];
-  drawerContent.innerHTML = `<p class="eyebrow">Detalle de evaluación</p><h2>${person.name}</h2><p class="drawer-meta">${person.battery} · <span class="row-status ${person.status === 'Completa' ? 'done' : person.status === 'En progreso' ? 'progress' : 'review'}">${person.status}</span></p><div class="drawer-section"><h3>Módulos</h3>${person.modules.map(([title, status]) => `<div class="drawer-module"><div><strong>${title}</strong><small>${status}</small></div><span class="check">${status === 'Pendiente' ? '○' : '✓'}</span></div>`).join('')}</div><div class="drawer-note">${person.note}</div><button class="primary-action" style="margin-top:24px">Abrir evaluación <span>→</span></button>`;
-  drawer.classList.add('open');
-  drawer.setAttribute('aria-hidden', 'false');
-}));
-
 function closeDrawer() {
   if (!confirmDiscardReviewNotes()) return;
   drawer.classList.remove('open'); drawer.setAttribute('aria-hidden', 'true');
@@ -552,6 +514,7 @@ async function createEvaluation() {
   button.innerHTML = 'Evaluación guardada <span>✓</span>';
   button.disabled = true;
   button.style.background = '#688f5b';
+  document.querySelector('#view-nueva .draft-label').textContent = 'Guardada';
   const accessLink = `${window.location.origin}${window.location.pathname}?access=${encodeURIComponent(accessToken)}`;
   renderLinkSharing(button.parentElement, accessLink, patient.email);
   notifyAction('Evaluación creada. El enlace ya está listo para compartir.');
@@ -582,7 +545,7 @@ function renderPatientEvaluation(evaluation, token) {
   const questions = swls.config?.questions?.length ? swls.config.questions : swlsQuestions;
   const questionsHtml = questions.map((question, index) => `<div class="patient-question"><p>${index + 1}. ${escapeHtml(question)}</p><div class="patient-scale">${[1, 2, 3, 4, 5, 6, 7].map((value) => `<label><input type="radio" name="swls-${index}" value="${value}" required /><span>${value}</span></label>`).join('')}</div><div class="patient-scale-legend"><span>Muy en desacuerdo</span><span>Muy de acuerdo</span></div></div>`).join('');
   document.querySelector('.patient-shell')?.remove();
-  document.body.insertAdjacentHTML('beforeend', `<main class="patient-shell"><div class="patient-wrap"><div class="patient-brand"><span class="brand-mark">ft</span><span><strong>Evaluaciones</strong><small>espacio privado</small></span></div><section class="patient-hero"><p class="eyebrow">Evaluación psicológica</p><h1>Hola, ${escapeHtml(evaluation.patient_name)}.</h1><p>Vamos a recorrer algunos aspectos de tu experiencia actual. No hay respuestas correctas o incorrectas: respondé según cómo te sentís.</p></section><section class="patient-card"><h2>Satisfacción con la vida</h2><p class="muted">Indicá cuánto estás de acuerdo con cada afirmación.</p><div class="patient-progress"><i></i></div><form id="patient-test-form">${questionsHtml}<div class="patient-note">Tus respuestas serán recibidas por tu profesional para revisarlas dentro de tu proceso de evaluación.</div><button class="primary-action patient-submit" type="submit">Enviar respuestas <span>→</span></button><p class="form-message" id="patient-form-message"></p></form></section><p class="patient-footer">${escapeHtml(evaluation.battery_name)} · Espacio privado</p></div></main>`);
+  document.body.insertAdjacentHTML('beforeend', `<main class="patient-shell"><div class="patient-wrap"><div class="patient-brand"><span class="brand-mark">ft</span><span><strong>Evaluaciones</strong><small>espacio privado</small></span></div><section class="patient-hero"><p class="eyebrow">Evaluación psicológica</p><h1>Hola, ${escapeHtml(evaluation.patient_name)}.</h1><p>Vamos a recorrer algunos aspectos de tu experiencia actual. No hay respuestas correctas o incorrectas: respondé según cómo te sentís.</p></section><section class="patient-card"><h2>Satisfacción con la vida</h2><p class="muted">Indicá cuánto estás de acuerdo con cada afirmación.</p><div class="patient-progress"><i></i></div><form id="patient-test-form">${questionsHtml}<div class="patient-note">Tus respuestas serán recibidas por tu profesional para revisarlas dentro de tu proceso de evaluación.</div><button class="primary-action patient-submit" type="submit">Enviar respuestas <span>→</span></button><p class="form-message" id="patient-form-message"></p></form></section><p class="patient-footer">${escapeHtml(displayInstrumentName(evaluation.battery_name))} · Espacio privado</p></div></main>`);
   document.querySelector('#patient-test-form').addEventListener('submit', async (event) => {
     event.preventDefault();
     const button = event.currentTarget.querySelector('button');

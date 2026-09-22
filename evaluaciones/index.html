@@ -36,16 +36,16 @@
         </a>
 
         <nav class="main-nav" aria-label="Navegación principal">
-          <p class="nav-label">Workspace</p>
+          <p class="nav-label">Espacio profesional</p>
           <button class="nav-item active" data-view="inicio"><span>⌂</span> Inicio</button>
           <button class="nav-item" data-view="evaluaciones"><span>◫</span> Evaluaciones <b>0</b></button>
-          <button class="nav-item" data-view="baterias"><span>☷</span> Baterías</button>
+          <button class="nav-item" data-view="baterias"><span>☷</span> Instrumentos</button>
           <button class="nav-item" data-view="pacientes"><span>○</span> Pacientes</button>
         </nav>
 
         <div class="sidebar-note">
           <span class="note-dot"></span>
-          <div><strong>Modo prueba</strong><p>Los datos son ficticios.</p></div>
+          <div><strong>Versión en prueba</strong><p>Usá datos ficticios.</p></div>
         </div>
 
         <div class="profile">
@@ -62,14 +62,14 @@
 
         <section id="view-inicio" class="view active-view">
           <div class="page-heading">
-            <div><p class="eyebrow">Mi espacio clínico</p><h1>Buen día, Fernando.</h1><p class="intro">Una mirada clara sobre lo que está en curso.</p></div>
+            <div><p class="eyebrow">Seguimiento</p><h1>Tus evaluaciones.</h1><p class="intro">Consultá las respuestas recibidas y lo que sigue en curso.</p></div>
             <button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button>
           </div>
 
           <div class="signal-row">
             <article class="signal-card signal-main"><div class="signal-label">En curso <span class="status-pip"></span></div><strong>0</strong><p>evaluaciones activas</p><a href="#evaluaciones" data-view="evaluaciones">Ver todas <span>→</span></a></article>
-            <article class="signal-card"><div class="signal-label">Para revisar</div><strong>0</strong><p>respuestas recibidas</p><div class="mini-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div></article>
-            <article class="signal-card"><div class="signal-label">Este mes</div><strong>0</strong><p>baterías completadas</p></article>
+            <article class="signal-card"><div class="signal-label">Para revisar</div><strong>0</strong><p>evaluaciones con respuestas</p></article>
+            <article class="signal-card"><div class="signal-label">Este mes</div><strong>0</strong><p>evaluaciones respondidas</p></article>
           </div>
 
           <div class="content-grid">
@@ -77,17 +77,28 @@
               <div class="evaluation-list">
               </div>
             </section>
-            <aside class="panel quick-panel"><p class="eyebrow">Acceso rápido</p><h2>Preparar una batería</h2><p class="muted">Combiná módulos para crear una evaluación a medida.</p><button class="outline-action" data-view="baterias">Ver mis baterías <span>→</span></button><div class="quote-mark">“</div><p class="quiet-quote">La herramienta ordena el proceso.<br />La lectura clínica sigue siendo tuya.</p></aside>
+            <aside class="panel quick-panel"><p class="eyebrow">Instrumento disponible</p><h2>Satisfacción con la vida</h2><p class="muted">Cinco afirmaciones con respuestas de 1 a 7. El puntaje queda disponible para tu revisión.</p><button class="outline-action" data-view="nueva">Crear evaluación <span>→</span></button><div class="quote-mark">“</div><p class="quiet-quote">La lectura clínica sigue siendo tuya.</p></aside>
           </div>
         </section>
 
-        <section id="view-evaluaciones" class="view"><div class="page-heading"><div><p class="eyebrow">Workspace</p><h1>Evaluaciones</h1><p class="intro">Todo lo que está en movimiento, en un solo lugar.</p></div><button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button></div><div class="filter-row"><button class="filter active">Todas <b>0</b></button><button class="filter">En progreso <b>0</b></button><button class="filter">Para revisar <b>0</b></button><button class="filter">Completas <b>0</b></button><div class="search">⌕ <input placeholder="Buscar paciente" /></div></div><section class="panel full-panel"><div class="table-head"><span>Paciente</span><span>Batería</span><span>Estado</span><span>Última actividad</span><span></span></div><div class="table-body"></div></section></section>
+        <section id="view-evaluaciones" class="view"><div class="page-heading"><div><p class="eyebrow">Seguimiento</p><h1>Evaluaciones</h1><p class="intro">Consultá el estado de cada evaluación y abrí las respuestas recibidas.</p></div><button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button></div><div class="filter-row"><button class="filter active">Todas <b>0</b></button><button class="filter">En progreso <b>0</b></button><button class="filter">Para revisar <b>0</b></button><button class="filter">Completas <b>0</b></button><div class="search">⌕ <input placeholder="Buscar paciente" aria-label="Buscar paciente" /></div></div><section class="panel full-panel"><div class="table-head"><span>Paciente</span><span>Instrumento</span><span>Estado</span><span>Creada</span><span></span></div><div class="table-body"></div></section></section>
 
-        <section id="view-baterias" class="view"><div class="page-heading"><div><p class="eyebrow">Biblioteca</p><h1>Mis baterías</h1><p class="intro">Combinaciones listas para volver a usar.</p></div><button class="primary-action" data-view="nueva"><span>＋</span> Armar batería</button></div><div class="battery-grid"><article class="battery-card featured"><span class="battery-number">01</span><h2>Batería inicial</h2><p>Un primer mapa para ordenar la entrevista y abrir hipótesis de trabajo.</p><div class="battery-meta"><span>5 módulos</span><span>≈ 35 min</span></div><button data-view="nueva">Usar esta batería <span>→</span></button></article><article class="battery-card"><span class="battery-number">02</span><h2>Ansiedad y funcionamiento</h2><p>Exploración breve de síntomas, recursos y funcionamiento cotidiano.</p><div class="battery-meta"><span>3 módulos</span><span>≈ 20 min</span></div><button data-view="nueva">Usar esta batería <span>→</span></button></article><article class="battery-card dashed"><span class="plus-large">＋</span><h2>Crear una nueva</h2><p>Elegí tus módulos y guardá una combinación propia.</p><button data-view="nueva">Empezar <span>→</span></button></article></div></section>
+        <section id="view-baterias" class="view"><div class="page-heading"><div><p class="eyebrow">Instrumentos</p><h1>Instrumentos disponibles</h1><p class="intro">Por ahora podés administrar Satisfacción con la vida (SWLS).</p></div></div><div class="battery-grid"><article class="battery-card featured"><h2>Satisfacción con la vida (SWLS)</h2><p>Cinco afirmaciones. La persona responde cuánto está de acuerdo con cada una, de 1 a 7.</p><div class="battery-meta"><span>5 ítems</span><span>Puntaje total: 5–35</span></div><button data-view="nueva">Crear evaluación <span>→</span></button></article></div></section>
 
-        <section id="view-pacientes" class="view"><div class="page-heading"><div><p class="eyebrow">Archivo</p><h1>Pacientes</h1><p class="intro">Personas vinculadas a tus evaluaciones.</p></div><button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button></div><section class="panel full-panel"><div class="patient-directory"><div class="directory-head">Paciente <span>Evaluaciones</span><span>Última actividad</span></div><div class="directory-row"><div class="patient-cell"><div class="patient-avatar peach">MG</div><strong>María González</strong></div><span>2 evaluaciones</span><span>Hoy, 09:42</span></div><div class="directory-row"><div class="patient-cell"><div class="patient-avatar blue">JP</div><strong>Juan Pérez</strong></div><span>1 evaluación</span><span>Ayer, 16:20</span></div><div class="directory-row"><div class="patient-cell"><div class="patient-avatar green">SL</div><strong>Sofía López</strong></div><span>1 evaluación</span><span>18 sep, 11:05</span></div></div></section></section>
+        <section id="view-pacientes" class="view"><div class="page-heading"><div><p class="eyebrow">Archivo</p><h1>Pacientes</h1><p class="intro">Consultá el historial y actualizá los datos de cada persona.</p></div><button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button></div><section class="panel full-panel"><div class="patient-directory"><div class="directory-head">Paciente <span>Evaluaciones</span><span>Contacto</span></div><div class="empty-directory">Cargando pacientes…</div></div></section></section>
 
-        <section id="view-nueva" class="view"><div class="page-heading"><div><p class="eyebrow">Nueva evaluación</p><h1>Armar una evaluación</h1><p class="intro">Elegí a quién acompañar y qué querés explorar.</p></div><span class="draft-label">Borrador</span></div><div class="wizard-layout"><section class="panel wizard-panel"><div class="stepper"><div class="step active"><span>1</span><strong>Paciente</strong></div><div class="step"><span>2</span><strong>Batería</strong></div><div class="step"><span>3</span><strong>Acceso</strong></div></div><div class="form-step active"><h2>¿Para quién es esta evaluación?</h2><p class="muted">Podés elegir una persona existente o agregar una nueva.</p><label>Paciente<input value="María González" /></label><label>Nota privada <textarea placeholder="Un motivo breve para orientar esta evaluación..."></textarea></label><button class="primary-action next-step">Continuar con la batería <span>→</span></button></div><div class="form-step"><h2>Elegí los módulos</h2><p class="muted">Esta batería puede ajustarse antes de enviarla.</p><label class="module-option"><input type="checkbox" checked /><span><strong>Entrevista inicial</strong><small>Antecedentes y motivo de consulta</small></span></label><label class="module-option"><input type="checkbox" checked /><span><strong>Datos sociodemográficos</strong><small>Contexto personal y cotidiano</small></span></label><label class="module-option"><input type="checkbox" checked /><span><strong>Cuestionario de ansiedad</strong><small>Escala breve de auto-reporte</small></span></label><label class="module-option"><input type="checkbox" /><span><strong>Técnica proyectiva</strong><small>Revisión profesional posterior</small></span></label><button class="primary-action next-step">Continuar con el acceso <span>→</span></button></div><div class="form-step"><h2>Crear acceso para María</h2><p class="muted">Al guardar podrás copiar el enlace o abrir un borrador en tu aplicación de correo. No se envían emails automáticamente.</p><div class="access-box"><span class="access-icon">⌁</span><div><strong>Enlace privado</strong><p>Se generará después de guardar. Compartilo desde tu correo o mensajería.</p></div></div><button class="primary-action finish-step">Guardar y generar acceso <span>→</span></button></div></section><aside class="panel preview-panel"><p class="eyebrow">Vista previa</p><h2>Batería inicial</h2><p class="muted">Así verá la evaluación la persona invitada.</p><div class="preview-sheet"><div class="preview-top"><span class="brand-mark small">ft</span><span>1 de 5 partes</span></div><h3>Evaluación psicológica</h3><p>Hola, María. Vamos a recorrer algunos aspectos de tu experiencia actual.</p><div class="preview-progress"><i></i></div><span class="preview-time">Tiempo estimado · 35 min</span><button>Comenzar</button></div></aside></div></section>
+        <section id="view-nueva" class="view">
+          <div class="page-heading"><div><p class="eyebrow">Nueva evaluación</p><h1>Preparar una evaluación</h1><p class="intro">Elegí un paciente y generá su acceso a Satisfacción con la vida.</p></div><span class="draft-label">Sin guardar</span></div>
+          <div class="wizard-layout">
+            <section class="panel wizard-panel">
+              <div class="stepper"><div class="step active"><span>1</span><strong>Paciente</strong></div><div class="step"><span>2</span><strong>Instrumento</strong></div><div class="step"><span>3</span><strong>Acceso</strong></div></div>
+              <div class="form-step active"><h2>¿Para quién es esta evaluación?</h2><p class="muted">Elegí un paciente guardado. Si todavía no está, crealo desde Pacientes.</p><label>Paciente<select id="evaluation-patient" required><option value="">Cargando pacientes…</option></select></label><label>Nota privada <textarea placeholder="Motivo breve de la evaluación..."></textarea></label><button class="primary-action next-step">Continuar con el instrumento <span>→</span></button></div>
+              <div class="form-step"><h2>Instrumento incluido</h2><p class="muted">Esta evaluación incluye Satisfacción con la vida (SWLS).</p><p class="patient-note">5 ítems · respuestas de 1 a 7 · puntaje total de 5 a 35</p><button class="primary-action next-step">Continuar con el acceso <span>→</span></button></div>
+              <div class="form-step"><h2>Generar enlace privado</h2><p class="muted">Al guardar, podrás copiar el enlace o abrir un borrador de correo. El mensaje no se envía desde esta página.</p><div class="access-box"><span class="access-icon">⌁</span><div><strong>Enlace personal</strong><p>Se mostrará una vez al guardar. Copialo antes de salir; si lo perdés, podrás generar otro desde el detalle.</p></div></div><button class="primary-action finish-step">Guardar y generar enlace <span>→</span></button></div>
+            </section>
+            <aside class="panel preview-panel"><p class="eyebrow">Vista del paciente</p><h2>Satisfacción con la vida</h2><p class="muted">Ejemplo de cómo se presenta el cuestionario. No se responde desde esta vista.</p><div class="preview-sheet"><div class="preview-top"><span class="brand-mark small">ft</span><span>Ejemplo · 1 de 5 ítems</span></div><h3>Evaluación psicológica</h3><p>En la mayoría de los aspectos, mi vida se acerca a mi ideal.</p><p>1 = muy en desacuerdo · 7 = muy de acuerdo</p></div></aside>
+          </div>
+        </section>
       </main>
     </div>
 

@@ -22,7 +22,7 @@ test('contadores: cuatro evaluaciones, una pendiente, conteo por paciente', () =
     {status:'completed', patient_id:'p2', completed_at:new Date().toISOString()}
   ]);
   assert.equal(nav.textContent, 4);
-  assert.equal(stats[0].textContent, 3);
+  assert.equal(stats[0].textContent, 1);
   assert.equal(stats[1].textContent, 1);
   assert.equal(filters[3].textContent, 1);
   assert.equal(count.textContent, '3 evaluaciones');
@@ -49,4 +49,21 @@ test('nombres con HTML se muestran como texto', () => {
   const context = vm.createContext({});
   vm.runInContext(fn('escapeHtml'), context);
   assert.equal(context.escapeHtml('<img onerror="x">'), '&lt;img onerror=&quot;x&quot;&gt;');
+});
+
+test('el instrumento anterior se identifica como SWLS sin alterar la base', () => {
+  const context = vm.createContext({});
+  vm.runInContext(fn('displayInstrumentName'), context);
+  assert.equal(context.displayInstrumentName('Batería inicial'), 'Satisfacción con la vida (SWLS)');
+  assert.equal(context.displayInstrumentName('Otro instrumento'), 'Otro instrumento');
+});
+
+test('la interfaz no presenta pacientes ni instrumentos ficticios', () => {
+  const html = fs.readFileSync(require('node:path').join(__dirname, '../index.html'), 'utf8');
+  for (const fictional of ['María González', 'Juan Pérez', 'Sofía López', 'Técnica proyectiva', 'Ansiedad y funcionamiento']) {
+    assert.equal(html.includes(fictional), false, fictional);
+  }
+  assert.match(html, /Instrumentos disponibles/);
+  assert.match(html, /Satisfacción con la vida \(SWLS\)/);
+  assert.doesNotMatch(html, /<button[^>]*>Comenzar<\/button>/);
 });
