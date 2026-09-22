@@ -329,7 +329,6 @@ async function createEvaluation() {
     event.currentTarget.textContent = 'Enlace copiado';
   });
   await loadEvaluations(user.id);
-  showView('evaluaciones');
 }
 
 function renderPatientLoading() {
