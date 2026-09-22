@@ -142,6 +142,27 @@ async function loadEvaluations(userId) {
   });
   if (table) table.innerHTML = rows.map((row) => `<button class="table-row" data-real-evaluation="${row.id}"><div class="patient-cell"><div class="patient-avatar blue">${escapeHtml(row.initials)}</div><strong>${escapeHtml(row.name)}</strong></div><span>${escapeHtml(row.battery)}</span><span class="row-status ${row.tone}">${row.label}</span><span>${row.date}</span><b>›</b></button>`).join('');
   if (recent) recent.innerHTML = rows.slice(0, 5).map((row) => `<button class="evaluation-row" data-real-evaluation="${row.id}"><div class="patient-avatar blue">${escapeHtml(row.initials)}</div><div class="evaluation-info"><strong>${escapeHtml(row.name)}</strong><span>${escapeHtml(row.battery)}</span></div><div class="row-status ${row.tone}">${row.label}</div><div class="row-date">${row.date} <b>›</b></div></button>`).join('');
+  document.querySelectorAll('[data-real-evaluation]').forEach((row) => row.addEventListener('click', () => openRealEvaluation(row.dataset.realEvaluation)));
+}
+
+async function openRealEvaluation(evaluationId) {
+  const { data: evaluation, error: evaluationError } = await supabaseClient.from('evaluations').select('id, status, created_at, patients(full_name), batteries(name)').eq('id', evaluationId).single();
+  if (evaluationError) {
+    window.alert(`No se pudo abrir la evaluación: ${evaluationError.message}`);
+    return;
+  }
+  const { data: responses, error: responsesError } = await supabaseClient.from('responses').select('id, score, completed_at, modules(name)').eq('evaluation_id', evaluationId).order('completed_at');
+  if (responsesError) {
+    window.alert(`No se pudieron cargar las respuestas: ${responsesError.message}`);
+    return;
+  }
+  const [label, tone] = statusLabel(evaluation.status);
+  const patientName = evaluation.patients?.full_name || 'Paciente sin nombre';
+  const batteryName = evaluation.batteries?.name || 'Batería sin nombre';
+  const modulesHtml = (responses || []).map((response) => `<div class="drawer-module"><div><strong>${escapeHtml(response.modules?.name || 'Módulo')}</strong><small>Puntaje: ${escapeHtml(String(response.score?.total ?? 'Sin puntaje'))}</small></div><span class="check">✓</span></div>`).join('');
+  drawerContent.innerHTML = `<p class="eyebrow">Detalle de evaluación</p><h2>${escapeHtml(patientName)}</h2><p class="drawer-meta">${escapeHtml(batteryName)} · <span class="row-status ${tone}">${label}</span></p><div class="drawer-section"><h3>Respuestas recibidas</h3>${modulesHtml || '<p class="muted">Todavía no hay respuestas guardadas.</p>'}</div><div class="drawer-note">La interpretación clínica y las conclusiones quedan bajo tu revisión profesional.</div>`;
+  drawer.classList.add('open');
+  drawer.setAttribute('aria-hidden', 'false');
 }
 
 function openPatientModal() {
