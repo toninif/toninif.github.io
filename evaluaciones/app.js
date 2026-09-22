@@ -3,8 +3,17 @@ const supabaseConfig = window.EVALUACIONES_SUPABASE;
 const supabaseClient = supabaseConfig && window.supabase
   ? window.supabase.createClient(supabaseConfig.url, supabaseConfig.publishableKey)
   : null;
+const patientAccessToken = new URLSearchParams(window.location.search).get('access');
+const isPatientMode = Boolean(patientAccessToken);
+const swlsQuestions = [
+  'En la mayoría de los aspectos, mi vida se acerca a mi ideal.',
+  'Las condiciones de mi vida son excelentes.',
+  'Estoy satisfecho/a con mi vida.',
+  'Hasta ahora he conseguido las cosas importantes que quiero en la vida.',
+  'Si pudiera vivir mi vida de nuevo, no cambiaría casi nada.'
+];
 
-if (supabaseClient) {
+if (supabaseClient && !isPatientMode) {
   window.evaluacionesSupabase = supabaseClient;
   console.info('Supabase conectado. Falta ejecutar el esquema y agregar autenticación.');
 } else {
@@ -60,11 +69,16 @@ async function ensureDefaultBattery(userId) {
     ['Entrevista inicial', 'Antecedentes y motivo de consulta', 1, {}],
     ['Datos sociodemográficos', 'Contexto personal y cotidiano', 2, {}],
     ['Cuestionario de ansiedad', 'Escala breve de auto-reporte', 3, {}],
-    ['Satisfacción con la vida (SWLS)', '5 ítems · escala de acuerdo de 1 a 7', 4, { instrument: 'SWLS', item_count: 5, response_min: 1, response_max: 7, scoring: 'sum', citation: 'Diener, Emmons, Larsen y Griffin (1985)' }]
+    ['Satisfacción con la vida (SWLS)', '5 ítems · escala de acuerdo de 1 a 7', 4, { instrument: 'SWLS', item_count: 5, response_min: 1, response_max: 7, scoring: 'sum', citation: 'Diener, Emmons, Larsen y Griffin (1985)', questions: swlsQuestions }]
   ];
-  const { data: currentModules, error: currentError } = await supabaseClient.from('modules').select('name').eq('battery_id', battery.id);
+  const { data: currentModules, error: currentError } = await supabaseClient.from('modules').select('id, name, config').eq('battery_id', battery.id);
   if (currentError) throw currentError;
   const currentNames = new Set((currentModules || []).map((module) => module.name));
+  const existingSwls = (currentModules || []).find((module) => module.name === 'Satisfacción con la vida (SWLS)');
+  if (existingSwls && !existingSwls.config?.questions) {
+    const { error: updateError } = await supabaseClient.from('modules').update({ config: modules[3][3] }).eq('id', existingSwls.id);
+    if (updateError) throw updateError;
+  }
   const missingModules = modules.filter(([name]) => !currentNames.has(name)).map(([name, description, position, config]) => ({ battery_id: battery.id, name, description, position, config }));
   if (missingModules.length) {
     const { error: modulesError } = await supabaseClient.from('modules').insert(missingModules);
@@ -218,7 +232,7 @@ if (supabaseClient) {
     button.innerHTML = 'Entrar <span>→</span>';
     if (error) setAuthMessage('No pudimos iniciar sesión. Revisá el email y la contraseña.');
   });
-} else {
+} else if (!isPatientMode) {
   authScreen?.classList.remove('visible');
 }
 
@@ -268,6 +282,18 @@ document.querySelector('.finish-step').addEventListener('click', () => {
   createEvaluation();
 });
 
+function generateAccessToken() {
+  const bytes = new Uint8Array(24);
+  crypto.getRandomValues(bytes);
+  return btoa(String.fromCharCode(...bytes)).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+}
+
+async function hashAccessToken(token) {
+  const encoded = new TextEncoder().encode(token);
+  const digest = await crypto.subtle.digest('SHA-256', encoded);
+  return [...new Uint8Array(digest)].map((byte) => byte.toString(16).padStart(2, '0')).join('');
+}
+
 async function createEvaluation() {
   const button = document.querySelector('.finish-step');
   const patientName = document.querySelectorAll('.form-step')[0].querySelector('input').value.trim();
@@ -285,7 +311,9 @@ async function createEvaluation() {
     return;
   }
   const batteryId = await ensureDefaultBattery(user.id);
-  const { error } = await supabaseClient.from('evaluations').insert({ professional_id: user.id, patient_id: patient.id, battery_id: batteryId, status: 'draft' });
+  const accessToken = generateAccessToken();
+  const accessTokenHash = await hashAccessToken(accessToken);
+  const { error } = await supabaseClient.from('evaluations').insert({ professional_id: user.id, patient_id: patient.id, battery_id: batteryId, access_token_hash: accessTokenHash, status: 'invited' });
   button.disabled = false;
   if (error) {
     button.innerHTML = 'Guardar y generar acceso <span>→</span>';
@@ -294,9 +322,76 @@ async function createEvaluation() {
   }
   button.innerHTML = 'Evaluación guardada <span>✓</span>';
   button.style.background = '#688f5b';
+  const accessLink = `${window.location.origin}${window.location.pathname}?access=${encodeURIComponent(accessToken)}`;
+  button.insertAdjacentHTML('afterend', `<div class="access-link-result"><strong>Enlace privado listo</strong><code>${accessLink}</code><button type="button" class="copy-access-link" data-link="${accessLink}">Copiar enlace</button></div>`);
+  document.querySelector('.copy-access-link').addEventListener('click', async (event) => {
+    await navigator.clipboard.writeText(event.currentTarget.dataset.link);
+    event.currentTarget.textContent = 'Enlace copiado';
+  });
   await loadEvaluations(user.id);
   showView('evaluaciones');
 }
 
+function renderPatientLoading() {
+  document.body.insertAdjacentHTML('beforeend', '<main class="patient-shell"><div class="patient-wrap"><div class="patient-brand"><span class="brand-mark">ft</span><span><strong>Evaluaciones</strong><small>espacio privado</small></span></div><p class="muted">Cargando tu evaluación…</p></div></main>');
+}
+
+function renderPatientError(message) {
+  document.querySelector('.patient-shell')?.remove();
+  document.body.insertAdjacentHTML('beforeend', `<main class="patient-shell"><div class="patient-wrap"><div class="patient-brand"><span class="brand-mark">ft</span><span><strong>Evaluaciones</strong><small>espacio privado</small></span></div><section class="patient-card"><div class="patient-error">${escapeHtml(message)}</div></section><p class="patient-footer">Si creés que esto es un error, contactá a tu profesional.</p></div></main>`);
+}
+
+function renderPatientEvaluation(evaluation, token) {
+  const modules = Array.isArray(evaluation.modules) ? evaluation.modules : [];
+  const swls = modules.find((module) => module.config?.instrument === 'SWLS' || module.name.includes('Satisfacción'));
+  if (!swls) {
+    renderPatientError('Esta evaluación todavía no tiene un cuestionario disponible.');
+    return;
+  }
+  const questions = swls.config?.questions?.length ? swls.config.questions : swlsQuestions;
+  const questionsHtml = questions.map((question, index) => `<div class="patient-question"><p>${index + 1}. ${escapeHtml(question)}</p><div class="patient-scale">${[1, 2, 3, 4, 5, 6, 7].map((value) => `<label><input type="radio" name="swls-${index}" value="${value}" required /><span>${value}</span></label>`).join('')}</div><div class="patient-scale-legend"><span>Muy en desacuerdo</span><span>Muy de acuerdo</span></div></div>`).join('');
+  document.querySelector('.patient-shell')?.remove();
+  document.body.insertAdjacentHTML('beforeend', `<main class="patient-shell"><div class="patient-wrap"><div class="patient-brand"><span class="brand-mark">ft</span><span><strong>Evaluaciones</strong><small>espacio privado</small></span></div><section class="patient-hero"><p class="eyebrow">Evaluación psicológica</p><h1>Hola, ${escapeHtml(evaluation.patient_name)}.</h1><p>Vamos a recorrer algunos aspectos de tu experiencia actual. No hay respuestas correctas o incorrectas: respondé según cómo te sentís.</p></section><section class="patient-card"><h2>Satisfacción con la vida</h2><p class="muted">Indicá cuánto estás de acuerdo con cada afirmación.</p><div class="patient-progress"><i></i></div><form id="patient-test-form">${questionsHtml}<div class="patient-note">Tus respuestas serán recibidas por tu profesional para revisarlas dentro de tu proceso de evaluación.</div><button class="primary-action patient-submit" type="submit">Enviar respuestas <span>→</span></button><p class="form-message" id="patient-form-message"></p></form></section><p class="patient-footer">${escapeHtml(evaluation.battery_name)} · Espacio privado</p></div></main>`);
+  document.querySelector('#patient-test-form').addEventListener('submit', async (event) => {
+    event.preventDefault();
+    const button = event.currentTarget.querySelector('button');
+    const message = document.querySelector('#patient-form-message');
+    const answers = {};
+    questions.forEach((_question, index) => {
+      answers[`item_${index + 1}`] = Number(event.currentTarget.querySelector(`input[name="swls-${index}"]:checked`).value);
+    });
+    const total = Object.values(answers).reduce((sum, value) => sum + value, 0);
+    button.disabled = true;
+    button.textContent = 'Enviando…';
+    const { error: saveError } = await supabaseClient.rpc('save_patient_response', { access_token: token, target_module_id: swls.id, response_answers: answers, response_score: { total, min: 5, max: 35, instrument: 'SWLS' } });
+    if (saveError) {
+      button.disabled = false;
+      button.innerHTML = 'Enviar respuestas <span>→</span>';
+      message.textContent = `No se pudieron guardar las respuestas: ${saveError.message}`;
+      return;
+    }
+    await supabaseClient.rpc('complete_patient_evaluation', { access_token: token });
+    document.querySelector('.patient-card').innerHTML = '<div class="patient-success"><div class="success-mark">✓</div><h2>Respuestas enviadas</h2><p class="muted">Tu profesional ya puede revisarlas. Podés cerrar esta ventana.</p></div>';
+  });
+}
+
+async function initializePatientApp() {
+  document.querySelector('.app-shell')?.remove();
+  document.querySelector('#auth-screen')?.remove();
+  renderPatientLoading();
+  const { data, error } = await supabaseClient.rpc('get_patient_evaluation', { access_token: patientAccessToken });
+  if (error) {
+    renderPatientError('No se pudo cargar la evaluación. Es posible que todavía no se haya activado el acceso para pacientes.');
+    return;
+  }
+  const evaluation = Array.isArray(data) ? data[0] : data;
+  if (!evaluation) {
+    renderPatientError('El enlace no es válido o la evaluación ya no está disponible.');
+    return;
+  }
+  renderPatientEvaluation(evaluation, patientAccessToken);
+}
+
 const hash = window.location.hash.slice(1);
 if (names[hash]) showView(hash);
+if (isPatientMode && supabaseClient) initializePatientApp();
