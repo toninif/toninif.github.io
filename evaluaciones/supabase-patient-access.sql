@@ -11,7 +11,7 @@ returns table (
 )
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, extensions
 as $$
 declare
   token_hash text;
@@ -47,7 +47,7 @@ create or replace function public.save_patient_response(
 returns uuid
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, extensions
 as $$
 declare
   token_hash text;
@@ -77,7 +77,7 @@ create or replace function public.complete_patient_evaluation(access_token text)
 returns boolean
 language plpgsql
 security definer
-set search_path = public
+set search_path = public, extensions
 as $$
 declare
   token_hash text;
