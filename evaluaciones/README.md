@@ -25,11 +25,34 @@ responder 1, 2, 3, 4, 5 en incógnito, comprobar total 15 e ítems individuales,
 marcar revisada y comprobar filtros y contadores. Reabrir el enlace: debe
 rechazar nuevos envíos. Probar también pacientes homónimos.
 
-Solo SWLS está habilitada. El enlace se muestra una vez al crearlo: aún no hay
-recuperación o revocación en el panel. Sin baremos o interpretación automática.
+Solo SWLS está habilitada. El enlace se muestra una vez al crearlo; después
+puede regenerarse desde el detalle. Sin baremos o interpretación automática.
 La versión lingüística requiere revisión profesional.
 
-## Próximo paso
+## Historial, observaciones y enlaces
+
+Ejecutar `supabase-management.sql` como cuarta migración, después de
+`supabase-stabilize.sql`. Agrega observaciones privadas, fechas de revisión,
+guardado de observaciones y rotación de enlaces con permisos por propietario.
+No elimina registros. Las funciones del paciente no exponen las observaciones.
+
+Desde Pacientes se abre el historial, y desde cada evaluación se pueden guardar
+observaciones. Marcar revisada guarda primero las observaciones pendientes.
+Regenerar un enlace invalida el anterior y solo se permite antes del envío.
+
+La aplicación no envía emails automáticamente: «Abrir borrador de correo»
+abre un `mailto` en el cliente del profesional, quien revisa y envía el mensaje.
+El destinatario se precarga con el email guardado, pero puede corregirse para
+ese borrador. Cambiarlo no modifica la ficha del paciente. No se configura SMTP
+ni se almacena ninguna clave secreta en el frontend.
+
+Prueba posterior a la cuarta migración: abrir historial de un paciente, guardar
+observaciones y reabrir para confirmar persistencia; revisar y comprobar fecha;
+en otra evaluación pendiente regenerar enlace y comprobar que el antiguo falla
+y el nuevo permite acceder. Abrir el borrador de email y verificar destinatario
+y enlace (no se envían correos durante las pruebas automatizadas).
+
+## Instalación inicial
 
 1. Crear un proyecto privado en Supabase.
 2. Ejecutar `supabase-schema.sql` en el SQL Editor.

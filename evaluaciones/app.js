@@ -133,10 +133,13 @@ async function loadPatients(userId) {
   if (!directory) return;
   const rows = (data || []).map((patient) => {
     const initials = patient.full_name.split(' ').map((part) => part[0]).slice(0, 2).join('').toUpperCase();
-    return `<div class="directory-row" data-patient-id="${patient.id}"><div class="patient-cell"><div class="patient-avatar blue">${escapeHtml(initials)}</div><strong>${escapeHtml(patient.full_name)}</strong></div><span class="patient-count">${workspaceEvaluations.filter(e => e.patient_id === patient.id).length} evaluaciones</span><span>${escapeHtml(patient.email || 'Sin email')}</span></div>`;
+    return `<button type="button" class="directory-row" data-patient-id="${patient.id}" aria-label="Ver historial de ${escapeHtml(patient.full_name)}"><span class="patient-cell"><span class="patient-avatar blue">${escapeHtml(initials)}</span><strong>${escapeHtml(patient.full_name)}</strong></span><span class="patient-count">${workspaceEvaluations.filter(e => e.patient_id === patient.id).length} evaluaciones</span><span>${escapeHtml(patient.email || 'Sin email')}</span></button>`;
   }).join('');
   directory.innerHTML = `<div class="directory-head">Paciente <span>Evaluaciones</span><span>Contacto</span></div>${rows || '<div class="empty-directory">Todavía no hay pacientes. Creá el primero para iniciar una evaluación.</div>'}`;
   const patientInput = document.querySelectorAll('.form-step')[0]?.querySelector('input, select');
+  directory.querySelectorAll('[data-patient-id]').forEach(row => {
+    row.onclick = () => openPatientHistory(row.dataset.patientId);
+  });
   if (patientInput) {
     const selected = patientInput.value;
     const select = document.createElement('select');
@@ -241,10 +244,11 @@ function applyEvaluationFilters() {
 }
 
 async function openRealEvaluation(evaluationId) {
+  if (!confirmDiscardReviewNotes()) return;
   drawerContent.textContent = 'Cargando respuestas…';
   drawer.classList.add('open');
   drawer.setAttribute('aria-hidden', 'false');
-  const { data: evaluation, error: evaluationError } = await supabaseClient.from('evaluations').select('id, status, private_note, created_at, patients(full_name), batteries(name)').eq('id', evaluationId).single();
+  const { data: evaluation, error: evaluationError } = await supabaseClient.from('evaluations').select('*, patients(full_name, email), batteries(name)').eq('id', evaluationId).single();
   if (evaluationError) {
     window.alert(`No se pudo abrir la evaluación: ${evaluationError.message}`);
     return;
@@ -279,11 +283,13 @@ async function openRealEvaluation(evaluationId) {
   const actionDisabled = evaluation.status !== 'to_review' || !responses?.length ? ' disabled' : '';
   drawerContent.insertAdjacentHTML('beforeend', `<button class="primary-action drawer-status-action"${actionDisabled}>${actionLabel} <span>✓</span></button>`);
   drawerContent.querySelector('.drawer-status-action')?.addEventListener('click', () => updateEvaluationStatus(evaluationId));
+  appendEvaluationManagement(evaluation);
 }
 
 async function updateEvaluationStatus(evaluationId) {
   const button = drawerContent.querySelector('.drawer-status-action');
   button.disabled = true;
+  if (!await savePendingReviewNotes()) { button.disabled = false; return; }
   const { data, error } = await supabaseClient.rpc('review_evaluation', { target_evaluation_id: evaluationId });
   if (error || !data) {
     button.disabled = false;
@@ -420,7 +426,11 @@ document.querySelectorAll('[data-detail]').forEach((row) => row.addEventListener
   drawer.setAttribute('aria-hidden', 'false');
 }));
 
-function closeDrawer() { drawer.classList.remove('open'); drawer.setAttribute('aria-hidden', 'true'); }
+function closeDrawer() {
+  if (!confirmDiscardReviewNotes()) return;
+  drawer.classList.remove('open'); drawer.setAttribute('aria-hidden', 'true');
+  drawerContent.replaceChildren();
+}
 document.querySelector('.close-drawer').addEventListener('click', closeDrawer);
 document.querySelector('.drawer-scrim').addEventListener('click', closeDrawer);
 document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeDrawer(); });
@@ -484,11 +494,7 @@ async function createEvaluation() {
   button.disabled = true;
   button.style.background = '#688f5b';
   const accessLink = `${window.location.origin}${window.location.pathname}?access=${encodeURIComponent(accessToken)}`;
-  button.insertAdjacentHTML('afterend', `<div class="access-link-result"><strong>Enlace privado listo</strong><code>${accessLink}</code><button type="button" class="copy-access-link" data-link="${accessLink}">Copiar enlace</button></div>`);
-  document.querySelector('.copy-access-link').addEventListener('click', async (event) => {
-    await navigator.clipboard.writeText(event.currentTarget.dataset.link);
-    event.currentTarget.textContent = 'Enlace copiado';
-  });
+  renderLinkSharing(button.parentElement, accessLink, patient.email);
   await loadEvaluations(user.id);
 }
 

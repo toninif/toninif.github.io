@@ -11,6 +11,7 @@ project:
     - "evaluaciones/patient.css"
     - "evaluaciones/app-extra.css"
     - "evaluaciones/app.js"
+    - "evaluaciones/management.js"
     - "evaluaciones/supabase-config.js"
     - "robots.txt"
 

@@ -4,3 +4,12 @@
 button:disabled{opacity:.6;cursor:not-allowed}
 #evaluation-patient{display:block;width:100%;padding:12px;margin-top:8px;border:1px solid #b6c9bf;background:white;color:#172b34}
 .drawer-section p{line-height:1.6}
+.directory-row[data-patient-id]{width:100%;text-align:left;background:transparent;cursor:pointer}
+.directory-row[data-patient-id]:hover,.history-row:hover{background:#edf2d8}
+.history-row{display:grid;gap:7px;width:100%;text-align:left;padding:18px 8px;background:transparent;border-bottom:1px solid #dce5df;margin-bottom:12px}
+.history-row small{color:#60736d}
+.review-management textarea,.access-link-result input{display:block;width:100%;padding:12px;margin:8px 0 16px;border:1px solid #b6c9bf;background:#fff;color:#172b34;font:inherit;border-radius:3px}
+.review-management textarea{resize:vertical;min-height:120px}
+.share-email-form{margin-top:20px}.access-link-result p{font-size:12px;line-height:1.5}
+.access-link-result label{display:block;font-size:12px}
+button:focus-visible,a:focus-visible{outline:3px solid #648e8b;outline-offset:3px}
