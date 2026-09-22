@@ -27,6 +27,8 @@ let workspaceInitialized = false;
 let workspacePatients = [];
 let workspaceEvaluations = [];
 let authLoading = false;
+let editingPatientId = null;
+let patientSaving = false;
 
 function setAuthMessage(message, isSuccess = false) {
   authMessage.textContent = message;
@@ -62,6 +64,17 @@ async function showAuthenticatedApp(session) {
 }
 
 function configureSwlsWorkflow() {
+  document.querySelectorAll('.form-step').forEach((step, index) => {
+    if (!index || step.querySelector('.previous-step')) return;
+    const back = document.createElement('button');
+    back.type = 'button'; back.className = 'previous-step'; back.textContent = 'Volver';
+    back.onclick = () => {
+      currentStep = index - 1;
+      formSteps.forEach((part, i) => part.classList.toggle('active', i === currentStep));
+      steps.forEach((part, i) => part.classList.toggle('active', i <= currentStep));
+    };
+    step.append(back);
+  });
   const moduleStep = document.querySelectorAll('.form-step')[1];
   moduleStep.querySelector('h2').textContent = 'Instrumento incluido';
   moduleStep.querySelector('.muted').textContent = 'Esta versión permite administrar Satisfacción con la vida (SWLS).';
@@ -288,59 +301,100 @@ async function openRealEvaluation(evaluationId) {
 
 async function updateEvaluationStatus(evaluationId) {
   const button = drawerContent.querySelector('.drawer-status-action');
+  if (button.disabled) return;
   button.disabled = true;
+  button.textContent = 'Guardando revisión…';
+  try {
   if (!await savePendingReviewNotes()) { button.disabled = false; return; }
   const { data, error } = await supabaseClient.rpc('review_evaluation', { target_evaluation_id: evaluationId });
   if (error || !data) {
     button.disabled = false;
-    window.alert(`No se pudo actualizar el estado: ${error?.message || 'La evaluación cambió de estado.'}`);
+    notifyAction(`No se pudo actualizar el estado: ${error?.message || 'La evaluación cambió de estado.'}`, true);
     return;
   }
   closeDrawer();
+  notifyAction('Evaluación marcada como revisada.');
   const { data: sessionData } = await supabaseClient.auth.getSession();
   if (sessionData.session?.user) await loadEvaluations(sessionData.session.user.id);
   showView('evaluaciones');
+  } catch (error) { notifyAction(`No se pudo completar la operación: ${error.message}`, true); }
+  finally { button.disabled = false; button.textContent = 'Marcar como revisada'; }
 }
 
-function openPatientModal() {
+function openPatientModal(patient = null) {
+  if (patientSaving) return;
+  const isEditing = Boolean(patient?.id);
+  editingPatientId = isEditing ? patient.id : null;
   const modal = document.querySelector('#patient-modal');
+  document.querySelector('#patient-form').reset();
+  modal.querySelector('h2').textContent = isEditing ? 'Editar paciente' : 'Nuevo paciente';
+  document.querySelector('#patient-name').value = isEditing ? patient.full_name : '';
+  document.querySelector('#patient-email').value = isEditing ? patient.email || '' : '';
+  document.querySelector('#patient-notes').value = isEditing ? patient.notes || '' : '';
+  document.querySelector('#patient-message').textContent = '';
+  document.querySelector('#patient-form button[type="submit"]').textContent = isEditing ? 'Guardar cambios' : 'Guardar paciente';
   modal.classList.add('open');
   modal.setAttribute('aria-hidden', 'false');
   document.querySelector('#patient-name')?.focus();
 }
 
 function closePatientModal() {
+  if (patientSaving) { notifyAction('Esperá a que termine el guardado.'); return; }
   const modal = document.querySelector('#patient-modal');
   modal.classList.remove('open');
   modal.setAttribute('aria-hidden', 'true');
   document.querySelector('#patient-form')?.reset();
   document.querySelector('#patient-message').textContent = '';
+  editingPatientId = null;
 }
 
 async function savePatient(event) {
   event.preventDefault();
-  const { data: sessionData } = await supabaseClient.auth.getSession();
-  const user = sessionData.session?.user;
-  if (!user) return;
+  if (patientSaving) return;
   const button = event.currentTarget.querySelector('button[type="submit"]');
   const message = document.querySelector('#patient-message');
-  button.disabled = true;
-  button.textContent = 'Guardando…';
-  const { error } = await supabaseClient.from('patients').insert({
-    professional_id: user.id,
+  const id = editingPatientId;
+  const values = {
     full_name: document.querySelector('#patient-name').value.trim(),
     email: document.querySelector('#patient-email').value.trim() || null,
     notes: document.querySelector('#patient-notes').value.trim() || null
-  });
-  button.disabled = false;
-  button.innerHTML = 'Guardar paciente <span>→</span>';
-  if (error) {
+  };
+  if (!values.full_name) { message.textContent = 'Ingresá el nombre del paciente.'; return; }
+  patientSaving = true;
+  button.disabled = true;
+  button.textContent = 'Guardando…';
+  message.textContent = 'Guardando datos…';
+  const fields = [...event.currentTarget.querySelectorAll('input, textarea')];
+  fields.forEach(field => { field.disabled = true; });
+  try {
+    const { data: sessionData, error: sessionError } = await supabaseClient.auth.getSession();
+    const user = sessionData.session?.user;
+    if (sessionError || !user) throw new Error('Tu sesión no está disponible. Volvé a ingresar.');
+    let request = supabaseClient.from('patients');
+    request = id ? request.update(values).eq('id', id).eq('professional_id', user.id)
+      : request.insert({ ...values, professional_id: user.id });
+    const { error } = await request.select('id').single();
+    if (error) throw error;
+    patientSaving = false;
+    closePatientModal();
+    notifyAction(id ? 'Datos del paciente actualizados.' : 'Paciente creado.');
+    try {
+      await loadPatients(user.id);
+      await loadEvaluations(user.id);
+      showView('pacientes');
+      if (id) await openPatientHistory(id);
+    } catch (refreshError) {
+      notifyAction(`Los datos se guardaron, pero no se pudo refrescar la vista: ${refreshError.message}`, true);
+    }
+  } catch (error) {
     message.textContent = `No se pudo guardar: ${error.message}`;
-    return;
+    notifyAction(message.textContent, true);
+  } finally {
+    patientSaving = false;
+    fields.forEach(field => { field.disabled = false; });
+    button.disabled = false;
+    button.textContent = id ? 'Guardar cambios' : 'Guardar paciente';
   }
-  closePatientModal();
-  await loadPatients(user.id);
-  showView('pacientes');
 }
 
 async function initializeWorkspace(user) {
@@ -433,7 +487,12 @@ function closeDrawer() {
 }
 document.querySelector('.close-drawer').addEventListener('click', closeDrawer);
 document.querySelector('.drawer-scrim').addEventListener('click', closeDrawer);
-document.addEventListener('keydown', (event) => { if (event.key === 'Escape') closeDrawer(); });
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    if (document.querySelector('#patient-modal').classList.contains('open')) closePatientModal();
+    else closeDrawer();
+  }
+});
 
 let currentStep = 0;
 const formSteps = [...document.querySelectorAll('.form-step')];
@@ -495,7 +554,9 @@ async function createEvaluation() {
   button.style.background = '#688f5b';
   const accessLink = `${window.location.origin}${window.location.pathname}?access=${encodeURIComponent(accessToken)}`;
   renderLinkSharing(button.parentElement, accessLink, patient.email);
-  await loadEvaluations(user.id);
+  notifyAction('Evaluación creada. El enlace ya está listo para compartir.');
+  try { await loadEvaluations(user.id); }
+  catch { notifyAction('La evaluación se guardó. Recargá para actualizar el listado.', true); }
 }
 
 function renderPatientLoading() {

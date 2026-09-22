@@ -12,6 +12,27 @@ function buildInvitationMailto(email, link) {
   return `mailto:${encodeURIComponent(recipient)}?subject=${encodeURIComponent('Acceso a tu evaluación')}&body=${encodeURIComponent(body)}`;
 }
 
+function buildInvitationGmail(email, link) {
+  const mailto = buildInvitationMailto(email, link);
+  const fields = new URLSearchParams(mailto.slice(mailto.indexOf('?') + 1));
+  const query = new URLSearchParams({view: 'cm', fs: '1', to: email.trim(), su: fields.get('subject'), body: fields.get('body')});
+  return `https://mail.google.com/mail/?${query}`;
+}
+
+function notifyAction(message, isError = false) {
+  let notice = document.querySelector('#action-feedback');
+  if (!notice) {
+    notice = document.createElement('div');
+    notice.id = 'action-feedback';
+    notice.innerHTML = '<p role="status" aria-live="polite" aria-atomic="true"></p><button type="button" aria-label="Cerrar aviso">×</button>';
+    notice.querySelector('button').onclick = () => { notice.hidden = true; };
+    document.body.append(notice);
+  }
+  notice.hidden = false;
+  notice.dataset.error = String(isError);
+  notice.querySelector('p').textContent = message;
+}
+
 function renderLinkSharing(container, link, email = '') {
   container.querySelector('.access-link-result')?.remove();
   const section = document.createElement('section');
@@ -19,24 +40,46 @@ function renderLinkSharing(container, link, email = '') {
   section.innerHTML = '<h3>Enlace privado listo</h3><label>Enlace para compartir<input class="share-link" readonly></label><button type="button" class="copy-access-link">Copiar enlace</button><form class="share-email-form"><label>Email del destinatario<input type="email" class="share-email" required autocomplete="off"></label><button type="submit" class="copy-access-link">Abrir borrador de correo</button></form><p>Se abrirá tu aplicación de correo. Revisá el borrador y presioná Enviar allí. Esta página no envía emails automáticamente.</p><p>Si no tenés una aplicación de correo configurada, copiá el enlace y pegalo en tu webmail. Al cerrar esta pantalla podés generar otro enlace desde el detalle.</p><p class="share-message" role="status"></p>';
   section.querySelector('.share-link').value = link;
   section.querySelector('.share-email').value = email || '';
+  const emailForm = section.querySelector('form');
+  emailForm.insertAdjacentHTML('beforeend', '<button type="submit" class="copy-access-link" data-provider="gmail">Abrir en Gmail</button>');
+  section.querySelector('.share-email-form + p').textContent = 'Elegí Gmail o tu aplicación de correo. Se prepara un borrador; revisá la cuenta remitente y presioná Enviar allí.';
   section.querySelector('.copy-access-link').onclick = async () => {
     const message = section.querySelector('.share-message');
+    const button = section.querySelector('.copy-access-link');
+    button.disabled = true;
+    button.textContent = 'Copiando…';
     try {
       await navigator.clipboard.writeText(link);
       message.textContent = 'Enlace copiado.';
+      button.textContent = 'Enlace copiado ✓';
+      notifyAction('Enlace copiado. Ya podés pegarlo donde quieras.');
     } catch {
       const input = section.querySelector('.share-link');
       input.focus(); input.select();
       message.textContent = 'Copiá el enlace seleccionado con Ctrl+C o el menú de tu dispositivo.';
-    }
+      button.textContent = 'Copiar enlace';
+      notifyAction('No se pudo copiar automáticamente. Seleccioné el enlace para que lo copies.', true);
+    } finally { button.disabled = false; }
   };
   section.querySelector('form').onsubmit = event => {
     event.preventDefault();
     try {
+      if (event.submitter?.dataset.provider === 'gmail') {
+        const href = buildInvitationGmail(section.querySelector('.share-email').value, link);
+        // Se abre durante el clic para evitar bloqueos por apertura asincrónica.
+        const tab = window.open('about:blank', '_blank');
+        if (!tab) throw new Error('El navegador bloqueó la pestaña. Permití ventanas emergentes para abrir Gmail.');
+        tab.opener = null;
+        tab.location.href = href;
+        section.querySelector('.share-message').textContent = 'Gmail abierto con el mensaje preparado. Revisá y enviá desde allí.';
+        notifyAction('Se abrió Gmail. El correo todavía no fue enviado.');
+        return;
+      }
       const href = buildInvitationMailto(section.querySelector('.share-email').value, link);
       window.location.href = href;
       section.querySelector('.share-message').textContent = 'Borrador solicitado. El correo aún no fue enviado desde esta página.';
-    } catch (error) { section.querySelector('.share-message').textContent = error.message; }
+      notifyAction('Borrador solicitado en tu aplicación de correo.');
+    } catch (error) { section.querySelector('.share-message').textContent = error.message; notifyAction(error.message, true); }
   };
   container.append(section);
 }
@@ -48,13 +91,17 @@ async function openPatientHistory(patientId) {
   drawerContent.textContent = 'Cargando historial…';
   try {
     const { data: patient, error: patientError } = await supabaseClient.from('patients')
-      .select('id, full_name, email').eq('id', patientId).single();
+      .select('id, full_name, email, notes').eq('id', patientId).single();
     if (patientError) throw patientError;
     const { data: evaluations, error } = await supabaseClient.from('evaluations')
       .select('id, status, created_at, completed_at, batteries(name)').eq('patient_id', patientId)
       .order('created_at', { ascending: false });
     if (error) throw error;
     drawerContent.innerHTML = `<h2>${escapeHtml(patient.full_name)}</h2><p>${escapeHtml(patient.email || 'Sin email registrado')}</p><h3>Historial de evaluaciones</h3>`;
+    const edit = document.createElement('button');
+    edit.type = 'button'; edit.className = 'primary-action'; edit.textContent = 'Editar paciente';
+    edit.onclick = () => { closeDrawer(); openPatientModal(patient); };
+    drawerContent.prepend(edit);
     if (!evaluations.length) drawerContent.insertAdjacentHTML('beforeend', '<p>Todavía no hay evaluaciones para esta persona.</p>');
     for (const evaluation of evaluations) {
       const row = document.createElement('button');
@@ -81,11 +128,17 @@ function confirmDiscardReviewNotes() {
 
 async function savePendingReviewNotes() {
   const input = document.querySelector('#review-notes');
-  if (!input || input.value === input.dataset.saved) return true;
+  if (!input) return true;
+  if (input.disabled) return false;
+  if (input.value === input.dataset.saved) {
+    document.querySelector('#review-note-message').textContent = 'No hay cambios pendientes.';
+    return true;
+  }
   const value = input.value;
   const status = document.querySelector('#review-note-message');
   const button = document.querySelector('#save-review-notes');
   button.disabled = true;
+  button.textContent = 'Guardando…';
   input.disabled = true;
   try {
     const { data, error } = await supabaseClient.rpc('save_review_notes', {
@@ -94,11 +147,13 @@ async function savePendingReviewNotes() {
     if (error || !data) throw error || new Error('No se guardó la observación.');
     input.dataset.saved = value;
     status.textContent = 'Observaciones guardadas.';
+    notifyAction('Observaciones guardadas.');
     return true;
   } catch (error) {
     status.textContent = `No se pudo guardar: ${error.message}`;
+    notifyAction(status.textContent, true);
     return false;
-  } finally { button.disabled = false; input.disabled = false; }
+  } finally { button.disabled = false; button.textContent = 'Guardar observaciones'; input.disabled = false; }
 }
 
 function appendEvaluationManagement(evaluation) {
@@ -128,6 +183,7 @@ function appendEvaluationManagement(evaluation) {
     button.onclick = async () => {
       if (!window.confirm('El enlace anterior dejará de funcionar. ¿Generar uno nuevo?')) return;
       button.disabled = true;
+      button.textContent = 'Generando enlace…';
       try {
         const token = generateAccessToken();
         const { data, error } = await supabaseClient.rpc('rotate_evaluation_link', {
@@ -136,10 +192,11 @@ function appendEvaluationManagement(evaluation) {
         if (error || !data) throw error || new Error('No se pudo actualizar el enlace.');
         renderLinkSharing(links, `${window.location.origin}${window.location.pathname}?access=${encodeURIComponent(token)}`, evaluation.patients?.email);
         links.querySelector('.link-message').textContent = 'Enlace regenerado. El anterior ya no funciona.';
+        notifyAction('Nuevo enlace generado. El anterior quedó invalidado.');
         const { data: session } = await supabaseClient.auth.getSession();
         if (session.session?.user) await loadEvaluations(session.session.user.id);
-      } catch (error) { links.querySelector('.link-message').textContent = `No se pudo completar la operación: ${error.message}`; }
-      finally { button.disabled = false; }
+      } catch (error) { links.querySelector('.link-message').textContent = `No se pudo completar la operación: ${error.message}`; notifyAction(error.message, true); }
+      finally { button.disabled = false; button.textContent = 'Generar nuevo enlace'; }
     };
     drawerContent.append(links);
   }

@@ -31,6 +31,15 @@ La versión lingüística requiere revisión profesional.
 
 ## Historial, observaciones y enlaces
 
+Edición: Pacientes → abrir ficha → Editar paciente. Conserva el identificador y
+las evaluaciones. Nombre, email y nota privada son editables. No requiere una
+migración adicional: utiliza los permisos por propietario de la tabla patients.
+
+«Abrir en Gmail» abre Gmail web en otra pestaña con destinatario y mensaje
+preparados. El profesional elige su cuenta y presiona Enviar. No es envío
+automático mediante API y no solicita acceso a la cuenta de Google.
+Los botones de copia, guardado y revisión presentan avisos de éxito o error.
+
 Ejecutar `supabase-management.sql` como cuarta migración, después de
 `supabase-stabilize.sql`. Agrega observaciones privadas, fechas de revisión,
 guardado de observaciones y rotación de enlaces con permisos por propietario.
