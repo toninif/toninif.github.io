@@ -6,6 +6,10 @@ project:
     - "!docs/**"
   resources:
     - "herramientas/**"
+    - "evaluaciones/index.html"
+    - "evaluaciones/styles.css"
+    - "evaluaciones/app.js"
+    - "evaluaciones/supabase-config.js"
     - "robots.txt"
 
 lang: es
