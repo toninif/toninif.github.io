@@ -15,6 +15,7 @@ const authScreen = document.querySelector('#auth-screen');
 const authForm = document.querySelector('#auth-form');
 const authMessage = document.querySelector('#auth-message');
 let workspaceInitialized = false;
+let workspacePatients = [];
 
 function setAuthMessage(message, isSuccess = false) {
   authMessage.textContent = message;
@@ -65,6 +66,7 @@ async function ensureDefaultBattery(userId) {
 async function loadPatients(userId) {
   const { data, error } = await supabaseClient.from('patients').select('id, full_name, email, created_at').eq('professional_id', userId).order('created_at', { ascending: false });
   if (error) throw error;
+  workspacePatients = data || [];
   const directory = document.querySelector('.patient-directory');
   if (!directory) return;
   const rows = (data || []).map((patient) => {
@@ -72,6 +74,17 @@ async function loadPatients(userId) {
     return `<div class="directory-row"><div class="patient-cell"><div class="patient-avatar blue">${initials}</div><strong>${patient.full_name}</strong></div><span>0 evaluaciones</span><span>${patient.email || 'Sin email'}</span></div>`;
   }).join('');
   directory.innerHTML = `<div class="directory-head">Paciente <span>Evaluaciones</span><span>Contacto</span></div>${rows || '<div class="empty-directory">Todavía no hay pacientes. Creá el primero para iniciar una evaluación.</div>'}`;
+  const patientInput = document.querySelectorAll('.form-step')[0]?.querySelector('input');
+  if (patientInput) {
+    patientInput.setAttribute('list', 'patient-options');
+    let datalist = document.querySelector('#patient-options');
+    if (!datalist) {
+      datalist = document.createElement('datalist');
+      datalist.id = 'patient-options';
+      patientInput.after(datalist);
+    }
+    datalist.innerHTML = workspacePatients.map((patient) => `<option value="${escapeHtml(patient.full_name)}"></option>`).join('');
+  }
 }
 
 function escapeHtml(value = '') {
@@ -244,11 +257,12 @@ async function createEvaluation() {
   if (!user || !patientName) return;
   button.disabled = true;
   button.textContent = 'Guardando…';
-  const { data: patient, error: patientError } = await supabaseClient.from('patients').select('id').eq('professional_id', user.id).eq('full_name', patientName).maybeSingle();
-  if (patientError || !patient) {
+  const normalizedName = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim().replace(/\s+/g, ' ').toLowerCase();
+  const patient = workspacePatients.find((candidate) => normalizedName(candidate.full_name) === normalizedName(patientName));
+  if (!patient) {
     button.disabled = false;
     button.innerHTML = 'Guardar y generar acceso <span>→</span>';
-    window.alert(patientError ? `No se pudo buscar el paciente: ${patientError.message}` : 'No encontramos ese paciente. Primero guardalo desde Pacientes.');
+    window.alert('No encontramos ese paciente. Elegilo de la lista o guardalo primero desde Pacientes.');
     return;
   }
   const batteryId = await ensureDefaultBattery(user.id);
