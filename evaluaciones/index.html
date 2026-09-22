@@ -7,7 +7,7 @@
     <meta name="description" content="Prototipo de plataforma de evaluaciones psicológicas." />
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="patient.css" />
-    <link rel="stylesheet" href="app-extra.css?v=buttons-2" />
+    <link rel="stylesheet" href="app-extra.css?v=modules-1" />
   </head>
   <body>
     <section class="auth-screen visible" id="auth-screen" aria-labelledby="auth-title">
@@ -88,15 +88,15 @@
         <section id="view-pacientes" class="view"><div class="page-heading"><div><p class="eyebrow">Archivo</p><h1>Pacientes</h1><p class="intro">Consultá el historial y actualizá los datos de cada persona.</p></div><button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button></div><section class="panel full-panel"><div class="patient-directory"><div class="directory-head">Paciente <span>Evaluaciones</span><span>Contacto</span></div><div class="empty-directory">Cargando pacientes…</div></div></section></section>
 
         <section id="view-nueva" class="view">
-          <div class="page-heading"><div><p class="eyebrow">Nueva evaluación</p><h1>Preparar una evaluación</h1><p class="intro">Elegí un paciente y generá su acceso a Satisfacción con la vida.</p></div><span class="draft-label">Sin guardar</span></div>
+          <div class="page-heading"><div><p class="eyebrow">Nueva evaluación</p><h1>Preparar una evaluación</h1><p class="intro">Elegí qué módulos enviar y generá un único enlace para tu paciente.</p></div><span class="draft-label">Sin guardar</span></div>
           <div class="wizard-layout">
             <section class="panel wizard-panel">
               <div class="stepper"><div class="step active"><span>1</span><strong>Paciente</strong></div><div class="step"><span>2</span><strong>Instrumento</strong></div><div class="step"><span>3</span><strong>Acceso</strong></div></div>
               <div class="form-step active"><h2>¿Para quién es esta evaluación?</h2><p class="muted">Elegí un paciente guardado. Si todavía no está, crealo desde Pacientes.</p><label>Paciente<select id="evaluation-patient" required><option value="">Cargando pacientes…</option></select></label><label>Nota privada <textarea placeholder="Motivo breve de la evaluación..."></textarea></label><button class="primary-action next-step">Continuar con el instrumento <span>→</span></button></div>
-              <div class="form-step"><h2>Instrumento incluido</h2><p class="muted">Esta evaluación incluye Satisfacción con la vida (SWLS).</p><p class="patient-note">5 ítems · respuestas de 1 a 7 · puntaje total de 5 a 35</p><button class="primary-action next-step">Continuar con el acceso <span>→</span></button></div>
+              <div class="form-step"><h2>¿Qué querés incluir?</h2><p class="muted" id="module-availability">Comprobando módulos disponibles…</p><div id="module-picker"></div><div id="phq-guidance" class="clinical-attention" hidden><strong>PHQ-9 para adultos</strong><p>Revisá las respuestas guardadas con regularidad y acordá con el paciente un canal para urgencias. La página no envía alertas por email ni tiene monitoreo continuo. El ítem 9 positivo se destaca en el tablero y requiere registrar su revisión.</p></div><button class="primary-action next-step">Continuar con el acceso <span>→</span></button></div>
               <div class="form-step"><h2>Generar enlace privado</h2><p class="muted">Al guardar, podrás copiar el enlace o abrir un borrador de correo. El mensaje no se envía desde esta página.</p><div class="access-box"><span class="access-icon">⌁</span><div><strong>Enlace personal</strong><p>Se mostrará una vez al guardar. Copialo antes de salir; si lo perdés, podrás generar otro desde el detalle.</p></div></div><button class="primary-action finish-step">Guardar y generar enlace <span>→</span></button></div>
             </section>
-            <aside class="panel preview-panel"><p class="eyebrow">Vista del paciente</p><h2>Satisfacción con la vida</h2><p class="muted">Ejemplo de cómo se presenta el cuestionario. No se responde desde esta vista.</p><div class="preview-sheet"><div class="preview-top"><span class="brand-mark small">ft</span><span>Ejemplo · 1 de 5 ítems</span></div><h3>Evaluación psicológica</h3><p>En la mayoría de los aspectos, mi vida se acerca a mi ideal.</p><p>1 = muy en desacuerdo · 7 = muy de acuerdo</p></div></aside>
+            <aside class="panel preview-panel"><h2>Recorrido del paciente</h2><p data-module-summary>Seleccioná los módulos.</p><p class="muted">Un único enlace. Cada sección se guarda al continuar y puede revisarse antes de enviar.</p><div class="preview-sheet"></div></aside>
           </div>
         </section>
       </main>
@@ -107,6 +107,8 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
     <script src="supabase-config.js"></script>
     <script src="management.js?v=buttons-2"></script>
-    <script src="app.js?v=buttons-2"></script>
+    <script src="instruments.js?v=modules-1"></script>
+    <script src="modular.js?v=modules-1"></script>
+    <script src="app.js?v=modules-1"></script>
   </body>
 </html>

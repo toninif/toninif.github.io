@@ -10,6 +10,52 @@ Aplicación en `fernandotonini.com.ar/evaluaciones/`.
 - Funciones de acceso privado para pacientes en `supabase-patient-access.sql`.
 - Login, respuestas por ítem, puntaje y revisión profesional. Sin envío de correos.
 
+## Formulario inicial y PHQ-9 (quinta actualización)
+
+Ejecutar **`supabase-modules.sql` completo** en Supabase → SQL Editor → New query
+→ Run, después de las cuatro migraciones anteriores. No elimina datos. Puede
+guardarse como «05 - Evaluaciones modulares». No volver a ejecutar las migraciones
+antiguas por encima de esta. Después, recargar la aplicación.
+
+Permite seleccionar Formulario inicial, PHQ-9 y/o SWLS. Cada evaluación nueva
+conserva una copia de sus instrumentos. Se guarda cada sección al continuar;
+se puede retomar desde el mismo enlace y el envío final exige todos los módulos.
+El formulario inicial no puntúa. La dificultad del PHQ-9 no suma. Los puntajes se
+calculan en el servidor. Un ítem 9 positivo queda destacado para revisión privada.
+
+Si la quinta migración todavía no se ejecutó, la aplicación indica qué falta,
+deshabilita los nuevos módulos y mantiene operativo el recorrido SWLS anterior.
+No se aplicó esta migración automáticamente al proyecto remoto.
+
+Fuentes, versiones, población estudiada, límites y revisión pendiente de SWLS:
+[`INSTRUMENTS.md`](INSTRUMENTS.md).
+
+### Verificación local y online
+
+Pruebas sin dependencias: `node --test evaluaciones/tests/*.test.cjs`.
+Para incluir PostgreSQL WASM y navegador real (datos ficticios, sin Supabase):
+
+```powershell
+npm install --prefix "$env:TEMP/tonini-evaluaciones-qa" --no-audit --no-fund @electric-sql/pglite playwright
+$env:EVALUATIONS_QA_ROOT = "$env:TEMP/tonini-evaluaciones-qa"
+node --test evaluaciones/tests/*.test.cjs
+node evaluaciones/tests/modules-browser.cjs
+```
+
+Requiere Edge instalado. Las capturas quedan en esa carpeta temporal.
+La prueba PostgreSQL aplica las cinco migraciones, prueba reejecución de la quinta,
+respuestas inválidas, módulos cruzados, permisos de funciones, puntajes, progreso,
+señal persistente, bloqueo de revisión y compatibilidad SWLS. Solo sustituye la
+función digest de pgcrypto por sha256 nativo en la base local de prueba.
+El navegador usa el frontend real con una conexión simulada y bloquea red externa.
+
+Luego de ejecutar el SQL remoto, prueba manual con un paciente ficticio:
+crear una evaluación con los tres módulos; guardar motivo; cerrar y retomar el
+enlace en incógnito; responder PHQ-9 con ítems 1–8 en 0, ítem 9 en 1 y dificultad
+en 0; guardar; comprobar señal en el tablero antes del envío; completar SWLS con
+1,2,3,4,5; enviar; revisar PHQ-9=1 y SWLS=15; registrar observaciones y revisión de
+la señal; marcar revisada. Un nuevo envío debe rechazarse. No enviar emails de prueba.
+
 ## Actualización de estabilización
 
 Ejecutar `supabase-stabilize.sql` completo en SQL Editor, después de las otras
@@ -25,7 +71,7 @@ responder 1, 2, 3, 4, 5 en incógnito, comprobar total 15 e ítems individuales,
 marcar revisada y comprobar filtros y contadores. Reabrir el enlace: debe
 rechazar nuevos envíos. Probar también pacientes homónimos.
 
-Solo SWLS está habilitada. El enlace se muestra una vez al crearlo; después
+En el recorrido anterior solo SWLS está habilitada. El enlace se muestra una vez al crearlo; después
 puede regenerarse desde el detalle. Sin baremos o interpretación automática.
 La versión lingüística requiere revisión profesional.
 

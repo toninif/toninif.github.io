@@ -162,10 +162,11 @@ async function loadEvaluations(userId) {
   const recent = document.querySelector('#view-inicio .evaluation-list');
   if (table) table.innerHTML = '';
   if (recent) recent.innerHTML = '';
-  const { data, error } = await supabaseClient.from('evaluations').select('id, patient_id, status, created_at, completed_at, patients(full_name), batteries(name)').eq('professional_id', userId).order('created_at', { ascending: false });
+  const { data, error } = await supabaseClient.from('evaluations').select('*, patients(full_name), batteries(name)').eq('professional_id', userId).order('created_at', { ascending: false });
   if (error) throw error;
   const evaluations = data || [];
   workspaceEvaluations = evaluations;
+  renderAttentionQueue(evaluations);
   updateDashboardStats(evaluations);
   const empty = '<div class="empty-directory">Todavía no hay evaluaciones. Creá la primera desde “Nueva evaluación”.</div>';
   if (!evaluations.length) {
@@ -256,7 +257,8 @@ async function openRealEvaluation(evaluationId) {
     return;
   }
   const moduleIds = (responses || []).map((response) => response.module_id);
-  const { data: modules } = moduleIds.length ? await supabaseClient.from('modules').select('id, name').in('id', moduleIds) : { data: [] };
+  const { data: modules, error: modulesError } = moduleIds.length ? await supabaseClient.from('modules').select('id, name, config').in('id', moduleIds) : { data: [] };
+  if (modulesError) { drawerContent.textContent = 'No se pudieron cargar los instrumentos. Cerrá y volvé a abrir la evaluación.'; return; }
   const moduleNames = new Map((modules || []).map((module) => [module.id, module.name]));
   const [label, tone] = statusLabel(evaluation.status);
   const patientName = evaluation.patients?.full_name || 'Paciente sin nombre';
@@ -274,13 +276,14 @@ async function openRealEvaluation(evaluationId) {
   for (const response of responses || []) {
     const section = document.createElement('section');
     section.className = 'drawer-section';
-    section.innerHTML = '<h3>Respuestas por ítem</h3>' + Object.entries(response.answers || {}).map(([key, value]) => `<p>${escapeHtml(swlsQuestions[Number(key.replace('item_', '')) - 1] || key)}<br><strong>${escapeHtml(String(value))} / 7</strong></p>`).join('');
+    section.innerHTML = renderResponseDetails(response, modules.find(module => module.id === response.module_id));
     drawerContent.append(section);
   }
   const actionDisabled = evaluation.status !== 'to_review' || !responses?.length ? ' disabled' : '';
   drawerContent.insertAdjacentHTML('beforeend', `<button class="primary-action drawer-status-action"${actionDisabled}>${actionLabel} <span>✓</span></button>`);
   drawerContent.querySelector('.drawer-status-action')?.addEventListener('click', () => updateEvaluationStatus(evaluationId));
   appendEvaluationManagement(evaluation);
+  appendAttentionReview(evaluation);
 }
 
 async function updateEvaluationStatus(evaluationId) {
@@ -401,6 +404,7 @@ async function initializeWorkspace(user) {
   document.querySelector('.modal-close')?.addEventListener('click', closePatientModal);
   document.querySelector('.modal-scrim')?.addEventListener('click', closePatientModal);
   configureSwlsWorkflow();
+  await configureModularWorkflow();
   workspaceInitialized = true;
 }
 
@@ -461,6 +465,7 @@ const formSteps = [...document.querySelectorAll('.form-step')];
 const steps = [...document.querySelectorAll('.step')];
 document.querySelectorAll('.next-step').forEach((button) => button.addEventListener('click', () => {
   if (!document.querySelector('#evaluation-patient')?.value) { window.alert('Primero elegí un paciente guardado.'); return; }
+  if (currentStep === 1 && !selectedInstrumentConfigs().length) { notifyAction('Elegí al menos un módulo.', true); return; }
   currentStep = Math.min(currentStep + 1, formSteps.length - 1);
   formSteps.forEach((step, index) => step.classList.toggle('active', index === currentStep));
   steps.forEach((step, index) => step.classList.toggle('active', index <= currentStep));
@@ -501,10 +506,21 @@ async function createEvaluation() {
     window.alert('No encontramos ese paciente. Elegilo de la lista o guardalo primero desde Pacientes.');
     return;
   }
-  const batteryId = await ensureDefaultBattery(user.id);
   const accessToken = generateAccessToken();
   const accessTokenHash = await hashAccessToken(accessToken);
-  const { error } = await supabaseClient.from('evaluations').insert({ professional_id: user.id, patient_id: patient.id, battery_id: batteryId, private_note: formSteps[0].querySelector('textarea').value.trim() || null, access_token_hash: accessTokenHash, status: 'invited' });
+  const selected = selectedInstrumentConfigs();
+  if (!selected.length) throw new Error('Elegí al menos un módulo.');
+  let error;
+  if (modularAvailable) {
+    ({ error } = await supabaseClient.rpc('create_modular_evaluation', {
+      target_patient_id: patient.id, token_hash: accessTokenHash,
+      selected_modules: selected, note: formSteps[0].querySelector('textarea').value.trim() || null
+    }));
+  } else {
+    if (selected.some(config => config.instrument !== 'SWLS')) throw new Error('Falta activar los nuevos módulos en Supabase.');
+    const batteryId = await ensureDefaultBattery(user.id);
+    ({ error } = await supabaseClient.from('evaluations').insert({ professional_id: user.id, patient_id: patient.id, battery_id: batteryId, private_note: formSteps[0].querySelector('textarea').value.trim() || null, access_token_hash: accessTokenHash, status: 'invited' }));
+  }
   button.disabled = false;
   if (error) {
     button.innerHTML = 'Guardar y generar acceso <span>→</span>';
@@ -537,6 +553,10 @@ function renderPatientEvaluation(evaluation, token) {
     return;
   }
   const modules = Array.isArray(evaluation.modules) ? evaluation.modules : [];
+  if (modules.length && modules.every(module => module.config?.workflow_version === 2)) {
+    renderModularPatient(evaluation, token);
+    return;
+  }
   const swls = modules.find((module) => module.config?.instrument === 'SWLS' || module.name.includes('Satisfacción'));
   if (!swls) {
     renderPatientError('Esta evaluación todavía no tiene un cuestionario disponible.');

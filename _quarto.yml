@@ -12,6 +12,8 @@ project:
     - "evaluaciones/app-extra.css"
     - "evaluaciones/app.js"
     - "evaluaciones/management.js"
+    - "evaluaciones/instruments.js"
+    - "evaluaciones/modular.js"
     - "evaluaciones/supabase-config.js"
     - "robots.txt"
 
