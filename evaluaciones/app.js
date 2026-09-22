@@ -74,6 +74,39 @@ async function loadPatients(userId) {
   directory.innerHTML = `<div class="directory-head">Paciente <span>Evaluaciones</span><span>Contacto</span></div>${rows || '<div class="empty-directory">Todavía no hay pacientes. Creá el primero para iniciar una evaluación.</div>'}`;
 }
 
+function escapeHtml(value = '') {
+  return value.replace(/[&<>'"]/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;' }[character]));
+}
+
+function statusLabel(status) {
+  const labels = { draft: ['Borrador', 'progress'], invited: ['Invitada', 'progress'], in_progress: ['En progreso', 'progress'], to_review: ['Para revisar', 'review'], completed: ['Completa', 'done'], archived: ['Archivada', 'review'] };
+  return labels[status] || ['Borrador', 'progress'];
+}
+
+async function loadEvaluations(userId) {
+  const { data, error } = await supabaseClient.from('evaluations').select('id, status, created_at, patients(full_name), batteries(name)').eq('professional_id', userId).order('created_at', { ascending: false });
+  if (error) throw error;
+  const evaluations = data || [];
+  const table = document.querySelector('#view-evaluaciones .table-body');
+  const recent = document.querySelector('#view-inicio .evaluation-list');
+  const empty = '<div class="empty-directory">Todavía no hay evaluaciones. Creá la primera desde “Nueva evaluación”.</div>';
+  if (!evaluations.length) {
+    if (table) table.innerHTML = empty;
+    if (recent) recent.innerHTML = empty;
+    return;
+  }
+  const rows = evaluations.map((evaluation) => {
+    const name = evaluation.patients?.full_name || 'Paciente sin nombre';
+    const battery = evaluation.batteries?.name || 'Batería sin nombre';
+    const initials = name.split(' ').map((part) => part[0]).slice(0, 2).join('').toUpperCase();
+    const [label, tone] = statusLabel(evaluation.status);
+    const date = new Date(evaluation.created_at).toLocaleDateString('es-AR', { day: '2-digit', month: 'short' });
+    return { id: evaluation.id, name, battery, initials, label, tone, date };
+  });
+  if (table) table.innerHTML = rows.map((row) => `<button class="table-row" data-real-evaluation="${row.id}"><div class="patient-cell"><div class="patient-avatar blue">${escapeHtml(row.initials)}</div><strong>${escapeHtml(row.name)}</strong></div><span>${escapeHtml(row.battery)}</span><span class="row-status ${row.tone}">${row.label}</span><span>${row.date}</span><b>›</b></button>`).join('');
+  if (recent) recent.innerHTML = rows.slice(0, 5).map((row) => `<button class="evaluation-row" data-real-evaluation="${row.id}"><div class="patient-avatar blue">${escapeHtml(row.initials)}</div><div class="evaluation-info"><strong>${escapeHtml(row.name)}</strong><span>${escapeHtml(row.battery)}</span></div><div class="row-status ${row.tone}">${row.label}</div><div class="row-date">${row.date} <b>›</b></div></button>`).join('');
+}
+
 function openPatientModal() {
   const modal = document.querySelector('#patient-modal');
   modal.classList.add('open');
@@ -120,11 +153,13 @@ async function initializeWorkspace(user) {
   workspaceInitialized = true;
   await ensureDefaultBattery(user.id);
   await loadPatients(user.id);
+  await loadEvaluations(user.id);
   const patientHeader = document.querySelector('#view-pacientes .page-heading');
   if (patientHeader && !document.querySelector('[data-action="new-patient"]')) {
     const actions = document.createElement('div');
     actions.className = 'heading-actions';
-    actions.innerHTML = '<button class="outline-action" data-action="new-patient">＋ Nuevo paciente</button><button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button>';
+    actions.style.cssText = 'display:flex;gap:9px;align-items:center;flex-wrap:wrap';
+    actions.innerHTML = '<button class="outline-action" style="border:1px solid #b6c9bf;color:#164b52;background:#fffefa" data-action="new-patient">＋ Nuevo paciente</button><button class="primary-action" data-view="nueva"><span>＋</span> Nueva evaluación</button>';
     patientHeader.querySelector('.primary-action')?.remove();
     patientHeader.appendChild(actions);
     actions.querySelector('[data-action="new-patient"]').addEventListener('click', openPatientModal);
@@ -226,6 +261,7 @@ async function createEvaluation() {
   }
   button.innerHTML = 'Evaluación guardada <span>✓</span>';
   button.style.background = '#688f5b';
+  await loadEvaluations(user.id);
   showView('evaluaciones');
 }
 
