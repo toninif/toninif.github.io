@@ -49,17 +49,27 @@ async function ensureDefaultBattery(userId) {
   const { data: existing, error: readError } = await supabaseClient
     .from('batteries').select('id').eq('professional_id', userId).eq('name', 'Batería inicial').maybeSingle();
   if (readError) throw readError;
-  if (existing) return existing.id;
-  const { data: battery, error: batteryError } = await supabaseClient
-    .from('batteries').insert({ professional_id: userId, name: 'Batería inicial', description: 'Batería inicial de evaluación', estimated_minutes: 35 }).select('id').single();
-  if (batteryError) throw batteryError;
+  let battery = existing;
+  if (!battery) {
+    const { data: createdBattery, error: batteryError } = await supabaseClient
+      .from('batteries').insert({ professional_id: userId, name: 'Batería inicial', description: 'Batería inicial de evaluación', estimated_minutes: 40 }).select('id').single();
+    if (batteryError) throw batteryError;
+    battery = createdBattery;
+  }
   const modules = [
-    ['Entrevista inicial', 'Antecedentes y motivo de consulta', 1],
-    ['Datos sociodemográficos', 'Contexto personal y cotidiano', 2],
-    ['Cuestionario de ansiedad', 'Escala breve de auto-reporte', 3]
-  ].map(([name, description, position]) => ({ battery_id: battery.id, name, description, position }));
-  const { error: modulesError } = await supabaseClient.from('modules').insert(modules);
-  if (modulesError) throw modulesError;
+    ['Entrevista inicial', 'Antecedentes y motivo de consulta', 1, {}],
+    ['Datos sociodemográficos', 'Contexto personal y cotidiano', 2, {}],
+    ['Cuestionario de ansiedad', 'Escala breve de auto-reporte', 3, {}],
+    ['Satisfacción con la vida (SWLS)', '5 ítems · escala de acuerdo de 1 a 7', 4, { instrument: 'SWLS', item_count: 5, response_min: 1, response_max: 7, scoring: 'sum', citation: 'Diener, Emmons, Larsen y Griffin (1985)' }]
+  ];
+  const { data: currentModules, error: currentError } = await supabaseClient.from('modules').select('name').eq('battery_id', battery.id);
+  if (currentError) throw currentError;
+  const currentNames = new Set((currentModules || []).map((module) => module.name));
+  const missingModules = modules.filter(([name]) => !currentNames.has(name)).map(([name, description, position, config]) => ({ battery_id: battery.id, name, description, position, config }));
+  if (missingModules.length) {
+    const { error: modulesError } = await supabaseClient.from('modules').insert(missingModules);
+    if (modulesError) throw modulesError;
+  }
   return battery.id;
 }
 
@@ -167,6 +177,15 @@ async function initializeWorkspace(user) {
   await ensureDefaultBattery(user.id);
   await loadPatients(user.id);
   await loadEvaluations(user.id);
+  const modulesStep = document.querySelectorAll('.form-step')[1];
+  if (modulesStep && !modulesStep.querySelector('[data-module="swls"]')) {
+    const continueButton = modulesStep.querySelector('.next-step');
+    const option = document.createElement('label');
+    option.className = 'module-option';
+    option.dataset.module = 'swls';
+    option.innerHTML = '<input type="checkbox" checked /><span><strong>Satisfacción con la vida (SWLS)</strong><small>5 ítems · escala de acuerdo de 1 a 7</small></span>';
+    modulesStep.insertBefore(option, continueButton);
+  }
   const patientHeader = document.querySelector('#view-pacientes .page-heading');
   if (patientHeader && !document.querySelector('[data-action="new-patient"]')) {
     const actions = document.createElement('div');
