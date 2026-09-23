@@ -91,4 +91,21 @@ test('migraciones y recorrido modular en PostgreSQL', {skip: !qa && 'Definí EVA
   assert.equal((await db.query("select has_function_privilege('anon','public.create_modular_evaluation(uuid,text,jsonb,text)','execute') as allowed")).rows[0].allowed,false);
   assert.equal((await db.query("select has_function_privilege('anon','public.acknowledge_evaluation_attention(uuid)','execute') as allowed")).rows[0].allowed,false);
   assert.equal((await db.query("select has_function_privilege('anon','public.save_patient_module(text,uuid,jsonb)','execute') as allowed")).rows[0].allowed,true);
+  // Borrado con el rol real de un profesional: RLS, cascada y enlace invalidado.
+  // Estos grants simulan los permisos de tablas de la API de Supabase.
+  await db.exec('grant usage on schema public,auth to authenticated; grant select,delete on public.evaluations to authenticated;');
+  const responseCount=(await db.query('select count(*)::int as n from responses where evaluation_id=$1',[id])).rows[0].n;
+  assert.equal(responseCount,3);
+  await login(other);
+  await db.exec('set role authenticated');
+  assert.equal((await db.query('delete from evaluations where id=$1 returning id',[id])).rows.length,0);
+  await login(owner);
+  assert.equal((await db.query('delete from evaluations where id=$1 and professional_id=$2 returning id',[id,owner])).rows.length,1);
+  await db.exec('reset role');
+  assert.equal(await get(token),undefined);
+  assert.equal((await db.query('select count(*)::int as n from responses where evaluation_id=$1',[id])).rows[0].n,0);
+  assert.equal((await db.query('select count(*)::int as n from patients where id=$1',[patient])).rows[0].n,1);
+  assert.equal((await get('legacy')).evaluation_status,'to_review');
+  assert.equal((await get('segundo-token')).evaluation_status,'invited');
+  assert.ok((await db.query('select count(*)::int as n from audit_events where evaluation_id is null')).rows[0].n>0);
 });

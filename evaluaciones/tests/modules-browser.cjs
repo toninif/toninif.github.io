@@ -32,10 +32,11 @@ const server = http.createServer((req,res)=>{
       const mock={
         auth:{getSession:async()=>({data:{session:location.search?null:{user:professional}}}),onAuthStateChange:()=>{}},
         from(table){
-          let single=false;
-          const query={select(){return query;},eq(){return query;},in(){return query;},order(){return query;},upsert(){return query;},insert(){return query;},update(){return query;},single(){single=true;return query;},maybeSingle(){single=true;return query;},
+          let single=false,deleting=false;
+          const query={delete(){deleting=true;return query;},select(){return query;},eq(){return query;},in(){return query;},order(){return query;},upsert(){return query;},insert(){return query;},update(){return query;},single(){single=true;return query;},maybeSingle(){single=true;return query;},
             then(resolve){
-              const data=table==='patients'?[patient]:table==='batteries'?[{id:'b1',name:'Batería inicial'}]:table==='modules'?evaluation.modules:table==='evaluations'?[dbEvaluation]:table==='responses'?[
+              if(deleting){window.__qa.deleted=true;return Promise.resolve({data:[{id:'e1'}],error:null}).then(resolve);}
+              const data=table==='patients'?[patient]:table==='batteries'?[{id:'b1',name:'Batería inicial'}]:table==='modules'?evaluation.modules:table==='evaluations'?(window.__qa.deleted?[]:[dbEvaluation]):table==='responses'?[
                 {module_id:'m0',answers:{reason:'<img src=x onerror=alert(1)>Texto ficticio'},score:null},
                 {module_id:'m1',answers:Object.fromEntries(Array.from({length:9},(_,i)=>[`item_${i+1}`,i===8?1:0])),score:{total:1,instrument:'PHQ9'}}
               ]:[];
@@ -112,6 +113,18 @@ const server = http.createServer((req,res)=>{
     await page.locator('#drawer-content').getByText('Dificultad cotidiana:',{exact:false}).waitFor();
     assert.equal(await page.locator('.drawer').evaluate(node=>node.getBoundingClientRect().right<=innerWidth),true);
     await page.screenshot({path:path.join(process.env.EVALUATIONS_QA_ROOT,'review-desktop.png'),fullPage:true});
+    const deleteButton=page.getByRole('button',{name:'Borrar evaluación',exact:true});
+    await deleteButton.scrollIntoViewIfNeeded();
+    page.once('dialog',dialog=>dialog.dismiss());
+    await deleteButton.click();
+    assert.equal(await page.evaluate(()=>Boolean(window.__qa.deleted)),false);
+    page.once('dialog',dialog=>dialog.accept());
+    await deleteButton.click();
+    await page.getByText('Evaluación borrada. Su enlace ya no funciona.',{exact:true}).waitFor();
+    await page.locator('#detail-drawer').waitFor({state:'hidden'});
+    assert.equal(await page.locator('.nav-item[data-view="evaluaciones"] b').textContent(),'0');
+    assert.equal(await page.locator('.patient-count').textContent(),'0 evaluaciones');
+    assert.equal(await page.locator('.attention-queue').count(),0);
     // Backend todavía sin migrar: conserva SWLS y bloquea nuevos módulos.
     await page.evaluate(async()=>{window.__qa.capabilities=1;await configureModularWorkflow();showView('nueva');});
     assert.equal(await page.locator('[name=instrument][value=PHQ9]').isDisabled(),true);

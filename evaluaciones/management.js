@@ -200,4 +200,48 @@ function appendEvaluationManagement(evaluation) {
     };
     drawerContent.append(links);
   }
+  const deletion = document.createElement('section');
+  deletion.className = 'drawer-section evaluation-deletion';
+  deletion.innerHTML = '<h3>Borrar evaluación</h3><p>Elimina esta evaluación, sus respuestas y observaciones. Su enlace deja de funcionar. La ficha del paciente y sus otras evaluaciones se conservan. No se puede deshacer desde la aplicación.</p><button type="button" class="delete-evaluation">Borrar evaluación</button><p role="status" aria-live="polite"></p>';
+  deletion.querySelector('button').onclick = event => deleteEvaluation(evaluation, event.currentTarget, deletion.querySelector('[role="status"]'));
+  drawerContent.append(deletion);
+}
+
+async function deleteEvaluation(evaluation, button, message) {
+  if (button.disabled) return;
+  const patient = evaluation.patients?.full_name || 'este paciente';
+  const instrument = displayInstrumentName(evaluation.batteries?.name);
+  if (!window.confirm(`¿Borrar la evaluación «${instrument}» de ${patient}?\n\nSe eliminarán sus respuestas y observaciones, incluidos los cambios sin guardar. El enlace dejará de funcionar.\n\nLa ficha del paciente y sus otras evaluaciones se conservan. Esta acción no se puede deshacer desde la aplicación.`)) return;
+  button.disabled = true;
+  button.textContent = 'Borrando…';
+  message.textContent = '';
+  try {
+    const { data: sessionData, error: sessionError } = await supabaseClient.auth.getSession();
+    const userId = sessionData?.session?.user?.id;
+    if (sessionError || !userId) throw new Error('Tu sesión venció. Volvé a ingresar antes de borrar.');
+    const { data, error } = await supabaseClient.from('evaluations').delete()
+      .eq('id', evaluation.id).eq('professional_id', userId).select('id');
+    if (error) throw error;
+    if (data?.length !== 1 || data[0].id !== evaluation.id) throw new Error('La evaluación ya no está disponible o no tenés permiso para borrarla. Recargá el listado.');
+    // Cerrar solo el detalle eliminado, sin descartar otra ficha abierta durante la petición.
+    if (document.querySelector('#review-notes')?.dataset.evaluationId === evaluation.id) {
+      drawerContent.replaceChildren();
+      closeDrawer();
+    }
+    workspaceEvaluations = workspaceEvaluations.filter(item => item.id !== evaluation.id);
+    document.querySelectorAll('[data-real-evaluation]').forEach(row => {
+      if (row.dataset.realEvaluation === evaluation.id) row.remove();
+    });
+    updateDashboardStats(workspaceEvaluations);
+    renderAttentionQueue(workspaceEvaluations);
+    notifyAction('Evaluación borrada. Su enlace ya no funciona.');
+    try { await loadEvaluations(userId); }
+    catch { notifyAction('La evaluación se borró, pero no se pudo actualizar el listado. Recargá la página.', true); }
+  } catch (error) {
+    message.textContent = `No se pudo borrar: ${error.message}`;
+    notifyAction(message.textContent, true);
+  } finally {
+    button.disabled = false;
+    button.textContent = 'Borrar evaluación';
+  }
 }

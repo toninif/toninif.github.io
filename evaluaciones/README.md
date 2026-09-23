@@ -77,6 +77,13 @@ La versión lingüística requiere revisión profesional.
 
 ## Historial, observaciones y enlaces
 
+Borrado: abrir una evaluación → «Borrar evaluación» al final del detalle →
+confirmar. Elimina la evaluación y sus respuestas mediante las relaciones de la
+base; invalida el enlace y conserva el paciente, sus otras evaluaciones y los
+registros de auditoría (sin referencia a la evaluación eliminada). No se puede
+deshacer desde la aplicación. Usa los permisos por propietario ya existentes;
+**no requiere otra consulta SQL**. No elimina las definiciones de instrumentos.
+
 Edición: Pacientes → abrir ficha → Editar paciente. Conserva el identificador y
 las evaluaciones. Nombre, email y nota privada son editables. No requiere una
 migración adicional: utiliza los permisos por propietario de la tabla patients.
