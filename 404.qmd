@@ -1,0 +1,31 @@
+---
+title: "Página no encontrada"
+subtitle: "Error 404"
+description: "La página que buscás no existe o fue movida. Volvé al inicio o explorá las secciones del sitio."
+toc: false
+page-layout: custom
+---
+
+::: {.hero}
+El enlace que seguiste puede estar roto, o la página pudo haberse movido o eliminado. Elegí una de las siguientes secciones para continuar.
+:::
+
+::: {.grid-section .grid-2col}
+
+::: {.grid-card}
+### Secciones principales
+- [Inicio](index.qmd)
+- [Atención psicológica](atencion-psicologica/index.qmd)
+- [Docencia](docencia/index.qmd)
+- [Investigación](investigacion/index.qmd)
+- [Sobre mí](about.qmd)
+:::
+
+::: {.grid-card}
+### Otros recursos
+- [Publicaciones](publicaciones.qmd)
+- [Evaluaciones](evaluaciones/index.html)
+- [Contacto académico](mailto:ftonin@palermo.edu)
+:::
+
+:::
