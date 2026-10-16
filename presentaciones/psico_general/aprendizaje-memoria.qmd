@@ -255,7 +255,7 @@ La descripción anterior es la versión habitual de los manuales: positivo signi
 ## Contingencia
 
 ::: {.caja-crema style="margin-top:0.5em"}
-La contingencia **contingencia** implica una **relación de probabilidad** entre dos eventos. ¿Qué tan probable es que ocurra el evento X dado que antes ocurrió el evento Z?
+La **contingencia** implica una **relación de probabilidad** entre dos eventos. ¿Qué tan probable es que ocurra el evento X dado que antes ocurrió el evento Z?
 :::
 
 <p style="margin-top:0.7em">Una **relación de contingencia** es una **diferencia de probabilidades**:</p>
@@ -891,7 +891,7 @@ La **doble disociación** entre medidas directas e indirectas en pacientes amné
 
 ------------------------------------------------------------------------
 
-## Pongmos a *trabajar* la memoria
+## Pongamos a *trabajar* la memoria
 
 ::: {.caja-crema style="margin-top:0.5em; font-size:0.95em"}
 Antes de seguir, vamos a hacer una **pequeña experiencia** para sentir cómo trabaja la memoria de trabajo. La consigna es simple:
