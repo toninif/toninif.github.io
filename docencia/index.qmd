@@ -60,6 +60,13 @@ Versión interactiva de la tarea para explorar decisiones bajo condiciones de in
 
 [Abrir la herramienta](../herramientas/iowa-gambling-task/index.html)
 :::
+
+::: {.resource-item}
+### Contingencia operante
+Calculadora, casos para clasificar y simulador para trabajar la contingencia entre una conducta y su consecuencia en el condicionamiento operante.
+
+[Abrir la herramienta](../herramientas/contingencia-operante/index.html)
+:::
 :::
 :::
 
