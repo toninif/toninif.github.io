@@ -391,6 +391,36 @@ La **contingencia** implica una **relación de probabilidad** entre dos eventos.
 
 ------------------------------------------------------------------------
 
+## Actividad · Practicá con la calculadora
+
+<p style="margin-top:0.4em">Ahora probalo vos con una herramienta interactiva: cambiás las frecuencias y mirás cómo cambia la contingencia.</p>
+
+:::::: {.cols-3 style="margin-top:0.6em; font-size:0.8em"}
+::: tarjeta
+<h4>1 · Calculadora</h4>
+
+<p>Cargá el caso de Pedro, modificá los números y observá cuándo la contingencia cambia de signo.</p>
+:::
+
+::: tarjeta
+<h4>2 · Casos</h4>
+
+<p>Calculá la contingencia de cada situación y clasificá el procedimiento.</p>
+:::
+
+::: tarjeta
+<h4>3 · Simulador</h4>
+
+<p>Elegí la realidad y mirá cuánto se parece lo que observás a lo que de verdad ocurre.</p>
+:::
+::::::
+
+::: {.caja-verde style="margin-top:0.7em; font-size:0.9em"}
+<p style="color:#f5f0e8; margin:0">→ [Abrir la herramienta](../../herramientas/contingencia-operante/index.html){target="_blank" style="color:#95c17a; font-weight:700"}</p>
+:::
+
+------------------------------------------------------------------------
+
 ## Programas de reforzamiento
 
 <p style="margin-top:0.4em">El **programa de reforzamiento** describe la regla según la cual una conducta es seguida o no por un reforzador. La pregunta clave es: ¿cuán resistente a la **extinción** será la conducta cuando el reforzador deje de aparecer?</p>
@@ -524,12 +554,21 @@ datos_tolman <- data.frame(
                             "G3 · Reforzada desde día 11"))
 )
 
-# Paleta verde de la materia
+# Colores bien separados (verde oscuro, gris y verde vivo) y, además, forma
+# de punto y tipo de línea distintos para que G1 y G3 se distingan aun donde
+# se superponen (días 15 a 17) o al proyectar con poco contraste.
 colores <- c("G1 · Siempre reforzada"        = "#1a3d2b",
-             "G2 · Nunca reforzada"          = "#95c17a",
-             "G3 · Reforzada desde día 11"   = "#2d6a4f")
+             "G2 · Nunca reforzada"          = "#8a938d",
+             "G3 · Reforzada desde día 11"   = "#52b788")
+formas  <- c("G1 · Siempre reforzada"        = 16,
+             "G2 · Nunca reforzada"          = 15,
+             "G3 · Reforzada desde día 11"   = 17)
+lineas  <- c("G1 · Siempre reforzada"        = "solid",
+             "G2 · Nunca reforzada"          = "solid",
+             "G3 · Reforzada desde día 11"   = "22")
 
-ggplot(datos_tolman, aes(x = dia, y = tiempo, color = grupo)) +
+ggplot(datos_tolman, aes(x = dia, y = tiempo, color = grupo,
+                         shape = grupo, linetype = grupo)) +
   # Línea vertical marcando el inicio del reforzamiento en G3
   geom_vline(xintercept = 11, linetype = "dashed",
              color = "red", linewidth = 0.95) +
@@ -538,14 +577,16 @@ ggplot(datos_tolman, aes(x = dia, y = tiempo, color = grupo)) +
            hjust = 0, size = 3.2, color = "#3d5247",
            fontface = "italic") +
   geom_line(linewidth = 1.1) +
-  geom_point(size = 2.2) +
+  geom_point(size = 2.8) +
   scale_color_manual(values = colores) +
+  scale_shape_manual(values = formas) +
+  scale_linetype_manual(values = lineas) +
   scale_x_continuous(breaks = seq(1, 17, 2)) +
   scale_y_continuous(limits = c(0, 26), breaks = seq(0, 25, 5)) +
   labs(
     x = "Día",
     y = "Tiempo de salida (minutos)",
-    color = NULL
+    color = NULL, shape = NULL, linetype = NULL
   ) +
   theme_minimal(base_size = 13) +
   theme(
@@ -557,6 +598,7 @@ ggplot(datos_tolman, aes(x = dia, y = tiempo, color = grupo)) +
                                  margin = margin(b = 12)),
     legend.position = "bottom",
     legend.text = element_text(size = 10),
+    legend.key.width = unit(1.6, "cm"),
     panel.grid.minor = element_blank(),
     panel.grid.major = element_line(color = "#e8dfc9"),
     axis.title = element_text(color = "#3d5247"),
