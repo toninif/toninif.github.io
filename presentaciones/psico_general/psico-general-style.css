@@ -314,6 +314,24 @@
   color: var(--texto-mid);
 }
 
+/* Sobre fondos verdes oscuros, el verde medio de las negritas y el gris
+   verdoso de las cursivas no se distinguen del fondo: se invierten. */
+.reveal .caja-verde strong,
+.reveal table th strong,
+.reveal .badge strong {
+  color: var(--acento);
+}
+
+.reveal .caja-verde em,
+.reveal table th em,
+.reveal .badge em {
+  color: var(--crema-oscura);
+}
+
+.reveal .caja-verde a {
+  color: var(--acento);
+}
+
 /* ── Crisis replicabilidad – lista con íconos ── */
 .lista-crisis li {
   list-style: none;
