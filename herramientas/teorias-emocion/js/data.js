@@ -134,7 +134,7 @@ const glossary = [
     id: "s-hippocampus",
     name: "Hipocampo",
     color: "#ED93B1",
-    role: "Memoria contextual y declarativa. Integra el estímulo presente con experiencias previas. Arnold le dio un rol importante en la appraisal.",
+    role: "Memoria contextual y declarativa. Integra el estímulo presente con experiencias previas. Aquí se relaciona, de manera didáctica, con la evaluación del contexto.",
     ref: "Eichenbaum, H. (2017). Memory: Organization and control. Annual Review of Psychology, 68, 19-45."
   },
   {
@@ -162,14 +162,14 @@ const glossary = [
     id: "s-dlpfc",
     name: "Corteza prefrontal dorsolateral (dlPFC)",
     color: "#378ADD",
-    role: "Appraisal secundaria. Evaluación de recursos de afrontamiento y control cognitivo. Central en los modelos de Lazarus y en la regulación emocional.",
+    role: "Control cognitivo y regulación emocional. En este mapa se asocia de manera didáctica con la consideración de opciones y recursos de afrontamiento; no es un centro exclusivo de la evaluación secundaria.",
     ref: "Ochsner, K. N., & Gross, J. J. (2005). The cognitive control of emotion. Trends in Cognitive Sciences, 9(5), 242-249."
   },
   {
     id: "s-somato",
     name: "Corteza somatosensorial",
     color: "#5DCAA5",
-    role: "Recibe aferencias propioceptivas e interoceptivas del cuerpo. James la consideraría parte del sustrato de la experiencia emocional vía retroalimentación corporal.",
+    role: "Procesamiento de información somatosensorial y representación del cuerpo. Se incluye como apoyo para estudiar la percepción corporal, sin atribuir esta asociación específica a James.",
     ref: "Adolphs, R. (2002). Recognizing emotion from facial expressions. Behavioral and Cognitive Neuroscience Reviews, 1(1), 21-62."
   },
   {
@@ -183,7 +183,7 @@ const glossary = [
     id: "s-sna",
     name: "Sistema nervioso autónomo y vísceras",
     color: "#D85A30",
-    role: "Sustrato de la respuesta fisiológica. Cannon describió el patrón simpático-adrenomedular de lucha o huida. Vasoconstricción periférica en miedo, vasodilatación en ira.",
+    role: "Participa en los cambios de frecuencia cardíaca, respiración y actividad visceral. Representa el componente corporal del ejemplo; no es una región dentro del cerebro.",
     ref: "Cannon, W. B. (1929). Bodily changes in pain, hunger, fear and rage. Appleton."
   }
 ];
