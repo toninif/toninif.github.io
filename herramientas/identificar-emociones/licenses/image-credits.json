@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "1.0",
+  "contentVersion": "0.1.0-demo",
+  "reviewDate": "2026-10-22",
+  "authorship": "Redacción e ilustraciones preparadas con Codex para revisión de Fernando Tonini",
+  "reviewStatus": "draft",
+  "editorialNote": "Lectura de fuentes completada; revisión docente y pilotaje pendientes.",
+  "items": [
+    {
+      "id": "original-svg-v1",
+      "creator": "Ilustraciones originales preparadas con Codex para este proyecto",
+      "license": "Material original del proyecto; no incorpora fotografías, trazados ni figuras de los PDF ni de bancos externos.",
+      "publicWebUseVerified": true,
+      "consentRequired": false,
+      "note": "Identidades ficticias esquemáticas. Permiso de uso del recurso original no equivale a validación psicológica."
+    }
+  ]
+}

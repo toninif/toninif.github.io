@@ -1,0 +1,332 @@
+{
+  "schemaVersion": "1.0",
+  "contentVersion": "0.1.0-demo",
+  "reviewDate": "2026-10-22",
+  "authorship": "Redacción e ilustraciones preparadas con Codex para revisión de Fernando Tonini",
+  "reviewStatus": "draft",
+  "editorialNote": "Lectura de fuentes completada; revisión docente y pilotaje pendientes.",
+  "guide": {
+    "modelId": "fernandez_abascal_2001",
+    "intro": "En el modelo cognitivo de estos materiales, una situación significativa se evalúa, se produce activación y el aprendizaje y la cultura modulan sus manifestaciones. No es una cronología universal de todas las teorías.",
+    "steps": [
+      {
+        "title": "Situación significativa",
+        "text": "Puede ser externa, como recibir una noticia, o interna, como recordar una experiencia."
+      },
+      {
+        "title": "Evaluación valorativa",
+        "text": "Distingue novedad y agrado, y la valoración del significado: metas, atribución, control, capacidad de afrontar y normas."
+      },
+      {
+        "title": "Activación emocional",
+        "text": "Incluye experiencia subjetiva, expresión corporal, soporte fisiológico y afrontamiento. Un cambio corporal aislado no identifica una emoción."
+      },
+      {
+        "title": "Aprendizaje y cultura",
+        "text": "Pueden modular qué se expresa, cómo se informa lo vivido y qué conducta se realiza. Una cara neutral no prueba ausencia de emoción."
+      }
+    ],
+    "limits": "Situación, experiencia, expresión y conducta aportan datos diferentes. Las seis categorías son un recorte docente. Las claves describen la interpretación mejor sustentada en un caso construido, no lo que necesariamente sentiría una persona real.",
+    "sourceRefs": [
+      {
+        "sourceId": "pdf_01",
+        "pdfPage": 3,
+        "printedPage": 3,
+        "section": "El proceso emocional",
+        "interpretation": "Secuencia del modelo del apunte."
+      },
+      {
+        "sourceId": "pdf_03",
+        "pdfPage": 6,
+        "printedPage": 300,
+        "section": "3.1. Evaluación valorativa",
+        "interpretation": "Dimensiones del significado y del afrontamiento."
+      },
+      {
+        "sourceId": "pdf_03",
+        "pdfPage": 12,
+        "printedPage": 306,
+        "section": "3.3. Aprendizaje y cultura",
+        "interpretation": "La expresión observable puede diferir de la experiencia."
+      }
+    ]
+  },
+  "glossary": [
+    {
+      "term": "Evaluación (appraisal)",
+      "text": "Significado afectivo y personal que adquiere una situación. No implica necesariamente reflexión consciente."
+    },
+    {
+      "term": "Agrado intrínseco",
+      "text": "Valoración agradable o desagradable del estímulo. No equivale a utilidad moral ni a que una emoción sea buena o mala."
+    },
+    {
+      "term": "Conducente / obstruyente",
+      "text": "La situación facilita u obstaculiza metas o necesidades de la persona."
+    },
+    {
+      "term": "Afrontamiento",
+      "text": "Esfuerzos y recursos cognitivos o conductuales para manejar demandas. En las fichas también se describen tendencias a la acción, que pueden diferir de la conducta realizada."
+    },
+    {
+      "term": "Soporte fisiológico (arousal)",
+      "text": "Cambios en la actividad del organismo que sostienen la respuesta. No constituyen por sí solos una etiqueta emocional."
+    },
+    {
+      "term": "Neutral",
+      "text": "Condición de un estímulo sin el patrón expresivo objetivo; no es una séptima emoción primaria."
+    },
+    {
+      "term": "Información insuficiente",
+      "text": "Faltan datos discriminantes para sostener una atribución única. Es una respuesta sobre la evidencia disponible."
+    }
+  ],
+  "items": [
+    {
+      "id": "alegria",
+      "label": "Alegría",
+      "shortLabel": "Alegría",
+      "synonyms": "Alegría; felicidad no es un sinónimo exacto",
+      "definition": "Respuesta agradable ante un resultado valorado favorablemente, como alcanzar una meta.",
+      "triggers": "Logros, reencuentros deseados o la continuidad de algo que se disfruta.",
+      "appraisal": "Lo sucedido ayuda a conseguir algo importante y se considera favorable. No exige que el resultado sea inesperado.",
+      "body": "Pueden cambiar la respiración, el pulso y la tensión muscular; esos cambios también aparecen en otras emociones.",
+      "subjective": "Bienestar, disfrute o ganas de compartir lo ocurrido.",
+      "expression": "En el patrón ilustrado se elevan las comisuras y las mejillas y se estrecha la abertura de los ojos.",
+      "actionTendency": "Acercarse, compartir la experiencia o sostener una actividad satisfactoria.",
+      "function": "Puede favorecer el disfrute, la exploración y los vínculos sociales.",
+      "confusions": "Una sonrisa de cortesía no demuestra disfrute. La felicidad global que describe el capítulo no equivale a cada episodio breve de alegría.",
+      "example": "Después de preparar un proyecto, recibís la confirmación de que salió como esperabas y querés celebrarlo.",
+      "counterexample": "Sonreís para una foto por pedido de otra persona: la forma del gesto no informa por sí sola cómo te sentís.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 7,
+          "printedPage": 9,
+          "section": "Alegría",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 27,
+          "printedPage": 321,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        },
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Patrones ilustrativos, sin inferencia directa sobre experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "tristeza",
+      "label": "Tristeza",
+      "shortLabel": "Tristeza",
+      "synonyms": "Tristeza",
+      "definition": "Respuesta ante una pérdida, separación o resultado desfavorable que ya ocurrió y tiene valor personal.",
+      "triggers": "Finales de etapas significativas, separaciones, pérdidas o proyectos que no podrán continuar.",
+      "appraisal": "Se destaca lo perdido y la dificultad para revertirlo. En estos casos la urgencia por actuar suele ser menor que ante una amenaza inmediata.",
+      "body": "Puede haber cambios en el pulso y la tensión muscular junto con menor energía percibida. No existe aquí una prueba corporal de tristeza.",
+      "subjective": "Desánimo, pena o pérdida de entusiasmo.",
+      "expression": "En el esquema, las comisuras descienden y los extremos internos de las cejas se elevan.",
+      "actionTendency": "Reducir el ritmo, revisar lo ocurrido y buscar compañía o apoyo.",
+      "function": "Puede facilitar la reorganización tras una pérdida y comunicar necesidad de ayuda.",
+      "confusions": "La amenaza de una pérdida y la pérdida ya consumada no aportan el mismo significado. Puede haber tristeza aun cuando alguien sea responsable.",
+      "example": "Una actividad que valorabas termina definitivamente y necesitás tiempo para procesar su ausencia.",
+      "counterexample": "Te preocupa que una actividad pueda suspenderse, pero todavía no pasó: faltan datos para atribuir tristeza.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 3,
+          "printedPage": 5,
+          "section": "Tristeza",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 22,
+          "printedPage": 316,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        },
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Patrones ilustrativos, sin inferencia directa sobre experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "miedo",
+      "label": "Miedo",
+      "shortLabel": "Miedo",
+      "synonyms": "Miedo",
+      "definition": "Respuesta de protección cuando una situación se evalúa como amenazante y difícil de afrontar.",
+      "triggers": "Peligro de daño físico o psicológico y señales que se han asociado con una amenaza.",
+      "appraisal": "Importa la amenaza percibida y la sensación de no disponer de recursos suficientes para manejarla.",
+      "body": "Pueden aumentar el pulso, la respiración y la tensión muscular. La activación aislada es inespecífica.",
+      "subjective": "Tensión, preocupación por la seguridad o sensación de poco control.",
+      "expression": "En el dibujo, las cejas se elevan y acercan, los ojos se abren y la boca se estira horizontalmente.",
+      "actionTendency": "Ponerse a resguardo, alejarse o quedarse inmóvil; también pueden buscarse otras formas de protección.",
+      "function": "Movilizar recursos para protegerse del peligro percibido.",
+      "confusions": "La sorpresa aporta novedad; para atribuir miedo hacen falta indicios de amenaza. La inmovilidad no prueba una emoción única.",
+      "example": "Un objeto pesado cae cerca y buscás apartarte porque podría lastimarte.",
+      "counterexample": "Encontrás un aula reorganizada y mirás para entender qué cambió, sin percibir peligro.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 2,
+          "printedPage": 4,
+          "section": "Miedo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 16,
+          "printedPage": 310,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        },
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Patrones ilustrativos, sin inferencia directa sobre experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "ira",
+      "label": "Ira / enojo",
+      "shortLabel": "Enojo",
+      "synonyms": "Ira; enojo",
+      "definition": "Respuesta ante un obstáculo, agravio o vulneración que se considera relevante y frente a la que se quiere intervenir.",
+      "triggers": "Tratos injustos, engaños, invasión de derechos o bloqueo de metas importantes.",
+      "appraisal": "La situación se interpreta como un obstáculo o una injusticia; en los casos propuestos se percibe capacidad para reclamar un cambio.",
+      "body": "Pueden aumentar la tensión muscular, el pulso y la respiración. Estos cambios no distinguen por sí solos enojo de miedo.",
+      "subjective": "Irritación, sensación de fuerza o impulso a actuar.",
+      "expression": "En el dibujo las cejas bajan y se acercan; los párpados y la boca muestran tensión.",
+      "actionTendency": "Reclamar, defenderse o intentar remover el obstáculo. Sentir el impulso no obliga a ejecutarlo.",
+      "function": "Puede organizar la defensa de límites y la búsqueda de cambios en una situación.",
+      "confusions": "Enojo no equivale a agresión: puede expresarse con un reclamo cuidadoso. Tampoco toda agresión implica enojo.",
+      "example": "Alguien se atribuye tu trabajo; lo considerás injusto y preparás un pedido de rectificación.",
+      "counterexample": "Un proyecto se pierde de forma irreversible y te centrás en su ausencia, sin impulso de confrontar.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 4,
+          "printedPage": 6,
+          "section": "Ira / enojo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 19,
+          "printedPage": 313,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        },
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Patrones ilustrativos, sin inferencia directa sobre experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "asco",
+      "label": "Asco",
+      "shortLabel": "Asco",
+      "synonyms": "Asco; repulsión",
+      "definition": "Respuesta de repulsión y rechazo hacia un estímulo considerado desagradable o potencialmente contaminante.",
+      "triggers": "Olores, sabores, texturas o contactos que se interpretan como deteriorados o contaminantes.",
+      "appraisal": "El estímulo se evalúa como muy desagradable y se busca evitar el contacto o la ingestión.",
+      "body": "Pueden aparecer sensaciones gástricas o náuseas, además de cambios generales de activación. No son una condición obligatoria.",
+      "subjective": "Repulsión y necesidad de apartar el estímulo.",
+      "expression": "En esta ilustración se marcan arrugas en la nariz y se eleva el labio superior.",
+      "actionTendency": "Apartarse, retirar el objeto o evitar ingerirlo.",
+      "function": "Puede favorecer conductas protectoras frente al contacto con sustancias consideradas dañinas.",
+      "confusions": "No todo desagrado es asco. Un juicio moral negativo no demuestra repulsión ni justifica desvalorizar a una persona.",
+      "example": "Notás señales de descomposición en una comida y la apartás antes de probarla.",
+      "counterexample": "No te gusta el horario de una clase, pero no hay repulsión ni rechazo al contacto.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 5,
+          "printedPage": 7,
+          "section": "Asco",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 25,
+          "printedPage": 319,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        },
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Patrones ilustrativos, sin inferencia directa sobre experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "sorpresa",
+      "label": "Sorpresa",
+      "shortLabel": "Sorpresa",
+      "synonyms": "Sorpresa",
+      "definition": "Respuesta breve de orientación ante un cambio que rompe una expectativa.",
+      "triggers": "Acontecimientos inesperados, cambios bruscos o interrupciones de una actividad.",
+      "appraisal": "Lo central es que lo ocurrido no se esperaba y requiere actualizar la información disponible.",
+      "body": "Puede interrumpirse brevemente la respiración y cambiar el tono muscular. Las fuentes discrepan sobre la dirección del pulso; no se usa como clave.",
+      "subjective": "Desconcierto o sensación momentánea de no saber qué pasó.",
+      "expression": "En el esquema, las cejas se elevan en arco, los ojos se abren y la mandíbula desciende.",
+      "actionTendency": "Detenerse, mirar, explorar y obtener información.",
+      "function": "Reorientar la atención para comprender la novedad y preparar una respuesta.",
+      "confusions": "Puede preceder a una emoción agradable o desagradable. Ojos abiertos y boca abierta también pueden aparecer en otros patrones.",
+      "example": "Entrás a un lugar conocido, encontrás una disposición inesperada y te detenés para comprender el cambio.",
+      "counterexample": "Ves un peligro que esperabas y te protegés: la amenaza puede ser central aunque no haya novedad.",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 6,
+          "printedPage": 8,
+          "section": "Sorpresa",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 29,
+          "printedPage": 323,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        },
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Patrones ilustrativos, sin inferencia directa sobre experiencia interna."
+        }
+      ]
+    }
+  ]
+}

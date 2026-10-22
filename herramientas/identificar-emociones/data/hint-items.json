@@ -1,0 +1,826 @@
+{
+  "schemaVersion": "1.0",
+  "contentVersion": "0.1.0-demo",
+  "reviewDate": "2026-10-22",
+  "authorship": "Redacción e ilustraciones preparadas con Codex para revisión de Fernando Tonini",
+  "reviewStatus": "draft",
+  "editorialNote": "Lectura de fuentes completada; revisión docente y pilotaje pendientes.",
+  "items": [
+    {
+      "id": "hint_0001",
+      "faceId": "f_0001",
+      "expectedEmotion": "alegria",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de mejillas y boca."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Las comisuras suben, las mejillas se elevan y la abertura de los ojos se estrecha."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "En este dibujo las comisuras suben; en el patrón de tristeza del ejemplo guiado descienden."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Acaba de alcanzar una meta que deseaba y quiere compartir el resultado."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan mejillas y boca."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "En este dibujo las comisuras suben; en el patrón de tristeza del ejemplo guiado descienden."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "La combinación descrita corresponde a un patrón de sonrisa. Identificar ese patrón no prueba una experiencia agradable interna."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Acaba de alcanzar una meta que deseaba y quiere compartir el resultado."
+        }
+      ],
+      "explanation": "La clave del esquema es alegría. Las comisuras suben, las mejillas se elevan y la abertura de los ojos se estrecha. En este dibujo las comisuras suben; en el patrón de tristeza del ejemplo guiado descienden.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0002",
+      "faceId": "f_0002",
+      "expectedEmotion": "tristeza",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de cejas y comisuras."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Los extremos internos de las cejas se elevan y las comisuras de la boca bajan."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "Compará las comisuras descendentes con las elevadas del patrón de alegría."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Una actividad que valoraba terminó para siempre y se centra en su pérdida."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan cejas y comisuras."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "Compará las comisuras descendentes con las elevadas del patrón de alegría."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "Los extremos internos de las cejas y las comisuras se desplazan en direcciones opuestas. Compará esta relación con una elevación conjunta de mejillas y comisuras."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Una actividad que valoraba terminó para siempre y se centra en su pérdida."
+        }
+      ],
+      "explanation": "La clave del esquema es tristeza. Los extremos internos de las cejas se elevan y las comisuras de la boca bajan. Compará las comisuras descendentes con las elevadas del patrón de alegría.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0003",
+      "faceId": "f_0003",
+      "expectedEmotion": "miedo",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de cejas y boca."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Las cejas están elevadas y próximas entre sí; los ojos están muy abiertos y la boca se estira hacia los lados."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "En el ejemplo de sorpresa la boca es redondeada; acá está estirada hacia los lados y las cejas se acercan."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Algo podría lastimarle de inmediato y busca ponerse a resguardo."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan cejas y boca."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "En el ejemplo de sorpresa la boca es redondeada; acá está estirada hacia los lados y las cejas se acercan."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "La abertura de los ojos también aparece en otra categoría. En esta comparación, el estiramiento horizontal de la boca aporta más información que los ojos por sí solos."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Algo podría lastimarle de inmediato y busca ponerse a resguardo."
+        }
+      ],
+      "explanation": "La clave del esquema es miedo. Las cejas están elevadas y próximas entre sí; los ojos están muy abiertos y la boca se estira hacia los lados. En el ejemplo de sorpresa la boca es redondeada; acá está estirada hacia los lados y las cejas se acercan.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0004",
+      "faceId": "f_0004",
+      "expectedEmotion": "ira",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de entrecejo y labios."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Las cejas descienden hacia el centro, los ojos se estrechan y los labios se presionan."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "A diferencia del patrón de miedo, las cejas bajan hacia el centro y la boca permanece cerrada y presionada."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Considera injusto un trato recibido y quiere reclamar que lo cambien."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan entrecejo y labios."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "A diferencia del patrón de miedo, las cejas bajan hacia el centro y la boca permanece cerrada y presionada."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "En el contraste no hay abertura redondeada de la mandíbula ni pliegues nasales: la tensión se concentra en el entrecejo y el cierre de la boca."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Considera injusto un trato recibido y quiere reclamar que lo cambien."
+        }
+      ],
+      "explanation": "La clave del esquema es ira / enojo. Las cejas descienden hacia el centro, los ojos se estrechan y los labios se presionan. A diferencia del patrón de miedo, las cejas bajan hacia el centro y la boca permanece cerrada y presionada.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0005",
+      "faceId": "f_0005",
+      "expectedEmotion": "asco",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de nariz y labio superior."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "La nariz muestra pliegues, el labio superior sube y la boca queda asimétrica."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "La tensión de labios también aparece en el enojo; acá se añaden pliegues en la nariz y elevación del labio superior."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Detecta un olor de descomposición y quiere apartar el objeto."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan nariz y labio superior."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "La tensión de labios también aparece en el enojo; acá se añaden pliegues en la nariz y elevación del labio superior."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "Una boca tensa podría encajar en más de una opción. La relación entre el pliegue nasal y el movimiento del labio es el dato discriminante de esta descripción."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Detecta un olor de descomposición y quiere apartar el objeto."
+        }
+      ],
+      "explanation": "La clave del esquema es asco. La nariz muestra pliegues, el labio superior sube y la boca queda asimétrica. La tensión de labios también aparece en el enojo; acá se añaden pliegues en la nariz y elevación del labio superior.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0006",
+      "faceId": "f_0006",
+      "expectedEmotion": "sorpresa",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de cejas y mandíbula."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Las cejas forman arcos elevados, los ojos se abren y la boca forma una abertura redondeada."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "En el ejemplo de miedo la boca se estira hacia los lados; acá la abertura es redondeada y las cejas no se juntan."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Encontró un cambio inesperado y se detiene para comprenderlo."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan cejas y mandíbula."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "En el ejemplo de miedo la boca se estira hacia los lados; acá la abertura es redondeada y las cejas no se juntan."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "Compará un patrón de tensión y aproximación de cejas con uno de apertura en arco y mandíbula descendida. La descripción del ejercicio corresponde al segundo."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Encontró un cambio inesperado y se detiene para comprenderlo."
+        }
+      ],
+      "explanation": "La clave del esquema es sorpresa. Las cejas forman arcos elevados, los ojos se abren y la boca forma una abertura redondeada. En el ejemplo de miedo la boca se estira hacia los lados; acá la abertura es redondeada y las cejas no se juntan.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0008",
+      "faceId": "f_0008",
+      "expectedEmotion": "alegria",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de mejillas y boca."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Las comisuras suben, las mejillas se elevan y la abertura de los ojos se estrecha."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "En este dibujo las comisuras suben; en el patrón de tristeza del ejemplo guiado descienden."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Acaba de alcanzar una meta que deseaba y quiere compartir el resultado."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan mejillas y boca."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "En este dibujo las comisuras suben; en el patrón de tristeza del ejemplo guiado descienden."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "La combinación descrita corresponde a un patrón de sonrisa. Identificar ese patrón no prueba una experiencia agradable interna."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Acaba de alcanzar una meta que deseaba y quiere compartir el resultado."
+        }
+      ],
+      "explanation": "La clave del esquema es alegría. Las comisuras suben, las mejillas se elevan y la abertura de los ojos se estrecha. En este dibujo las comisuras suben; en el patrón de tristeza del ejemplo guiado descienden.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0009",
+      "faceId": "f_0009",
+      "expectedEmotion": "tristeza",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de cejas y comisuras."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Los extremos internos de las cejas se elevan y las comisuras de la boca bajan."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "Compará las comisuras descendentes con las elevadas del patrón de alegría."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Una actividad que valoraba terminó para siempre y se centra en su pérdida."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan cejas y comisuras."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "Compará las comisuras descendentes con las elevadas del patrón de alegría."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "Los extremos internos de las cejas y las comisuras se desplazan en direcciones opuestas. Compará esta relación con una elevación conjunta de mejillas y comisuras."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Una actividad que valoraba terminó para siempre y se centra en su pérdida."
+        }
+      ],
+      "explanation": "La clave del esquema es tristeza. Los extremos internos de las cejas se elevan y las comisuras de la boca bajan. Compará las comisuras descendentes con las elevadas del patrón de alegría.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0010",
+      "faceId": "f_0010",
+      "expectedEmotion": "miedo",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de cejas y boca."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Las cejas están elevadas y próximas entre sí; los ojos están muy abiertos y la boca se estira hacia los lados."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "En el ejemplo de sorpresa la boca es redondeada; acá está estirada hacia los lados y las cejas se acercan."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Algo podría lastimarle de inmediato y busca ponerse a resguardo."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan cejas y boca."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "En el ejemplo de sorpresa la boca es redondeada; acá está estirada hacia los lados y las cejas se acercan."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "La abertura de los ojos también aparece en otra categoría. En esta comparación, el estiramiento horizontal de la boca aporta más información que los ojos por sí solos."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Algo podría lastimarle de inmediato y busca ponerse a resguardo."
+        }
+      ],
+      "explanation": "La clave del esquema es miedo. Las cejas están elevadas y próximas entre sí; los ojos están muy abiertos y la boca se estira hacia los lados. En el ejemplo de sorpresa la boca es redondeada; acá está estirada hacia los lados y las cejas se acercan.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0011",
+      "faceId": "f_0011",
+      "expectedEmotion": "ira",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de entrecejo y labios."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Las cejas descienden hacia el centro, los ojos se estrechan y los labios se presionan."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "A diferencia del patrón de miedo, las cejas bajan hacia el centro y la boca permanece cerrada y presionada."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Considera injusto un trato recibido y quiere reclamar que lo cambien."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan entrecejo y labios."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "A diferencia del patrón de miedo, las cejas bajan hacia el centro y la boca permanece cerrada y presionada."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "En el contraste no hay abertura redondeada de la mandíbula ni pliegues nasales: la tensión se concentra en el entrecejo y el cierre de la boca."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Considera injusto un trato recibido y quiere reclamar que lo cambien."
+        }
+      ],
+      "explanation": "La clave del esquema es ira / enojo. Las cejas descienden hacia el centro, los ojos se estrechan y los labios se presionan. A diferencia del patrón de miedo, las cejas bajan hacia el centro y la boca permanece cerrada y presionada.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0012",
+      "faceId": "f_0012",
+      "expectedEmotion": "asco",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de nariz y labio superior."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "La nariz muestra pliegues, el labio superior sube y la boca queda asimétrica."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "La tensión de labios también aparece en el enojo; acá se añaden pliegues en la nariz y elevación del labio superior."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Detecta un olor de descomposición y quiere apartar el objeto."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan nariz y labio superior."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "La tensión de labios también aparece en el enojo; acá se añaden pliegues en la nariz y elevación del labio superior."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "Una boca tensa podría encajar en más de una opción. La relación entre el pliegue nasal y el movimiento del labio es el dato discriminante de esta descripción."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Detecta un olor de descomposición y quiere apartar el objeto."
+        }
+      ],
+      "explanation": "La clave del esquema es asco. La nariz muestra pliegues, el labio superior sube y la boca queda asimétrica. La tensión de labios también aparece en el enojo; acá se añaden pliegues en la nariz y elevación del labio superior.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "hint_0013",
+      "faceId": "f_0013",
+      "expectedEmotion": "sorpresa",
+      "hints": [
+        {
+          "level": 1,
+          "kind": "facial",
+          "text": "Prestá atención a la zona de cejas y mandíbula."
+        },
+        {
+          "level": 2,
+          "kind": "facial",
+          "text": "Las cejas forman arcos elevados, los ojos se abren y la boca forma una abertura redondeada."
+        },
+        {
+          "level": 3,
+          "kind": "facial",
+          "text": "En el ejemplo de miedo la boca se estira hacia los lados; acá la abertura es redondeada y las cejas no se juntan."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Encontró un cambio inesperado y se detiene para comprenderlo."
+        }
+      ],
+      "descriptiveHints": [
+        {
+          "level": 1,
+          "kind": "descriptive",
+          "text": "Buscá una combinación de movimientos, no una palabra aislada: revisá cómo se relacionan cejas y mandíbula."
+        },
+        {
+          "level": 2,
+          "kind": "descriptive",
+          "text": "En el ejemplo de miedo la boca se estira hacia los lados; acá la abertura es redondeada y las cejas no se juntan."
+        },
+        {
+          "level": 3,
+          "kind": "descriptive",
+          "text": "Compará un patrón de tensión y aproximación de cejas con uno de apertura en arco y mandíbula descendida. La descripción del ejercicio corresponde al segundo."
+        },
+        {
+          "level": 4,
+          "kind": "contextual",
+          "text": "Encontró un cambio inesperado y se detiene para comprenderlo."
+        }
+      ],
+      "explanation": "La clave del esquema es sorpresa. Las cejas forman arcos elevados, los ojos se abren y la boca forma una abertura redondeada. En el ejemplo de miedo la boca se estira hacia los lados; acá la abertura es redondeada y las cejas no se juntan.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    }
+  ]
+}

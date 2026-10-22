@@ -8,3 +8,6 @@
 *_files/
 
 **/*.quarto_ipynb
+
+# Extracciones, OCR y capturas locales de la herramienta de emociones.
+/tmp/identificar-emociones/

@@ -1,0 +1,1060 @@
+{
+  "schemaVersion": "1.0",
+  "contentVersion": "0.1.0-demo",
+  "reviewDate": "2026-10-22",
+  "authorship": "Redacción e ilustraciones preparadas con Codex para revisión de Fernando Tonini",
+  "reviewStatus": "draft",
+  "editorialNote": "Lectura de fuentes completada; revisión docente y pilotaje pendientes.",
+  "items": [
+    {
+      "id": "proc_alegria_01",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Después de preparar una exposición, Alex recibe la confirmación de que el trabajo fue aceptado.",
+        "appraisal": "Lo interpreta como la realización de una meta importante que venía buscando.",
+        "body": "Nota energía y una sensación agradable.",
+        "actionTendency": "Quiere compartir la noticia y seguir trabajando con su grupo."
+      },
+      "answerType": "single",
+      "expectedAnswer": "alegria",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es alegría. El dato central es el significado atribuido: Lo interpreta como la realización de una meta importante que venía buscando. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Una sonrisa de cortesía no demuestra disfrute. La felicidad global que describe el capítulo no equivale a cada episodio breve de alegría.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 7,
+          "printedPage": 9,
+          "section": "Alegría",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 27,
+          "printedPage": 321,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_alegria_02",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Tras varios ensayos, un grupo consigue interpretar una pieza completa.",
+        "appraisal": "El resultado coincide con lo que se propusieron y valoran haberlo conseguido juntos.",
+        "body": "Se sienten con vigor y disfrutan el momento.",
+        "actionTendency": "Quieren repetir la experiencia y festejar el logro."
+      },
+      "answerType": "single",
+      "expectedAnswer": "alegria",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es alegría. El dato central es el significado atribuido: El resultado coincide con lo que se propusieron y valoran haberlo conseguido juntos. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Una sonrisa de cortesía no demuestra disfrute. La felicidad global que describe el capítulo no equivale a cada episodio breve de alegría.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 7,
+          "printedPage": 9,
+          "section": "Alegría",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 27,
+          "printedPage": 321,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_alegria_03",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "La planta que Jo cuidó durante meses finalmente florece.",
+        "appraisal": "Considera que el esfuerzo dio el resultado que deseaba.",
+        "body": "Percibe bienestar y una respiración más animada.",
+        "actionTendency": "Quiere mostrarla y continuar cuidándola."
+      },
+      "answerType": "single",
+      "expectedAnswer": "alegria",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es alegría. El dato central es el significado atribuido: Considera que el esfuerzo dio el resultado que deseaba. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Una sonrisa de cortesía no demuestra disfrute. La felicidad global que describe el capítulo no equivale a cada episodio breve de alegría.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 7,
+          "printedPage": 9,
+          "section": "Alegría",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 27,
+          "printedPage": 321,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_alegria_04",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Un equipo termina de restaurar el espacio comunitario que se había propuesto recuperar.",
+        "appraisal": "Dani piensa que alcanzaron algo valioso y que el resultado beneficia al grupo.",
+        "body": "Nota una sensación agradable y energía disponible.",
+        "actionTendency": "Quiere encontrarse con los demás y disfrutar del espacio."
+      },
+      "answerType": "single",
+      "expectedAnswer": "alegria",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es alegría. El dato central es el significado atribuido: Dani piensa que alcanzaron algo valioso y que el resultado beneficia al grupo. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Una sonrisa de cortesía no demuestra disfrute. La felicidad global que describe el capítulo no equivale a cada episodio breve de alegría.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 7,
+          "printedPage": 9,
+          "section": "Alegría",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 27,
+          "printedPage": 321,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_tristeza_01",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Una biblioteca barrial muy importante para Sol cierra definitivamente.",
+        "appraisal": "Se centra en la pérdida de un lugar de encuentro que ya no podrá recuperar.",
+        "body": "Se siente con poca energía y le cuesta sostener el ritmo habitual.",
+        "actionTendency": "Quiere bajar el ritmo y conversar con alguien cercano."
+      },
+      "answerType": "single",
+      "expectedAnswer": "tristeza",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es tristeza. El dato central es el significado atribuido: Se centra en la pérdida de un lugar de encuentro que ya no podrá recuperar. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "La amenaza de una pérdida y la pérdida ya consumada no aportan el mismo significado. Puede haber tristeza aun cuando alguien sea responsable.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 3,
+          "printedPage": 5,
+          "section": "Tristeza",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 22,
+          "printedPage": 316,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_tristeza_02",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Después de muchos años, termina de forma definitiva el taller al que asistía Cris.",
+        "appraisal": "Valora todo lo que ese espacio significaba y reconoce que esa etapa se terminó.",
+        "body": "Siente pesadez y poco entusiasmo.",
+        "actionTendency": "Quiere revisar recuerdos y buscar compañía."
+      },
+      "answerType": "single",
+      "expectedAnswer": "tristeza",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es tristeza. El dato central es el significado atribuido: Valora todo lo que ese espacio significaba y reconoce que esa etapa se terminó. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "La amenaza de una pérdida y la pérdida ya consumada no aportan el mismo significado. Puede haber tristeza aun cuando alguien sea responsable.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 3,
+          "printedPage": 5,
+          "section": "Tristeza",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 22,
+          "printedPage": 316,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_tristeza_03",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Un archivo de grabaciones familiares se perdió sin posibilidad de recuperación.",
+        "appraisal": "Luz piensa en el valor de lo que desapareció y en que no puede reconstruirlo.",
+        "body": "Nota decaimiento y menor energía.",
+        "actionTendency": "Necesita detenerse y compartir la pérdida con su familia."
+      },
+      "answerType": "single",
+      "expectedAnswer": "tristeza",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es tristeza. El dato central es el significado atribuido: Luz piensa en el valor de lo que desapareció y en que no puede reconstruirlo. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "La amenaza de una pérdida y la pérdida ya consumada no aportan el mismo significado. Puede haber tristeza aun cuando alguien sea responsable.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 3,
+          "printedPage": 5,
+          "section": "Tristeza",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 22,
+          "printedPage": 316,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_tristeza_04",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "La agrupación con la que Sam compartía cada semana se disuelve definitivamente.",
+        "appraisal": "Lo central para Sam es la ausencia de una convivencia que valoraba.",
+        "body": "Siente un descenso de energía y dificultad para interesarse en otras actividades.",
+        "actionTendency": "Quiere tener un tiempo de pausa y hablar con una amistad."
+      },
+      "answerType": "single",
+      "expectedAnswer": "tristeza",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es tristeza. El dato central es el significado atribuido: Lo central para Sam es la ausencia de una convivencia que valoraba. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "La amenaza de una pérdida y la pérdida ya consumada no aportan el mismo significado. Puede haber tristeza aun cuando alguien sea responsable.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 3,
+          "printedPage": 5,
+          "section": "Tristeza",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 22,
+          "printedPage": 316,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_miedo_01",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Un estante empieza a caer muy cerca de Jo.",
+        "appraisal": "Percibe que puede lastimarse y que tiene muy poco margen para controlar la caída.",
+        "body": "Nota tensión corporal y el pulso acelerado.",
+        "actionTendency": "Busca ponerse a resguardo de inmediato."
+      },
+      "answerType": "single",
+      "expectedAnswer": "miedo",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es miedo. El dato central es el significado atribuido: Percibe que puede lastimarse y que tiene muy poco margen para controlar la caída. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "La sorpresa aporta novedad; para atribuir miedo hacen falta indicios de amenaza. La inmovilidad no prueba una emoción única.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 2,
+          "printedPage": 4,
+          "section": "Miedo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 16,
+          "printedPage": 310,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_miedo_02",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "En una caminata, un perro se acerca mostrando los dientes y bloquea el paso.",
+        "appraisal": "Alex cree que podría recibir una mordida y no sabe cómo manejar la situación.",
+        "body": "Nota respiración rápida y tensión en las piernas.",
+        "actionTendency": "Quiere aumentar la distancia y encontrar protección."
+      },
+      "answerType": "single",
+      "expectedAnswer": "miedo",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es miedo. El dato central es el significado atribuido: Alex cree que podría recibir una mordida y no sabe cómo manejar la situación. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "La sorpresa aporta novedad; para atribuir miedo hacen falta indicios de amenaza. La inmovilidad no prueba una emoción única.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 2,
+          "printedPage": 4,
+          "section": "Miedo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 16,
+          "printedPage": 310,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_miedo_03",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Una pieza pesada se desprende del techo mientras Cris está debajo.",
+        "appraisal": "Considera que el impacto puede dañarle y que no puede detener el objeto.",
+        "body": "Se tensa y focaliza la atención en la caída.",
+        "actionTendency": "Quiere apartarse y cubrirse."
+      },
+      "answerType": "single",
+      "expectedAnswer": "miedo",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es miedo. El dato central es el significado atribuido: Considera que el impacto puede dañarle y que no puede detener el objeto. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "La sorpresa aporta novedad; para atribuir miedo hacen falta indicios de amenaza. La inmovilidad no prueba una emoción única.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 2,
+          "printedPage": 4,
+          "section": "Miedo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 16,
+          "printedPage": 310,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_miedo_04",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Al cruzar, Dani ve un vehículo que se aproxima sin frenar.",
+        "appraisal": "Percibe un riesgo inmediato de atropello y poca capacidad para modificar la trayectoria.",
+        "body": "Nota tensión muscular y una fuerte activación.",
+        "actionTendency": "Busca retroceder hasta un lugar protegido."
+      },
+      "answerType": "single",
+      "expectedAnswer": "miedo",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es miedo. El dato central es el significado atribuido: Percibe un riesgo inmediato de atropello y poca capacidad para modificar la trayectoria. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "La sorpresa aporta novedad; para atribuir miedo hacen falta indicios de amenaza. La inmovilidad no prueba una emoción única.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 2,
+          "printedPage": 4,
+          "section": "Miedo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 16,
+          "printedPage": 310,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_ira_01",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Alguien presenta como propio un trabajo realizado por Sam.",
+        "appraisal": "Sam considera que se vulneró su autoría y que puede exigir una rectificación.",
+        "body": "Siente tensión y un impulso intenso de intervenir.",
+        "actionTendency": "Quiere reclamar que se reconozca su aporte; decide preparar un mensaje cuidadoso."
+      },
+      "answerType": "single",
+      "expectedAnswer": "ira",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es enojo. El dato central es el significado atribuido: Sam considera que se vulneró su autoría y que puede exigir una rectificación. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Enojo no equivale a agresión: puede expresarse con un reclamo cuidadoso. Tampoco toda agresión implica enojo.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 4,
+          "printedPage": 6,
+          "section": "Ira / enojo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 19,
+          "printedPage": 313,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_ira_02",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Una persona se adelanta deliberadamente en una fila y desplaza a Luz.",
+        "appraisal": "Luz lo considera un trato injusto y cree que puede hacer respetar el turno.",
+        "body": "Siente energía y tensión en el cuerpo.",
+        "actionTendency": "Quiere pedir que se restablezca el orden de llegada."
+      },
+      "answerType": "single",
+      "expectedAnswer": "ira",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es enojo. El dato central es el significado atribuido: Luz lo considera un trato injusto y cree que puede hacer respetar el turno. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Enojo no equivale a agresión: puede expresarse con un reclamo cuidadoso. Tampoco toda agresión implica enojo.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 4,
+          "printedPage": 6,
+          "section": "Ira / enojo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 19,
+          "printedPage": 313,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_ira_03",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Un grupo cambia un acuerdo para excluir a Jo después de que realizó su parte del trabajo.",
+        "appraisal": "Jo atribuye la decisión a un trato deliberadamente injusto y cree que puede cuestionarlo.",
+        "body": "Nota tensión y un impulso de actuar.",
+        "actionTendency": "Quiere pedir una explicación y que se respete lo acordado."
+      },
+      "answerType": "single",
+      "expectedAnswer": "ira",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es enojo. El dato central es el significado atribuido: Jo atribuye la decisión a un trato deliberadamente injusto y cree que puede cuestionarlo. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Enojo no equivale a agresión: puede expresarse con un reclamo cuidadoso. Tampoco toda agresión implica enojo.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 4,
+          "printedPage": 6,
+          "section": "Ira / enojo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 19,
+          "printedPage": 313,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_ira_04",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Se publica un reconocimiento colectivo omitiendo intencionalmente el aporte de Alex.",
+        "appraisal": "Alex percibe una vulneración de sus derechos y considera posible corregirla.",
+        "body": "Siente activación y atención focalizada en el agravio.",
+        "actionTendency": "Quiere presentar los antecedentes y solicitar la corrección."
+      },
+      "answerType": "single",
+      "expectedAnswer": "ira",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es enojo. El dato central es el significado atribuido: Alex percibe una vulneración de sus derechos y considera posible corregirla. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Enojo no equivale a agresión: puede expresarse con un reclamo cuidadoso. Tampoco toda agresión implica enojo.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 4,
+          "printedPage": 6,
+          "section": "Ira / enojo",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 19,
+          "printedPage": 313,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_asco_01",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Al abrir un recipiente, Cris detecta olor a comida en descomposición.",
+        "appraisal": "Interpreta el contenido como repulsivo y no quiere que entre en contacto con su boca.",
+        "body": "Nota malestar gástrico.",
+        "actionTendency": "Quiere apartar el recipiente sin probar su contenido."
+      },
+      "answerType": "single",
+      "expectedAnswer": "asco",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es asco. El dato central es el significado atribuido: Interpreta el contenido como repulsivo y no quiere que entre en contacto con su boca. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "No todo desagrado es asco. Un juicio moral negativo no demuestra repulsión ni justifica desvalorizar a una persona.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 5,
+          "printedPage": 7,
+          "section": "Asco",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 25,
+          "printedPage": 319,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_asco_02",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Al levantar una fruta, Dani encuentra una zona blanda cubierta de moho.",
+        "appraisal": "La percibe como deteriorada y rechaza la posibilidad de ingerirla.",
+        "body": "Siente una reacción de repulsión en el estómago.",
+        "actionTendency": "Quiere dejarla a un lado y evitar el contacto."
+      },
+      "answerType": "single",
+      "expectedAnswer": "asco",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es asco. El dato central es el significado atribuido: La percibe como deteriorada y rechaza la posibilidad de ingerirla. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "No todo desagrado es asco. Un juicio moral negativo no demuestra repulsión ni justifica desvalorizar a una persona.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 5,
+          "printedPage": 7,
+          "section": "Asco",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 25,
+          "printedPage": 319,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_asco_03",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Sol acerca un vaso y percibe un olor rancio que proviene del líquido.",
+        "appraisal": "Considera que el contenido está deteriorado y le resulta repulsivo.",
+        "body": "Nota una sensación gástrica desagradable.",
+        "actionTendency": "Quiere retirar el vaso sin beber."
+      },
+      "answerType": "single",
+      "expectedAnswer": "asco",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es asco. El dato central es el significado atribuido: Considera que el contenido está deteriorado y le resulta repulsivo. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "No todo desagrado es asco. Un juicio moral negativo no demuestra repulsión ni justifica desvalorizar a una persona.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 5,
+          "printedPage": 7,
+          "section": "Asco",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 25,
+          "printedPage": 319,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_asco_04",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Al abrir una bolsa olvidada, Sam ve restos viscosos y percibe olor de descomposición.",
+        "appraisal": "Evalúa el material como repulsivo y quiere evitar que toque su cuerpo.",
+        "body": "Nota malestar en el estómago y un impulso de apartarse.",
+        "actionTendency": "Busca cerrar la bolsa y retirar el material."
+      },
+      "answerType": "single",
+      "expectedAnswer": "asco",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es asco. El dato central es el significado atribuido: Evalúa el material como repulsivo y quiere evitar que toque su cuerpo. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "No todo desagrado es asco. Un juicio moral negativo no demuestra repulsión ni justifica desvalorizar a una persona.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 5,
+          "printedPage": 7,
+          "section": "Asco",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 25,
+          "printedPage": 319,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_sorpresa_01",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Al entrar al aula habitual, Luz encuentra las mesas en una disposición completamente distinta.",
+        "appraisal": "No lo esperaba y todavía no sabe si el cambio le resulta favorable o desfavorable.",
+        "body": "Se detiene y concentra la atención en el cambio.",
+        "actionTendency": "Quiere mirar y preguntar qué pasó."
+      },
+      "answerType": "single",
+      "expectedAnswer": "sorpresa",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es sorpresa. El dato central es el significado atribuido: No lo esperaba y todavía no sabe si el cambio le resulta favorable o desfavorable. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Puede preceder a una emoción agradable o desagradable. Ojos abiertos y boca abierta también pueden aparecer en otros patrones.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 6,
+          "printedPage": 8,
+          "section": "Sorpresa",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 29,
+          "printedPage": 323,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_sorpresa_02",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Al iniciar una presentación conocida, aparece una pantalla que Jo nunca había visto.",
+        "appraisal": "El contenido rompe su expectativa; aún no identifica consecuencias agradables ni una amenaza.",
+        "body": "Su actividad se interrumpe por un momento.",
+        "actionTendency": "Quiere explorar la pantalla para entender el cambio."
+      },
+      "answerType": "single",
+      "expectedAnswer": "sorpresa",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es sorpresa. El dato central es el significado atribuido: El contenido rompe su expectativa; aún no identifica consecuencias agradables ni una amenaza. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Puede preceder a una emoción agradable o desagradable. Ojos abiertos y boca abierta también pueden aparecer en otros patrones.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 6,
+          "printedPage": 8,
+          "section": "Sorpresa",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 29,
+          "printedPage": 323,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_sorpresa_03",
+      "difficulty": "initial",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Alex abre una caja rotulada como vacía y encuentra una colección de objetos desconocidos.",
+        "appraisal": "No esperaba ningún contenido y necesita entender de dónde salió. Todavía no lo valora como bueno o malo.",
+        "body": "Su atención se concentra de golpe en los objetos.",
+        "actionTendency": "Quiere observarlos y obtener información."
+      },
+      "answerType": "single",
+      "expectedAnswer": "sorpresa",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es sorpresa. El dato central es el significado atribuido: No esperaba ningún contenido y necesita entender de dónde salió. Todavía no lo valora como bueno o malo. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Puede preceder a una emoción agradable o desagradable. Ojos abiertos y boca abierta también pueden aparecer en otros patrones.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 6,
+          "printedPage": 8,
+          "section": "Sorpresa",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 29,
+          "printedPage": 323,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_sorpresa_04",
+      "difficulty": "intermediate",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "En una reunión rutinaria se anuncia un cambio de formato que nadie había anticipado.",
+        "appraisal": "Cris registra la ruptura de lo esperado antes de decidir qué consecuencias tendrá.",
+        "body": "Se detiene brevemente y orienta toda su atención al anuncio.",
+        "actionTendency": "Quiere escuchar la explicación y actualizar lo que esperaba."
+      },
+      "answerType": "single",
+      "expectedAnswer": "sorpresa",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La interpretación mejor sustentada es sorpresa. El dato central es el significado atribuido: Cris registra la ruptura de lo esperado antes de decidir qué consecuencias tendrá. La tendencia a actuar lo complementa; el cuerpo por sí solo no fija la clave.",
+      "contrast": "Puede preceder a una emoción agradable o desagradable. Ojos abiertos y boca abierta también pueden aparecer en otros patrones.",
+      "missingInformation": "Para sostener otra interpretación habría que conocer un significado diferente para la persona o cambios en la situación que este relato no describe.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 6,
+          "printedPage": 8,
+          "section": "Sorpresa",
+          "interpretation": "Síntesis de la ficha y contraste con el capítulo; asociaciones posibles, no criterios necesarios."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 29,
+          "printedPage": 323,
+          "section": "4.1. Emociones primarias",
+          "interpretation": "Base conceptual de la ficha. Los ejemplos y contraejemplos son originales."
+        }
+      ]
+    },
+    {
+      "id": "proc_insuficiente_01",
+      "difficulty": "advanced",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Antes de entrar a una sala, una persona nota que su corazón late más rápido.",
+        "appraisal": null,
+        "body": "Pulso acelerado.",
+        "actionTendency": null
+      },
+      "answerType": "single",
+      "expectedAnswer": "insufficient_information",
+      "discriminatingComponent": "appraisal",
+      "explanation": "El pulso acelerado puede acompañar distintas experiencias y actividades. Falta saber qué significa entrar a la sala para esa persona.",
+      "contrast": "Elegir una de las seis emociones agregaría una información sobre la experiencia que el relato no proporciona.",
+      "missingInformation": "Habría que conocer qué significado tiene el episodio para la persona y cómo se relaciona con su experiencia y sus tendencias a actuar.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_01",
+          "pdfPage": 5,
+          "printedPage": 5,
+          "section": "Activación emocional",
+          "interpretation": "Una activación aislada no basta."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "Un gesto observable puede tener función social y no revelar la experiencia."
+        }
+      ]
+    },
+    {
+      "id": "proc_insuficiente_02",
+      "difficulty": "advanced",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Una persona sonríe al saludar a un grupo.",
+        "appraisal": null,
+        "body": "Se observa una sonrisa.",
+        "actionTendency": null
+      },
+      "answerType": "single",
+      "expectedAnswer": "insufficient_information",
+      "discriminatingComponent": "appraisal",
+      "explanation": "Una sonrisa puede acompañar disfrute o cumplir una función social. Falta conocer la experiencia y el significado de la situación.",
+      "contrast": "Elegir una de las seis emociones agregaría una información sobre la experiencia que el relato no proporciona.",
+      "missingInformation": "Habría que conocer qué significado tiene el episodio para la persona y cómo se relaciona con su experiencia y sus tendencias a actuar.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_01",
+          "pdfPage": 5,
+          "printedPage": 5,
+          "section": "Activación emocional",
+          "interpretation": "Una activación aislada no basta."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "Un gesto observable puede tener función social y no revelar la experiencia."
+        }
+      ]
+    },
+    {
+      "id": "proc_insuficiente_03",
+      "difficulty": "advanced",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Al recibir una noticia, alguien permanece inmóvil y no cambia su rostro.",
+        "appraisal": null,
+        "body": "Rostro sin un patrón expresivo marcado.",
+        "actionTendency": null
+      },
+      "answerType": "single",
+      "expectedAnswer": "insufficient_information",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La neutralidad del rostro no demuestra ausencia de experiencia emocional. Faltan el significado de la noticia y el relato de la persona.",
+      "contrast": "Elegir una de las seis emociones agregaría una información sobre la experiencia que el relato no proporciona.",
+      "missingInformation": "Habría que conocer qué significado tiene el episodio para la persona y cómo se relaciona con su experiencia y sus tendencias a actuar.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_01",
+          "pdfPage": 5,
+          "printedPage": 5,
+          "section": "Activación emocional",
+          "interpretation": "Una activación aislada no basta."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "Un gesto observable puede tener función social y no revelar la experiencia."
+        }
+      ]
+    },
+    {
+      "id": "proc_insuficiente_04",
+      "difficulty": "advanced",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Una persona sale rápido de un aula al terminar una conversación.",
+        "appraisal": null,
+        "body": null,
+        "actionTendency": "Se aleja rápidamente."
+      },
+      "answerType": "single",
+      "expectedAnswer": "insufficient_information",
+      "discriminatingComponent": "appraisal",
+      "explanation": "Alejarse podría responder a amenaza, repulsión, un compromiso o varias razones. Faltan la evaluación y otros componentes del episodio.",
+      "contrast": "Elegir una de las seis emociones agregaría una información sobre la experiencia que el relato no proporciona.",
+      "missingInformation": "Habría que conocer qué significado tiene el episodio para la persona y cómo se relaciona con su experiencia y sus tendencias a actuar.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_01",
+          "pdfPage": 5,
+          "printedPage": 5,
+          "section": "Activación emocional",
+          "interpretation": "Una activación aislada no basta."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "Un gesto observable puede tener función social y no revelar la experiencia."
+        }
+      ]
+    },
+    {
+      "id": "proc_insuficiente_05",
+      "difficulty": "advanced",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Al terminar una actividad, alguien tiene lágrimas en los ojos.",
+        "appraisal": null,
+        "body": "Se observan lágrimas.",
+        "actionTendency": null
+      },
+      "answerType": "single",
+      "expectedAnswer": "insufficient_information",
+      "discriminatingComponent": "appraisal",
+      "explanation": "Las lágrimas no establecen una clave única. Faltan el valor de la actividad y el significado de su final.",
+      "contrast": "Elegir una de las seis emociones agregaría una información sobre la experiencia que el relato no proporciona.",
+      "missingInformation": "Habría que conocer qué significado tiene el episodio para la persona y cómo se relaciona con su experiencia y sus tendencias a actuar.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_01",
+          "pdfPage": 5,
+          "printedPage": 5,
+          "section": "Activación emocional",
+          "interpretation": "Una activación aislada no basta."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "Un gesto observable puede tener función social y no revelar la experiencia."
+        }
+      ]
+    },
+    {
+      "id": "proc_insuficiente_06",
+      "difficulty": "advanced",
+      "theoreticalModelId": "fernandez_abascal_2001",
+      "components": {
+        "trigger": "Una persona se tensa y mira fijamente un objeto que cayó.",
+        "appraisal": null,
+        "body": "Tensión muscular y atención dirigida al objeto.",
+        "actionTendency": null
+      },
+      "answerType": "single",
+      "expectedAnswer": "insufficient_information",
+      "discriminatingComponent": "appraisal",
+      "explanation": "La activación y la atención no distinguen entre amenaza, novedad u otras interpretaciones. Falta la valoración del evento.",
+      "contrast": "Elegir una de las seis emociones agregaría una información sobre la experiencia que el relato no proporciona.",
+      "missingInformation": "Habría que conocer qué significado tiene el episodio para la persona y cómo se relaciona con su experiencia y sus tendencias a actuar.",
+      "split": "check",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_01",
+          "pdfPage": 5,
+          "printedPage": 5,
+          "section": "Activación emocional",
+          "interpretation": "Una activación aislada no basta."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "Un gesto observable puede tener función social y no revelar la experiencia."
+        }
+      ]
+    }
+  ]
+}

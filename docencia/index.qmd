@@ -48,6 +48,13 @@ Materiales para revisar anteproyectos, realizar búsquedas bibliográficas y tom
 
 ::: {.resource-list}
 ::: {.resource-item}
+### Identificar y comprender emociones
+Tres actividades para distinguir patrones expresivos, observar con pistas y relacionar situaciones, evaluaciones y tendencias a actuar. Incluye una biblioteca de conceptos y una modalidad descriptiva.
+
+[Abrir la herramienta](../herramientas/identificar-emociones/index.html)
+:::
+
+::: {.resource-item}
 ### Teorías clásicas de la emoción
 Explorador interactivo para comparar las explicaciones de James-Lange, Cannon-Bard, Arnold, Schachter-Singer, Zajonc y Lazarus.
 

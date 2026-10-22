@@ -1,0 +1,40 @@
+{
+  "schemaVersion": "1.0",
+  "contentVersion": "0.1.0-demo",
+  "reviewDate": "2026-10-22",
+  "authorship": "Redacción e ilustraciones preparadas con Codex para revisión de Fernando Tonini",
+  "reviewStatus": "draft",
+  "editorialNote": "Lectura de fuentes completada; revisión docente y pilotaje pendientes.",
+  "items": [
+    {
+      "id": "pdf_01",
+      "title": "El estudio de la emoción desde una perspectiva cognitiva",
+      "author": "Universidad de Palermo (institución identificada; autoría personal no indicada)",
+      "year": null,
+      "pageCount": 11,
+      "version": "222Q_v1-0 (nombre de archivo)",
+      "originalFilename": "0512_APU_EstudioDeLaEmociónDesdePerspectivaCognitiva_222Q_v1-0.pdf",
+      "note": "11 páginas de texto. El archivo se creó en 2022 según metadatos; no se usa ese dato como fecha bibliográfica. Numeración impresa 1–11. PDF conservado fuera de los recursos públicos."
+    },
+    {
+      "id": "pdf_02",
+      "title": "Proceso emocional en las emociones primarias",
+      "author": "Universidad de Palermo (identidad institucional visible; autoría personal no indicada)",
+      "year": null,
+      "pageCount": 14,
+      "version": "222Q_v1-0_removed (nombre de archivo)",
+      "originalFilename": "0512_APU_ProcesoEmocionalEnEmocionesPrimarias_222Q_v1-0_removed.pdf",
+      "note": "Fragmento de 14 páginas; numeración impresa 3–16. Sin portada ni año bibliográfico visible. Se revisaron tablas y ejemplos faciales; las fotografías no se redistribuyen."
+    },
+    {
+      "id": "pdf_03",
+      "title": "La emoción",
+      "author": "Fernández-Abascal, Martín Díaz y Domínguez Sánchez (atribución según la bibliografía de pdf_01)",
+      "year": 2001,
+      "pageCount": 43,
+      "version": "Fragmento escaneado de Procesos psicológicos, pp. 295–337",
+      "originalFilename": "cap9_laemocion.pdf",
+      "note": "43 páginas escaneadas leídas mediante OCR en español y comprobación visual de esquemas, cuadros y pasajes relevantes. La primera página corresponde a la p. 295 por continuidad; no incluye portada editorial. Año y atribución proceden de la referencia de pdf_01, p. 11."
+    }
+  ]
+}

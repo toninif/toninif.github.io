@@ -1,0 +1,458 @@
+{
+  "schemaVersion": "1.0",
+  "contentVersion": "0.1.0-demo",
+  "reviewDate": "2026-10-22",
+  "authorship": "Redacción e ilustraciones preparadas con Codex para revisión de Fernando Tonini",
+  "reviewStatus": "draft",
+  "editorialNote": "Lectura de fuentes completada; revisión docente y pilotaje pendientes.",
+  "items": [
+    {
+      "id": "f_0001",
+      "identityId": "esquema_01",
+      "path": "assets/faces/f_0001.svg",
+      "depictedExpression": "alegria",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las comisuras suben, las mejillas se elevan y la abertura de los ojos se estrecha.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0002",
+      "identityId": "esquema_01",
+      "path": "assets/faces/f_0002.svg",
+      "depictedExpression": "tristeza",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Los extremos internos de las cejas se elevan y las comisuras de la boca bajan.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0003",
+      "identityId": "esquema_01",
+      "path": "assets/faces/f_0003.svg",
+      "depictedExpression": "miedo",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las cejas están elevadas y próximas entre sí; los ojos están muy abiertos y la boca se estira hacia los lados.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0004",
+      "identityId": "esquema_01",
+      "path": "assets/faces/f_0004.svg",
+      "depictedExpression": "ira",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las cejas descienden hacia el centro, los ojos se estrechan y los labios se presionan.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0005",
+      "identityId": "esquema_01",
+      "path": "assets/faces/f_0005.svg",
+      "depictedExpression": "asco",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "La nariz muestra pliegues, el labio superior sube y la boca queda asimétrica.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0006",
+      "identityId": "esquema_01",
+      "path": "assets/faces/f_0006.svg",
+      "depictedExpression": "sorpresa",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las cejas forman arcos elevados, los ojos se abren y la boca forma una abertura redondeada.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0007",
+      "identityId": "esquema_01",
+      "path": "assets/faces/f_0007.svg",
+      "depictedExpression": "neutral",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las cejas quedan a una altura intermedia, los ojos tienen abertura moderada y la boca se mantiene horizontal.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0008",
+      "identityId": "esquema_02",
+      "path": "assets/faces/f_0008.svg",
+      "depictedExpression": "alegria",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las comisuras suben, las mejillas se elevan y la abertura de los ojos se estrecha.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0009",
+      "identityId": "esquema_02",
+      "path": "assets/faces/f_0009.svg",
+      "depictedExpression": "tristeza",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Los extremos internos de las cejas se elevan y las comisuras de la boca bajan.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0010",
+      "identityId": "esquema_02",
+      "path": "assets/faces/f_0010.svg",
+      "depictedExpression": "miedo",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las cejas están elevadas y próximas entre sí; los ojos están muy abiertos y la boca se estira hacia los lados.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0011",
+      "identityId": "esquema_02",
+      "path": "assets/faces/f_0011.svg",
+      "depictedExpression": "ira",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las cejas descienden hacia el centro, los ojos se estrechan y los labios se presionan.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0012",
+      "identityId": "esquema_02",
+      "path": "assets/faces/f_0012.svg",
+      "depictedExpression": "asco",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "La nariz muestra pliegues, el labio superior sube y la boca queda asimétrica.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0013",
+      "identityId": "esquema_02",
+      "path": "assets/faces/f_0013.svg",
+      "depictedExpression": "sorpresa",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las cejas forman arcos elevados, los ojos se abren y la boca forma una abertura redondeada.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "f_0014",
+      "identityId": "esquema_02",
+      "path": "assets/faces/f_0014.svg",
+      "depictedExpression": "neutral",
+      "stimulusType": "original_illustration",
+      "split": "practice",
+      "width": 640,
+      "height": 640,
+      "altNeutral": "Rostro ilustrado del ejercicio",
+      "movementDescription": "Las cejas quedan a una altura intermedia, los ojos tienen abertura moderada y la boca se mantiene horizontal.",
+      "licenseId": "original-svg-v1",
+      "publicWebUseVerified": true,
+      "reviewStatus": "draft",
+      "recognitionPilot": null,
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,322 @@
+{
+  "schemaVersion": "1.0",
+  "contentVersion": "0.1.0-demo",
+  "reviewDate": "2026-10-22",
+  "authorship": "Redacción e ilustraciones preparadas con Codex para revisión de Fernando Tonini",
+  "reviewStatus": "draft",
+  "editorialNote": "Lectura de fuentes completada; revisión docente y pilotaje pendientes.",
+  "items": [
+    {
+      "id": "pres_01_1",
+      "faceId": "f_0001",
+      "targetEmotion": "alegria",
+      "expectedResponse": "yes",
+      "negativeType": null,
+      "explanation": "En este esquema se representa alegría. Las comisuras suben, las mejillas se elevan y la abertura de los ojos se estrecha. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_01_2",
+      "faceId": "f_0007",
+      "targetEmotion": "alegria",
+      "expectedResponse": "no",
+      "negativeType": "neutral",
+      "explanation": "En este esquema se representa una configuración neutral. Las cejas quedan a una altura intermedia, los ojos tienen abertura moderada y la boca se mantiene horizontal. El patrón objetivo era alegría: En el patrón ilustrado se elevan las comisuras y las mejillas y se estrecha la abertura de los ojos. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_02_1",
+      "faceId": "f_0002",
+      "targetEmotion": "tristeza",
+      "expectedResponse": "yes",
+      "negativeType": null,
+      "explanation": "En este esquema se representa tristeza. Los extremos internos de las cejas se elevan y las comisuras de la boca bajan. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_02_2",
+      "faceId": "f_0008",
+      "targetEmotion": "tristeza",
+      "expectedResponse": "no",
+      "negativeType": "other",
+      "explanation": "En este esquema se representa alegría. Las comisuras suben, las mejillas se elevan y la abertura de los ojos se estrecha. El patrón objetivo era tristeza: En el esquema, las comisuras descienden y los extremos internos de las cejas se elevan. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_03_1",
+      "faceId": "f_0003",
+      "targetEmotion": "miedo",
+      "expectedResponse": "yes",
+      "negativeType": null,
+      "explanation": "En este esquema se representa miedo. Las cejas están elevadas y próximas entre sí; los ojos están muy abiertos y la boca se estira hacia los lados. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_03_2",
+      "faceId": "f_0013",
+      "targetEmotion": "miedo",
+      "expectedResponse": "no",
+      "negativeType": "other",
+      "explanation": "En este esquema se representa sorpresa. Las cejas forman arcos elevados, los ojos se abren y la boca forma una abertura redondeada. El patrón objetivo era miedo: En el dibujo, las cejas se elevan y acercan, los ojos se abren y la boca se estira horizontalmente. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_04_1",
+      "faceId": "f_0004",
+      "targetEmotion": "ira",
+      "expectedResponse": "yes",
+      "negativeType": null,
+      "explanation": "En este esquema se representa ira / enojo. Las cejas descienden hacia el centro, los ojos se estrechan y los labios se presionan. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_04_2",
+      "faceId": "f_0009",
+      "targetEmotion": "ira",
+      "expectedResponse": "no",
+      "negativeType": "other",
+      "explanation": "En este esquema se representa tristeza. Los extremos internos de las cejas se elevan y las comisuras de la boca bajan. El patrón objetivo era enojo: En el dibujo las cejas bajan y se acercan; los párpados y la boca muestran tensión. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_05_1",
+      "faceId": "f_0005",
+      "targetEmotion": "asco",
+      "expectedResponse": "yes",
+      "negativeType": null,
+      "explanation": "En este esquema se representa asco. La nariz muestra pliegues, el labio superior sube y la boca queda asimétrica. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_05_2",
+      "faceId": "f_0014",
+      "targetEmotion": "asco",
+      "expectedResponse": "no",
+      "negativeType": "neutral",
+      "explanation": "En este esquema se representa una configuración neutral. Las cejas quedan a una altura intermedia, los ojos tienen abertura moderada y la boca se mantiene horizontal. El patrón objetivo era asco: En esta ilustración se marcan arrugas en la nariz y se eleva el labio superior. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_06_1",
+      "faceId": "f_0006",
+      "targetEmotion": "sorpresa",
+      "expectedResponse": "yes",
+      "negativeType": null,
+      "explanation": "En este esquema se representa sorpresa. Las cejas forman arcos elevados, los ojos se abren y la boca forma una abertura redondeada. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    },
+    {
+      "id": "pres_06_2",
+      "faceId": "f_0010",
+      "targetEmotion": "sorpresa",
+      "expectedResponse": "no",
+      "negativeType": "other",
+      "explanation": "En este esquema se representa miedo. Las cejas están elevadas y próximas entre sí; los ojos están muy abiertos y la boca se estira hacia los lados. El patrón objetivo era sorpresa: En el esquema, las cejas se elevan en arco, los ojos se abren y la mandíbula desciende. La respuesta se refiere al dibujo; no permite saber qué siente una persona.",
+      "split": "practice",
+      "reviewStatus": "draft",
+      "sourceRefs": [
+        {
+          "sourceId": "pdf_02",
+          "pdfPage": 12,
+          "printedPage": 14,
+          "section": "Expresión facial",
+          "interpretation": "Rasgos utilizados para construir un esquema original; no se copia la fotografía."
+        },
+        {
+          "sourceId": "pdf_03",
+          "pdfPage": 12,
+          "printedPage": 306,
+          "section": "Aprendizaje y cultura",
+          "interpretation": "La expresión no determina la experiencia interna."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": "1.0",
+  "contentVersion": "0.1.0-demo",
+  "reviewDate": "2026-10-22",
+  "authorship": "Redacción e ilustraciones preparadas con Codex para revisión de Fernando Tonini",
+  "reviewStatus": "draft",
+  "editorialNote": "Lectura de fuentes completada; revisión docente y pilotaje pendientes.",
+  "channel": "demo",
+  "modelId": "fernandez_abascal_2001",
+  "faceCheckEnabled": false,
+  "counts": {
+    "emotions": 6,
+    "faces": 14,
+    "identities": 2,
+    "presence": 12,
+    "hints": 12,
+    "process": 30
+  },
+  "limitations": [
+    "Revisión docente pendiente: el banco completo permanece en draft.",
+    "Ilustraciones originales de demostración; sin fotografías ni pilotaje.",
+    "Presencia: bloque reducido de 12 ítems únicos, 6 positivos, 2 negativos neutrales y 4 de otra expresión.",
+    "Las dos identidades se reutilizan entre actividades de práctica. No hay formas faciales A/B.",
+    "Procesos: 24 casos claros y 6 de información insuficiente; práctica y comprobación usan casos distintos, sin equivalencia demostrada."
+  ]
+}
